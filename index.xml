@@ -1,24 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>飞 光</title>
+    <title>飞光</title>
     <link>https://rjguanwen.cn/</link>
-    <description>Recent content on 飞 光</description>
+    <description>Recent content on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 19 Nov 2019 10:04:45 +0800</lastBuildDate>
     
-	<atom:link href="https://rjguanwen.cn/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://rjguanwen.cn/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://rjguanwen.cn/post/my-first-post/</link>
-      <pubDate>Tue, 19 Nov 2019 10:04:45 +0800</pubDate>
-      
-      <guid>https://rjguanwen.cn/post/my-first-post/</guid>
-      <description># 第一篇文章 测试使用</description>
-    </item>
     
   </channel>
 </rss>
