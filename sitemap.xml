@@ -3,6 +3,55 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://rjguanwen.cn/tags/</loc>
+    <lastmod>2019-11-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/tags/%E5%85%89%E9%98%B4/</loc>
+    <lastmod>2019-11-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/about/</loc>
+    <lastmod>2019-11-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/posts/</loc>
+    <lastmod>2019-11-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/2019/11/art-1/</loc>
+    <lastmod>2019-11-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/tags/%E8%AF%97%E8%AF%8D/</loc>
+    <lastmod>2019-11-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/</loc>
+    <lastmod>2019-11-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://rjguanwen.cn/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -10,18 +59,6 @@
   
   <url>
     <loc>https://rjguanwen.cn/series/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://rjguanwen.cn/tags/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://rjguanwen.cn/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
