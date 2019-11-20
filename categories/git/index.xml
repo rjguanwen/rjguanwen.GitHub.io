@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GIT on 飞光</title>
+    <link>https://rjguanwen.cn/categories/git/</link>
+    <description>Recent content in GIT on 飞光</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 20 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://rjguanwen.cn/categories/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>git错误解决</title>
+      <link>https://rjguanwen.cn/2019/11/git_01/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2019/11/git_01/</guid>
+      <description>#pull仓库时：refusing to merge unrelated histories 问题原因： 在远端已经建立好了仓库，在本地又 init 了一个仓库，然后使用 git remote add origin xxxxx 添加远端，之后进行pul</description>
+    </item>
+    
+  </channel>
+</rss>

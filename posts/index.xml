@@ -5,10 +5,19 @@
     <link>https://rjguanwen.cn/posts/</link>
     <description>Recent content in 文章 on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 19 Nov 2019 18:13:06 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 20 Nov 2019 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://rjguanwen.cn/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>git错误解决</title>
+      <link>https://rjguanwen.cn/2019/11/git_01/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2019/11/git_01/</guid>
+      <description>#pull仓库时：refusing to merge unrelated histories 问题原因： 在远端已经建立好了仓库，在本地又 init 了一个仓库，然后使用 git remote add origin xxxxx 添加远端，之后进行pul</description>
+    </item>
     
     <item>
       <title>杂句摘抄</title>
@@ -16,7 +25,7 @@
       <pubDate>Tue, 19 Nov 2019 18:13:06 +0800</pubDate>
       
       <guid>https://rjguanwen.cn/2019/11/somewords_01/</guid>
-      <description>春花秋月何时了。</description>
+      <description>1.读书不是为了雄辩与驳斥，也不是为了轻信与盲从，而是为了思考和权衡。很多人觉得他们在思考，而实际上他们是在重新整理自己的偏见。 2.用一套程</description>
     </item>
     
     <item>
