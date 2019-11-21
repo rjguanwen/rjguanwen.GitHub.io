@@ -43,7 +43,7 @@
 
 <meta itemprop="datePublished" content="2019-11-21T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-11-21T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="264">
+<meta itemprop="wordCount" content="284">
 
 
 
@@ -263,11 +263,7 @@
     <div class="slimContent">
       <nav id="toc" class="article-toc">
         <h3 class="toc-title">文章目录</h3>
-        <div class="toc-content always-active"><nav id="TableOfContents">
-<ul>
-<li><a href="#govendor-使用记录">govendor 使用记录</a></li>
-</ul>
-</nav>
+        <div class="toc-content always-active">
         </div>
       </nav>
     </div>
@@ -303,14 +299,12 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/11/govendor_use/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:264字</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:284字</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长:1分 </span>
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
-      
-
-<h1 id="govendor-使用记录">govendor 使用记录</h1>
+      <p><strong>简单记录 govendor 的使用方式：</strong></p>
 
 <ol>
 <li><p>安装<br />
@@ -328,6 +322,8 @@
 <li><p>删除依赖包
 <code>govendor remove +vendor</code></p></li>
 </ol>
+
+<p><strong>常用的命令如下：</strong></p>
 
 <table>
 <thead>
@@ -390,7 +386,7 @@
 </tbody>
 </table>
 
-<p>Status Types
+<p><strong>可用的 Status Types 如下：</strong><br />
     +local    (l) packages in your project<br />
     +external (e) referenced packages in GOPATH but not in current project<br />
     +vendor   (v) packages in the vendor folder<br />
