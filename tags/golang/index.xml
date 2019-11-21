@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>gomod使用记录</title>
+      <link>https://rjguanwen.cn/2019/11/gomod_use/</link>
+      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2019/11/gomod_use/</guid>
+      <description>简单记录 go mod 的使用方式： 代理配置 $env:GOPROXY = &amp;quot;https://goproxy.io&amp;quot; 或使用 goproxy.cn 初始化 go mod init ***，***为你要创建的mod名字，直接为工程名即可 自动下载依赖 go run *****.</description>
+    </item>
+    
+    <item>
       <title>govendor使用记录</title>
       <link>https://rjguanwen.cn/2019/11/govendor_use/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>

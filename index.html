@@ -146,7 +146,7 @@
     <div class="widget-body">
         <ul class="category-list">
             <li class="category-list-item"><a href="https://rjguanwen.cn/categories/git/" class="category-list-link">git</a><span class="category-list-count">1</span></li>
-            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/golang/" class="category-list-link">golang</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/golang/" class="category-list-link">golang</a><span class="category-list-count">2</span></li>
             <li class="category-list-item"><a href="https://rjguanwen.cn/categories/%E8%AF%97%E8%AF%8D/" class="category-list-link">诗词</a><span class="category-list-count">1</span></li>
         </ul>
     </div>
@@ -162,7 +162,7 @@
             
             
             <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/golang/" class="tag-list-link">golang</a><span
-                    class="tag-list-count">1</span></li>
+                    class="tag-list-count">2</span></li>
             
             
             <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E5%85%89%E9%98%B4/" class="tag-list-link">光阴</a><span
@@ -174,7 +174,7 @@
             
             
             <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/" class="tag-list-link">技术</a><span
-                    class="tag-list-count">2</span></li>
+                    class="tag-list-count">3</span></li>
             
             
             <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E6%9D%82%E6%84%9F%E9%9A%8F%E7%AC%94/" class="tag-list-link">杂感随笔</a><span
@@ -193,6 +193,16 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget-body">
         <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://rjguanwen.cn/2019/11/gomod_use/" class="title">gomod使用记录</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-11-21 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-11-21</time>
+                    </p>
+                </div>
+            </li>
             <li>
                 <div class="item-inner">
                     <p class="item-title">
@@ -233,16 +243,6 @@
                     </p>
                 </div>
             </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://rjguanwen.cn/2019/11/art-1/" class="title">苦昼短</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2019-11-19 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-11-19</time>
-                    </p>
-                </div>
-            </li>
         </ul>
     </div>
 </div>
@@ -263,6 +263,41 @@
         <h1 itemprop="name">
   <a
     class="article-title"
+    href="/2019/11/gomod_use/"
+    >gomod使用记录</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">简单记录 go mod 的使用方式： 代理配置 $env:GOPROXY = &quot;https://goproxy.io&quot; 或使用 goproxy.cn 初始化 go mod init ***，***为你要创建的mod名字，直接为工程名即可 自动下载依赖 go run *****.</div>
+      <p class="article-meta"><span class="article-date">
+  <i class="icon icon-calendar-check"></i>
+<a href="https://rjguanwen.cn/2019/11/gomod_use/" class="">
+  <time datetime="2019-11-21 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-11-21</time>
+</a>
+</span><span class="article-category">
+  <i class="icon icon-folder"></i>
+  <a class="article-category-link" href="/categories/golang/"> GOLANG </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+    <a class="article-tag-link" href="/tags/%E6%8A%80%E6%9C%AF/"> 技术 </a>
+    <a class="article-tag-link" href="/tags/golang/"> GOLANG </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/11/gomod_use/#comments" class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:256字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长:1分 </span>
+      </p>
+    </article><article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
     href="/2019/11/govendor_use/"
     >govendor使用记录</a
   >
@@ -272,7 +307,7 @@
       <div class="article-entry text-muted" itemprop="description">简单记录 govendor 的使用方式： 安装 go get -u -v github.com/kardianos/govendor 初始化 vendor 目录 govendor init 添加依赖包到 vendor 目录 govendor add +external 或 govendor add +e 从 $GOPATH 更新依赖包到 vendor 目录 govendor update +vendor 删除依赖包 govendor remove +vendor 常用的命令如</div>
       <p class="article-meta"><span class="article-date">
   <i class="icon icon-calendar-check"></i>
-<a href="https://rjguanwen.cn/2019/11/govendor_use/" class="article-date">
+<a href="https://rjguanwen.cn/2019/11/govendor_use/" class="">
   <time datetime="2019-11-21 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-11-21</time>
 </a>
 </span><span class="article-category">
@@ -307,7 +342,7 @@
       <div class="article-entry text-muted" itemprop="description">pull仓库时：refusing to merge unrelated histories 问题原因： 在远端已经建立好了仓库，在本地又 init 了一个仓库，然后使用 git remote add origin xxxxx 添加远端，之后进行pull</div>
       <p class="article-meta"><span class="article-date">
   <i class="icon icon-calendar-check"></i>
-<a href="https://rjguanwen.cn/2019/11/git_01/" class="">
+<a href="https://rjguanwen.cn/2019/11/git_01/" class="article-title">
   <time datetime="2019-11-20 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-11-20</time>
 </a>
 </span><span class="article-category">
