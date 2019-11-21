@@ -5,10 +5,19 @@
     <link>https://rjguanwen.cn/categories/</link>
     <description>Recent content in Categories on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 20 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 Nov 2019 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://rjguanwen.cn/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GOLANG</title>
+      <link>https://rjguanwen.cn/categories/golang/</link>
+      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/categories/golang/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>GIT</title>
