@@ -10,14 +10,14 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/git/</loc>
+    <loc>https://rjguanwen.cn/categories/git/</loc>
     <lastmod>2019-11-20T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/categories/git/</loc>
+    <loc>https://rjguanwen.cn/tags/git/</loc>
     <lastmod>2019-11-20T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -38,6 +38,13 @@
   </url>
   
   <url>
+    <loc>https://rjguanwen.cn/2019/11/any_01/</loc>
+    <lastmod>2019-11-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2019-11-20T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -46,6 +53,13 @@
   
   <url>
     <loc>https://rjguanwen.cn/posts/</loc>
+    <lastmod>2019-11-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/tags/%E6%9D%82%E6%84%9F%E9%9A%8F%E7%AC%94/</loc>
     <lastmod>2019-11-20T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -94,14 +108,14 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/categories/%E8%AF%97%E8%AF%8D/</loc>
+    <loc>https://rjguanwen.cn/tags/%E8%AF%97%E8%AF%8D/</loc>
     <lastmod>2019-11-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/%E8%AF%97%E8%AF%8D/</loc>
+    <loc>https://rjguanwen.cn/categories/%E8%AF%97%E8%AF%8D/</loc>
     <lastmod>2019-11-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
