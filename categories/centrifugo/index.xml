@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>centrifugo on 飞光</title>
+    <link>https://rjguanwen.cn/categories/centrifugo/</link>
+    <description>Recent content in centrifugo on 飞光</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 11 Dec 2019 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://rjguanwen.cn/categories/centrifugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>centrifugo基本使用</title>
+      <link>https://rjguanwen.cn/2019/12/centrifugo_02/</link>
+      <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2019/12/centrifugo_02/</guid>
+      <description>Centrifugo 是一个用 Golang 实现的基于 Websocket 或者 SockJS 的实时通信平台。 基本运行框架： Centrifugo 的使用场景一般涉及三个部分：客户端（前端）、应用程序（后端）和 Centrifu</description>
+    </item>
+    
+    <item>
+      <title>centrifugo简介</title>
+      <link>https://rjguanwen.cn/2019/12/centrifugo_01/</link>
+      <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2019/12/centrifugo_01/</guid>
+      <description>Centrifugo 是一个用 Golang 实现的基于 Websocket 或者 SockJS 的实时通信平台。 提供基于频道的发布/订阅（PUB/SUB）模式。 容易和现有系统集成– 不改变已有后端情况下为系统</description>
+    </item>
+    
+  </channel>
+</rss>

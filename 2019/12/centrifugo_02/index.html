@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        飞光</title>
+        centrifugo基本使用 - 飞光
+      </title>
     <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -22,27 +23,34 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  
+  <meta name="description" content="centrifugo相关内容" />
   <meta name="generator" content="Hugo 0.59.1 with theme pure" />
-  <title>飞光</title>
+  <title>centrifugo基本使用 - 飞光</title>
   
 
-  <link rel="alternate" type="application/rss+xml" href="https://rjguanwen.cn/categories/git/index.xml" title="飞光" />
   <link rel="stylesheet" href="https://rjguanwen.cn/css/style.css">
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css"> 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-  <meta property="og:title" content="GIT" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://rjguanwen.cn/categories/git/" />
+  <meta property="og:title" content="centrifugo基本使用" />
+<meta property="og:description" content="centrifugo相关内容" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rjguanwen.cn/2019/12/centrifugo_02/" />
+<meta property="article:published_time" content="2019-12-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-12-11T00:00:00+00:00" />
+<meta itemprop="name" content="centrifugo基本使用">
+<meta itemprop="description" content="centrifugo相关内容">
 
-<meta property="og:updated_time" content="2019-11-20T00:00:00+00:00" />
-<meta itemprop="name" content="GIT">
-<meta itemprop="description" content="">
 
+<meta itemprop="datePublished" content="2019-12-11T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-12-11T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="782">
+
+
+
+<meta itemprop="keywords" content="技术,centrifugo," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="GIT"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="centrifugo基本使用"/>
+<meta name="twitter:description" content="centrifugo相关内容"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -262,49 +270,106 @@
 
     
     
-<main class="main" role="main">
-    <article class="article article-categories article-type-list" itemscope="">
-        <header class="article-header">
-            <h1 itemprop="name" class="hidden-xs">GIT</h1>
-            <p class="text-muted hidden-xs">共 6 个分类</p>
-            <nav role="navigation" id="nav-main" class="okayNav">
-                <ul>
-                    <li><a href="/categories">All</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/centrifugo/">centrifugo</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/git/">GIT</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/golang/">GOLANG</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/">杂七杂八</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/">系统架构</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/%E8%AF%97%E8%AF%8D/">诗词</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <div class="article-body">
-            <div class="panel panel-default b-no">
-                <div class="panel-heading" role="tab">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" href="#collapseed82dc1c7066f5e5103d0204b6fe58d0" aria-expanded="true">
-                            <i class="icon icon-folder text-active"></i><i class="icon icon-folder-open text"></i>GIT
-                        </a>
-                        <small class="text-muted">(Total1 articles)</small>
-                    </h4>
-                </div>
-                <div id="collapseed82dc1c7066f5e5103d0204b6fe58d0" class="panel-collapse collapse in" role="tabpanel"
-                    aria-labelledby="headinged82dc1c7066f5e5103d0204b6fe58d0">
-                    <div class="panel-body">
-                        <div class="collection">
-<a href="https://rjguanwen.cn/2019/11/git_01/" class="collection-item" itemprop="url"  target="_blank" >
-    <time datetime="2019-11-20 00:00:00 &#43;0000 UTC"
-        itemprop="datePublished">2019-11-20</time>
-    <span>&nbsp;&nbsp;&nbsp;</span>git错误解决
-</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+    <div class="slimContent">
+      <nav id="toc" class="article-toc">
+        <h3 class="toc-title">文章目录</h3>
+        <div class="toc-content always-active">
         </div>
-    </article>
+      </nav>
+    </div>
+  </aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2019/12/centrifugo_02/"
+    >centrifugo基本使用</a
+  >
+</h1>
+
+      <div class="article-meta">
+        <span class="article-date">
+  <i class="icon icon-calendar-check"></i>
+<a href="https://rjguanwen.cn/2019/12/centrifugo_02/" class="article-date">
+  <time datetime="2019-12-11 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-12-11</time>
+</a>
+</span><span class="article-category">
+  <i class="icon icon-folder"></i>
+  <a class="article-category-link" href="/categories/centrifugo/"> centrifugo </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+    <a class="article-tag-link" href="/tags/%E6%8A%80%E6%9C%AF/"> 技术 </a>
+    <a class="article-tag-link" href="/tags/centrifugo/"> centrifugo </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/12/centrifugo_02/#comments"
+            class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:782字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长:2分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      <p><strong>Centrifugo 是一个用 Golang 实现的基于 Websocket 或者 SockJS 的实时通信平台。</strong></p>
+
+<p><strong>基本运行框架：</strong><br />
+<img src="/images/centrifugo-scheme.png" alt="基本运行框架" /></p>
+
+<p><strong>Centrifugo 的使用场景一般涉及三个部分：客户端（前端）、应用程序（后端）和 Centrifugo。当然，也可以只有客户端和 Centrifugo。基本使用流程如下：</strong></p>
+
+<ol>
+<li><p>下载并安装Centrifugo，推荐使用 docker 方式。</p></li>
+
+<li><p>创建基础配置文件，设置 <code>secret</code> 和 <code>api_key</code>。配置文件（config.json）可以通过命令自动创建： <code>./centrifugo genconfig</code></p></li>
+
+<li><p>在后端应用程序中设置三个变量：<code>Centrifugo secret</code>、<code>Centrifugo API Key</code>、<code>Centrifugo API address</code>。<code>Centrifugo secret</code> 和 <code>Centrifugo API Key</code> 来自配置文件，<code>Centrifugo API address</code> 默认为 <code>http://localhost:8000/api</code>。<code>Centrifugo secret</code> 和 <code>Centrifugo API Key</code> 是<font color='red'>关键信息，不能泄露到客户端</font>。</p></li>
+
+<li><p>根据客户端语言下载相应的客户端库（<a href="https://centrifugal.github.io/centrifugo/libraries/client/">支持的客户端库列表</a>）。客户端库中有连接到 Centrifugo 的方法。在连接时，客户端需要提供令牌（Token JWT）。令牌的生成应该在应用程序后端进行，然后提供给客户端，可以考虑在用户登录成功时生成令牌给客户端或者提供令牌获取服务供已登录的客户端调用。令牌的生成需要依赖 <code>Centrifugo secret</code>。  客户端库一般都有 <code>setToken</code> 方法供使用。</p></li>
+
+<li><p>客户端连接到 Centrifugo 后，即可根据需要订阅相关的渠道（Channel）。所有的客户端库都提供了处理所订阅渠道（Channel）消息的方法。</p></li>
+
+<li><p>以上完成后，应用程序后端则可将实时消息发布到相应的渠道（Channel）。消息的推送可以通过 Centrifugo HTTP API 来完成，官方针对不同的编程语言提供了一些 API 库（<a href="https://centrifugal.github.io/centrifugo/libraries/api/">API libraries</a>），使用这些库可以方便的发布消息到指定的渠道（Channel）。当然，你也可以根据<a href="https://centrifugal.github.io/centrifugo/server/http_api/">API 描述</a>编写自己的 API 库。发布到渠道的消息会被投递到订阅相应渠道的客户端。</p></li>
+
+<li><p>为了方便在生产环境中安装 Centrifugo，官方提供了 Docker 镜像、rpm 包以及 deb 包。</p></li>
+
+<li><p><a href="https://legacy.gitbook.com/book/fzambia/centrifugal/details">详细参考资料地址</a>。</p></li>
+</ol>
+
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://rjguanwen.cn/2019/12/centrifugo_01/" title="centrifugo简介"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat"
+                data-mobile-sites="weibo,qq,qzone,wechat"></div>
+        </div>
+    </div>
+</nav>
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 <ul class="social-links">
     <li><a href="https://github.com/rjguanwen" target="_blank" title="github" data-toggle=tooltip data-placement=top >
@@ -354,5 +419,20 @@ hljs.initHighlightingOnLoad();
       </script>
 <script type="text/javascript" src="https://rjguanwen.cn/js/insight.js"></script>
 
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: 'fa63cb30ceea59ed6d75',
+        clientSecret: 'e06b033c38c44b3bc8d2bf15aa4ef888c6548e90',
+        repo: 'rjguanwen-blog-comments',
+        owner: 'rjguanwen',
+        admin: ['rjguanwen'],
+        id: md5(location.pathname),
+        distractionFreeMode: true
+    });
+    gitalk.render('comments');
+</script>
   </body>
 </html>
