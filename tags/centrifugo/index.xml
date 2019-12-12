@@ -1,26 +1,44 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>centrifugo on 飞光</title>
+    <title>Centrifugo on 飞光</title>
     <link>https://rjguanwen.cn/tags/centrifugo/</link>
-    <description>Recent content in centrifugo on 飞光</description>
+    <description>Recent content in Centrifugo on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 11 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Dec 2019 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://rjguanwen.cn/tags/centrifugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>centrifugo基本使用</title>
+      <title>Centrifugo（三）安装与启动</title>
+      <link>https://rjguanwen.cn/2019/12/centrifugo_03/</link>
+      <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2019/12/centrifugo_03/</guid>
+      <description>一、下载安装程序 &amp;ensp;&amp;ensp;Centrifugo 使用 Go 语言开发，GO 语言可以将应用程序编译为单一的二进制执行文件，并且具备交叉编译的能力。因此，Centrifugo 可以方</description>
+    </item>
+    
+    <item>
+      <title>Centrifugo（二）基本使用</title>
       <link>https://rjguanwen.cn/2019/12/centrifugo_02/</link>
-      <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://rjguanwen.cn/2019/12/centrifugo_02/</guid>
       <description>Centrifugo 是一个用 Golang 实现的基于 Websocket 或者 SockJS 的实时通信平台。 基本运行框架： Centrifugo 的使用场景一般涉及三个部分：客户端（前端）、应用程序（后端）和 Centrifu</description>
     </item>
     
     <item>
-      <title>centrifugo简介</title>
+      <title>Centrifugo（四）配置文件说明</title>
+      <link>https://rjguanwen.cn/2019/12/centrifugo_04/</link>
+      <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2019/12/centrifugo_04/</guid>
+      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Centrifugo 支持 JSON、TOML和YAML三种格式的配置文件。本文以 JSON 格式为例说明 Centrifugo 配置文件的内容。最简单的配置文件如下： { &amp;quot;secret&amp;quot;: &amp;quot;very-long-secret-key&amp;quot; } 只有 secret 是必须的，在</description>
+    </item>
+    
+    <item>
+      <title>Centrifugo（一）简介</title>
       <link>https://rjguanwen.cn/2019/12/centrifugo_01/</link>
       <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
       
