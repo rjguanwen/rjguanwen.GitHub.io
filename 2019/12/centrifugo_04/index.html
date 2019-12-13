@@ -153,7 +153,7 @@
     <h3 class="widget-title"> 分类</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/centrifugo/" class="category-list-link">centrifugo</a><span class="category-list-count">4</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/centrifugo/" class="category-list-link">centrifugo</a><span class="category-list-count">5</span></li>
             <li class="category-list-item"><a href="https://rjguanwen.cn/categories/git/" class="category-list-link">git</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://rjguanwen.cn/categories/golang/" class="category-list-link">golang</a><span class="category-list-count">2</span></li>
             <li class="category-list-item"><a href="https://rjguanwen.cn/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/" class="category-list-link">杂七杂八</a><span class="category-list-count">1</span></li>
@@ -169,7 +169,7 @@
             
             
             <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/centrifugo/" class="tag-list-link">centrifugo</a><span
-                    class="tag-list-count">4</span></li>
+                    class="tag-list-count">5</span></li>
             
             
             <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/git/" class="tag-list-link">git</a><span
@@ -193,7 +193,7 @@
             
             
             <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/" class="tag-list-link">技术</a><span
-                    class="tag-list-count">8</span></li>
+                    class="tag-list-count">9</span></li>
             
             
             <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E6%9D%82%E6%84%9F%E9%9A%8F%E7%AC%94/" class="tag-list-link">杂感随笔</a><span
@@ -235,6 +235,16 @@
             <li>
                 <div class="item-inner">
                     <p class="item-title">
+                        <a href="https://rjguanwen.cn/2019/12/centrifugo_05/" class="title">Centrifugo（五）频道（Channel）</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-12-12 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-12-12</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
                         <a href="https://rjguanwen.cn/2019/12/centrifugo_04/" class="title">Centrifugo（四）配置文件说明</a>
                     </p>
                     <p class="item-date">
@@ -249,16 +259,6 @@
                     </p>
                     <p class="item-date">
                         <time datetime="2019-12-11 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-12-11</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://rjguanwen.cn/2019/11/good_habits/" class="title">坚持好习惯</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2019-11-30 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-11-30</time>
                     </p>
                 </div>
             </li>
@@ -322,7 +322,7 @@
 }
 </code></pre>
 
-<p>只有 <code>secret</code> 是必须的，在生产环境你应该将该参数设置的足够复杂并且避免外泄。<font color='red'><strong>唯二的需要知道这个参数值的只有 Centrifugo 自身和你的应用程序后端。</strong></font>该值被用来生成客户端连接令牌、调用 API 以及订阅私有渠道。</p>
+<p>只有 <code>secret</code> 是必须的，在生产环境你应该将该参数设置的足够复杂并且避免外泄。<font color='red'><strong>唯二的需要知道这个参数值的只有 Centrifugo 自身和你的应用程序后端。</strong></font>该值被用来生成客户端连接令牌、调用 API 以及订阅私有频道。</p>
 
 <p>&ensp;&ensp;&ensp;&ensp;<code>connection_lifetime</code> 参数用来设置客户端连接的过期时间，单位为秒。如果该参数设置为0，表示该客户端连接永不过期。</p>
 
@@ -334,28 +334,28 @@
 
 <p><br></p>
 
-<p>&ensp;&ensp;&ensp;&ensp;我们重点关注以下与渠道（Channel）相关的几个参数。渠道以字符串进行标识，客户端通过订阅渠道来获取发布到渠道中的实时消息。配置文件中的一些参数会影响到渠道的行为：</p>
+<p>&ensp;&ensp;&ensp;&ensp;我们重点关注以下与频道（Channel）相关的几个参数。频道以字符串进行标识，客户端通过订阅频道来获取发布到频道中的实时消息。配置文件中的一些参数会影响到频道的行为：</p>
 
 <ul>
-<li><p><strong>watch：</strong>Centrifugo 会同时发生消息到 admin channel，这些消息可以在 admin 管理界面的 <code>messages tab</code> 下查看。这个参数要慎用，特别是针对消息发布频率比较高的渠道，以免超出 admin client 的处理能力。本参数默认值为 <code>fasle</code>。</p></li>
+<li><p><strong>watch：</strong>Centrifugo 会同时发生消息到 admin channel，这些消息可以在 admin 管理界面的 <code>messages tab</code> 下查看。这个参数要慎用，特别是针对消息发布频率比较高的频道，以免超出 admin client 的处理能力。本参数默认值为 <code>fasle</code>。</p></li>
 
-<li><p><strong>publish：</strong>允许客户端直接发布消息到渠道，而不经过应用程序后端。一般情况下，消息都是由应用程序后端通过 Centrifugo API 发布到 Centrifugo 服务器的。这个参数适用于没有后端或者 demo 的快速构建。需要注意的一点是客户端只有成功订阅了渠道之后才能发布消息到该渠道。本参数默认值为 <code>false</code>。</p></li>
+<li><p><strong>publish：</strong>允许客户端直接发布消息到频道，而不经过应用程序后端。一般情况下，消息都是由应用程序后端通过 Centrifugo API 发布到 Centrifugo 服务器的。这个参数适用于没有后端或者 demo 的快速构建。需要注意的一点是客户端只有成功订阅了频道之后才能发布消息到该频道。本参数默认值为 <code>false</code>。</p></li>
 
-<li><p><strong>anonymous：</strong>该参数允许匿名访问（在连接参数中使用空字符串作为 user ID，JWT token 中 sub 为空）。通常情况下，应用程序的用户都需要登录认证，因此客户端建立连接时可以使用用户名作为标识。如果你需要提供公共的实时消息服务，你可以在相应的渠道上开启本参数。本参数默认值为 <code>false</code>。</p></li>
+<li><p><strong>anonymous：</strong>该参数允许匿名访问（在连接参数中使用空字符串作为 user ID，JWT token 中 sub 为空）。通常情况下，应用程序的用户都需要登录认证，因此客户端建立连接时可以使用用户名作为标识。如果你需要提供公共的实时消息服务，你可以在相应的频道上开启本参数。本参数默认值为 <code>false</code>。</p></li>
 
-<li><p><strong>presence：</strong>是否可查看当前渠道的连接信息，即客户端对本渠道的订阅信息。本参数默认是为 <code>false</code>。</p></li>
+<li><p><strong>presence：</strong>是否可查看当前频道的连接信息，即客户端对本频道的订阅信息。本参数默认是为 <code>false</code>。</p></li>
 
-<li><p><strong>join_leave：</strong>当有用户订阅/取消订阅渠道时，是否发送相关信息到渠道中。本参数默认值为 <code>false</code>。</p></li>
+<li><p><strong>join_leave：</strong>当有用户订阅/取消订阅频道时，是否发送相关信息到频道中。本参数默认值为 <code>false</code>。</p></li>
 
-<li><p><strong>history_size：</strong>渠道历史消息数量。因为 Centrifugo 将所有的消息存储在内存中，因此限制每个渠道保留的历史消息数量是非常重要的。本参数默认值为 <code>0</code>，这意味着渠道不会保留历史消息。启用本参数后，Centrifugo 会为命名空间中的每条渠道保留指定数量的历史消息，直到消息过期，关于消息过期详见参数 <code>history_lifetime</code>。</p></li>
+<li><p><strong>history_size：</strong>频道历史消息数量。因为 Centrifugo 将所有的消息存储在内存中，因此限制每个频道保留的历史消息数量是非常重要的。本参数默认值为 <code>0</code>，这意味着频道不会保留历史消息。启用本参数后，Centrifugo 会为命名空间中的每条频道保留指定数量的历史消息，直到消息过期，关于消息过期详见参数 <code>history_lifetime</code>。</p></li>
 
-<li><p><strong>history_lifetime：</strong>渠道历史消息的过期时间，单位为秒。本参数默认值为 <code>0</code>，这意味着渠道不会保留历史消息。如果要保留历史消息，需要同时配置 <code>history_size</code> 与 <code>history_lifetime</code>，并设置合理的参数值。</p></li>
+<li><p><strong>history_lifetime：</strong>频道历史消息的过期时间，单位为秒。本参数默认值为 <code>0</code>，这意味着频道不会保留历史消息。如果要保留历史消息，需要同时配置 <code>history_size</code> 与 <code>history_lifetime</code>，并设置合理的参数值。</p></li>
 
-<li><p><strong>recover：</strong>是否恢复丢失的消息。如果开启本参数，当客户端重新连接时（如因网络原因断线重连），Centrifugo 将试图重新恢复丢失的消息。这个参数的启用要配合历史消息相关参数（history_size 和 histroy_lifetime），毕竟消息的恢复依靠的是渠道历史消息记录。注意，所有实时事件都需要启用此功能。本参数默认值为 <code>false</code>。</p></li>
+<li><p><strong>recover：</strong>是否恢复丢失的消息。如果开启本参数，当客户端重新连接时（如因网络原因断线重连），Centrifugo 将试图重新恢复丢失的消息。这个参数的启用要配合历史消息相关参数（history_size 和 histroy_lifetime），毕竟消息的恢复依靠的是频道历史消息记录。注意，所有实时事件都需要启用此功能。本参数默认值为 <code>false</code>。</p></li>
 
 <li><p><strong>history_drop_inactive：</strong>是否丢弃不活跃的历史消息。本参数可以大幅降低资源消耗（内存、消息传播次数）。简单来说，该参数开启后，Centrifugo 会主动丢弃不需要的历史消息。本参数默认值为 <code>false</code>。</p></li>
 
-<li><p><strong>namespaces：</strong>namespaces 是可选参数，如果设置的话，需要设置成 namespace 数组的形式。通过 namespaces 可以针对 namespace 下的渠道配置自定义参数。每个 namespace 都有自己的 name，并且拥有上面所有的针对渠道的参数。name 必须唯一，并且由字母、数字、下划线或连接符组成，长度必须大于2（<code>^[-azA-Z0-9_]{2,}$</code>）。<br />
+<li><p><strong>namespaces：</strong>namespaces 是可选参数，如果设置的话，需要设置成 namespace 数组的形式。通过 namespaces 可以针对 namespace 下的频道配置自定义参数。每个 namespace 都有自己的 name，并且拥有上面所有的针对频道的参数。name 必须唯一，并且由字母、数字、下划线或连接符组成，长度必须大于2（<code>^[-azA-Z0-9_]{2,}$</code>）。<br />
 <br></p></li>
 </ul>
 
@@ -405,9 +405,9 @@
 </code></pre>
 
 <p>在以上配置下：<br />
-&ensp;&ensp;- 渠道 <code>news</code> 将使用全局参数配置。<br />
-&ensp;&ensp;- 渠道 <code>public:news</code> 将使用 <code>public</code> 命名空间的参数配置。<br />
-&ensp;&ensp;- 渠道 <code>gossips:news</code> 将使用 <code>gossips</code> 命名空间的参数配置。<br />
+&ensp;&ensp;- 频道 <code>news</code> 将使用全局参数配置。<br />
+&ensp;&ensp;- 频道 <code>public:news</code> 将使用 <code>public</code> 命名空间的参数配置。<br />
+&ensp;&ensp;- 频道 <code>gossips:news</code> 将使用 <code>gossips</code> 命名空间的参数配置。<br />
 <br></p>
 
 <p><strong>通过 <code>./centrifugo -h</code> 命令，可以查看所有的可用参数，如下：</strong></p>
@@ -470,8 +470,8 @@
                         aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
             </li>
             <li class="next">
-                <a href="https://rjguanwen.cn/2019/12/centrifugo_02/"
-                    title="Centrifugo（二）基本使用"><span>下一篇&nbsp;&nbsp;</span><i
+                <a href="https://rjguanwen.cn/2019/12/centrifugo_05/"
+                    title="Centrifugo（五）频道（Channel）"><span>下一篇&nbsp;&nbsp;</span><i
                         class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
