@@ -5,10 +5,28 @@
     <link>https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/</link>
     <description>Recent content in 技术 on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 12 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Dec 2019 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Centrifugo（六）引擎（Engines）</title>
+      <link>https://rjguanwen.cn/2019/12/centrifugo_06/</link>
+      <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2019/12/centrifugo_06/</guid>
+      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Centrifugo 引擎负责如何发布消息、处理订阅、状态及历史数据的保存及恢复等。Centrifugo 可选的引擎为 Memory 和 Redis，默认使用 Memory。两者最</description>
+    </item>
+    
+    <item>
+      <title>上传本地文件到git</title>
+      <link>https://rjguanwen.cn/2019/12/git_02/</link>
+      <pubDate>Tue, 17 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2019/12/git_02/</guid>
+      <description>1、创建本地仓库 cd 到相应文件夹 仓库初始化： git init 将文件添加到仓库： git add . 提交文件到仓库： git commit -m &amp;quot;xxxxxxx&amp;quot; 2、关联 github 仓库 添加远程仓库： git remote add origin https://github.com/rjguanwen/xxxx.git 合并本地</description>
+    </item>
     
     <item>
       <title>Centrifugo（三）安装与启动</title>
@@ -34,7 +52,7 @@
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://rjguanwen.cn/2019/12/centrifugo_05/</guid>
-      <description></description>
+      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;频道（Channel）是消息发布的通道。客户端通过订阅频道来接收与频道相关的事件，包括发布到</description>
     </item>
     
     <item>
