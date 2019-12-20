@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>Centrifugo（七）Server API</title>
+      <link>https://rjguanwen.cn/2019/12/centrifugo_07/</link>
+      <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2019/12/centrifugo_07/</guid>
+      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;HTTP API 是最常用的向 Centrifugo 发送指令的一种方式。本文专门讲解 HTTP API。 Centrifugo API 的 url 为 /api/。如果你的 Centrifugo 服务域名是 https://centrifugo.</description>
+    </item>
+    
+    <item>
       <title>Centrifugo（六）引擎（Engines）</title>
       <link>https://rjguanwen.cn/2019/12/centrifugo_06/</link>
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>

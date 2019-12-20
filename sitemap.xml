@@ -24,6 +24,13 @@
   </url>
   
   <url>
+    <loc>https://rjguanwen.cn/2019/12/centrifugo_07/</loc>
+    <lastmod>2019-12-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://rjguanwen.cn/2019/12/centrifugo_06/</loc>
     <lastmod>2019-12-18T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -150,14 +157,14 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/golang/</loc>
+    <loc>https://rjguanwen.cn/categories/golang/</loc>
     <lastmod>2019-11-21T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/categories/golang/</loc>
+    <loc>https://rjguanwen.cn/tags/golang/</loc>
     <lastmod>2019-11-21T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -234,14 +241,14 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/%E8%AF%97%E8%AF%8D/</loc>
+    <loc>https://rjguanwen.cn/categories/%E8%AF%97%E8%AF%8D/</loc>
     <lastmod>2019-11-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/categories/%E8%AF%97%E8%AF%8D/</loc>
+    <loc>https://rjguanwen.cn/tags/%E8%AF%97%E8%AF%8D/</loc>
     <lastmod>2019-11-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        Centrifugo（四）配置文件说明 - 飞光
+        Centrifugo（七）Server API - 飞光
       </title>
     <head>
   <meta charset="utf-8">
@@ -25,31 +25,31 @@
   
   <meta name="description" content="Centrifugo相关内容" />
   <meta name="generator" content="Hugo 0.59.1 with theme pure" />
-  <title>Centrifugo（四）配置文件说明 - 飞光</title>
+  <title>Centrifugo（七）Server API - 飞光</title>
   
 
   <link rel="stylesheet" href="https://rjguanwen.cn/css/style.css">
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css"> 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-  <meta property="og:title" content="Centrifugo（四）配置文件说明" />
+  <meta property="og:title" content="Centrifugo（七）Server API" />
 <meta property="og:description" content="Centrifugo相关内容" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://rjguanwen.cn/2019/12/centrifugo_04/" />
-<meta property="article:published_time" content="2019-12-12T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-12-12T00:00:00+00:00" />
-<meta itemprop="name" content="Centrifugo（四）配置文件说明">
+<meta property="og:url" content="https://rjguanwen.cn/2019/12/centrifugo_07/" />
+<meta property="article:published_time" content="2019-12-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-12-18T00:00:00+00:00" />
+<meta itemprop="name" content="Centrifugo（七）Server API">
 <meta itemprop="description" content="Centrifugo相关内容">
 
 
-<meta itemprop="datePublished" content="2019-12-12T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2019-12-12T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="2232">
+<meta itemprop="datePublished" content="2019-12-18T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-12-18T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1942">
 
 
 
 <meta itemprop="keywords" content="技术,Centrifugo," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Centrifugo（四）配置文件说明"/>
+<meta name="twitter:title" content="Centrifugo（七）Server API"/>
 <meta name="twitter:description" content="Centrifugo相关内容"/>
 
   <!--[if lte IE 9]>
@@ -274,7 +274,25 @@
     <div class="slimContent">
       <nav id="toc" class="article-toc">
         <h3 class="toc-title">文章目录</h3>
-        <div class="toc-content always-active">
+        <div class="toc-content always-active"><nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#publish">publish</a></li>
+<li><a href="#broadcast">broadcast</a></li>
+<li><a href="#unsubscribe">unsubscribe</a></li>
+<li><a href="#disconnect">disconnect</a></li>
+<li><a href="#presence">presence</a></li>
+<li><a href="#history">history</a></li>
+<li><a href="#channels">channels</a></li>
+<li><a href="#stats">stats</a></li>
+<li><a href="#node">node</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
         </div>
       </nav>
     </div>
@@ -287,16 +305,16 @@
       <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2019/12/centrifugo_04/"
-    >Centrifugo（四）配置文件说明</a
+    href="/2019/12/centrifugo_07/"
+    >Centrifugo（七）Server API</a
   >
 </h1>
 
       <div class="article-meta">
         <span class="article-date">
   <i class="icon icon-calendar-check"></i>
-<a href="https://rjguanwen.cn/2019/12/centrifugo_04/" class="article-date">
-  <time datetime="2019-12-12 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-12-12</time>
+<a href="https://rjguanwen.cn/2019/12/centrifugo_07/" class="article-date">
+  <time datetime="2019-12-18 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-12-18</time>
 </a>
 </span><span class="article-category">
   <i class="icon icon-folder"></i>
@@ -308,152 +326,376 @@
     <a class="article-tag-link" href="/tags/centrifugo/"> Centrifugo </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/12/centrifugo_04/#comments"
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/12/centrifugo_07/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:2232字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长:5分 </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:1942字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长:4分 </span>
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
-      <p>&ensp;&ensp;&ensp;&ensp;Centrifugo 支持 JSON、TOML和YAML三种格式的配置文件。本文以 JSON 格式为例说明 Centrifugo 配置文件的内容。最简单的配置文件如下：</p>
+      
 
-<pre><code>{
-    &quot;secret&quot;: &quot;very-long-secret-key&quot;
-}
-</code></pre>
-
-<p>只有 <code>secret</code> 是必须的，在生产环境你应该将该参数设置的足够复杂并且避免外泄。<font color='red'><strong>唯二的需要知道这个参数值的只有 Centrifugo 自身和你的应用程序后端。</strong></font>该值被用来生成客户端连接令牌、调用 API 以及订阅私有频道。</p>
-
-<p>&ensp;&ensp;&ensp;&ensp;<code>connection_lifetime</code> 参数用来设置客户端连接的过期时间，单位为秒。如果该参数设置为0，表示该客户端连接永不过期。</p>
-
-<pre><code>{
-    &quot;secret&quot;: &quot;very-long-secret-key&quot;,
-    &quot;connect_lifetime&quot;: 0
-}
-</code></pre>
-
-<p><br></p>
-
-<p>&ensp;&ensp;&ensp;&ensp;我们重点关注以下与频道（Channel）相关的几个参数。频道以字符串进行标识，客户端通过订阅频道来获取发布到频道中的实时消息。配置文件中的一些参数会影响到频道的行为：</p>
+<p>&ensp;&ensp;&ensp;&ensp;HTTP API 是最常用的向 Centrifugo 发送指令的一种方式。本文专门讲解 HTTP API。</p>
 
 <ul>
-<li><p><strong>watch：</strong>Centrifugo 会同时发生消息到 admin channel，这些消息可以在 admin 管理界面的 <code>messages tab</code> 下查看。这个参数要慎用，特别是针对消息发布频率比较高的频道，以免超出 admin client 的处理能力。本参数默认值为 <code>fasle</code>。</p></li>
+<li><p>Centrifugo API 的 url 为 <code>/api/</code>。如果你的 Centrifugo 服务域名是 <code>https://centrifugo.rjguanwen.cn</code>，那么 API 地址则是 <code>https://centrifugo.rjguanwen.cn/api/</code>。</p></li>
 
-<li><p><strong>publish：</strong>允许客户端直接发布消息到频道，而不经过应用程序后端。一般情况下，消息都是由应用程序后端通过 Centrifugo API 发布到 Centrifugo 服务器的。这个参数适用于没有后端或者 demo 的快速构建。需要注意的一点是客户端只有成功订阅了频道之后才能发布消息到该频道。本参数默认值为 <code>false</code>。</p></li>
+<li><p>当使用 <code>HTTP API</code> 时，你需要做的是向正确的地址发送正确构造的 POST 请求。</p></li>
 
-<li><p><strong>anonymous：</strong>该参数允许匿名访问（在连接参数中使用空字符串作为 user ID，JWT token 中 sub 为空）。通常情况下，应用程序的用户都需要登录认证，因此客户端建立连接时可以使用用户名作为标识。如果你需要提供公共的实时消息服务，你可以在相应的频道上开启本参数。本参数默认值为 <code>false</code>。</p></li>
+<li><p>API 请求是一个 POST <code>application/json</code> 请求，指令包含在请求体，并带有一个附加的header <code>X-API-Sign</code>。请求体是 JSON 结构，其中包含了你需要执行的指令，指令可以是单条也可以是多条。</p></li>
 
-<li><p><strong>presence：</strong>是否可查看当前频道的连接信息，即客户端对本频道的订阅信息。本参数默认是为 <code>false</code>。</p></li>
+<li><p><code>X-API-Sign</code> 标头是基于 Centrifugo 密钥和要发送的 JSON 正文的 SHA-256 HMAC 字符串。该字符串主要用于 Centrifugo 对请求进行验证，以防假冒。在大多数情况下，你可以使用防火墙规则保护 Centrifugo API 端点，并且在 Centrifugo 启动时使用 <code>--api_insecure</code> 选项禁用验证检查。在此模式下，你使用 <code>HTTP API</code> 只需要发送 POST 请求，而不需要额外的 <code>X-API-Sign</code> 标头。</p></li>
 
-<li><p><strong>join_leave：</strong>当有用户订阅/取消订阅频道时，是否发送相关信息到频道中。本参数默认值为 <code>false</code>。</p></li>
+<li><p>请求体是 JSON 对象，包括两个属性：<code>method</code> 和 <code>params</code>：</p>
 
-<li><p><strong>history_size：</strong>频道历史消息数量。因为 Centrifugo 将所有的消息存储在内存中，因此限制每个频道保留的历史消息数量是非常重要的。本参数默认值为 <code>0</code>，这意味着频道不会保留历史消息。启用本参数后，Centrifugo 会为命名空间中的每条频道保留指定数量的历史消息，直到消息过期，关于消息过期详见参数 <code>history_lifetime</code>。</p></li>
+<pre><code class="language-(python)"># 一条指令
+command = json.dumps({
+    &quot;method&quot;: &quot;publish&quot;,
+    &quot;params&quot;: {&quot;channel&quot;: &quot;news&quot;, &quot;data&quot;:{}}
+})
 
-<li><p><strong>history_lifetime：</strong>频道历史消息的过期时间，单位为秒。本参数默认值为 <code>0</code>，这意味着频道不会保留历史消息。如果要保留历史消息，需要同时配置 <code>history_size</code> 与 <code>history_lifetime</code>，并设置合理的参数值。</p></li>
+# 多条指令
+command = json.dumps([
+    {
+        &quot;method&quot;: &quot;publish&quot;,
+        &quot;params&quot;: {&quot;channel&quot;: &quot;news&quot;, &quot;data&quot;: {&quot;content&quot;: &quot;1&quot;}}
+    },
+    {
+        &quot;method&quot;: &quot;publish&quot;,
+        &quot;params&quot;: {&quot;channel&quot;: &quot;news&quot;, &quot;data&quot;: {&quot;content&quot;: &quot;2&quot;}}
+    },
+])
+</code></pre></li>
 
-<li><p><strong>recover：</strong>是否恢复丢失的消息。如果开启本参数，当客户端重新连接时（如因网络原因断线重连），Centrifugo 将试图重新恢复丢失的消息。这个参数的启用要配合历史消息相关参数（history_size 和 histroy_lifetime），毕竟消息的恢复依靠的是频道历史消息记录。注意，所有实时事件都需要启用此功能。本参数默认值为 <code>false</code>。</p></li>
+<li><p>Centrifugo 已经提供了一些编程语言的官方 API client（<a href="https://centrifugal.github.io/centrifugo/libraries/api/">API libraries</a>）以方便调用 HTTP API。但是，你也可以不使用官方提供的 API client，而是自己编写程序发送请求，这样做也并不麻烦，而且可以减少你的应用程序的依赖。以 Python（使用 <code>requests</code> 库发送请求）为例：</p>
 
-<li><p><strong>history_drop_inactive：</strong>是否丢弃不活跃的历史消息。本参数可以大幅降低资源消耗（内存、消息传播次数）。简单来说，该参数开启后，Centrifugo 会主动丢弃不需要的历史消息。本参数默认值为 <code>false</code>。</p></li>
+<pre><code class="language-(python)">import json
+import requests
 
-<li><p><strong>namespaces：</strong>namespaces 是可选参数，如果设置的话，需要设置成 namespace 数组的形式。通过 namespaces 可以针对 namespace 下的频道配置自定义参数。每个 namespace 都有自己的 name，并且拥有上面所有的针对频道的参数。name 必须唯一，并且由字母、数字、下划线或连接符组成，长度必须大于2（<code>^[-azA-Z0-9_]{2,}$</code>）。<br />
-<br></p></li>
+from cent.core import generate_api_sign
+
+commands = [
+{
+    &quot;method&quot;: &quot;publish&quot;,
+    &quot;params&quot;: {&quot;channel&quot;: &quot;docs&quot;, &quot;data&quot;: {&quot;content&quot;: &quot;1&quot;}}
+}
+]
+
+encoded_data = json.dumps(commands)
+# 使用官方库中的方法来生成标识
+sign = generate_api_sign('very-long-secret-key', encoded_data)
+headers = {'Content-type': 'application/json', 'X-API-Sign': sign}
+r = requests.post(&quot;https://centrifugo.rjguanwen.cn/api/, data=encoded_data, headers=headers)
+print r.json()
+</code></pre></li>
 </ul>
 
-<p><strong>配置文件示例：</strong></p>
+<p>&ensp;&ensp;&ensp;&ensp;在上面的代码中，我们使用了官方提供的 Python 语言的 <code>Cent</code> 库中的方法来生成标识（sign）。你也可以自己构建标识。在上例中，commands 是一个数组，可以包含多条指令。</p>
+
+<p>&ensp;&ensp;&ensp;&ensp;我们可用的指令包括：<code>publish</code>、<code>broadcast</code>、<code>unsubscribe</code>、<code>presence</code>、<code>history</code>、<code>disconnect</code>、<code>channels</code>、<code>stats</code>、<code>node</code>。</p>
+
+<h3 id="publish">publish</h3>
+
+<p>&ensp;&ensp;&ensp;&ensp;<code>publish</code> 指令用来向频道发送消息。<code>publish</code> 方法的 <code>params</code> 是一个 JSON 对象，至少包含两个 KEY ：<code>channel</code> 和 <code>data</code>。从<strong>version 0.2.0</strong>之后，可以选择将客户端ID <code>client</code> 包含在 <code>publish</code> 指令中。</p>
 
 <pre><code>{
-    &quot;admin&quot;: true,
-    &quot;port&quot;: 8000,
-    &quot;secret&quot;:&quot;very-long-secret-key&quot;,
-    &quot;admin_password&quot;:&quot;very-long-admin-password&quot;,
-    &quot;admin_secret&quot;:&quot;very-long-admin-secret&quot;,
-    &quot;api_key&quot;:&quot;very-long-api-key&quot;,
-    &quot;connection_lifetime&quot;: 0,
-    &quot;debug&quot;: true,
-    &quot;presence&quot;: true,
-    &quot;history_size&quot;: 50,
-    &quot;history_lifetime&quot;: 600,
-    &quot;publish&quot;: true,
-    &quot;anonymous&quot;: true,
-    &quot;subscribe_to_publish&quot;: true,
-    &quot;join_leave&quot;: true,
-    &quot;history_recover&quot;: true,
-    &quot;log_file&quot;: &quot;D:/tmp/centrifugo.log&quot;,
-    &quot;log_level&quot;: &quot;debug&quot;,
-    &quot;engine&quot;: &quot;redis&quot;,
-    &quot;redis_host&quot;: &quot;127.0.0.1&quot;,
-    &quot;redis_port&quot;: &quot;6379&quot;,
-    &quot;redis_db&quot;: &quot;12&quot;,
-    &quot;redis_password&quot;: &quot;123456a?&quot;,
-    &quot;namespaces&quot;:[
-        {
-            &quot;name&quot;:&quot;public&quot;,
-            &quot;anonymous&quot;:true,
-            &quot;publish&quot;:true,
-            &quot;presence&quot;:true,
-            &quot;join_leave&quot;:true,
-            &quot;history_size&quot;:10,
-            &quot;history_lifetime&quot;:30,
-            &quot;history_recover&quot;:true
+    &quot;method&quot;: &quot;publish&quot;,
+    &quot;params&quot;: {
+        &quot;channel&quot;: &quot;CHANNEL NAME&quot;,
+        &quot;data&quot;: {
+            &quot;input&quot;: &quot;hello&quot;
         },
-        {
-            &quot;name&quot;: &quot;gossips&quot;,
-            &quot;watch&quot;: true
-        }
-    ]
+        &quot;client&quot;: &quot;long-unique-client-id&quot;
+    }
 }
 </code></pre>
 
-<p>在以上配置下：<br />
-&ensp;&ensp;- 频道 <code>news</code> 将使用全局参数配置。<br />
-&ensp;&ensp;- 频道 <code>public:news</code> 将使用 <code>public</code> 命名空间的参数配置。<br />
-&ensp;&ensp;- 频道 <code>gossips:news</code> 将使用 <code>gossips</code> 命名空间的参数配置。<br />
-<br></p>
+<p>&ensp;&ensp;&ensp;&ensp;响应示例：</p>
 
-<p><strong>通过 <code>./centrifugo -h</code> 命令，可以查看所有的可用参数，如下：</strong></p>
+<pre><code>{
+    &quot;body&quot;: null,
+    &quot;error&quot;: null,
+    &quot;method&quot;: &quot;publish&quot;
+}
+</code></pre>
 
-<pre><code>    Centrifugo – real-time messaging server
+<h3 id="broadcast">broadcast</h3>
 
-    Usage:
-    [flags] 
-    [command]
+<p>&ensp;&ensp;&ensp;&ensp;与 <code>publish</code> 基本类似，不过可以同时发布一条消息到多个渠道。</p>
 
-    Available Commands:
-    checkconfig Check configuration file
-    genconfig   Generate simple configuration file to start with
-    help        Help about any command
-    version     Centrifugo version information
+<pre><code>{
+    &quot;method&quot;: &quot;broadcast&quot;,
+    &quot;params&quot;: {
+        &quot;channels&quot;: [&quot;CHANNEL_1&quot;, &quot;CHANNEL_2&quot;],
+        &quot;data&quot;: {
+            &quot;input&quot;: &quot;Hello&quot;
+        }
+    }
+}
+</code></pre>
 
-    Flags:
-    -a, --address string             interface address to listen on 服务的地址
-        --admin                      enable admin web interface 是否开启admin的管理界面
-        --admin_insecure             use insecure admin mode – no auth required for admin socket admin安全验证, 节点: /, 可直接访问admin管理界面, 默认为false, 登录admin需要admin_password, 反之可直接登录
-        --api_insecure               use insecure API mode  后台推送安全验证, 节点: /api. 默认为 false, 此时访问节点需要api_key. 当设置为 true 后, 任何人都将可以访问此节点
-        --client_insecure            start in insecure client mode 客户端是否需要安全验证, 默认为false, 客户端必须拥有 JWT token 才能访问
-    -c, --config string              path to config file (default &quot;config.json&quot;)
-        --debug                      enable debug endpoints 是否开启dubug节点, 开启后可访问 /debug/pprof/ 查看一些Centrifugo的网络状态
-    -e, --engine string              engine to use: memory or redis (default &quot;memory&quot;) 消息存储引擎, 默认为内存, 部署多个实例会造成数据不同步, 因此推荐使用 redis
-        --grpc_api                   enable GRPC API server 是否开启grpc api, 默认使用 http_api
-    -h, --help                       help for this command
-        --internal_port string       custom port for internal endpoints 开启自定义默认端口, 默认为8000, 开启额外的端口为admin访问
-        --log_file string            optional log file - if not specified logs go to STDOUT  log输出文件
-        --log_level string           set the log level: debug, info, error, fatal or none (default &quot;info&quot;) log级别
-    -n, --name string                unique node name 命名空间名称, 此空间下的属性会覆盖common部分, 但不会继承
-        --pid_file string            optional path to create PID file
-    -p, --port string                port to bind HTTP server to (default &quot;8000&quot;)  服务端口号
-        --prometheus                 enable Prometheus metrics endpoint
-        --redis_db int               Redis database (Redis engine)
-        --redis_host string          Redis host (Redis engine) (default &quot;127.0.0.1&quot;)
-        --redis_master_name string   name of Redis master Sentinel monitors (Redis engine)
-        --redis_password string      Redis auth password (Redis engine)
-        --redis_port string          Redis port (Redis engine) (default &quot;6379&quot;)
-        --redis_sentinels string     comma-separated list of Sentinel addresses (Redis engine)
-        --redis_tls                  enable Redis TLS connection
-        --redis_tls_skip_verify      disable Redis TLS host verification
-        --redis_url string           Redis connection URL in format redis://:password@hostname:port/db (Redis engine)
-        --tls                        enable TLS, requires an X509 certificate and a key file
-        --tls_cert string            path to an X509 certificate file
-        --tls_key string             path to an X509 certificate key
+<p>&ensp;&ensp;&ensp;&ensp;<code>broadcast</code> 指令同样可以包含 <code>client</code> 参数。<br />
+&ensp;&ensp;&ensp;&ensp;本指令会将消息发送到所有指定队列直到第一个错误发生。当错误发生时，错误信息会以响应的方式返回，并且停止消息的继续发布。当使用 Redis API 时，错误信息无法返回，而是会记录日志。</p>
+
+<h3 id="unsubscribe">unsubscribe</h3>
+
+<p>&ensp;&ensp;&ensp;&ensp;<code>unsubscribe</code> 用来从渠道取消用户的订阅。<code>params</code> 包括两个 KEY：<code>channel</code>、<code>user</code>。</p>
+
+<pre><code>    &quot;method&quot;: &quot;unsubscribe&quot;,
+    &quot;params&quot;: {
+        &quot;channel&quot;: &quot;CHANNEL NAME&quot;,
+        &quot;user&quot;: &quot;USER ID&quot;
+    }
+</code></pre>
+
+<p>&ensp;&ensp;&ensp;&ensp;响应示例：</p>
+
+<pre><code>{
+    &quot;body&quot;: null,
+    &quot;error&quot;: null,
+    &quot;method&quot;: &quot;unsubscribe&quot;
+}
+</code></pre>
+
+<h3 id="disconnect">disconnect</h3>
+
+<p>&ensp;&ensp;&ensp;&ensp;<code>disconnect</code> 指令用来通过 ID 断开用户连接。<code>params</code> 包含一个 KEY：<code>user</code>。</p>
+
+<pre><code>{
+    &quot;method&quot;: &quot;disconnect&quot;,
+    &quot;params&quot;: {
+        &quot;user&quot;: &quot;USER ID&quot;
+    }
+}
+</code></pre>
+
+<p>&ensp;&ensp;&ensp;&ensp;响应示例：</p>
+
+<pre><code>{
+    &quot;body&quot;: null,
+    &quot;error&quot;: null,
+    &quot;method&quot;: &quot;disconnect&quot;
+}
+</code></pre>
+
+<h3 id="presence">presence</h3>
+
+<p>&ensp;&ensp;&ensp;&ensp;<code>presence</code> 指令用来获取渠道的状态信息（当前订阅本渠道的所有客户端）。<code>params</code> 包含一个 KEY：<code>channel</code>。</p>
+
+<pre><code>{
+    &quot;method&quot;: &quot;presence&quot;,
+    &quot;params&quot;: {
+        &quot;channel&quot;: &quot;CHANNEL NAME&quot;
+    }
+}
+</code></pre>
+
+<p>&ensp;&ensp;&ensp;&ensp;响应示例：</p>
+
+<pre><code>{
+    &quot;body&quot;: {
+        &quot;channel&quot;: &quot;$public:chat&quot;,
+        &quot;data&quot;: {
+            &quot;a1c2f99d-fdaf-4e00-5f73-fc8a6bb7d239&quot;: {
+                &quot;user&quot;: &quot;2694&quot;,
+                &quot;client&quot;: &quot;a1c2f99d-fdaf-4e00-5f73-fc8a6bb7d239&quot;,
+                &quot;default_info&quot;: {
+                    &quot;first_name&quot;: &quot;Alexandr&quot;,
+                    &quot;last_name&quot;: &quot;Emelin&quot;
+                },
+                &quot;channel_info&quot;: {
+                    &quot;channel_extra_info_example&quot;: &quot;you can add additional JSON data when authorizing&quot;
+                }
+            },
+            &quot;e5ee0ab0-fde1-4543-6f36-13f2201adeac&quot;: {
+                &quot;user&quot;: &quot;2694&quot;,
+                &quot;client&quot;: &quot;e5ee0ab0-fde1-4543-6f36-13f2201adeac&quot;,
+                &quot;default_info&quot;: {
+                    &quot;first_name&quot;: &quot;Alexandr&quot;,
+                    &quot;last_name&quot;: &quot;Emelin&quot;
+                },
+                &quot;channel_info&quot;: {
+                    &quot;channel_extra_info_example&quot;: &quot;you can add additional JSON data when authorizing&quot;
+                }
+            }
+        }
+    },
+    &quot;error&quot;: null,
+    &quot;method&quot;: &quot;presence&quot;
+}
+</code></pre>
+
+<h3 id="history">history</h3>
+
+<p>&ensp;&ensp;&ensp;&ensp;<code>history</code> 指令用来获取渠道的历史信息（发送到本渠道的最近的消息列表）。<code>params</code> 包含一个 KEY：<code>channel</code>。</p>
+
+<pre><code>{
+    &quot;method&quot;: &quot;history&quot;,
+    &quot;params&quot;: {
+        &quot;channel&quot;: &quot;CHANNEL NAME&quot;
+    }
+}
+</code></pre>
+
+<p>&ensp;&ensp;&ensp;&ensp;响应示例：</p>
+
+<pre><code>{
+    &quot;body&quot;: {
+        &quot;channel&quot;: &quot;$public:chat&quot;,
+        &quot;data&quot;: [
+            {
+                &quot;uid&quot;: &quot;8c5dca2e-1846-42e4-449e-682f615c4977&quot;,
+                &quot;timestamp&quot;: &quot;1445536974&quot;,
+                &quot;info&quot;: {
+                    &quot;user&quot;: &quot;2694&quot;,
+                    &quot;client&quot;: &quot;a1c2f99d-fdaf-4e00-5f73-fc8a6bb7d239&quot;,
+                    &quot;default_info&quot;: {
+                        &quot;first_name&quot;: &quot;Alexandr&quot;,
+                        &quot;last_name&quot;: &quot;Emelin&quot;
+                    },
+                    &quot;channel_info&quot;: {
+                        &quot;channel_extra_info_example&quot;: &quot;you can add additional JSON data when authorizing&quot;
+                    }
+                },
+                &quot;channel&quot;: &quot;$public:chat&quot;,
+                &quot;data&quot;: {
+                    &quot;input&quot;: &quot;world&quot;
+                },
+                &quot;client&quot;: &quot;a1c2f99d-fdaf-4e00-5f73-fc8a6bb7d239&quot;
+            },
+            {
+                &quot;uid&quot;: &quot;63ecba35-e9df-4dc6-4b72-a22f9c9f486f&quot;,
+                &quot;timestamp&quot;: &quot;1445536969&quot;,
+                &quot;info&quot;: {
+                    &quot;user&quot;: &quot;2694&quot;,
+                    &quot;client&quot;: &quot;a1c2f99d-fdaf-4e00-5f73-fc8a6bb7d239&quot;,
+                    &quot;default_info&quot;: {
+                        &quot;first_name&quot;: &quot;Alexandr&quot;,
+                        &quot;last_name&quot;: &quot;Emelin&quot;
+                    },
+                    &quot;channel_info&quot;: {
+                        &quot;channel_extra_info_example&quot;: &quot;you can add additional JSON data when authorizing&quot;
+                    }
+                },
+                &quot;channel&quot;: &quot;$public:chat&quot;,
+                &quot;data&quot;: {
+                    &quot;input&quot;: &quot;hello&quot;
+                },
+                &quot;client&quot;: &quot;a1c2f99d-fdaf-4e00-5f73-fc8a6bb7d239&quot;
+            }
+        ]
+    },
+    &quot;error&quot;: null,
+    &quot;method&quot;: &quot;history&quot;
+}
+</code></pre>
+
+<h3 id="channels">channels</h3>
+
+<p>&ensp;&ensp;&ensp;&ensp;<code>channels</code> 指令用来获取活动渠道列表（拥有至少一个订阅者）。</p>
+
+<pre><code>{
+    &quot;method&quot;: &quot;channels&quot;,
+    &quot;params&quot;: {}
+}
+</code></pre>
+
+<p>&ensp;&ensp;&ensp;&ensp;响应示例：</p>
+
+<pre><code>{
+    &quot;body&quot;: {
+        &quot;data&quot;: [
+            &quot;$public:chat&quot;,
+            &quot;news&quot;,
+            &quot;notifications&quot;
+        ]
+    },
+    &quot;error&quot;: null,
+    &quot;method&quot;: &quot;channels&quot;
+}
+</code></pre>
+
+<h3 id="stats">stats</h3>
+
+<p>&ensp;&ensp;&ensp;&ensp;<code>stats</code> 指令用来获取正在运行的 Centrifugo 节点的统计信息。</p>
+
+<pre><code>    &quot;method&quot;: &quot;stats&quot;,
+    &quot;params&quot;: {}
+</code></pre>
+
+<p>&ensp;&ensp;&ensp;&ensp;响应示例：</p>
+
+<pre><code>{
+    &quot;body&quot;: {
+        &quot;data&quot;: {
+            &quot;nodes&quot;: [
+                {
+                    &quot;uid&quot;: &quot;6045438c-1b65-4b86-79ee-0c35367f29a9&quot;,
+                    &quot;name&quot;: &quot;MacAir.local_8000&quot;,
+                    &quot;num_goroutine&quot;: 21,
+                    &quot;num_clients&quot;: 0,
+                    &quot;num_unique_clients&quot;: 0,
+                    &quot;num_channels&quot;: 0,
+                    &quot;started_at&quot;: 1445536564,
+                    &quot;gomaxprocs&quot;: 1,
+                    &quot;num_cpu&quot;: 4,
+                    &quot;num_msg_published&quot;: 0,
+                    &quot;num_msg_queued&quot;: 0,
+                    &quot;num_msg_sent&quot;: 0,
+                    &quot;num_api_requests&quot;: 0,
+                    &quot;num_client_requests&quot;: 0,
+                    &quot;bytes_client_in&quot;: 0,
+                    &quot;bytes_client_out&quot;: 0,
+                    &quot;memory_sys&quot;: 7444728,
+                    &quot;cpu_usage&quot;: 0
+                }
+            ],
+            &quot;metrics_interval&quot;: 60
+        }
+    },
+    &quot;error&quot;: null,
+    &quot;method&quot;: &quot;stats&quot;
+}
+</code></pre>
+
+<h3 id="node">node</h3>
+
+<p>&ensp;&ensp;&ensp;&ensp;<code>node</code> 指令用来获取单个 Centrifugo 节点的信息。</p>
+
+<pre><code>{
+    &quot;method&quot;: &quot;node&quot;,
+    &quot;params&quot;: {}
+}
+</code></pre>
+
+<p>&ensp;&ensp;&ensp;&ensp;响应示例：</p>
+
+<pre><code>{
+    &quot;body&quot;: {
+        &quot;data&quot;:{
+            &quot;uid&quot;:&quot;c3ceab87-8060-4c25-9cb4-94eb9db7899a&quot;,
+            &quot;name&quot;:&quot;MacAir.local_8000&quot;,
+            &quot;num_goroutine&quot;:14,
+            &quot;num_clients&quot;:0,
+            &quot;num_unique_clients&quot;:0,
+            &quot;num_channels&quot;:0,
+            &quot;started_at&quot;:1455450238,
+            &quot;gomaxprocs&quot;:4,
+            &quot;num_cpu&quot;:4,
+            &quot;num_msg_published&quot;:0,
+            &quot;num_msg_queued&quot;:0,
+            &quot;num_msg_sent&quot;:0,
+            &quot;num_api_requests&quot;:3,
+            &quot;num_client_requests&quot;:0,
+            &quot;bytes_client_in&quot;:0,
+            &quot;bytes_client_out&quot;:0,
+            &quot;memory_sys&quot;:0,
+            &quot;cpu_usage&quot;:0
+        }
+    },
+    &quot;error&quot;:null,
+    &quot;method&quot;:&quot;node&quot;
+}
 </code></pre>
 
     </div>
@@ -465,14 +707,9 @@
     <div class="bar-inner">
         <ul class="pager pull-left">
             <li class="prev">
-                <a href="https://rjguanwen.cn/2019/12/centrifugo_01/" title="Centrifugo（一）简介"><i
+                <a href="https://rjguanwen.cn/2019/12/centrifugo_06/" title="Centrifugo（六）引擎（Engines）"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
-            </li>
-            <li class="next">
-                <a href="https://rjguanwen.cn/2019/12/centrifugo_05/"
-                    title="Centrifugo（五）频道（Channel）"><span>下一篇&nbsp;&nbsp;</span><i
-                        class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
             <li class="toggle-toc">
