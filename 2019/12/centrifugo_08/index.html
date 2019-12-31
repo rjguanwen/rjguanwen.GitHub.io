@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        飞光</title>
+        Centrifugo（八）连接检查 - 飞光
+      </title>
     <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -22,27 +23,34 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  
+  <meta name="description" content="Centrifugo相关内容" />
   <meta name="generator" content="Hugo 0.59.1 with theme pure" />
-  <title>飞光</title>
+  <title>Centrifugo（八）连接检查 - 飞光</title>
   
 
-  <link rel="alternate" type="application/rss+xml" href="https://rjguanwen.cn/categories/golang/index.xml" title="飞光" />
   <link rel="stylesheet" href="https://rjguanwen.cn/css/style.css">
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css"> 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-  <meta property="og:title" content="GOLANG" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://rjguanwen.cn/categories/golang/" />
+  <meta property="og:title" content="Centrifugo（八）连接检查" />
+<meta property="og:description" content="Centrifugo相关内容" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rjguanwen.cn/2019/12/centrifugo_08/" />
+<meta property="article:published_time" content="2019-12-29T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-12-29T00:00:00+00:00" />
+<meta itemprop="name" content="Centrifugo（八）连接检查">
+<meta itemprop="description" content="Centrifugo相关内容">
 
-<meta property="og:updated_time" content="2019-11-21T00:00:00+00:00" />
-<meta itemprop="name" content="GOLANG">
-<meta itemprop="description" content="">
 
+<meta itemprop="datePublished" content="2019-12-29T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-12-29T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="546">
+
+
+
+<meta itemprop="keywords" content="技术,Centrifugo," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="GOLANG"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Centrifugo（八）连接检查"/>
+<meta name="twitter:description" content="Centrifugo相关内容"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -262,54 +270,103 @@
 
     
     
-<main class="main" role="main">
-    <article class="article article-categories article-type-list" itemscope="">
-        <header class="article-header">
-            <h1 itemprop="name" class="hidden-xs">GOLANG</h1>
-            <p class="text-muted hidden-xs">共 6 个分类</p>
-            <nav role="navigation" id="nav-main" class="okayNav">
-                <ul>
-                    <li><a href="/categories">All</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/centrifugo/">Centrifugo</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/git/">GIT</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/golang/">GOLANG</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/">杂七杂八</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/">系统架构</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/%E8%AF%97%E8%AF%8D/">诗词</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <div class="article-body">
-            <div class="panel panel-default b-no">
-                <div class="panel-heading" role="tab">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" href="#collapsee599d609d3299b826113e7ebc6efec3b" aria-expanded="true">
-                            <i class="icon icon-folder text-active"></i><i class="icon icon-folder-open text"></i>GOLANG
-                        </a>
-                        <small class="text-muted">(Total2 articles)</small>
-                    </h4>
-                </div>
-                <div id="collapsee599d609d3299b826113e7ebc6efec3b" class="panel-collapse collapse in" role="tabpanel"
-                    aria-labelledby="headinge599d609d3299b826113e7ebc6efec3b">
-                    <div class="panel-body">
-                        <div class="collection">
-<a href="https://rjguanwen.cn/2019/11/gomod_use/" class="collection-item" itemprop="url"  target="_blank" >
-    <time datetime="2019-11-21 00:00:00 &#43;0000 UTC"
-        itemprop="datePublished">2019-11-21</time>
-    <span>&nbsp;&nbsp;&nbsp;</span>gomod使用记录
-</a>
-<a href="https://rjguanwen.cn/2019/11/govendor_use/" class="collection-item" itemprop="url"  target="_blank" >
-    <time datetime="2019-11-21 00:00:00 &#43;0000 UTC"
-        itemprop="datePublished">2019-11-21</time>
-    <span>&nbsp;&nbsp;&nbsp;</span>govendor使用记录
-</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+    <div class="slimContent">
+      <nav id="toc" class="article-toc">
+        <h3 class="toc-title">文章目录</h3>
+        <div class="toc-content always-active">
         </div>
-    </article>
+      </nav>
+    </div>
+  </aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2019/12/centrifugo_08/"
+    >Centrifugo（八）连接检查</a
+  >
+</h1>
+
+      <div class="article-meta">
+        <span class="article-date">
+  <i class="icon icon-calendar-check"></i>
+<a href="https://rjguanwen.cn/2019/12/centrifugo_08/" class="article-date">
+  <time datetime="2019-12-29 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-12-29</time>
+</a>
+</span><span class="article-category">
+  <i class="icon icon-folder"></i>
+  <a class="article-category-link" href="/categories/centrifugo/"> Centrifugo </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+    <a class="article-tag-link" href="/tags/%E6%8A%80%E6%9C%AF/"> 技术 </a>
+    <a class="article-tag-link" href="/tags/centrifugo/"> Centrifugo </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/12/centrifugo_08/#comments"
+            class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:546字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长:2分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      <p>&ensp;&ensp;&ensp;&ensp;当客户端使用适当的凭据连接到 Centrifugo 后，连接是一直存在的，哪怕你在应用程序中禁止了该用户，他也能从他已订阅的频道中读取消息。在有些时候，这不是我们想要的。因此，我们需要连接检查机制。</p>
+
+<p>&ensp;&ensp;&ensp;&ensp;Centrifugo 有一个选项 <code>connection_lifetime</code>。其默认值为 <code>0</code>，此时，连接检查机制处于关闭状态。当该选项设置的数值大于 0 时，连接检查机制开启，并且这个数值表示成功连接后，连接保持的时长（以秒为单位）。例如，将 <code>connection_lifetime</code> 设置为 60，表示连接保持时长为 60 秒。当连接时长到期时，Javascript 浏览器客户端将向应用程序后端发送 AJAX POST 请求。默认情况下，此请求发送到 URL <code>/centrifuge/refresh</code>。你可以使用 Javascript 客户端配置选项 <code>refreshEndpoint</code> 进行更改。应用服务器需要返回带有连接凭据的 JSON 作为响应。返回相应示例（Python）：</p>
+
+<pre><code>    to_return = {
+        'user': &quot;USER ID&quot;,
+        'timestamp': &quot;CURRENT TIMESTAMP AS INTEGER&quot;,
+        'info': &quot;ADDITIONAL CONNECTION INFO&quot;,
+        'token': &quot;TOKEN BASED ON PARAMS ABOVE&quot;,
+    }
+    return json.dumps(to_return)
+</code></pre>
+
+<p>&ensp;&ensp;&ensp;&ensp;你在响应中返回的连接凭据必须与页面初始化时的凭据一致，其中 <code>timestamp</code> 要使用当前的时间戳。然后，Javascript 客户端会将凭据发送到 Centrifugo 服务器，并刷新连接时长。</p>
+
+<p>&ensp;&ensp;&ensp;&ensp;如果你不想保持该连接，应用程序后端只需要向 AJAX POST 请求返回 403 响应即可。</p>
+
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://rjguanwen.cn/2019/12/git_03/" title="常用 Git 命令清单"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+            </li>
+            <li class="next">
+                <a href="https://rjguanwen.cn/2019/12/centrifugo_10/"
+                    title="Centrifugo（十）令牌和签名"><span>下一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat"
+                data-mobile-sites="weibo,qq,qzone,wechat"></div>
+        </div>
+    </div>
+</nav>
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 <ul class="social-links">
     <li><a href="https://github.com/rjguanwen" target="_blank" title="github" data-toggle=tooltip data-placement=top >
@@ -359,5 +416,20 @@ hljs.initHighlightingOnLoad();
       </script>
 <script type="text/javascript" src="https://rjguanwen.cn/js/insight.js"></script>
 
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: 'fa63cb30ceea59ed6d75',
+        clientSecret: 'e06b033c38c44b3bc8d2bf15aa4ef888c6548e90',
+        repo: 'rjguanwen-blog-comments',
+        owner: 'rjguanwen',
+        admin: ['rjguanwen'],
+        id: md5(location.pathname),
+        distractionFreeMode: true
+    });
+    gitalk.render('comments');
+</script>
   </body>
 </html>

@@ -5,10 +5,46 @@
     <link>https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/</link>
     <description>Recent content in 技术 on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 18 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 31 Dec 2019 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Centrifugo（九）使用 Redis 实现伸缩</title>
+      <link>https://rjguanwen.cn/2019/12/centrifugo_09/</link>
+      <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2019/12/centrifugo_09/</guid>
+      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Centrifugo 服务器支持多节点部署，并支持对客户端请求的负载均衡。本文中，我们将启动三个 Centrifugo 服务节点来进行演示，这些节点通过 Redis 互相连接。为了达到这个目的，</description>
+    </item>
+    
+    <item>
+      <title>Centrifugo（十）令牌和签名</title>
+      <link>https://rjguanwen.cn/2019/12/centrifugo_10/</link>
+      <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2019/12/centrifugo_10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Centrifugo（八）连接检查</title>
+      <link>https://rjguanwen.cn/2019/12/centrifugo_08/</link>
+      <pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2019/12/centrifugo_08/</guid>
+      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;当客户端使用适当的凭据连接到 Centrifugo 后，连接是一直存在的，哪怕你在应用程序中禁止了该用户，他也能从</description>
+    </item>
+    
+    <item>
+      <title>常用 Git 命令清单</title>
+      <link>https://rjguanwen.cn/2019/12/git_03/</link>
+      <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2019/12/git_03/</guid>
+      <description>经常记不住 Git 命令，备查！ 本篇博客是转发的别人的，原文地址：http://www.ruanyifeng.com/blog/2015/12/gi</description>
+    </item>
     
     <item>
       <title>Centrifugo（七）Server API</title>
