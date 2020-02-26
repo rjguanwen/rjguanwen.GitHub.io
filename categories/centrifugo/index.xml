@@ -25,7 +25,7 @@
       <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://rjguanwen.cn/2019/12/centrifugo_10/</guid>
-      <description></description>
+      <description>Centrifugo 使用具有 SHA-256 摘要算法的 HMAC（Hash-based Message Authentication Code）来创建连接令牌以及对数据进行签名。 &amp;ensp;&amp;ensp;&amp;ensp;&amp;e</description>
     </item>
     
     <item>
