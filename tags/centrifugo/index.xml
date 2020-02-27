@@ -88,7 +88,7 @@
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://rjguanwen.cn/2019/12/centrifugo_04/</guid>
-      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Centrifugo 支持 JSON、TOML和YAML三种格式的配置文件。本文以 JSON 格式为例说明 Centrifugo 配置文件的内容。最简单的配置文件如下： { &amp;quot;secret&amp;quot;: &amp;quot;very-long-secret-key&amp;quot; } 只有 secret 是必须的，在</description>
+      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Centrifugo 支持 JSON、TOML和YAML三种格式的配置文件。 &amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;通过 ./centrifugo -h 命令，可以查看所有的可用选型，</description>
     </item>
     
     <item>

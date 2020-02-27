@@ -43,7 +43,7 @@
 
 <meta itemprop="datePublished" content="2019-12-12T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-12-12T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="2232">
+<meta itemprop="wordCount" content="3147">
 
 
 
@@ -274,7 +274,22 @@
     <div class="slimContent">
       <nav id="toc" class="article-toc">
         <h3 class="toc-title">文章目录</h3>
-        <div class="toc-content always-active">
+        <div class="toc-content always-active"><nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#version">version</a></li>
+<li><a href="#json-file">JSON file</a></li>
+<li><a href="#toml-file">TOML file</a></li>
+<li><a href="#yaml-file">YAML file</a></li>
+<li><a href="#checkconfig-command">checkconfig command</a></li>
+<li><a href="#genconfig-command">genconfig command</a></li>
+<li><a href="#important-options">Important options</a></li>
+<li><a href="#channel-options">Channel options</a></li>
+<li><a href="#other-options">other options</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
       </nav>
     </div>
@@ -310,107 +325,16 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/12/centrifugo_04/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:2232字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长:5分 </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:3147字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长:7分 </span>
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
-      <p>&ensp;&ensp;&ensp;&ensp;Centrifugo 支持 JSON、TOML和YAML三种格式的配置文件。本文以 JSON 格式为例说明 Centrifugo 配置文件的内容。最简单的配置文件如下：</p>
+      
 
-<pre><code>{
-    &quot;secret&quot;: &quot;very-long-secret-key&quot;
-}
-</code></pre>
+<p>&ensp;&ensp;&ensp;&ensp;Centrifugo 支持 JSON、TOML和YAML三种格式的配置文件。</p>
 
-<p>只有 <code>secret</code> 是必须的，在生产环境你应该将该参数设置的足够复杂并且避免外泄。<font color='red'><strong>唯二的需要知道这个参数值的只有 Centrifugo 自身和你的应用程序后端。</strong></font>该值被用来生成客户端连接令牌、调用 API 以及订阅私有频道。</p>
-
-<p>&ensp;&ensp;&ensp;&ensp;<code>connection_lifetime</code> 参数用来设置客户端连接的过期时间，单位为秒。如果该参数设置为0，表示该客户端连接永不过期。</p>
-
-<pre><code>{
-    &quot;secret&quot;: &quot;very-long-secret-key&quot;,
-    &quot;connect_lifetime&quot;: 0
-}
-</code></pre>
-
-<p><br></p>
-
-<p>&ensp;&ensp;&ensp;&ensp;我们重点关注以下与频道（Channel）相关的几个参数。频道以字符串进行标识，客户端通过订阅频道来获取发布到频道中的实时消息。配置文件中的一些参数会影响到频道的行为：</p>
-
-<ul>
-<li><p><strong>watch：</strong>Centrifugo 会同时发生消息到 admin channel，这些消息可以在 admin 管理界面的 <code>messages tab</code> 下查看。这个参数要慎用，特别是针对消息发布频率比较高的频道，以免超出 admin client 的处理能力。本参数默认值为 <code>fasle</code>。</p></li>
-
-<li><p><strong>publish：</strong>允许客户端直接发布消息到频道，而不经过应用程序后端。一般情况下，消息都是由应用程序后端通过 Centrifugo API 发布到 Centrifugo 服务器的。这个参数适用于没有后端或者 demo 的快速构建。需要注意的一点是客户端只有成功订阅了频道之后才能发布消息到该频道。本参数默认值为 <code>false</code>。</p></li>
-
-<li><p><strong>anonymous：</strong>该参数允许匿名访问（在连接参数中使用空字符串作为 user ID，JWT token 中 sub 为空）。通常情况下，应用程序的用户都需要登录认证，因此客户端建立连接时可以使用用户名作为标识。如果你需要提供公共的实时消息服务，你可以在相应的频道上开启本参数。本参数默认值为 <code>false</code>。</p></li>
-
-<li><p><strong>presence：</strong>是否可查看当前频道的连接信息，即客户端对本频道的订阅信息。本参数默认是为 <code>false</code>。</p></li>
-
-<li><p><strong>join_leave：</strong>当有用户订阅/取消订阅频道时，是否发送相关信息到频道中。本参数默认值为 <code>false</code>。</p></li>
-
-<li><p><strong>history_size：</strong>频道历史消息数量。因为 Centrifugo 将所有的消息存储在内存中，因此限制每个频道保留的历史消息数量是非常重要的。本参数默认值为 <code>0</code>，这意味着频道不会保留历史消息。启用本参数后，Centrifugo 会为命名空间中的每条频道保留指定数量的历史消息，直到消息过期，关于消息过期详见参数 <code>history_lifetime</code>。</p></li>
-
-<li><p><strong>history_lifetime：</strong>频道历史消息的过期时间，单位为秒。本参数默认值为 <code>0</code>，这意味着频道不会保留历史消息。如果要保留历史消息，需要同时配置 <code>history_size</code> 与 <code>history_lifetime</code>，并设置合理的参数值。</p></li>
-
-<li><p><strong>recover：</strong>是否恢复丢失的消息。如果开启本参数，当客户端重新连接时（如因网络原因断线重连），Centrifugo 将试图重新恢复丢失的消息。这个参数的启用要配合历史消息相关参数（history_size 和 histroy_lifetime），毕竟消息的恢复依靠的是频道历史消息记录。注意，所有实时事件都需要启用此功能。本参数默认值为 <code>false</code>。</p></li>
-
-<li><p><strong>history_drop_inactive：</strong>是否丢弃不活跃的历史消息。本参数可以大幅降低资源消耗（内存、消息传播次数）。简单来说，该参数开启后，Centrifugo 会主动丢弃不需要的历史消息。本参数默认值为 <code>false</code>。</p></li>
-
-<li><p><strong>namespaces：</strong>namespaces 是可选参数，如果设置的话，需要设置成 namespace 数组的形式。通过 namespaces 可以针对 namespace 下的频道配置自定义参数。每个 namespace 都有自己的 name，并且拥有上面所有的针对频道的参数。name 必须唯一，并且由字母、数字、下划线或连接符组成，长度必须大于2（<code>^[-azA-Z0-9_]{2,}$</code>）。<br />
-<br></p></li>
-</ul>
-
-<p><strong>配置文件示例：</strong></p>
-
-<pre><code>{
-    &quot;admin&quot;: true,
-    &quot;port&quot;: 8000,
-    &quot;secret&quot;:&quot;very-long-secret-key&quot;,
-    &quot;admin_password&quot;:&quot;very-long-admin-password&quot;,
-    &quot;admin_secret&quot;:&quot;very-long-admin-secret&quot;,
-    &quot;api_key&quot;:&quot;very-long-api-key&quot;,
-    &quot;connection_lifetime&quot;: 0,
-    &quot;debug&quot;: true,
-    &quot;presence&quot;: true,
-    &quot;history_size&quot;: 50,
-    &quot;history_lifetime&quot;: 600,
-    &quot;publish&quot;: true,
-    &quot;anonymous&quot;: true,
-    &quot;subscribe_to_publish&quot;: true,
-    &quot;join_leave&quot;: true,
-    &quot;history_recover&quot;: true,
-    &quot;log_file&quot;: &quot;D:/tmp/centrifugo.log&quot;,
-    &quot;log_level&quot;: &quot;debug&quot;,
-    &quot;engine&quot;: &quot;redis&quot;,
-    &quot;redis_host&quot;: &quot;127.0.0.1&quot;,
-    &quot;redis_port&quot;: &quot;6379&quot;,
-    &quot;redis_db&quot;: &quot;12&quot;,
-    &quot;redis_password&quot;: &quot;123456a?&quot;,
-    &quot;namespaces&quot;:[
-        {
-            &quot;name&quot;:&quot;public&quot;,
-            &quot;anonymous&quot;:true,
-            &quot;publish&quot;:true,
-            &quot;presence&quot;:true,
-            &quot;join_leave&quot;:true,
-            &quot;history_size&quot;:10,
-            &quot;history_lifetime&quot;:30,
-            &quot;history_recover&quot;:true
-        },
-        {
-            &quot;name&quot;: &quot;gossips&quot;,
-            &quot;watch&quot;: true
-        }
-    ]
-}
-</code></pre>
-
-<p>在以上配置下：<br />
-&ensp;&ensp;- 频道 <code>news</code> 将使用全局参数配置。<br />
-&ensp;&ensp;- 频道 <code>public:news</code> 将使用 <code>public</code> 命名空间的参数配置。<br />
-&ensp;&ensp;- 频道 <code>gossips:news</code> 将使用 <code>gossips</code> 命名空间的参数配置。<br />
-<br></p>
-
-<p><strong>通过 <code>./centrifugo -h</code> 命令，可以查看所有的可用参数，如下：</strong></p>
+<p>&ensp;&ensp;&ensp;&ensp;<strong>通过 <code>./centrifugo -h</code> 命令，可以查看所有的可用选型，如下：</strong></p>
 
 <pre><code>    Centrifugo – real-time messaging server
 
@@ -455,6 +379,177 @@
         --tls_cert string            path to an X509 certificate file
         --tls_key string             path to an X509 certificate key
 </code></pre>
+
+<p><strong>注意：所有的命令行选项都可以用同样的名字在配置文件中进行设置。此外，所有的可用选项也都可以设置到环境变量中，格式为 CENTRIFUGO_&lt;OPTION_NAME&gt;。</strong></p>
+
+<h2 id="version">version</h2>
+
+<pre><code>centrifugo version
+</code></pre>
+
+<h2 id="json-file">JSON file</h2>
+
+<p>Centrifugo 启动时依赖配置文件。最简单的配置文件如下：</p>
+
+<pre><code>{
+    &quot;token_hmac_secret_key&quot;: &quot;&lt;YOUR-SECRET-STRING-HERE&gt;&quot;,
+    &quot;api_key&quot;: &quot;&lt;YOUR-API-KEY-HERE&gt;&quot;
+}
+</code></pre>
+
+<p>必须的两个选项为 <strong>token_hmac_secret_key</strong> 和 <strong>api_key</strong>。<code>token_hmac_secret_key</code> 用来检查 JWT 签名。<code>api_key</code> 用于 Centrifugo API 端点授权。在生产环境你应该将这两个参数设置的足够复杂并且避免外泄。<font color='red'><strong>唯二的需要知道这两个参数值的只有 Centrifugo 自身和你的应用程序后端。</strong></font>该值被用来生成客户端连接令牌、调用 API 以及订阅私有频道。</p>
+
+<h2 id="toml-file">TOML file</h2>
+
+<p>Centrifugo 同样支持 TOML 格式的配置文件：</p>
+
+<pre><code>centrifugo --config=config.toml
+</code></pre>
+
+<p><code>config.toml</code> 示例：</p>
+
+<pre><code>token_hmac_secret_key = &quot;&lt;YOUR-SECRET-STRING-HERE&gt;&quot;
+api_key = &quot;&lt;YOUR-API-KEY-HERE&gt;&quot;
+log_level = &quot;debug&quot;
+</code></pre>
+
+<h2 id="yaml-file">YAML file</h2>
+
+<p>Centrifugo 同样支持 TOML 格式的配置文件，<code>config.yaml</code>：</p>
+
+<pre><code>token_hmac_secret_key: &quot;&lt;YOUR-SECRET-STRING-HERE&gt;&quot;
+api_key: &quot;&lt;YOUR-API-KEY-HERE&gt;&quot;
+log_level: debug
+</code></pre>
+
+<h2 id="checkconfig-command">checkconfig command</h2>
+
+<p>Centrifugo 有专门的命令用来检查配置文件：</p>
+
+<pre><code>centrifugo checkconfig --config=config.json
+</code></pre>
+
+<h2 id="genconfig-command">genconfig command</h2>
+
+<pre><code>centrifugo genconfig -c config.json
+</code></pre>
+
+<p>该命令会生成最小化的配置文件。</p>
+
+<h2 id="important-options">Important options</h2>
+
+<p>运行 Centrifugo 时可以配置一些最重要的选项：<br />
+- <code>address</code> - 将 Centrifugo 绑定到特定的接口地址（默认为 <code>&quot;&quot;</code>）<br />
+- <code>port</code> - Centrifugo 的绑定端口（默认为 <code>8000</code>）<br />
+- <code>engine</code> - Centrifugo 使用的引擎：<code>memory</code> 或者 <code>redis</code>（默认为 <code>memory</code>）
+注意：命令行参数优先级要大于配置文件选项。</p>
+
+<h2 id="channel-options">Channel options</h2>
+
+<p>频道（channel）是一个实体，客户端可以订阅发布到相应频道的消息。下面几个选项可以控制频道的一些行为：</p>
+
+<ul>
+<li><p><strong>publish：</strong>允许客户端直接发布消息到频道，而不经过应用程序后端。一般情况下，消息都是由应用程序后端通过 Centrifugo API 发布到 Centrifugo 服务器的。这个参数适用于没有后端或者 demo 的快速构建。<del>需要注意的一点是客户端只有成功订阅了频道之后才能发布消息到该频道。</del>本参数默认值为 <code>false</code>。</p></li>
+
+<li><p><strong>subscribe_to_publish：</strong>当 <code>publish</code> 选项启用后，客户端可以发布消息到频道中而无需订阅。使用此选项，客户端会在发布到频道之前自动检查是否已订阅该频道。</p></li>
+
+<li><p><strong>anonymous：</strong>该参数允许匿名访问（在连接参数中使用空字符串作为 user ID，JWT token 中 sub 为空）。通常情况下，应用程序的用户都需要登录认证，因此客户端建立连接时可以使用用户名作为唯一标识。如果你需要提供公共的实时消息服务，你可以在相应的频道上开启本参数。本参数默认值为 <code>false</code>。</p></li>
+
+<li><p><strong>presence：</strong>是否开启 presence 信息，presence 为当前订阅本频道的客户端信息。本参数默认是为 <code>false</code>，即不开启。</p></li>
+
+<li><p><strong>presence_disable_for_client：</strong>（v2.2.3 之后版本有效）presence 在客户端不可用。默认值为 <code>false</code>，即同时允许客户端和服务端 API 访问 presence 信息。</p></li>
+
+<li><p><strong>join_leave：</strong>当有用户订阅/取消订阅频道时，是否发送相关信息到频道中。本参数默认值为 <code>false</code>。</p></li>
+
+<li><p><strong>history_size：</strong>频道历史消息数量。因为 Centrifugo 将所有的消息存储在内存中，因此限制每个频道保留的历史消息数量是非常重要的。本参数默认值为 <code>0</code>，这意味着频道不会保留历史消息。启用本参数后，Centrifugo 会为命名空间中的<strong>每条频道</strong>保留指定数量的历史消息，直到消息过期，关于消息过期详见参数 <code>history_lifetime</code>。</p></li>
+
+<li><p><strong>history_lifetime：</strong>频道历史消息的过期时间，单位为秒。本参数默认值为 <code>0</code>，这意味着频道不会保留历史消息。如果要保留历史消息，需要同时配置 <code>history_size</code> 与 <code>history_lifetime</code>，并设置合理的参数值。</p></li>
+
+<li><p><strong>history_recover：</strong>是否恢复丢失的消息。如果开启本参数，当客户端重新连接时（如因网络原因断线重连），Centrifugo 将试图重新恢复丢失的消息。本参数默认值为 <code>false</code>。这个参数的启用要配合历史消息相关参数（history_size 和 histroy_lifetime），毕竟消息的恢复依靠的是频道历史消息记录。请注意，并非所有实时事件消息都需要开启此功能，因此在需要时请慎重考虑。启用此选项后，你的应用程序需要考虑消息去重。</p></li>
+
+<li><p><strong>history_disable_for_client：</strong>（v2.2.3 之后版本有效）历史消息在客户端不可用。默认为 <code>false</code>，即历史消息在客户端与服务端均可用。该参数是否启用不会影响历史消息恢复机制。</p></li>
+</ul>
+
+<p><strong>参数配置示例：</strong></p>
+
+<pre><code>{
+    &quot;token_hmac_secret_key&quot;: &quot;my-secret-key&quot;,
+    &quot;api_key&quot;: &quot;secret-api-key&quot;,
+    &quot;anonymous&quot;: true,
+    &quot;publish&quot;: true,
+    &quot;subscribe_to_publish&quot;: true,
+    &quot;presence&quot;: true,
+    &quot;join_leave&quot;: true,
+    &quot;history_size&quot;: 10,
+    &quot;history_lifetime&quot;: 300,
+    &quot;history_recover&quot;: true
+}
+</code></pre>
+
+<ul>
+<li><strong>namespaces：</strong>namespaces 是可选参数，如果设置的话，需要设置成 namespace 数组的形式。通过 namespaces 可以针对 namespace 下的频道配置自定义参数。每个 namespace 都有自己的 name，并且拥有上面所有的针对频道的参数。name 必须唯一，并且由字母、数字、下划线或连接符组成，长度必须大于2（<code>^[-azA-Z0-9_]{2,}$</code>）。<br /></li>
+</ul>
+
+<p><strong>namespaces 相关配置文件示例：</strong></p>
+
+<pre><code>{
+&quot;token_hmac_secret_key&quot;: &quot;very-long-secret-key&quot;,
+&quot;api_key&quot;: &quot;secret-api-key&quot;,
+&quot;anonymous&quot;: true,
+&quot;publish&quot;: true,
+&quot;presence&quot;: true,
+&quot;join_leave&quot;: true,
+&quot;history_size&quot;: 10,
+&quot;history_lifetime&quot;: 30,
+&quot;namespaces&quot;: [
+    {
+      &quot;name&quot;: &quot;public&quot;,
+      &quot;publish&quot;: true,
+      &quot;anonymous&quot;: true,
+      &quot;history_size&quot;: 10,
+      &quot;history_lifetime&quot;: 300,
+      &quot;history_recover&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;gossips&quot;,
+      &quot;presence&quot;: true,
+      &quot;join_leave&quot;: true
+    }
+]
+</code></pre>
+
+<p>}</p>
+
+<p>在以上配置下：<br />
+&ensp;&ensp;- 频道 <code>news</code> 将使用全局参数配置。<br />
+&ensp;&ensp;- 频道 <code>public:news</code> 将使用 <code>public</code> 命名空间的参数配置。<br />
+&ensp;&ensp;- 频道 <code>gossips:news</code> 将使用 <code>gossips</code> 命名空间的参数配置。</p>
+
+<p><font color="red"><strong>注意：频道（channel）相关的选项在命名空间（namespaces）中不存在继承关系。</strong></font>例如，你在配置文件的顶层配置了 <code>presence: true</code>，在命名空间中，频道的 <code>presence</code> 选项不会继承 <code>true</code>，你必须在命名空间中显式的启用。</p>
+
+<h2 id="other-options">other options</h2>
+
+<p><em>下面几个参数在新版本中是否仍可使用，未验证</em></p>
+
+<p>&ensp;&ensp;&ensp;&ensp;<code>connection_lifetime</code> 参数用来设置客户端连接的过期时间，单位为秒。如果该参数设置为0，表示该客户端连接永不过期。</p>
+
+<pre><code>{
+    &quot;secret&quot;: &quot;very-long-secret-key&quot;,
+    &quot;connect_lifetime&quot;: 0
+}
+</code></pre>
+
+<p><br></p>
+
+<p>&ensp;&ensp;&ensp;&ensp;我们重点关注以下与频道（Channel）相关的几个参数。频道以字符串进行标识，客户端通过订阅频道来获取发布到频道中的实时消息。配置文件中的一些参数会影响到频道的行为：</p>
+
+<ul>
+<li><p><strong>watch：</strong>Centrifugo 会同时发生消息到 admin channel，这些消息可以在 admin 管理界面的 <code>messages tab</code> 下查看。这个参数要慎用，特别是针对消息发布频率比较高的频道，以免超出 admin client 的处理能力。本参数默认值为 <code>fasle</code>。</p></li>
+
+<li><p><strong>history_drop_inactive：</strong>是否丢弃不活跃的历史消息。本参数可以大幅降低资源消耗（内存、消息传播次数）。简单来说，该参数开启后，Centrifugo 会主动丢弃不需要的历史消息。本参数默认值为 <code>false</code>。</p></li>
+</ul>
+
+<p><br></p>
 
     </div>
   </article>

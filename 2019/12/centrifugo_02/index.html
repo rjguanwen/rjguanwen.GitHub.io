@@ -345,7 +345,7 @@ Centrifugo v2.3.0 之后，可以不使用 JWT 进行连接认证，参见 <a hr
 <li><p><strong>消息推送</strong><br />
 以上完成后，当用户打开应用程序的相关页面时，客户端会成功连接到 Centrifugo 并订阅一个或多个频道。如果你想向订阅特定频道的用户发送实时消息，例如：有人发布了新评论、部分商品打折促销、某个业务按钮被按下等，可以通过 Centrifugo HTTP API 来完成，官方针对不同的编程语言提供了一些 API 库（<a href="https://centrifugal.github.io/centrifugo/libraries/api/">API libraries</a>），使用这些库可以方便的发布消息到指定的频道（Channel）。当然，你也可以根据<a href="https://centrifugal.github.io/centrifugo/server/http_api/">API 描述</a>编写自己的 API 库。Centrifugo 也支持 <a href="https://centrifugal.github.io/centrifugo/server/grpc_api/">GRPC API</a>。发布到频道的消息会被投递到订阅相应频道的客户端。</p></li>
 
-<li><p><strong>生产环境安装包</strong>
+<li><p><strong>生产环境安装包</strong><br />
 为了方便在生产环境中安装 Centrifugo，官方提供了 Docker 镜像、rpm 包以及 deb 包。</p></li>
 
 <li><p><strong>监控</strong><br />
