@@ -5,10 +5,19 @@
     <link>https://rjguanwen.cn/posts/</link>
     <description>Recent content in 文章 on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 31 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 29 Feb 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://rjguanwen.cn/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>架构决策记录（ADR）</title>
+      <link>https://rjguanwen.cn/2020/02/adr/</link>
+      <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2020/02/adr/</guid>
+      <description>什么是ADR ADR（Architecture Decision Records）即架构决策记录。 架构决策（AD）是一种软件设计选择，针对功能性或非功能性的需求</description>
+    </item>
     
     <item>
       <title>Centrifugo（九）使用 Redis 实现伸缩</title>

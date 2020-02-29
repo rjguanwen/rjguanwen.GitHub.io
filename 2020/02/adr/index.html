@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        govendor使用记录 - 飞光
+        架构决策记录（ADR） - 飞光
       </title>
     <head>
   <meta charset="utf-8">
@@ -23,34 +23,34 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <meta name="description" content="govendor使用中一些问题及解决方案的记录" />
+  <meta name="description" content="什么是架构决策记录，以及如何使用。" />
   <meta name="generator" content="Hugo 0.59.1 with theme pure" />
-  <title>govendor使用记录 - 飞光</title>
+  <title>架构决策记录（ADR） - 飞光</title>
   
 
   <link rel="stylesheet" href="https://rjguanwen.cn/css/style.css">
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css"> 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-  <meta property="og:title" content="govendor使用记录" />
-<meta property="og:description" content="govendor使用中一些问题及解决方案的记录" />
+  <meta property="og:title" content="架构决策记录（ADR）" />
+<meta property="og:description" content="什么是架构决策记录，以及如何使用。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://rjguanwen.cn/2019/11/govendor_use/" />
-<meta property="article:published_time" content="2019-11-21T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-11-21T00:00:00+00:00" />
-<meta itemprop="name" content="govendor使用记录">
-<meta itemprop="description" content="govendor使用中一些问题及解决方案的记录">
+<meta property="og:url" content="https://rjguanwen.cn/2020/02/adr/" />
+<meta property="article:published_time" content="2020-02-29T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-02-29T00:00:00+00:00" />
+<meta itemprop="name" content="架构决策记录（ADR）">
+<meta itemprop="description" content="什么是架构决策记录，以及如何使用。">
 
 
-<meta itemprop="datePublished" content="2019-11-21T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2019-11-21T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="284">
+<meta itemprop="datePublished" content="2020-02-29T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-02-29T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1232">
 
 
 
-<meta itemprop="keywords" content="技术,GOLANG," />
+<meta itemprop="keywords" content="技术," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="govendor使用记录"/>
-<meta name="twitter:description" content="govendor使用中一些问题及解决方案的记录"/>
+<meta name="twitter:title" content="架构决策记录（ADR）"/>
+<meta name="twitter:description" content="什么是架构决策记录，以及如何使用。"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -274,7 +274,19 @@
     <div class="slimContent">
       <nav id="toc" class="article-toc">
         <h3 class="toc-title">文章目录</h3>
-        <div class="toc-content always-active">
+        <div class="toc-content always-active"><nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#什么是adr">什么是ADR</a></li>
+<li><a href="#架构决策记录记啥">架构决策记录记啥？</a></li>
+<li><a href="#架构决策记录的作用">架构决策记录的作用</a></li>
+<li><a href="#架构决策记录的组成部分">架构决策记录的组成部分</a></li>
+<li><a href="#其他关键问题">其他关键问题</a></li>
+<li><a href="#一个架构决策记录示例">一个架构决策记录示例</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
       </nav>
     </div>
@@ -287,134 +299,115 @@
       <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2019/11/govendor_use/"
-    >govendor使用记录</a
+    href="/2020/02/adr/"
+    >架构决策记录（ADR）</a
   >
 </h1>
 
       <div class="article-meta">
         <span class="article-date">
   <i class="icon icon-calendar-check"></i>
-<a href="https://rjguanwen.cn/2019/11/govendor_use/" class="article-date">
-  <time datetime="2019-11-21 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-11-21</time>
+<a href="https://rjguanwen.cn/2020/02/adr/" class="article-date">
+  <time datetime="2020-02-29 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-02-29</time>
 </a>
 </span><span class="article-category">
   <i class="icon icon-folder"></i>
-  <a class="article-category-link" href="/categories/golang/"> GOLANG </a>
+  <a class="article-category-link" href="/categories/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/"> 系统架构 </a>
 </span>  
   <span class="article-tag">
     <i class="icon icon-tags"></i>
     <a class="article-tag-link" href="/tags/%E6%8A%80%E6%9C%AF/"> 技术 </a>
-    <a class="article-tag-link" href="/tags/golang/"> GOLANG </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/11/govendor_use/#comments"
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/02/adr/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:284字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长:1分 </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:1232字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长:3分 </span>
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
-      <p><strong>简单记录 govendor 的使用方式：</strong></p>
+      
+
+<h2 id="什么是adr">什么是ADR</h2>
+
+<p>ADR（Architecture Decision Records）即架构决策记录。</p>
+
+<p>架构决策（AD）是一种软件设计选择，针对功能性或非功能性的需求进行的选择设计。软件架构决策需要在软件质量属性、成本、时间以及其他各种因素之间，做出正确的权衡。架构决策记录（ADR） 是跟踪软件设计选择的一种方法，其应能向项目经理、架构师、开发人员及软件的其他利益相关者，清楚阐明选择何种解决方案以及为此做出的权衡。</p>
+
+<h2 id="架构决策记录记啥">架构决策记录记啥？</h2>
+
+<p>架构决策记录（ADR）首先要解决的基本问题：“我们做了什么决策？”、“为什么这样决策？”，稍次要的问题包括：“我们还考虑过哪些解决方案？”、“为什么没有采用？”等。</p>
+
+<h2 id="架构决策记录的作用">架构决策记录的作用</h2>
+
+<ul>
+<li>可以作为和开发人员进行沟通的工具，说明应遵循的重要架构原则<br /></li>
+<li>当开发人员对架构背后的逻辑提出质疑时，使团队成员能够“就事论事”，提高效率。（如果事实表明你的决策站不住脚，便应虚心接受批评，改正架构）<br /></li>
+<li>向领导和利益相关者说明这样构建软件的确切原因（比如，采用某种较为昂贵的硬件或软件的必要性等）<br /></li>
+<li>要把项目移交给下任架构师时，保持架构设计的有序传承<br /></li>
+<li>如果相关条件发生变化，需要对决策重新评估时，它可以作为一个起点<br /></li>
+<li>架构决策记录也会倒逼架构师在进行架构决策时更严谨，有助于确保基础的扎实稳固<br /></li>
+</ul>
+
+<h2 id="架构决策记录的组成部分">架构决策记录的组成部分</h2>
+
+<p>每个架构决策至少有 6 部分组成：标题、时间、状态（Status）、上下文（Context）、决策（Decision）、后果（Consequences）。</p>
+
+<ul>
+<li><p>标题：按数字顺序编号，简要描述架构决策内容</p></li>
+
+<li><p>时间：在标题下一行，记录架构决策做出的日期，如 <code>日期：2020年2月28日</code></p></li>
+
+<li><p>状态：表示本架构决策当前所处的状态，可选项包括：</p>
+
+<ul>
+<li><code>提议</code>：决策已被提出讨论，但是利益相关方尚未达成一致。<br /></li>
+<li><code>公认</code>：决策已讨论通过并达成一致。<br /></li>
+<li><code>已取代</code>：因条件变化，已有新的架构决策取代本决策。此时需要给出新决策链接。<br /></li>
+<li><code>已弃用</code>：本架构决策已撤销，不再使用。<br /></li>
+</ul></li>
+
+<li><p>上下文：架构决策相关的背景及决策原因。本部分的语言应该是<strong>价值中立</strong>的，只用于描述事实</p></li>
+
+<li><p>决策：本部分简洁明了的描述我们最终确定的架构决策</p></li>
+
+<li><p>后果：本部分描述应用决策后产生的影响，所有的影响都应该列在这里，包括“积极的”、“中性的”与消极的”</p></li>
+</ul>
+
+<h2 id="其他关键问题">其他关键问题</h2>
 
 <ol>
-<li><p>安装<br />
-<code>go get -u -v github.com/kardianos/govendor</code></p></li>
+<li><p>架构决策按照顺序和数字编号，不要打乱顺序。</p></li>
 
-<li><p>初始化 vendor 目录<br />
-<code>govendor init</code></p></li>
-
-<li><p>添加依赖包到 vendor 目录<br />
-<code>govendor add +external</code>  或  <code>govendor add +e</code></p></li>
-
-<li><p>从 $GOPATH 更新依赖包到 vendor 目录<br />
-<code>govendor update +vendor</code></p></li>
-
-<li><p>删除依赖包<br />
-<code>govendor remove +vendor</code></p></li>
+<li><p>已记录的架构决策不应该被删除，如果被取代掉或已不符合当前情况，请将其标记为 <code>已取代</code> 或 <code>已弃用</code></p></li>
 </ol>
 
-<p><strong>常用的命令如下：</strong></p>
+<h2 id="一个架构决策记录示例">一个架构决策记录示例</h2>
 
-<table>
-<thead>
-<tr>
-<th align="center">命令</th>
-<th>功能</th>
-</tr>
-</thead>
+<pre><code>1. 使用 ssh key 替换用户名密码方式登录
+日期: 2019年11月12日
 
-<tbody>
-<tr>
-<td align="center">init</td>
-<td>初始化 vendor 目录</td>
-</tr>
+状态：
+公认
 
-<tr>
-<td align="center">list</td>
-<td>列出所有依赖包</td>
-</tr>
+上下文：
+当前我们使用的是用户名、密码方式进行服务器登录，存在以下问题
 
-<tr>
-<td align="center">add</td>
-<td>添加包到 vendor 目录</td>
-</tr>
+安全性问题，密码面临被破解的风险；
+易用性问题，无法使用 config 记录密码，可以使用第三方软件解决，如，SecureCRT，ZOC7；
+无法充分使用 local terminal，如 iTerm2；
 
-<tr>
-<td align="center">add PKG_PATH</td>
-<td>添加指定依赖包到 vendor 目录</td>
-</tr>
+参考:
+SSH: passwords or keys? https://lwn.net/Articles/369703/
+Why is SSH key authentication better than password authentication? https://superuser.com/questions/303358/why-is-ssh-key-authentication-better-than-password-authentication
+Why is using an SSH key more secure than using passwords? https://security.stackexchange.com/questions/69407/why-is-using-an-ssh-key-more-secure-than-using-passwords
 
-<tr>
-<td align="center">update</td>
-<td>从 $GOPATH 更新依赖包到 vendor 目录</td>
-</tr>
+决策：
+禁用用户名、密码登录，使用 ssh key 进行登录
 
-<tr>
-<td align="center">remove</td>
-<td>从 vendor 管理中删除依赖</td>
-</tr>
-
-<tr>
-<td align="center">status</td>
-<td>列出 vendor 管理的各个包的状态</td>
-</tr>
-
-<tr>
-<td align="center">fetch</td>
-<td>添加或更新包到 vendor 目录</td>
-</tr>
-
-<tr>
-<td align="center">sync</td>
-<td>同步，基于已存在的 vendor.json 拉取依赖包</td>
-</tr>
-
-<tr>
-<td align="center">get</td>
-<td>类似 go get ，拉取依赖包到 vendor 目录</td>
-</tr>
-</tbody>
-</table>
-
-<p><strong>可用的 Status Types 如下：</strong><br />
-    +local    (l) packages in your project<br />
-    +external (e) referenced packages in GOPATH but not in current project<br />
-    +vendor   (v) packages in the vendor folder<br />
-    +std      (s) packages in the standard library<br />
-    +excluded (x) external packages explicitly excluded from vendoring<br />
-    +unused   (u) packages in the vendor folder, but unused<br />
-    +missing  (m) referenced packages but not found<br />
-    +program  (p) package is a main package<br />
-    +outside  +external +missing<br />
-    +all      +all packages</p>
-
-<p><strong>注意事项：</strong></p>
-
-<p>使用 vendor 后，请配置  .gitignore 文件：</p>
-
-<pre><code>/vendor/*
-!/vendor/vendor.json
+后果：
+团队成员使用新方式需要适应；
+key 的管理需要统一（需要引入堡垒机）。
 </code></pre>
 
     </div>
@@ -426,14 +419,9 @@
     <div class="bar-inner">
         <ul class="pager pull-left">
             <li class="prev">
-                <a href="https://rjguanwen.cn/2019/11/git_01/" title="git错误解决"><i
+                <a href="https://rjguanwen.cn/2019/12/centrifugo_09/" title="Centrifugo（九）使用 Redis 实现伸缩"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
-            </li>
-            <li class="next">
-                <a href="https://rjguanwen.cn/2019/11/gomod_use/"
-                    title="gomod使用记录"><span>下一篇&nbsp;&nbsp;</span><i
-                        class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
             <li class="toggle-toc">
