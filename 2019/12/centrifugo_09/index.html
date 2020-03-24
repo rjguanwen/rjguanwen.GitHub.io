@@ -43,7 +43,7 @@
 
 <meta itemprop="datePublished" content="2019-12-31T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-12-31T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="1034">
+<meta itemprop="wordCount" content="1098">
 
 
 
@@ -310,7 +310,7 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/12/centrifugo_09/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:1034字</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:1098字</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长:3分 </span>
       </div>
     </div>
@@ -340,7 +340,7 @@
 
 <p>&ensp;&ensp;&ensp;&ensp;现在你已经拥有了三个 Centrifugo 实例，分别运行在 <code>8000</code>、<code>8001</code>、<code>8002</code> 端口，客户端可以选择连接任何一个实例。同样，你也可以发送 API 请求到任何一个节点。这三个节点通过 Redis 的 PUB/SUB 机制实现消息共享。</p>
 
-<p>&ensp;&ensp;&ensp;&ensp;多个节点之间的负载均衡通过 Nginx 实现。要非常注意的一定是，如果你的客户端使用了 SockJS 连接到 Centrifugo 节点，那么接下来的该客户端的请求只能路由到同一节点，因为该节点保存了客户端的会话信息。而使用 websocket 则不存在该问题。</p>
+<p>&ensp;&ensp;&ensp;&ensp;多个节点之间的负载均衡可以通过 Nginx 实现。要非常注意的一点是，如果你的客户端使用了 SockJS 连接到 Centrifugo 节点，那么接下来的该客户端的请求只能路由到同一节点，因为该节点保存了客户端的会话信息。而使用 websocket 则不存在该问题。</p>
 
 <p><strong>Redis 分片</strong></p>
 
@@ -361,6 +361,10 @@
 </code></pre>
 
 <p>&ensp;&ensp;&ensp;&ensp;启用分片后，Centrifugo 将使用一致性哈希算法在已配置的 Redis 实例上传播频道和历史/状态信息。</p>
+
+<p><strong>KeyDB engine</strong></p>
+
+<p>&ensp;&ensp;&ensp;&ensp;Centrifugo Redis engine 可与 KeyDB 无缝协作，KeyDB 服务器与 Reids 兼容，并且提供其他一些附加功能。此功能为<strong>实验功能</strong>，不保证未来版本仍然与 KeyDB 兼容。</p>
 
     </div>
   </article>
