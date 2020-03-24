@@ -43,7 +43,7 @@
 
 <meta itemprop="datePublished" content="2019-12-12T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-12-12T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="3147">
+<meta itemprop="wordCount" content="4548">
 
 
 
@@ -286,6 +286,8 @@
 <li><a href="#genconfig-command">genconfig command</a></li>
 <li><a href="#important-options">Important options</a></li>
 <li><a href="#channel-options">Channel options</a></li>
+<li><a href="#advanced-configuration">Advanced configuration</a></li>
+<li><a href="#advanced-endpoint-configuration">Advanced endpoint configuration</a></li>
 <li><a href="#other-options">other options</a></li>
 </ul></li>
 </ul>
@@ -325,8 +327,8 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/12/centrifugo_04/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:3147字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长:7分 </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:4548字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长:10分 </span>
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
@@ -527,6 +529,147 @@ log_level: debug
 
 <p><font color="red"><strong>注意：频道（channel）相关的选项在命名空间（namespaces）中不存在继承关系。</strong></font>例如，你在配置文件的顶层配置了 <code>presence: true</code>，在命名空间中，频道的 <code>presence</code> 选项不会继承 <code>true</code>，你必须在命名空间中显式的启用。</p>
 
+<h2 id="advanced-configuration">Advanced configuration</h2>
+
+<p>Centrifugo 还提供了更多的配置选项，一般情况下，你不需要配置他们，使用默认值即可。</p>
+
+<ul>
+<li><p><strong>client_channel_limit</strong><br />
+Default: <code>128</code><br />
+设置单个客户端可以拥有的不同频道订阅的最大数量。</p></li>
+
+<li><p><strong>channel_max_length</strong><br />
+Default: <code>255</code>
+设置频道名称的最大长度。</p></li>
+
+<li><p><strong>client_user_connection_limit</strong><br />
+Default: <code>0</code><br />
+同一用户（不包含匿名用户）连接到 Centrifugo 节点的最大连接数。默认值 <code>0</code> 表示不限制。</p></li>
+
+<li><p><strong>client_request_max_size</strong><br />
+Default: <code>65536</code><br />
+客户端请求的最大允许长度，按字节计。</p></li>
+
+<li><p><strong>client_queue_max_size</strong><br />
+Default: <code>10485760</code><br />
+客户端消息队列的最大大小，以字节计。默认大小为 <code>10mb</code>。（超出长度后缓慢的读取连接会被关闭？）</p></li>
+
+<li><p><strong>client_anonymous</strong><br />
+Default: <code>false</code><br />
+是否允许客户端匿名连接。如果设置为 <code>true</code>，则所有客户端可以在没有 JWT 令牌的情况下连接到 Centrifugo。在这种情况下，没有令牌的连接会被视为匿名（user ID 为空），并且只能订阅开启了 <code>anonymous</code> 选项的频道。</p></li>
+
+<li><p><strong>sockjs_heartbeat_delay</strong><br />
+Default: <code>25</code><br />
+SockJS 心跳检测时间间隔，单位为秒。</p></li>
+
+<li><p><strong>websocket_compression</strong><br />
+Default: <code>fasle</code>
+是否开启 websocket 压缩。</p></li>
+
+<li><p><strong>gomaxprocs</strong><br />
+Default: <code>0</code><br />
+默认情况下，Centrifugo 会在所有可用 CPU 内核上执行，本选项可以用来限制 Centrifugo 同时可利用的 CPU 内核数。</p></li>
+</ul>
+
+<h2 id="advanced-endpoint-configuration">Advanced endpoint configuration</h2>
+
+<p>启动 Centrifugo 后，你会有几个可用的端点（endpoint），如果你没有提供额外的选项，你默认会有 3 个端点。</p>
+
+<ul>
+<li><strong>Default endpoints</strong><br /></li>
+</ul>
+
+<p><strong>主端点</strong>是原生的 Websocket 端口，用来支持纯 Websocket 协议的客户端连接：<code>ws://localhost:8000/connection/websocket</code></p>
+
+<p><strong>SockJS 端点</strong>，用来服务使用 SockJS library 连接的客户端：<code>http://localhost:8000/connection/sockjs</code></p>
+
+<p>最后，<strong>API 端点</strong>，用来发布消息到频道以及执行其他可用的 API 指令：<code>http://localhost:8000/api</code></p>
+
+<p>所有的端点默认使用 <code>8000</code> 端口，可以通过 <code>port</code> 选项修改：</p>
+
+<pre><code>{
+    &quot;port&quot;: 9000
+}
+</code></pre>
+
+<p>在生产环境中，你的域名将替代上面 URL 中的 <code>localhost</code>。如果你的 Centrifugo 服务器位于代理或者负载均衡服务器之后，则 URL 中可能没有端口号。</p>
+
+<ul>
+<li><p><strong>Admin endpoints</strong>
+启用管理端点：</p>
+
+<pre><code>{
+...
+&quot;admin&quot;: true,
+&quot;admin_password&quot;: &quot;&lt;password&gt;&quot;,
+&quot;admin_secret&quot;: &quot;&lt;secret&gt;&quot;
+}
+</code></pre>
+
+<p>以上配置，使管理端点可用：<code>http://localhost:8000</code><br />
+通过上面的地址，你可以看到管理界面，通过上面配置的 <code>admin_password</code> 登录。</p></li>
+
+<li><p><strong>Debug endpoints</strong>
+当 Centrifugo 以 debug 模式启动时，debug 端点将可用。</p>
+
+<pre><code>{
+...
+&quot;debug&quot;: true
+}
+</code></pre>
+
+<p>端点 URL: <code>http://localhost:8000/debug/pprof/</code><br />
+通过上面的地址，你可以看到 Centrifugo 实例的内部状态信息，这些信息在故障排除时会非常有用。</p></li>
+
+<li><p><strong>Healthcheck endpoint</strong>
+使用 <code>health</code> 选项（默认值为 <code>false</code>）来启用健康检查端点，该端点路径为 <code>/health</code>。同样，也可以在启动命令通过标记来启用健康检查端点：</p>
+
+<pre><code>./centrifugo -c config.json --health
+</code></pre></li>
+
+<li><p><strong>Custom internal ports</strong>
+我们强烈建议，不要将 <code>API</code>、<code>admin</code>、<code>debug</code> 以及 <code>prometheus</code> 端点暴露到互联网，这些端点被视为内部的：</p>
+
+<ul>
+<li>API 端点（<code>/api</code>）: 针对 HTTP API 请求<br /></li>
+<li>Admin web interface endpoints（<code>/</code>, <code>/admin/auth</code>, <code>/admin/api</code>）: used by web interface<br /></li>
+<li>Prometheus endpoint(<code>/metrics</code>): 用于以 Prometheus 格式公开服务器指标<br /></li>
+<li>Healthcheck endpoint(<code>/health</code>): 用来进行健康检查<br /></li>
+<li>Debug endpoints(<code>/debug/pprof</code>): 用于检测服务器内部状态<br /></li>
+</ul></li>
+</ul>
+
+<p>这些内部端点，最好使用防火墙保护起来。<br />
+可以通过 <code>internal_port</code> 选项来自定义内部端点的端口：</p>
+
+<pre><code>{
+    ...
+    &quot;internal_port&quot;: 9000
+}
+</code></pre>
+
+<ul>
+<li><p><strong>Disable default endpoints</strong>
+以下选项在 v2.4.0 版本后有效：<code>websocket_disable</code>、<code>sockjs_disable</code>、<code>api_disable</code>，这些选项默认值均为 <code>true</code>。</p></li>
+
+<li><p><strong>Customize handler endpoinds</strong><br />
+从 Centrifugo v2.2.5 开始，可以自定义 HTTP 处理程序端点，有如下几个选项可用：</p>
+
+<ul>
+<li><code>admin_handler_prefix</code>（默认值为 <code>&quot;&quot;</code>）: 控制台 URL 前缀。<br /></li>
+<li><code>websocket_handler_prefix</code>（默认值为 <code>/connection/websocket</code>）: WebSocket URL前缀。<br /></li>
+<li><code>sockjs_handler_prefix</code>（默认值为 <code>/connection/sockjs</code>）: SockJS URL 前缀。<br /></li>
+<li><code>api_handler_prefix</code>（默认值为 <code>/api</code>）: HTTP API URL 前缀。<br /></li>
+<li><code>prometheus_handler_prefix</code>（默认值为 <code>/metrics</code>）: Prometheus URL 前缀。<br /></li>
+<li><code>health_handler_prefix</code>（默认值为 <code>/health</code>）: 健康检查 URL 前缀。<br /></li>
+</ul></li>
+</ul>
+
+<p><br>
+<br>
+<br>
+// &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</p>
+
 <h2 id="other-options">other options</h2>
 
 <p><em>下面几个参数在新版本中是否仍可使用，未验证</em></p>
@@ -541,13 +684,11 @@ log_level: debug
 
 <p><br></p>
 
-<p>&ensp;&ensp;&ensp;&ensp;我们重点关注以下与频道（Channel）相关的几个参数。频道以字符串进行标识，客户端通过订阅频道来获取发布到频道中的实时消息。配置文件中的一些参数会影响到频道的行为：</p>
+<p>频道（Channel）相关的选项：</p>
 
-<ul>
-<li><p><strong>watch：</strong>Centrifugo 会同时发生消息到 admin channel，这些消息可以在 admin 管理界面的 <code>messages tab</code> 下查看。这个参数要慎用，特别是针对消息发布频率比较高的频道，以免超出 admin client 的处理能力。本参数默认值为 <code>fasle</code>。</p></li>
+<p><code>watch</code>：Centrifugo 会同时发生消息到 admin channel，这些消息可以在 admin 管理界面的 <code>messages tab</code> 下查看。这个参数要慎用，特别是针对消息发布频率比较高的频道，以免超出 admin client 的处理能力。本参数默认值为 <code>fasle</code>。</p>
 
-<li><p><strong>history_drop_inactive：</strong>是否丢弃不活跃的历史消息。本参数可以大幅降低资源消耗（内存、消息传播次数）。简单来说，该参数开启后，Centrifugo 会主动丢弃不需要的历史消息。本参数默认值为 <code>false</code>。</p></li>
-</ul>
+<p><code>history_drop_inactive</code>：是否丢弃不活跃的历史消息。本参数可以大幅降低资源消耗（内存、消息传播次数）。简单来说，该参数开启后，Centrifugo 会主动丢弃不需要的历史消息。本参数默认值为 <code>false</code>。</p>
 
 <p><br></p>
 
