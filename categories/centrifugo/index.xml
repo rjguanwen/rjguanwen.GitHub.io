@@ -25,7 +25,7 @@
       <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://rjguanwen.cn/2019/12/centrifugo_10/</guid>
-      <description></description>
+      <description>Centrifugo 使用具有 SHA-256 摘要算法的 HMAC（Hash-based Message Authentication Code）来创建连接令牌以及对数据进行签名。 &amp;ensp;&amp;ensp;&amp;ensp;&amp;e</description>
     </item>
     
     <item>
@@ -52,7 +52,7 @@
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://rjguanwen.cn/2019/12/centrifugo_06/</guid>
-      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Centrifugo 引擎负责如何发布消息、处理订阅、状态及历史数据的保存及恢复等。Centrifugo 可选的引擎为 Memory 和 Redis，默认使用 Memory。两者最</description>
+      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Centrifugo 引擎负责如何发布消息、处理订阅、状态及历史数据的保存及恢复等。 &amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Centrifugo 可选的引擎为 Memory 和 Redis，默认使用 Memory。两者最大的不同在于，Me</description>
     </item>
     
     <item>
@@ -88,7 +88,7 @@
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://rjguanwen.cn/2019/12/centrifugo_04/</guid>
-      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Centrifugo 支持 JSON、TOML和YAML三种格式的配置文件。本文以 JSON 格式为例说明 Centrifugo 配置文件的内容。最简单的配置文件如下： { &amp;quot;secret&amp;quot;: &amp;quot;very-long-secret-key&amp;quot; } 只有 secret 是必须的，在</description>
+      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Centrifugo 支持 JSON、TOML和YAML三种格式的配置文件。 &amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;通过 ./centrifugo -h 命令，可以查看所有的可用选型，</description>
     </item>
     
     <item>

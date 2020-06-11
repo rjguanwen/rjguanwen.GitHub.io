@@ -5,10 +5,37 @@
     <link>https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/</link>
     <description>Recent content in 技术 on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 31 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Docker常用命令</title>
+      <link>https://rjguanwen.cn/2020/06/docker_01/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2020/06/docker_01/</guid>
+      <description>Redis 常用命令，备查！ 1、测试 Docker 是否正常安装 docker run hello-world 2、Docker 状态信息查看 docker info 3、Docker 镜像管理 3.1 创建镜像 方法一：根据 Dockerfile 创建镜像 创建D</description>
+    </item>
+    
+    <item>
+      <title>Redis 常用命令</title>
+      <link>https://rjguanwen.cn/2020/06/redis_01/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2020/06/redis_01/</guid>
+      <description>Redis 常用命令，备查！ &amp;lt;部分内容摘抄自网络，如有侵权，预先道歉，请及时联系（rjguanwen001@163.com），我会尽快删除，谢谢</description>
+    </item>
+    
+    <item>
+      <title>架构决策记录（ADR）</title>
+      <link>https://rjguanwen.cn/2020/02/adr/</link>
+      <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2020/02/adr/</guid>
+      <description>什么是ADR ADR（Architecture Decision Records）即架构决策记录。 架构决策（AD）是一种软件设计选择，针对功能性或非功能性的需求</description>
+    </item>
     
     <item>
       <title>Centrifugo（九）使用 Redis 实现伸缩</title>
@@ -25,7 +52,7 @@
       <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://rjguanwen.cn/2019/12/centrifugo_10/</guid>
-      <description></description>
+      <description>Centrifugo 使用具有 SHA-256 摘要算法的 HMAC（Hash-based Message Authentication Code）来创建连接令牌以及对数据进行签名。 &amp;ensp;&amp;ensp;&amp;ensp;&amp;e</description>
     </item>
     
     <item>
@@ -61,7 +88,7 @@
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://rjguanwen.cn/2019/12/centrifugo_06/</guid>
-      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Centrifugo 引擎负责如何发布消息、处理订阅、状态及历史数据的保存及恢复等。Centrifugo 可选的引擎为 Memory 和 Redis，默认使用 Memory。两者最</description>
+      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Centrifugo 引擎负责如何发布消息、处理订阅、状态及历史数据的保存及恢复等。 &amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Centrifugo 可选的引擎为 Memory 和 Redis，默认使用 Memory。两者最大的不同在于，Me</description>
     </item>
     
     <item>
@@ -106,7 +133,7 @@
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://rjguanwen.cn/2019/12/centrifugo_04/</guid>
-      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Centrifugo 支持 JSON、TOML和YAML三种格式的配置文件。本文以 JSON 格式为例说明 Centrifugo 配置文件的内容。最简单的配置文件如下： { &amp;quot;secret&amp;quot;: &amp;quot;very-long-secret-key&amp;quot; } 只有 secret 是必须的，在</description>
+      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Centrifugo 支持 JSON、TOML和YAML三种格式的配置文件。 &amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;通过 ./centrifugo -h 命令，可以查看所有的可用选型，</description>
     </item>
     
     <item>

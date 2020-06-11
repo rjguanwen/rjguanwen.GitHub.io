@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on 飞光</title>
+    <link>https://rjguanwen.cn/tags/docker/</link>
+    <description>Recent content in docker on 飞光</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 05 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://rjguanwen.cn/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Docker常用命令</title>
+      <link>https://rjguanwen.cn/2020/06/docker_01/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2020/06/docker_01/</guid>
+      <description>Redis 常用命令，备查！ 1、测试 Docker 是否正常安装 docker run hello-world 2、Docker 状态信息查看 docker info 3、Docker 镜像管理 3.1 创建镜像 方法一：根据 Dockerfile 创建镜像 创建D</description>
+    </item>
+    
+  </channel>
+</rss>

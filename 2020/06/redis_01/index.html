@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        Redis 常用命令 - 飞光
+      </title>
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="Redis 常用命令" />
+  <meta name="generator" content="Hugo 0.59.1 with theme pure" />
+  <title>Redis 常用命令 - 飞光</title>
+  
+
+  <link rel="stylesheet" href="https://rjguanwen.cn/css/style.css">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <meta property="og:title" content="Redis 常用命令" />
+<meta property="og:description" content="Redis 常用命令" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rjguanwen.cn/2020/06/redis_01/" />
+<meta property="article:published_time" content="2020-06-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-05T00:00:00+00:00" />
+<meta itemprop="name" content="Redis 常用命令">
+<meta itemprop="description" content="Redis 常用命令">
+
+
+<meta itemprop="datePublished" content="2020-06-05T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-06-05T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="2245">
+
+
+
+<meta itemprop="keywords" content="技术,redis," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Redis 常用命令"/>
+<meta name="twitter:description" content="Redis 常用命令"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  </head>
+  <body class="main-center" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/rjguanwen" target="_blank">
+            <img class="img-circle img-rotate" src="https://rjguanwen.cn/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">rjguanwen</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">食熊则肥  食蛙则瘦</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>山东 济南</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-主页">
+                <a href="/">
+                  <span class="menu-title">主页</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-文章">
+                <a href="/posts">
+                  <span class="menu-title">文章</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-目录">
+                <a href="/categories">
+                  <span class="menu-title">目录</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-标签">
+                <a href="/tags">
+                  <span class="menu-title">标签</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-关于">
+                <a href="/about">
+                  <span class="menu-title">关于</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>临渊羡鱼，<br/>不如退而结网！</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> 分类</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/centrifugo/" class="category-list-link">centrifugo</a><span class="category-list-count">10</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/docker/" class="category-list-link">docker</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/git/" class="category-list-link">git</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/golang/" class="category-list-link">golang</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/redis/" class="category-list-link">redis</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/" class="category-list-link">杂七杂八</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/" class="category-list-link">系统架构</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/%E8%AF%97%E8%AF%8D/" class="category-list-link">诗词</a><span class="category-list-count">1</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/centrifugo/" class="tag-list-link">centrifugo</a><span
+                    class="tag-list-count">10</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/docker/" class="tag-list-link">docker</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/git/" class="tag-list-link">git</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/golang/" class="tag-list-link">golang</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/redis/" class="tag-list-link">redis</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E4%B8%AA%E4%BA%BA/" class="tag-list-link">个人</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E5%85%89%E9%98%B4/" class="tag-list-link">光阴</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E5%8F%A5%E5%AD%90/" class="tag-list-link">句子</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/" class="tag-list-link">技术</a><span
+                    class="tag-list-count">19</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E6%9D%82%E6%84%9F%E9%9A%8F%E7%AC%94/" class="tag-list-link">杂感随笔</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E8%AF%97%E8%AF%8D/" class="tag-list-link">诗词</a><span
+                    class="tag-list-count">1</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://rjguanwen.cn/2020/06/docker_01/" class="title">Docker常用命令</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-06-05 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-06-05</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://rjguanwen.cn/2020/06/redis_01/" class="title">Redis 常用命令</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-06-05 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-06-05</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://rjguanwen.cn/2020/02/adr/" class="title">架构决策记录（ADR）</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-02-29 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-02-29</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://rjguanwen.cn/2019/12/centrifugo_09/" class="title">Centrifugo（九）使用 Redis 实现伸缩</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-12-31 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-12-31</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://rjguanwen.cn/2019/12/centrifugo_10/" class="title">Centrifugo（十）令牌和签名</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-12-31 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-12-31</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+  <aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+    <div class="slimContent">
+      <nav id="toc" class="article-toc">
+        <h3 class="toc-title">文章目录</h3>
+        <div class="toc-content always-active"><nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#一-管理命令">一、管理命令</a>
+<ul>
+<li><a href="#1-启动-redis">1 启动 Redis</a></li>
+<li><a href="#2-连接-redis">2 连接 Redis</a></li>
+<li><a href="#3-停止-reids">3 停止 Reids</a></li>
+<li><a href="#4-发送命令">4 发送命令</a></li>
+<li><a href="#5-测试连通性">5 测试连通性</a></li>
+</ul></li>
+<li><a href="#二-key-操作命令">二、key 操作命令</a>
+<ul>
+<li><a href="#1-获取所有键">1 获取所有键</a></li>
+<li><a href="#2-获取键总数">2 获取键总数</a></li>
+<li><a href="#3-查询键是否存在">3 查询键是否存在</a></li>
+<li><a href="#4-删除键">4 删除键</a></li>
+<li><a href="#5-查询键类型">5 查询键类型</a></li>
+<li><a href="#6-移动键">6 移动键</a></li>
+<li><a href="#7-查询-key-的生命周期-秒">7 查询 key 的生命周期（秒）</a></li>
+<li><a href="#8-设置过期时间">8 设置过期时间</a></li>
+<li><a href="#9-设置永不过期">9 设置永不过期</a></li>
+<li><a href="#10-更改键名称">10 更改键名称</a></li>
+</ul></li>
+<li><a href="#三-字符串操作命令">三、字符串操作命令</a>
+<ul>
+<li><a href="#1-存放键值">1 存放键值</a></li>
+<li><a href="#2-获取键值">2 获取键值</a></li>
+<li><a href="#3-值递增-递减">3 值递增/递减</a></li>
+<li><a href="#4-批量存放键值">4 批量存放键值</a></li>
+<li><a href="#5-批量获取键值">5 批量获取键值</a></li>
+<li><a href="#6-获取值长度">6 获取值长度</a></li>
+<li><a href="#7-追加内容">7 追加内容</a></li>
+<li><a href="#8-获取部分字符">8 获取部分字符</a></li>
+</ul></li>
+<li><a href="#四-集合操作命令">四、集合操作命令</a>
+<ul>
+<li><a href="#集合">集合</a>
+<ul>
+<li><a href="#1-存储值">1 存储值</a></li>
+<li><a href="#2-获取元素">2 获取元素</a></li>
+<li><a href="#3-判断集合是否存在元素">3 判断集合是否存在元素</a></li>
+<li><a href="#4-获取集合元素个数">4 获取集合元素个数</a></li>
+<li><a href="#5-删除集合元素">5 删除集合元素</a></li>
+<li><a href="#6-弹出元素">6 弹出元素</a></li>
+</ul></li>
+<li><a href="#有序集合">有序集合</a>
+<ul>
+<li><a href="#1-存储值-1">1 存储值</a></li>
+<li><a href="#2-获取元素分数">2 获取元素分数</a></li>
+<li><a href="#3-增加指定元素分数">3 增加指定元素分数</a></li>
+<li><a href="#4-获取集合元素个数-1">4 获取集合元素个数</a></li>
+<li><a href="#5-获取指定范围分数个数">5 获取指定范围分数个数</a></li>
+<li><a href="#6-删除指定元素">6 删除指定元素</a></li>
+<li><a href="#7-获取元素排名">7 获取元素排名</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#五-列表操作命令">五、列表操作命令</a>
+<ul>
+<li><a href="#1-存储值-2">1 存储值</a></li>
+<li><a href="#2-弹出元素">2 弹出元素</a></li>
+<li><a href="#3-获取元素个数">3 获取元素个数</a></li>
+<li><a href="#4-获取列表元素">4 获取列表元素</a></li>
+<li><a href="#5-删除元素">5 删除元素</a></li>
+</ul></li>
+<li><a href="#六-散列操作命令">六、散列操作命令</a>
+<ul>
+<li><a href="#1-存放键值-1">1 存放键值</a></li>
+<li><a href="#2-获取字段值">2 获取字段值</a></li>
+<li><a href="#3-判断字段是否存在">3 判断字段是否存在</a></li>
+<li><a href="#4-获取字段数量">4 获取字段数量</a></li>
+<li><a href="#5-递增-减">5 递增/减</a></li>
+<li><a href="#6-删除字段">6 删除字段</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+      </nav>
+    </div>
+  </aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2020/06/redis_01/"
+    >Redis 常用命令</a
+  >
+</h1>
+
+      <div class="article-meta">
+        <span class="article-date">
+  <i class="icon icon-calendar-check"></i>
+<a href="https://rjguanwen.cn/2020/06/redis_01/" class="article-date">
+  <time datetime="2020-06-05 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-06-05</time>
+</a>
+</span><span class="article-category">
+  <i class="icon icon-folder"></i>
+  <a class="article-category-link" href="/categories/redis/"> redis </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+    <a class="article-tag-link" href="/tags/%E6%8A%80%E6%9C%AF/"> 技术 </a>
+    <a class="article-tag-link" href="/tags/redis/"> redis </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/06/redis_01/#comments"
+            class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:2245字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长:5分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+
+<p>Redis 常用命令，备查！</p>
+
+<p><em>&lt;部分内容摘抄自网络，如有侵权，预先道歉，请及时联系（rjguanwen001@163.com），我会尽快删除，谢谢！&gt;</em></p>
+
+<p><img src="/images/redis_01_1.png" alt="Redis 常用命令" /></p>
+
+<h2 id="一-管理命令">一、管理命令</h2>
+
+<h3 id="1-启动-redis">1 启动 Redis</h3>
+
+<pre><code>&gt; redis-server [--port 6379]
+</code></pre>
+
+<p>如果命令参数过多，建议通过配置文件来启动 Redis。</p>
+
+<pre><code>&gt; redis-server [xx/xx/redis.conf]
+</code></pre>
+
+<h3 id="2-连接-redis">2 连接 Redis</h3>
+
+<pre><code>&gt; ./redis-cli [-h 127.0.0.1 -p 6379]
+</code></pre>
+
+<h3 id="3-停止-reids">3 停止 Reids</h3>
+
+<pre><code>&gt; redis-cli shutdown
+
+&gt; kill redis-pid
+</code></pre>
+
+<p>以上两条命令，效果一样</p>
+
+<h3 id="4-发送命令">4 发送命令</h3>
+
+<p>给 Redis 发送命令有两种方式：
+1、redis-cli 带参数运行</p>
+
+<pre><code>&gt; redis-cli &lt;命令，如 shutdown&gt;
+</code></pre>
+
+<p>2、redis-cli不带参数运行，先执行 redis-cli，进入命令行执行命令</p>
+
+<h3 id="5-测试连通性">5 测试连通性</h3>
+
+<pre><code>&gt; ping
+</code></pre>
+
+<h2 id="二-key-操作命令">二、key 操作命令</h2>
+
+<h3 id="1-获取所有键">1 获取所有键</h3>
+
+<blockquote>
+<p>语法：keys pattern</p>
+
+<pre><code>&gt; keys *
+</code></pre>
+
+<ul>
+<li>* 表示通配符，表示任意字符，会遍历所有键显示所有的键列表，时间复杂度O(n)，在生产环境不建议使用。<br /></li>
+</ul>
+</blockquote>
+
+<h3 id="2-获取键总数">2 获取键总数</h3>
+
+<blockquote>
+<p>语法：dbsize
+- 获取键总数时不会遍历所有的键，直接获取内部变量，时间复杂度O(1)。</p>
+</blockquote>
+
+<h3 id="3-查询键是否存在">3 查询键是否存在</h3>
+
+<blockquote>
+<p>语法：exists key [key &hellip;]
+- 可查询多个key，返回存在的个数。</p>
+</blockquote>
+
+<h3 id="4-删除键">4 删除键</h3>
+
+<blockquote>
+<p>语法：del key [key &hellip;]
+- 可以删除多个key，返回删除成功的个数。</p>
+</blockquote>
+
+<h3 id="5-查询键类型">5 查询键类型</h3>
+
+<blockquote>
+<p>语法：type key</p>
+</blockquote>
+
+<h3 id="6-移动键">6 移动键</h3>
+
+<blockquote>
+<p>语法：move key db
+如把 javastack 移到 2 号数据库：</p>
+
+<pre><code>&gt; move javastack 2
+(integer) 1
+&gt; select 2
+OK
+&gt; keys *
+1) &quot;javastack&quot;
+</code></pre>
+</blockquote>
+
+<h3 id="7-查询-key-的生命周期-秒">7 查询 key 的生命周期（秒）</h3>
+
+<blockquote>
+<p>秒语法：ttl key
+毫秒语法：pttl key</p>
+</blockquote>
+
+<pre><code>&gt; ttl javastack
+(integer) -1
+</code></pre>
+
+<ul>
+<li>-1: 永不过期。</li>
+</ul>
+
+<h3 id="8-设置过期时间">8 设置过期时间</h3>
+
+<blockquote>
+<p>秒语法：expire key seconds
+毫秒语法：pexpire key milliseconds</p>
+</blockquote>
+
+<h3 id="9-设置永不过期">9 设置永不过期</h3>
+
+<blockquote>
+<p>语法：persist key</p>
+</blockquote>
+
+<h3 id="10-更改键名称">10 更改键名称</h3>
+
+<blockquote>
+<p>语法：rename key newkey</p>
+</blockquote>
+
+<h2 id="三-字符串操作命令">三、字符串操作命令</h2>
+
+<p>字符串是Redis中最基本的数据类型，单个数据能存储的最大空间是512M。</p>
+
+<h3 id="1-存放键值">1 存放键值</h3>
+
+<blockquote>
+<p>语法：set key value [EX seconds] [PX milliseconds] [NX|XX]</p>
+</blockquote>
+
+<p>nx: 如果 key 不存在则建立；<br />
+xx: 如果 key 存在则修改其值；</p>
+
+<h3 id="2-获取键值">2 获取键值</h3>
+
+<blockquote>
+<p>语法：get key</p>
+</blockquote>
+
+<h3 id="3-值递增-递减">3 值递增/递减</h3>
+
+<p>如果字符串中的值是数字类型的，可以使用incr命令每次递增，不是数字类型则报错。<br />
+&gt; 语法：incr key</p>
+
+<p>如果字符串中的值是数字类型的，可以使用incr命令每次递增，不是数字类型则报错。<br />
+同样，递减使用decr、decrby命令。</p>
+
+<h3 id="4-批量存放键值">4 批量存放键值</h3>
+
+<blockquote>
+<p>语法：mset key value [key value &hellip;]</p>
+</blockquote>
+
+<h3 id="5-批量获取键值">5 批量获取键值</h3>
+
+<blockquote>
+<p>语法：mget key [key &hellip;]</p>
+</blockquote>
+
+<p>Redis接收的是UTF-8的编码，如果是中文一个汉字将占3位返回。</p>
+
+<h3 id="6-获取值长度">6 获取值长度</h3>
+
+<blockquote>
+<p>语法：strlen key</p>
+</blockquote>
+
+<h3 id="7-追加内容">7 追加内容</h3>
+
+<blockquote>
+<p>语法：append key value</p>
+</blockquote>
+
+<p>向键值尾部拼接字符串。</p>
+
+<h3 id="8-获取部分字符">8 获取部分字符</h3>
+
+<blockquote>
+<p>语法：getrange key start end</p>
+</blockquote>
+
+<h2 id="四-集合操作命令">四、集合操作命令</h2>
+
+<p>集合类型和列表类型相似，只不过是集合是无序且不可重复的。</p>
+
+<h3 id="集合">集合</h3>
+
+<h4 id="1-存储值">1 存储值</h4>
+
+<blockquote>
+<p>语法：sadd key member [member &hellip;]</p>
+
+<pre><code>&gt; sadd langs java php c++ go ruby python kotlin java
+(integer) 7
+</code></pre>
+</blockquote>
+
+<h4 id="2-获取元素">2 获取元素</h4>
+
+<blockquote>
+<p>获取所有元素语法：smembers key</p>
+
+<p>随机获取元素语法：srandmember key count
+- 随机获取集合中 count 指定个数的元素</p>
+</blockquote>
+
+<h4 id="3-判断集合是否存在元素">3 判断集合是否存在元素</h4>
+
+<blockquote>
+<p>语法：sismember key member</p>
+</blockquote>
+
+<h4 id="4-获取集合元素个数">4 获取集合元素个数</h4>
+
+<blockquote>
+<p>语法：scard key</p>
+</blockquote>
+
+<h4 id="5-删除集合元素">5 删除集合元素</h4>
+
+<blockquote>
+<p>语法：srem key member [member &hellip;]</p>
+</blockquote>
+
+<h4 id="6-弹出元素">6 弹出元素</h4>
+
+<blockquote>
+<p>语法：spop key [count]</p>
+</blockquote>
+
+<h3 id="有序集合">有序集合</h3>
+
+<p>和列表的区别：</p>
+
+<ol>
+<li><p>列表使用链表实现，两头快，中间慢。有序集合是散列表和跳跃表实现的，即使读取中间的元素也比较快。</p></li>
+
+<li><p>列表不能调整元素位置，有序集合能。</p></li>
+
+<li><p>有序集合比列表更占内存。</p></li>
+</ol>
+
+<h4 id="1-存储值-1">1 存储值</h4>
+
+<blockquote>
+<p>语法：zadd key [NX|XX] [CH] [INCR] score member [score member &hellip;]</p>
+
+<pre><code>&gt; zadd fooCounts 16011 tid 20023 huny 2893 nosy
+(integer) 3 
+</code></pre>
+</blockquote>
+
+<h4 id="2-获取元素分数">2 获取元素分数</h4>
+
+<blockquote>
+<p>语法：zscore key member</p>
+
+<pre><code>&gt; zscore footCounts tid
+&quot;16011&quot;
+</code></pre>
+
+<p>获取指定范围排名语法：zrange key start stop [WITHSCORES]</p>
+
+<pre><code>// 获取所有，没有分数
+&gt; zrange footCounts 0 -1
+1) &quot;nosy&quot;
+2) &quot;tid&quot;
+3) &quot;huny&quot;
+
+// 获取所有及分数
+&gt; zrange footCounts 0 -1 Withscores
+1) &quot;nosy&quot;
+2) &quot;2893&quot;
+3) &quot;tid&quot;
+4) &quot;16011&quot;
+5) &quot;huny&quot;
+6) &quot;20082&quot;
+</code></pre>
+
+<p>获取指定分数范围排名语法：zrangebyscore key min max [WITHSCORES] [LIMIT offset count]</p>
+</blockquote>
+
+<h4 id="3-增加指定元素分数">3 增加指定元素分数</h4>
+
+<blockquote>
+<p>zincrby key increment member</p>
+</blockquote>
+
+<h4 id="4-获取集合元素个数-1">4 获取集合元素个数</h4>
+
+<blockquote>
+<p>语法：zcard key</p>
+</blockquote>
+
+<h4 id="5-获取指定范围分数个数">5 获取指定范围分数个数</h4>
+
+<blockquote>
+<p>语法：zcount key min max</p>
+</blockquote>
+
+<h4 id="6-删除指定元素">6 删除指定元素</h4>
+
+<blockquote>
+<p>语法：zrem key member [member &hellip;]</p>
+</blockquote>
+
+<h4 id="7-获取元素排名">7 获取元素排名</h4>
+
+<blockquote>
+<p>语法 zrank key member</p>
+</blockquote>
+
+<h2 id="五-列表操作命令">五、列表操作命令</h2>
+
+<p>列表类型是一个有序的字段串列表，内部是使用双向链表实现，所有可以向两端操作元素，获取两端的数据速度快，通过索引到具体的行数比较慢。<br />
+列表类型的元素是有序且可以重复的。</p>
+
+<h3 id="1-存储值-2">1 存储值</h3>
+
+<blockquote>
+<p>左端存值语法：lpush key value [value &hellip;]
+右端存值语法：rpush key value [value &hellip;]
+索引存值语法：lset key index value</p>
+</blockquote>
+
+<h3 id="2-弹出元素">2 弹出元素</h3>
+
+<blockquote>
+<p>左侧弹出语法：lpop key
+右侧弹出语法：rpop key</p>
+</blockquote>
+
+<h3 id="3-获取元素个数">3 获取元素个数</h3>
+
+<blockquote>
+<p>语法：llen key</p>
+</blockquote>
+
+<h3 id="4-获取列表元素">4 获取列表元素</h3>
+
+<blockquote>
+<p>两边获取语法：lrange key start stop</p>
+
+<pre><code>&gt; lpush users tom kitty land pony jack maddy
+(integer) 6
+
+&gt; lrange users 0 3
+1) &quot;maddy&quot;
+2) &quot;jack&quot;
+3) &quot;pony&quot;
+4) &quot;land&quot;
+
+// 获取所有
+&gt; lrange users 0 -1
+1) &quot;maddy&quot;
+2) &quot;jack&quot;
+3) &quot;pony&quot;
+4) &quot;land&quot;
+5) &quot;kitty&quot;
+6) &quot;tom&quot;
+
+// 从右端索引
+&gt; lrange users -3 -1
+1) &quot;land&quot;
+2) &quot;kitty&quot;
+3) &quot;tom&quot;
+</code></pre>
+
+<p>索引获取语法：lindex key index</p>
+
+<pre><code>&gt; lindex list 2
+&quot;ketty&quot;
+
+// 从右端获取
+&gt; lindex list -5
+&quot;sady&quot;
+</code></pre>
+</blockquote>
+
+<h3 id="5-删除元素">5 删除元素</h3>
+
+<blockquote>
+<p>根据值删除语法：lrem key count value</p>
+
+<pre><code>&gt; lpush userids 111 222 111 222 222 333 222 222
+(integer) 8
+
+// count=0 删除所有
+&gt; lrem userids 0 111
+(integer) 2
+
+// count &gt; 0 从左端删除前count个
+&gt; lrem userids 3 222
+(integer) 3
+
+// count &lt; 0 从右端删除前count个
+&gt; lrem userids -3 222
+(integer) 2
+</code></pre>
+
+<p>范围删除语法：ltrim key start stop</p>
+
+<pre><code>// 只保留2-4之间的元素
+&gt; ltrim list 2 4
+OK
+</code></pre>
+</blockquote>
+
+<h2 id="六-散列操作命令">六、散列操作命令</h2>
+
+<p>redis字符串类型键和值是字典结构形式，这里的散列类型其值也可以是字典结构。</p>
+
+<h3 id="1-存放键值-1">1 存放键值</h3>
+
+<blockquote>
+<p>单个语法：hset key field value</p>
+
+<pre><code>&gt; hset user name javastack
+(integer) 1
+</code></pre>
+
+<p>多个语法：hmset key field value [field value &hellip;]</p>
+
+<pre><code>&gt; hmset user name javastack age 20 address china
+OK
+</code></pre>
+
+<p>不存在时语法：hsetnx key field value</p>
+
+<pre><code>&gt; hsetnx user tall 180
+(integer) 0
+</code></pre>
+</blockquote>
+
+<h3 id="2-获取字段值">2 获取字段值</h3>
+
+<blockquote>
+<p>单个语法：hget key field</p>
+</blockquote>
+
+<pre><code>&gt; hget user age
+&quot;20&quot;
+</code></pre>
+
+<blockquote>
+<p>多个语法：hmget key field [field &hellip;]</p>
+</blockquote>
+
+<pre><code>&gt; hmget user name age address
+1) &quot;javastack&quot;
+2) &quot;20&quot;
+3) &quot;china&quot;
+</code></pre>
+
+<blockquote>
+<p>获取所有键与值语法：hgetall key</p>
+</blockquote>
+
+<pre><code>&gt; hgetall user
+1) &quot;name&quot;
+2) &quot;javastack&quot;
+3) &quot;age&quot;
+4) &quot;20&quot;
+5) &quot;address&quot;
+6) &quot;china&quot;
+</code></pre>
+
+<blockquote>
+<p>获取所有字段语法：hkeys key</p>
+</blockquote>
+
+<pre><code>&gt; hkeys user
+1) &quot;name&quot;
+2) &quot;address&quot;
+3) &quot;tall&quot;
+4) &quot;age&quot;
+</code></pre>
+
+<blockquote>
+<p>获取所有值语法：hvals key</p>
+</blockquote>
+
+<pre><code>&gt; hvals user
+1) &quot;javastack&quot;
+2) &quot;china&quot;
+3) &quot;170&quot;
+4) &quot;20&quot;
+</code></pre>
+
+<h3 id="3-判断字段是否存在">3 判断字段是否存在</h3>
+
+<blockquote>
+<p>语法：hexists key field</p>
+</blockquote>
+
+<pre><code>&gt; hexists user address
+(integer) 1
+</code></pre>
+
+<h3 id="4-获取字段数量">4 获取字段数量</h3>
+
+<blockquote>
+<p>语法：hlen key</p>
+</blockquote>
+
+<pre><code>&gt; hlen user
+(integer) 4
+</code></pre>
+
+<h3 id="5-递增-减">5 递增/减</h3>
+
+<blockquote>
+<p>语法：hincrby key field increment</p>
+</blockquote>
+
+<pre><code>&gt; hincrby user tall -10
+(integer) 170
+</code></pre>
+
+<h3 id="6-删除字段">6 删除字段</h3>
+
+<blockquote>
+<p>语法：hdel key field [filed &hellip;]</p>
+</blockquote>
+
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://rjguanwen.cn/2020/02/adr/" title="架构决策记录（ADR）"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+            </li>
+            <li class="next">
+                <a href="https://rjguanwen.cn/2020/06/docker_01/"
+                    title="Docker常用命令"><span>下一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat"
+                data-mobile-sites="weibo,qq,qzone,wechat"></div>
+        </div>
+    </div>
+</nav>
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/rjguanwen" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://rjguanwen.cn/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2017  -
+    2020
+    
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+   window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/rust.min.js"></script>
+<script type="text/javascript"
+   src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script>
+hljs.configure({
+  tabReplace: '    ', 
+  classPrefix: ''     
+                      
+})
+hljs.initHighlightingOnLoad();
+</script>
+<script type="text/javascript" src="https://rjguanwen.cn/js/application.js"></script>
+<script type="text/javascript" src="https://rjguanwen.cn/js/plugin.js"></script>
+<script>
+      (function (window) {
+          var INSIGHT_CONFIG = {
+              TRANSLATION: {
+                  POSTS: '文章',
+                  PAGES: '页面',
+                  CATEGORIES: '分类',
+                  TAGS: '标签',
+                  UNTITLED: '(未命名)',
+              },
+              ROOT_URL: 'https:\/\/rjguanwen.cn\/',
+              CONTENT_URL: 'https:\/\/rjguanwen.cn\/\/searchindex.json ',
+          };
+          window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+      })(window);
+      </script>
+<script type="text/javascript" src="https://rjguanwen.cn/js/insight.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: 'fa63cb30ceea59ed6d75',
+        clientSecret: 'e06b033c38c44b3bc8d2bf15aa4ef888c6548e90',
+        repo: 'rjguanwen-blog-comments',
+        owner: 'rjguanwen',
+        admin: ['rjguanwen'],
+        id: md5(location.pathname),
+        distractionFreeMode: true
+    });
+    gitalk.render('comments');
+</script>
+  </body>
+</html>

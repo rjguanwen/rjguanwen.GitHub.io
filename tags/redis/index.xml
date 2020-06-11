@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>redis on 飞光</title>
+    <link>https://rjguanwen.cn/tags/redis/</link>
+    <description>Recent content in redis on 飞光</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 05 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://rjguanwen.cn/tags/redis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Redis 常用命令</title>
+      <link>https://rjguanwen.cn/2020/06/redis_01/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2020/06/redis_01/</guid>
+      <description>Redis 常用命令，备查！ &amp;lt;部分内容摘抄自网络，如有侵权，预先道歉，请及时联系（rjguanwen001@163.com），我会尽快删除，谢谢</description>
+    </item>
+    
+  </channel>
+</rss>
