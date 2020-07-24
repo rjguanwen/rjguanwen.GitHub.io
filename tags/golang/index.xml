@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>GOLANG on 飞光</title>
+    <title>golang on 飞光</title>
     <link>https://rjguanwen.cn/tags/golang/</link>
-    <description>Recent content in GOLANG on 飞光</description>
+    <description>Recent content in golang on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 21 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://rjguanwen.cn/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Gin Quickstart</title>
+      <link>https://rjguanwen.cn/2020/06/gin_01/</link>
+      <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2020/06/gin_01/</guid>
+      <description>Gin 使基于 go 语言的一个 web 框架，接口简洁，封装比较优雅，性能表现很好。 Gin 特性 快速：路由不使用反射，基于Radix树，内存占用少。 中间件：HTTP</description>
+    </item>
+    
+    <item>
+      <title>Gin Quickstart</title>
+      <link>https://rjguanwen.cn/2020/06/gin_02/</link>
+      <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2020/06/gin_02/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>gomod使用记录</title>

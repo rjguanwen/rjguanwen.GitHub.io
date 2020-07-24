@@ -4,7 +4,77 @@
   
   <url>
     <loc>https://rjguanwen.cn/categories/</loc>
-    <lastmod>2020-06-05T00:00:00+00:00</lastmod>
+    <lastmod>2020-06-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/categories/gin/</loc>
+    <lastmod>2020-06-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/tags/gin/</loc>
+    <lastmod>2020-06-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/2020/06/gin_01/</loc>
+    <lastmod>2020-06-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/2020/06/gin_02/</loc>
+    <lastmod>2020-06-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/tags/golang/</loc>
+    <lastmod>2020-06-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/tags/</loc>
+    <lastmod>2020-06-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/tags/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/</loc>
+    <lastmod>2020-06-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2020-06-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/posts/</loc>
+    <lastmod>2020-06-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/</loc>
+    <lastmod>2020-06-13T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -46,34 +116,6 @@
   
   <url>
     <loc>https://rjguanwen.cn/2020/06/redis_01/</loc>
-    <lastmod>2020-06-05T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://rjguanwen.cn/tags/</loc>
-    <lastmod>2020-06-05T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2020-06-05T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://rjguanwen.cn/posts/</loc>
-    <lastmod>2020-06-05T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://rjguanwen.cn/</loc>
     <lastmod>2020-06-05T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -241,13 +283,6 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/golang/</loc>
-    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://rjguanwen.cn/2019/11/gomod_use/</loc>
     <lastmod>2019-11-21T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -318,14 +353,14 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/%E8%AF%97%E8%AF%8D/</loc>
+    <loc>https://rjguanwen.cn/categories/%E8%AF%97%E8%AF%8D/</loc>
     <lastmod>2019-11-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/categories/%E8%AF%97%E8%AF%8D/</loc>
+    <loc>https://rjguanwen.cn/tags/%E8%AF%97%E8%AF%8D/</loc>
     <lastmod>2019-11-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
