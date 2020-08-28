@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        Go 文件操作 - 飞光
+      </title>
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="使用 GO 语言操作文件总结" />
+  <meta name="generator" content="Hugo 0.59.1 with theme pure" />
+  <title>Go 文件操作 - 飞光</title>
+  
+
+  <link rel="stylesheet" href="https://rjguanwen.cn/css/style.css">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <meta property="og:title" content="Go 文件操作" />
+<meta property="og:description" content="使用 GO 语言操作文件总结" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rjguanwen.cn/1/01/go_file/" />
+
+<meta itemprop="name" content="Go 文件操作">
+<meta itemprop="description" content="使用 GO 语言操作文件总结">
+
+
+
+<meta itemprop="wordCount" content="6170">
+
+
+
+<meta itemprop="keywords" content="技术,GOLANG," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Go 文件操作"/>
+<meta name="twitter:description" content="使用 GO 语言操作文件总结"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  </head>
+  <body class="main-center" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/rjguanwen" target="_blank">
+            <img class="img-circle img-rotate" src="https://rjguanwen.cn/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">rjguanwen</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">食熊则肥  食蛙则瘦</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>山东 济南</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-主页">
+                <a href="/">
+                  <span class="menu-title">主页</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-文章">
+                <a href="/posts">
+                  <span class="menu-title">文章</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-目录">
+                <a href="/categories">
+                  <span class="menu-title">目录</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-标签">
+                <a href="/tags">
+                  <span class="menu-title">标签</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-关于">
+                <a href="/about">
+                  <span class="menu-title">关于</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>临渊羡鱼，<br/>不如退而结网！</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> 分类</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/centrifugo/" class="category-list-link">centrifugo</a><span class="category-list-count">10</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/docker/" class="category-list-link">docker</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/gin/" class="category-list-link">gin</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/git/" class="category-list-link">git</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/golang/" class="category-list-link">golang</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/redis/" class="category-list-link">redis</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/" class="category-list-link">杂七杂八</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/" class="category-list-link">系统架构</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/%E8%AF%97%E8%AF%8D/" class="category-list-link">诗词</a><span class="category-list-count">1</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/centrifugo/" class="tag-list-link">centrifugo</a><span
+                    class="tag-list-count">10</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/docker/" class="tag-list-link">docker</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/gin/" class="tag-list-link">gin</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/git/" class="tag-list-link">git</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/golang/" class="tag-list-link">golang</a><span
+                    class="tag-list-count">5</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/redis/" class="tag-list-link">redis</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E4%B8%AA%E4%BA%BA/" class="tag-list-link">个人</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E5%85%89%E9%98%B4/" class="tag-list-link">光阴</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E5%8F%A5%E5%AD%90/" class="tag-list-link">句子</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/" class="tag-list-link">开发框架</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/" class="tag-list-link">技术</a><span
+                    class="tag-list-count">22</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E6%9D%82%E6%84%9F%E9%9A%8F%E7%AC%94/" class="tag-list-link">杂感随笔</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E8%AF%97%E8%AF%8D/" class="tag-list-link">诗词</a><span
+                    class="tag-list-count">1</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://rjguanwen.cn/2020/06/gin_01/" class="title">Gin Quickstart</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-06-13 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-06-13</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://rjguanwen.cn/2020/06/gin_02/" class="title">Gin Quickstart</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-06-13 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-06-13</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://rjguanwen.cn/2020/06/docker_01/" class="title">Docker常用命令</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-06-05 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-06-05</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://rjguanwen.cn/2020/06/redis_01/" class="title">Redis 常用命令</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-06-05 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-06-05</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://rjguanwen.cn/2020/02/adr/" class="title">架构决策记录（ADR）</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-02-29 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-02-29</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+  <aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+    <div class="slimContent">
+      <nav id="toc" class="article-toc">
+        <h3 class="toc-title">文章目录</h3>
+        <div class="toc-content always-active"><nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#go-文件操作总结">Go 文件操作总结</a>
+<ul>
+<li><a href="#1-基本操作">1、基本操作</a>
+<ul>
+<li><a href="#1-1-创建文件">1.1 创建文件</a></li>
+<li><a href="#1-2-truncate文件">1.2 Truncate文件</a></li>
+<li><a href="#1-3-获取文件信息">1.3 获取文件信息</a></li>
+<li><a href="#1-4-重命名和移动">1.4 重命名和移动</a></li>
+<li><a href="#1-5-删除文件">1.5 删除文件</a></li>
+<li><a href="#1-6-打开和关闭文件">1.6 打开和关闭文件</a></li>
+<li><a href="#1-7-检查文件是否存在">1.7 检查文件是否存在</a></li>
+<li><a href="#1-8-检查读写权限">1.8 检查读写权限</a></li>
+<li><a href="#1-9-改变权限-拥有者-时间戳">1.9 改变权限、拥有者、时间戳</a></li>
+<li><a href="#1-10-硬链接与软链接">1.10 硬链接与软链接</a></li>
+</ul></li>
+<li><a href="#2-读写文件">2、读写文件</a>
+<ul>
+<li><a href="#2-1-复制文件">2.1 复制文件</a></li>
+<li><a href="#2-2-跳转到文件指定位置-seek">2.2 跳转到文件指定位置（Seek）</a></li>
+<li><a href="#2-3-写文件">2.3 写文件</a></li>
+<li><a href="#2-4-快写文件">2.4 快写文件</a></li>
+<li><a href="#2-5-使用缓存写">2.5 使用缓存写</a></li>
+<li><a href="#2-6-读取最多-n-个字节">2.6 读取最多 N 个字节</a></li>
+<li><a href="#2-7-读取正好-n-个字节">2.7 读取正好 N 个字节</a></li>
+<li><a href="#2-8-读取至少-n-个字节">2.8 读取至少 N 个字节</a></li>
+<li><a href="#2-9-读取全部字节">2.9 读取全部字节</a></li>
+<li><a href="#2-10-快读到内存">2.10 快读到内存</a></li>
+<li><a href="#2-11-使用缓存读">2.11 使用缓存读</a></li>
+<li><a href="#2-12-使用-scanner">2.12 使用 scanner</a></li>
+</ul></li>
+<li><a href="#3-压缩">3、压缩</a>
+<ul>
+<li><a href="#3-1-打包-zip-文件">3.1 打包（zip）文件</a></li>
+<li><a href="#3-2-抽取-unzip-文件">3.2 抽取（unzip）文件</a></li>
+<li><a href="#3-3-压缩文件">3.3 压缩文件</a></li>
+<li><a href="#3-4-解压缩文件">3.4 解压缩文件</a></li>
+</ul></li>
+<li><a href="#4-其他">4、其他</a>
+<ul>
+<li><a href="#4-1-临时文件和目录">4.1 临时文件和目录</a></li>
+<li><a href="#4-2-通过-http-下载文件">4.2 通过 HTTP 下载文件</a></li>
+<li><a href="#4-3-哈希和摘要">4.3 哈希和摘要</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+      </nav>
+    </div>
+  </aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/1/01/go_file/"
+    >Go 文件操作</a
+  >
+</h1>
+
+      <div class="article-meta">
+        <span class="article-date">
+  <i class="icon icon-calendar-check"></i>
+<a href="https://rjguanwen.cn/1/01/go_file/" class="article-date">
+  <time datetime="0001-01-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">0001-01-01</time>
+</a>
+</span><span class="article-category">
+  <i class="icon icon-folder"></i>
+  <a class="article-category-link" href="/categories/golang/"> GOLANG </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+    <a class="article-tag-link" href="/tags/%E6%8A%80%E6%9C%AF/"> 技术 </a>
+    <a class="article-tag-link" href="/tags/golang/"> GOLANG </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/1/01/go_file/#comments"
+            class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:6170字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长:13分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+
+<p><em>&lt;部分内容借鉴自网络，如有侵权，预先道歉，请及时联系（rjguanwen001@163.com），我会尽快删除，谢谢！&gt;</em></p>
+
+<h2 id="go-文件操作总结">Go 文件操作总结</h2>
+
+<h3 id="1-基本操作">1、基本操作</h3>
+
+<h4 id="1-1-创建文件">1.1 创建文件</h4>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;log&quot;
+	&quot;os&quot;
+)
+
+func main() {
+	newFile, err := os.Create(&quot;example_1.txt&quot;)
+	if err != nil {
+		log.Fatal(err)
+	}
+	newFile.Close()
+}
+</code></pre>
+
+<h4 id="1-2-truncate文件">1.2 Truncate文件</h4>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;log&quot;
+	&quot;os&quot;
+)
+
+func main(){
+	// 裁剪一个文件到100个字节。
+	// 如果文件本来就少于100个字节，则文件中原始内容得以保留，剩余的字节以null字节填充。
+	// 如果文件本来超过100个字节，则超过的字节会被抛弃。
+	// 这样我们总是得到精确的100个字节的文件。
+	// 传入0则会清空文件。
+	err := os.Truncate(&quot;example_1.txt&quot;, 100)
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+</code></pre>
+
+<h4 id="1-3-获取文件信息">1.3 获取文件信息</h4>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;fmt&quot;
+	&quot;log&quot;
+	&quot;os&quot;
+)
+
+func main(){
+	fi, err := os.Stat(&quot;example_1.txt&quot;)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println(&quot;文件名：&quot;,fi.Name())
+	fmt.Println(&quot;文件大小：&quot;, fi.Size())
+	fmt.Println(&quot;权限：&quot;, fi.Mode())
+	fmt.Println(&quot;最后修改时间：&quot;, fi.ModTime())
+	fmt.Println(&quot;是否文件夹：&quot;, fi.IsDir())
+	fmt.Println(&quot;系统信息：&quot;, fi.Sys())
+}
+</code></pre>
+
+<h4 id="1-4-重命名和移动">1.4 重命名和移动</h4>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;log&quot;
+	&quot;os&quot;
+)
+
+func main() {
+	// 在 windows 下，通过 Rename 将文件跨卷移动，会报错
+	// 当文件 open 后，未 close 时，Rename 方法貌似不起作用，
+	// 并且也不会报错，需要注意
+	oldPath := &quot;example_1.txt&quot;
+	newPath := &quot;example_4.txt&quot;
+	err := os.Rename(oldPath, newPath)
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+</code></pre>
+
+<h4 id="1-5-删除文件">1.5 删除文件</h4>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;log&quot;
+	&quot;os&quot;
+)
+
+func main() {
+	err := os.Remove(&quot;example_1.txt&quot;)
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+</code></pre>
+
+<h4 id="1-6-打开和关闭文件">1.6 打开和关闭文件</h4>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;log&quot;
+	&quot;os&quot;
+)
+
+func main() {
+	// 以只读方式打开文件
+	file, err := os.Open(&quot;example_1.txt&quot;)
+	if err != nil {
+		log.Fatal(err)
+	}
+	file.Close()
+
+	// 第二个参数为打开文件时的属性，可以多个组合使用
+	// 第三个参数为权限模式
+	file, err = os.OpenFile(&quot;example_1.txt&quot;, os.O_APPEND, 0666)
+	if err != nil {
+		log.Fatal(err)
+	}
+	file.Close()
+
+	// 以下为可组合使用的文件属性
+	//os.O_RDONLY		// 只读
+	//os.O_WRONLY		// 只写
+	//os.O_RDWR			// 读写
+	//os.O_APPEND		// 向文件中添加
+	//os.O_CREATE		// 如果文件不存在则先创建
+	//os.O_TRUNC		// 文件打开时裁剪文件
+	//os.O_EXCL			//
+	//os.O_SYNC			// 以同步I/O方式打开
+}
+</code></pre>
+
+<h4 id="1-7-检查文件是否存在">1.7 检查文件是否存在</h4>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;fmt&quot;
+	&quot;os&quot;
+)
+
+func main() {
+	_, err := os.Stat(&quot;example_2.txt&quot;)
+	fileExist :=  err == nil || os.IsExist(err)
+	fmt.Println(fileExist)
+}
+</code></pre>
+
+<h4 id="1-8-检查读写权限">1.8 检查读写权限</h4>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;log&quot;
+	&quot;os&quot;
+)
+
+func main() {
+
+	// 测试写权限，如果文件是只读或者其他原因导致不具备写入权限，则返回 error
+	file, err := os.OpenFile(&quot;example_1.txt&quot;, os.O_WRONLY, 0666)
+	if err != nil {
+		if os.IsPermission(err) {
+			log.Println(&quot;错误：无写入权限！&quot;)
+		}
+	}
+	file.Close()
+
+	// 测试读权限
+	file, err = os.OpenFile(&quot;example_1.txt&quot;, os.O_RDONLY, 0666)
+	if err != nil {
+		if os.IsPermission(err) {
+			log.Println(&quot;错误：无读取权限！&quot;)
+		}
+	}
+	file.Close()
+}
+</code></pre>
+
+<h4 id="1-9-改变权限-拥有者-时间戳">1.9 改变权限、拥有者、时间戳</h4>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;log&quot;
+	&quot;os&quot;
+	&quot;time&quot;
+)
+
+func main() {
+	// 使用 Linux 风格改变文件权限
+	err := os.Chmod(&quot;example_1.txt&quot;, 0777)
+	if err != nil {
+		log.Println(err)
+	}
+
+	// 改变文件所有者 (not supported by windows)
+	err = os.Chown(&quot;example_1.txt&quot;, os.Getuid(), os.Getgid())
+	if err != nil {
+		log.Println(err)
+	}
+
+	// 改变时间戳
+	oneDaysFromNow := time.Now().Add(24 * time.Hour)
+	lastAccessTime := oneDaysFromNow
+	lastModifyTime := oneDaysFromNow
+
+	err = os.Chtimes(&quot;example_1.txt&quot;, lastAccessTime, lastModifyTime)
+	if err != nil {
+		log.Println(err)
+	}
+}
+</code></pre>
+
+<h4 id="1-10-硬链接与软链接">1.10 硬链接与软链接</h4>
+
+<p>一个普通的文件是一个指向硬盘的inode的地方。<br />
+硬链接创建一个新的指针指向同一个地方。只有所有的链接被删除后文件才会被删除。硬链接只在相同的文件系统中才工作。你可以认为一个硬链接是一个正常的链接。<br />
+symbolic link，又叫软连接，和硬链接有点不一样，它不直接指向硬盘中的相同的地方，而是通过名字引用其它文件。他们可以指向不同的文件系统中的不同文件。并不是所有的操作系统都支持软链接。</p>
+
+<pre><code class="language-(go)">package main
+import (
+    &quot;os&quot;
+    &quot;log&quot;
+    &quot;fmt&quot;
+)
+func main() {
+    // 创建一个硬链接。
+    // 创建后同一个文件内容会有两个文件名，改变一个文件的内容会影响另一个。
+    // 删除和重命名不会影响另一个。
+    err := os.Link(&quot;original.txt&quot;, &quot;original_also.txt&quot;)
+    if err != nil {
+        log.Fatal(err)
+    }
+    fmt.Println(&quot;creating sym&quot;)
+    // Create a symlink
+    err = os.Symlink(&quot;original.txt&quot;, &quot;original_sym.txt&quot;)
+    if err != nil {
+        log.Fatal(err)
+    }
+    // Lstat返回一个文件的信息，但是当文件是一个软链接时，它返回软链接的信息，而不是引用的文件的信息。
+    // Symlink在Windows中不工作。
+    fileInfo, err := os.Lstat(&quot;original_sym.txt&quot;)
+    if err != nil {
+        log.Fatal(err)
+    }
+    fmt.Printf(&quot;Link info: %+v&quot;, fileInfo)
+    //改变软链接的拥有者不会影响原始文件。
+    err = os.Lchown(&quot;original_sym.txt&quot;, os.Getuid(), os.Getgid())
+    if err != nil {
+        log.Fatal(err)
+    }
+}
+</code></pre>
+
+<h3 id="2-读写文件">2、读写文件</h3>
+
+<h4 id="2-1-复制文件">2.1 复制文件</h4>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;io&quot;
+	&quot;log&quot;
+	&quot;os&quot;
+)
+
+func main() {
+	//打开文件
+	oFile, err := os.Open(&quot;example_1.txt&quot;)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer oFile.Close()
+
+	// 创建新文件
+	nFile, err := os.Create(&quot;example_copy.txt&quot;)
+	if err != nil {
+		log.Fatalln(err)
+	}
+	defer nFile.Close()
+
+	// 从源文件复制字节到目标文件
+	bytesWritten, err := io.Copy(nFile, oFile)
+	if err != nil {
+		log.Fatalln(err)
+	}
+	log.Printf(&quot;已复制 %d 字节。&quot;, bytesWritten)
+
+	err = nFile.Sync()
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+</code></pre>
+
+<h4 id="2-2-跳转到文件指定位置-seek">2.2 跳转到文件指定位置（Seek）</h4>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;fmt&quot;
+	&quot;log&quot;
+	&quot;os&quot;
+)
+
+func main() {
+	file, _ := os.Open(&quot;example_1.txt&quot;)
+	defer file.Close()
+
+	// 偏离位置，可以是正数也可以是负数
+	var offset int64 = 5
+
+	// offset 的初始位置，即相对那个位置进行偏移
+	// 0 ：文件开始位置 	os.SEEK_SET
+	// 1 ：当前位置 		os.SEEK_CUR
+	// 2 ：文件结尾位置 	os.SEEK_END
+	var whence int = 0
+
+	newPosition, err := file.Seek(offset, whence)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println(&quot;向前移动 5：&quot;, newPosition)
+
+	// 从当前位置回退 3 个字节
+	newPosition, err = file.Seek(-3, os.SEEK_CUR)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println(&quot;向后移动 2：&quot;, newPosition)
+
+	// 获取当前位置
+	currentPosition, err := file.Seek(0, 1)
+	fmt.Println(&quot;当前位置：&quot;, currentPosition)
+
+	// 转到文件开始处
+	newPosition, err = file.Seek(0, 0)
+	if err != nil {
+		log.Fatal(err)
+	}
+	//fmt.Println(newPosition)
+}
+</code></pre>
+
+<h4 id="2-3-写文件">2.3 写文件</h4>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;log&quot;
+	&quot;os&quot;
+)
+
+func main() {
+	// 以可写方式打开文件
+	file, err := os.OpenFile(&quot;example_1.txt&quot;,
+		os.O_WRONLY | os.O_TRUNC | os.O_CREATE,
+		0666,
+		)
+
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer file.Close()
+
+	byteSlice := []byte(&quot;Hello!\n&quot;)
+	bytesWriteen, err := file.Write(byteSlice)
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Printf(&quot;写入 %d 个字节. \n&quot;, bytesWriteen)
+}
+</code></pre>
+
+<h4 id="2-4-快写文件">2.4 快写文件</h4>
+
+<p><code>ioutil</code> 包有一个方法 <code>WriteFile()</code> 可以处理创建/打开文件、写字节切片和关闭文件一些列的操作。如果你需要简洁快速地写字节切片到文件中，可以使用它。</p>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;io/ioutil&quot;
+	&quot;log&quot;
+)
+
+func main() {
+	err := ioutil.WriteFile(&quot;example_1.txt&quot;,
+		[]byte(&quot;Hi, world!\n&quot;), 0666)
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+</code></pre>
+
+<h4 id="2-5-使用缓存写">2.5 使用缓存写</h4>
+
+<p><code>bufio</code> 包提供了带缓存功能的writer，你可以在写字节到硬盘前使用内存缓存。当你处理很多数据时会很有用，因为它可以节省操作硬盘 I/O 的时间，大大提升性能并减少硬盘磨损。</p>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;bufio&quot;
+	&quot;log&quot;
+	&quot;os&quot;
+)
+
+func main() {
+	file, err := os.OpenFile(&quot;example_1.txt&quot;, os.O_WRONLY, 0666)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer file.Close()
+
+	// 创建 buffered writer
+	bufferedWriter := bufio.NewWriter(file)
+
+	// 写字节到 buffer
+	bytesWritten, err := bufferedWriter.Write([]byte{65, 66, 67},)
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Printf(&quot;写入字节数：%d \n&quot;, bytesWritten)
+
+	// 写字符串到 buffer
+	bytesWritten, err = bufferedWriter.WriteString(&quot;Hello, buffer!\n&quot;)
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Printf(&quot;写入字节数：%d \n&quot;, bytesWritten)
+
+	// 检查缓存中的字节数
+	unflushedBufferSize := bufferedWriter.Buffered()
+	log.Printf(&quot;缓存的字节数：%d \n&quot;, unflushedBufferSize)
+
+	// 还有多少字节可用（未使用的缓存大小）
+	bytesAvailable := bufferedWriter.Available()
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Printf(&quot;可用缓存1：%d \n&quot;, bytesAvailable)
+
+	// 写缓存到硬盘
+	bufferedWriter.Flush()
+
+	bytesAvailable = bufferedWriter.Available()
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Printf(&quot;可用缓存2：%d \n&quot;, bytesAvailable)
+
+	// 丢弃还没有flush的缓存的内容，清除错误并把它的输出传给参数中的writer
+	// 当你想将缓存传给另外一个writer时有用
+	bufferedWriter.Reset(bufferedWriter)
+
+	bytesAvailable = bufferedWriter.Available()
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Printf(&quot;可用缓存3：%d \n&quot;, bytesAvailable)
+
+	// 重新设置缓存的大小
+	// 第一个参数是缓存应该输出到哪里，这个例子中我们使用相同的writer。
+	// 如果我们设置的新的大小小于第一个参数writer的缓存大小， 比如10，我们不会得到一个10字节大小的缓存，
+	// 而是writer的原始大小的缓存，默认是4096。
+	// 它的功能主要还是为了扩容。
+	bufferedWriter = bufio.NewWriterSize(
+		bufferedWriter,
+		8000,
+		)
+
+	// resize 后检查缓存大小
+	bytesAvailable = bufferedWriter.Available()
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Printf(&quot;可用缓存4：%d \n&quot;, bytesAvailable)
+
+	// 设置 resize 值小于当前缓存大小，此时是不起作用的
+	bufferedWriter = bufio.NewWriterSize(
+		bufferedWriter,
+		800,
+	)
+	bytesAvailable = bufferedWriter.Available()
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Printf(&quot;可用缓存5：%d \n&quot;, bytesAvailable)
+}
+</code></pre>
+
+<h4 id="2-6-读取最多-n-个字节">2.6 读取最多 N 个字节</h4>
+
+<p><code>os.File</code> 提供了文件操作的基本功能，而 <code>io</code>、<code>ioutil</code>、<code>bufio</code> 提供了额外的辅助函数。</p>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;log&quot;
+	&quot;os&quot;
+)
+
+func main() {
+	// 以只读模式打开文件
+	file, err := os.Open(&quot;example_1.txt&quot;)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer file.Close()
+
+	// 从文件中读取指定长度的字节数据
+	byteSlice := make([]byte, 20)
+	bytesRead, err := file.Read(byteSlice)
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Printf(&quot;读取到的字节数据长度：%d\n&quot;, bytesRead)
+	log.Printf(&quot;读取到的数据：%s \n&quot;, byteSlice)
+}
+</code></pre>
+
+<h4 id="2-7-读取正好-n-个字节">2.7 读取正好 N 个字节</h4>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;io&quot;
+	&quot;log&quot;
+	&quot;os&quot;
+)
+
+func main() {
+
+	file, err := os.Open(&quot;example_1.txt&quot;)
+	if err != nil {
+		log.Fatal(err)
+	}
+	// file.Read()可以读取一个小文件到大的byte slice中，
+	// 但是io.ReadFull()在文件的字节数小于byte slice字节数的时候会返回错误
+	byteSlice := make([]byte, 5)
+	numBytesRead, err := io.ReadFull(file, byteSlice)
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Printf(&quot;读取到的字节数: %d\n&quot;, numBytesRead)
+	log.Printf(&quot;读取到的数据: %s\n&quot;, byteSlice)
+}
+</code></pre>
+
+<h4 id="2-8-读取至少-n-个字节">2.8 读取至少 N 个字节</h4>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;io&quot;
+	&quot;log&quot;
+	&quot;os&quot;
+)
+
+func main() {
+	// 打开文件，只读
+	file, err := os.Open(&quot;example_1.txt&quot;)
+	if err != nil {
+		log.Fatal(err)
+	}
+	byteSlice := make([]byte, 512)
+	minBytes := 18
+	// io.ReadAtLeast()在不能得到最小的字节的时候会返回错误，但会把已读的文件保留
+	numBytesRead, err := io.ReadAtLeast(file, byteSlice, minBytes)
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Printf(&quot;读取到的字节数: %d\n&quot;, numBytesRead)
+	log.Printf(&quot;读取到的数据: %s\n&quot;, byteSlice)
+}
+</code></pre>
+
+<h4 id="2-9-读取全部字节">2.9 读取全部字节</h4>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;fmt&quot;
+	&quot;io/ioutil&quot;
+	&quot;log&quot;
+	&quot;os&quot;
+)
+
+func main() {
+	file, err := os.Open(&quot;example_1.txt&quot;)
+	if err != nil {
+		log.Fatal(err)
+	}
+	// os.File.Read(), io.ReadFull() 和
+	// io.ReadAtLeast() 在读取之前都需要一个固定大小的byte slice。
+	// 但ioutil.ReadAll()会读取reader(这个例子中是file)的每一个字节，然后把字节slice返回。
+	data, err := ioutil.ReadAll(file)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Printf(&quot;读取到的数据（十六进制）: %x\n&quot;, data)
+	fmt.Printf(&quot;读取到的数据（字符串）: %s\n&quot;, data)
+	fmt.Println(&quot;读取到的数据长度:&quot;, len(data))
+}
+</code></pre>
+
+<h4 id="2-10-快读到内存">2.10 快读到内存</h4>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;io/ioutil&quot;
+	&quot;log&quot;
+)
+
+func main() {
+    // 直接读取，省略掉文件打开与关闭操作
+	data, err := ioutil.ReadFile(&quot;example_1.txt&quot;)
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Printf(&quot;读取到的数据：%s \n&quot;, data)
+}
+</code></pre>
+
+<h4 id="2-11-使用缓存读">2.11 使用缓存读</h4>
+
+<p>缓存 reader 会把一些内容缓存在内存中，它提供了比 <code>os.File</code> 和 <code>io.Reader</code> 更多的函数，缺省的缓存大小是 4096，最小缓存是 16。</p>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;bufio&quot;
+	&quot;fmt&quot;
+	&quot;log&quot;
+	&quot;os&quot;
+)
+
+// 使用缓存读
+func main() {
+	file, err := os.Open(&quot;example_1.txt&quot;)
+	if err != nil {
+		log.Fatal(err)
+	}
+	bufferedReader := bufio.NewReader(file)
+
+	// 读取字节，当前指针不变
+	byteSlice := make([]byte, 5)
+	byteSlice, err = bufferedReader.Peek(5)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Printf(&quot;读取 5 个字节：%s \n&quot;, byteSlice)
+
+	// 读取，指针同时移动
+	numBytesRead, err := bufferedReader.Read(byteSlice)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Printf(&quot;读取 %d 个字节：%s \n&quot;, numBytesRead, byteSlice)
+
+	// 读取一个字节，如果不成功会返回 error
+	myByte, err := bufferedReader.ReadByte()
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Printf(&quot;读取一个字节：%c \n&quot;, myByte)
+
+	// 读取到分隔符，包含分隔符
+	dataBytes, err := bufferedReader.ReadBytes('\n')
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Printf(&quot;读取字节：%s \n&quot;, dataBytes)
+
+	// 读取到分隔符，包含分隔符，返回字符串
+	dataString, err := bufferedReader.ReadString('\n')
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Printf(&quot;读取字符串：%s \n&quot;, dataString)
+}
+</code></pre>
+
+<h4 id="2-12-使用-scanner">2.12 使用 scanner</h4>
+
+<p><code>Scanner</code> 是 <code>bufio</code> 包下的类型，在处理文件中以分隔符分隔的文本时很有用。<br />
+通常我们使用换行符作为分隔符将文件内容分成多行。在 CSV 文件中，逗号一般作为一行内不同元素之间的分隔符。<br />
+<code>os.File</code> 文件可以被包装成 <code>bufio.Scanner</code>，它就像一个缓存 reader。<br />
+我们会调用 <code>Scan()</code> 方法去读取下一个分隔符，使用 <code>Text()</code> 或者 <code>Bytes()</code> 获取读取的数据。<br />
+分隔符可以不是一个简单的字节或者字符，有一个特殊的方法可以实现分隔符的功能，以及将指针移动多少，返回什么数据。<br />
+如果没有定制的 <code>SplitFunc</code> 提供，缺省的 <code>ScanLines</code> 会使用 <code>newLine</code> 字符作为分隔符，其他的分隔函数还包括 <code>ScanRunes</code> 和 <code>ScanWords</code>，皆在 <code>bufio</code> 包中。</p>
+
+<pre><code class="language-(go)">/ To define your own split function, match this fingerprint
+type SplitFunc func(data []byte, atEOF bool) (advance int, token []byte, err error)
+// Returning (0, nil, nil) will tell the scanner
+// to scan again, but with a bigger buffer because
+// it wasn't enough data to reach the delimiter
+</code></pre>
+
+<p>下面的例子，为一个文件创建 <code>bufio.Scanner</code>，并按照单词和单行读取：</p>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;bufio&quot;
+	&quot;fmt&quot;
+	&quot;log&quot;
+	&quot;os&quot;
+)
+
+func main() {
+	file, err := os.Open(&quot;example_1.txt&quot;)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	scanner := bufio.NewScanner(file)
+
+	// 缺省的分隔函数是 buffio.ScanLines，我们这里使用 ScanWords。
+	// 也可以定制一个 SplitFunc 类型的分隔函数
+	scanner.Split(bufio.ScanWords)
+
+	// scan 下一个 token。
+	success := scanner.Scan()
+	if success == false {
+		// 出现错误或者 EOF
+		err = scanner.Err()
+		if err == nil {
+			log.Println(&quot;读取完成，到达文件末尾！&quot;)
+		} else {
+			log.Fatal(err)
+		}
+	}
+
+	fmt.Println(&quot;读取到第一个单词：&quot;, scanner.Text())
+
+	//再次调用 scanner.Scan() 发下下一个 token
+	//------
+
+	file.Close()
+
+	file2, err := os.Open(&quot;example_1.txt&quot;)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer file2.Close()
+
+	// 尝试按行读取
+	scannerLines := bufio.NewScanner(file2)
+	scannerLines.Split(bufio.ScanLines)
+	for  {
+		success2 := scannerLines.Scan()
+		if success2 == false {
+			// 出现错误或者 EOF
+			err = scannerLines.Err()
+			if err == nil {
+				log.Println(&quot;读取完成，到达文件末尾！&quot;)
+			} else {
+				log.Fatal(err)
+			}
+			break
+		} else {
+			fmt.Printf(&quot;读取到行：&lt;%s&gt;\n&quot;, scannerLines.Text())
+		}
+	}
+}
+</code></pre>
+
+<h3 id="3-压缩">3、压缩</h3>
+
+<h4 id="3-1-打包-zip-文件">3.1 打包（zip）文件</h4>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;archive/zip&quot;
+	&quot;log&quot;
+	&quot;os&quot;
+)
+
+// 标准库支持zip 及 tar 格式打包
+func main() {
+
+	outFile, err := os.Create(&quot;example_1.zip&quot;)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer outFile.Close()
+
+	// 创建 zip writer
+	zipWriter := zip.NewWriter(outFile)
+
+	// 往打包文件中写入文件及数据。
+	// 此处我们直接硬编码。你可以遍历文件夹，将其下的文件及内容写入。
+	var filesToArchive = []struct{
+		Name, Body string
+	} {
+		{&quot;test1.txt&quot;, &quot;Hello, everyone!&quot;},
+		{&quot;test2.txt&quot;, &quot;\x61\x62\x63\n&quot;},
+	}
+
+	// 将要打包的内容写入打包文件
+	for _, file := range filesToArchive {
+		fileWriter, err := zipWriter.Create(file.Name)
+		if err != nil {
+			log.Fatal(err)
+		}
+		_, err = fileWriter.Write([]byte(file.Body))
+		if err != nil {
+			log.Fatal(err)
+		}
+	}
+
+	// 清理
+	err = zipWriter.Close()
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+</code></pre>
+
+<h4 id="3-2-抽取-unzip-文件">3.2 抽取（unzip）文件</h4>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;archive/zip&quot;
+	&quot;io&quot;
+	&quot;log&quot;
+	&quot;os&quot;
+	&quot;path/filepath&quot;
+)
+
+func main() {
+
+	zipReader, err := zip.OpenReader(&quot;example_1.zip&quot;)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer zipReader.Close()
+
+	// 遍历打包文件中的每一个文件/文件夹
+	for _, file := range zipReader.Reader.File {
+		zippedFile, err := file.Open()
+		if err != nil {
+			log.Fatal(err)
+		}
+		defer zippedFile.Close()
+
+		// 指定抽取的文件名
+		targetDir := &quot;temp&quot;
+		extractedFilePath := filepath.Join(targetDir, file.Name)
+
+		// 抽取项目或者创建文件夹
+		if file.FileInfo().IsDir() {
+			// 创建文件夹并设置其权限与文件一致
+			log.Println(&quot;创建文件夹：&quot;, extractedFilePath)
+			os.MkdirAll(extractedFilePath, file.Mode())
+		} else {
+			// 抽取正常的文件
+			log.Println(&quot;抽取文件：&quot;, file.Name)
+
+			outputFile, err := os.OpenFile(
+				extractedFilePath,
+				os.O_WRONLY | os.O_CREATE | os.O_TRUNC,
+				file.Mode(),
+				)
+			if err != nil {
+				log.Fatal(err)
+			}
+			defer outputFile.Close()
+
+			// 通过 io.Copy 复制文件内容
+			_, err = io.Copy(outputFile, zippedFile)
+			if err != nil {
+				log.Fatal(err)
+			}
+		}
+	}
+}
+</code></pre>
+
+<h4 id="3-3-压缩文件">3.3 压缩文件</h4>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;compress/gzip&quot;
+	&quot;log&quot;
+	&quot;os&quot;
+)
+
+// 压缩文件，本例使用 gzip 压缩格式，标准库还支持zlib, bz2, flate, lzw
+func main() {
+	outputFile, err := os.Create(&quot;example.txt.gz&quot;)
+	if err != nil {
+		log.Fatal(err)
+	}
+	gzipWriter := gzip.NewWriter(outputFile)
+	defer gzipWriter.Close()
+	// 当我们写如到gizp writer数据时，它会依次压缩数据并写入到底层的文件中。
+	// 我们不必关心它是如何压缩的，还是像普通的writer一样操作即可。
+	_, err = gzipWriter.Write([]byte(&quot;我是数据数据数据!\n&quot;))
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Println(&quot;压缩数据已写入文件。&quot;)
+}
+</code></pre>
+
+<h4 id="3-4-解压缩文件">3.4 解压缩文件</h4>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;compress/gzip&quot;
+	&quot;io&quot;
+	&quot;log&quot;
+	&quot;os&quot;
+)
+
+func main() {
+	// 打开一个gzip文件。
+	// 文件是一个reader,但是我们可以使用各种数据源，比如web服务器返回的gzipped内容，
+	// 它的内容不是一个文件，而是一个内存流
+	gzipFile, err := os.Open(&quot;example.txt.gz&quot;)
+	if err != nil {
+		log.Fatal(err)
+	}
+	gzipReader, err := gzip.NewReader(gzipFile)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer gzipReader.Close()
+	// 解压缩到一个 writer,它是一个 file writer
+	outfileWriter, err := os.Create(&quot;example_unzipped.txt&quot;)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer outfileWriter.Close()
+	// 复制内容
+	_, err = io.Copy(outfileWriter, gzipReader)
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+</code></pre>
+
+<h3 id="4-其他">4、其他</h3>
+
+<h4 id="4-1-临时文件和目录">4.1 临时文件和目录</h4>
+
+<p><code>ioutil</code> 提供了两个函数：<code>TempDir()</code> 和 <code>TempFile()</code>。<br />
+使用完毕后，调用者负责删除这些临时文件和文件夹。<br />
+有一个好处是，当你传递一个空字符串作为文件夹名的时候，它会在操作系统的临时文件夹中创建这些项目（/tmp on Linux）。<br />
+<code>os.TempDir()</code> 返回当前操作系统的临时文件夹。</p>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;fmt&quot;
+	&quot;io/ioutil&quot;
+	&quot;log&quot;
+	&quot;os&quot;
+)
+
+func main() {
+	// 在系统临时文件夹中创建一个临时文件夹
+	tempDirPath, err := ioutil.TempDir(&quot;&quot;, &quot;myTempDir&quot;)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println(&quot;临时文件夹已创建:&quot;, tempDirPath)
+	// 在临时文件夹中创建临时文件
+	tempFile, err := ioutil.TempFile(tempDirPath, &quot;myTempFile.txt&quot;)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println(&quot;临时文件已创建:&quot;, tempFile.Name())
+	// ... 做一些操作 ...
+	// 关闭文件
+	err = tempFile.Close()
+	if err != nil {
+		log.Fatal(err)
+	}
+	// 删除我们创建的资源
+	err = os.Remove(tempFile.Name())
+	if err != nil {
+		log.Fatal(err)
+	}
+	err = os.Remove(tempDirPath)
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+</code></pre>
+
+<h4 id="4-2-通过-http-下载文件">4.2 通过 HTTP 下载文件</h4>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;io&quot;
+	&quot;log&quot;
+	&quot;net/http&quot;
+	&quot;os&quot;
+)
+
+func main() {
+	newFile, err := os.Create(&quot;good_habits.html&quot;)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer newFile.Close()
+	url := &quot;https://rjguanwen.cn/2019/11/good_habits/&quot;
+	response, err := http.Get(url)
+	defer response.Body.Close()
+	// 将HTTP response Body中的内容写入到文件
+	// Body满足reader接口，因此我们可以使用ioutil.Copy
+	numBytesWritten, err := io.Copy(newFile, response.Body)
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Printf(&quot;Downloaded %d byte file.\n&quot;, numBytesWritten)
+}
+</code></pre>
+
+<h4 id="4-3-哈希和摘要">4.3 哈希和摘要</h4>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;crypto/md5&quot;
+	&quot;crypto/sha1&quot;
+	&quot;crypto/sha256&quot;
+	&quot;crypto/sha512&quot;
+	&quot;fmt&quot;
+	&quot;io/ioutil&quot;
+	&quot;log&quot;
+)
+
+func main() {
+	// 得到文件内容
+	data, err := ioutil.ReadFile(&quot;example_1.txt&quot;)
+	if err != nil {
+		log.Fatal(err)
+	}
+	// 计算Hash
+	fmt.Printf(&quot;Md5: %x\n\n&quot;, md5.Sum(data))
+	fmt.Printf(&quot;Sha1: %x\n\n&quot;, sha1.Sum(data))
+	fmt.Printf(&quot;Sha256: %x\n\n&quot;, sha256.Sum256(data))
+	fmt.Printf(&quot;Sha512: %x\n\n&quot;, sha512.Sum512(data))
+}
+</code></pre>
+
+<p>上面的例子复制了整个文件内容到内存中，传递给 hash 函数。<br />
+另一个方式是创建一个 hash writer，使用 <code>Write</code>、 <code>WriteString</code>、<code>Copy</code> 将数据传给它。</p>
+
+<pre><code class="language-(go)">package main
+
+import (
+	&quot;crypto/md5&quot;
+	&quot;fmt&quot;
+	&quot;io&quot;
+	&quot;log&quot;
+	&quot;os&quot;
+)
+
+func main() {
+	file, err := os.Open(&quot;example_1.txt&quot;)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer file.Close()
+	//创建一个新的 hasher,满足 writer 接口
+	hasher := md5.New()
+	_, err = io.Copy(hasher, file)
+	if err != nil {
+		log.Fatal(err)
+	}
+	// 计算 hash 并打印结果。
+	// 传递 nil 作为参数，因为我们不通参数传递数据，而是通过 writer 接口。
+	sum := hasher.Sum(nil)
+	fmt.Printf(&quot;Md5 checksum: %x\n&quot;, sum)
+}
+</code></pre>
+
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="next">
+                <a href="https://rjguanwen.cn/2019/11/art-1/"
+                    title="苦昼短"><span>下一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat"
+                data-mobile-sites="weibo,qq,qzone,wechat"></div>
+        </div>
+    </div>
+</nav>
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/rjguanwen" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://rjguanwen.cn/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2017  -
+    2020
+    
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+   window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/rust.min.js"></script>
+<script type="text/javascript"
+   src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script>
+hljs.configure({
+  tabReplace: '    ', 
+  classPrefix: ''     
+                      
+})
+hljs.initHighlightingOnLoad();
+</script>
+<script type="text/javascript" src="https://rjguanwen.cn/js/application.js"></script>
+<script type="text/javascript" src="https://rjguanwen.cn/js/plugin.js"></script>
+<script>
+      (function (window) {
+          var INSIGHT_CONFIG = {
+              TRANSLATION: {
+                  POSTS: '文章',
+                  PAGES: '页面',
+                  CATEGORIES: '分类',
+                  TAGS: '标签',
+                  UNTITLED: '(未命名)',
+              },
+              ROOT_URL: 'https:\/\/rjguanwen.cn\/',
+              CONTENT_URL: 'https:\/\/rjguanwen.cn\/\/searchindex.json ',
+          };
+          window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+      })(window);
+      </script>
+<script type="text/javascript" src="https://rjguanwen.cn/js/insight.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: 'fa63cb30ceea59ed6d75',
+        clientSecret: 'e06b033c38c44b3bc8d2bf15aa4ef888c6548e90',
+        repo: 'rjguanwen-blog-comments',
+        owner: 'rjguanwen',
+        admin: ['rjguanwen'],
+        id: md5(location.pathname),
+        distractionFreeMode: true
+    });
+    gitalk.render('comments');
+</script>
+  </body>
+</html>
