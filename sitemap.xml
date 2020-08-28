@@ -136,14 +136,14 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/centrifugo/</loc>
+    <loc>https://rjguanwen.cn/categories/centrifugo/</loc>
     <lastmod>2019-12-31T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/categories/centrifugo/</loc>
+    <loc>https://rjguanwen.cn/tags/centrifugo/</loc>
     <lastmod>2019-12-31T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -171,14 +171,14 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/categories/git/</loc>
+    <loc>https://rjguanwen.cn/tags/git/</loc>
     <lastmod>2019-12-20T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/git/</loc>
+    <loc>https://rjguanwen.cn/categories/git/</loc>
     <lastmod>2019-12-20T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -374,6 +374,12 @@
   
   <url>
     <loc>https://rjguanwen.cn/series/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/1/01/yzh/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
