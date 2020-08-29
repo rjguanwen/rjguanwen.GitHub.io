@@ -4,6 +4,62 @@
   
   <url>
     <loc>https://rjguanwen.cn/categories/</loc>
+    <lastmod>2020-08-29T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/tags/</loc>
+    <lastmod>2020-08-29T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/2020/08/lzgt/</loc>
+    <lastmod>2020-08-29T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/posts/</loc>
+    <lastmod>2020-08-29T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/categories/%E8%AF%97%E8%AF%8D/</loc>
+    <lastmod>2020-08-29T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/tags/%E8%AF%97%E8%AF%8D/</loc>
+    <lastmod>2020-08-29T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/</loc>
+    <lastmod>2020-08-29T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/2020/08/yzh/</loc>
+    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/categories/gin/</loc>
     <lastmod>2020-06-13T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -11,13 +67,6 @@
   
   <url>
     <loc>https://rjguanwen.cn/tags/gin/</loc>
-    <lastmod>2020-06-13T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://rjguanwen.cn/categories/gin/</loc>
     <lastmod>2020-06-13T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -45,13 +94,6 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/</loc>
-    <lastmod>2020-06-13T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://rjguanwen.cn/tags/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/</loc>
     <lastmod>2020-06-13T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -66,28 +108,14 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/posts/</loc>
-    <lastmod>2020-06-13T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://rjguanwen.cn/</loc>
-    <lastmod>2020-06-13T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://rjguanwen.cn/categories/docker/</loc>
+    <loc>https://rjguanwen.cn/tags/docker/</loc>
     <lastmod>2020-06-05T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/docker/</loc>
+    <loc>https://rjguanwen.cn/categories/docker/</loc>
     <lastmod>2020-06-05T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -136,14 +164,14 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/categories/centrifugo/</loc>
+    <loc>https://rjguanwen.cn/tags/centrifugo/</loc>
     <lastmod>2019-12-31T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/centrifugo/</loc>
+    <loc>https://rjguanwen.cn/categories/centrifugo/</loc>
     <lastmod>2019-12-31T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -171,14 +199,14 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/git/</loc>
+    <loc>https://rjguanwen.cn/categories/git/</loc>
     <lastmod>2019-12-20T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/categories/git/</loc>
+    <loc>https://rjguanwen.cn/tags/git/</loc>
     <lastmod>2019-12-20T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -332,13 +360,6 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/%E5%85%89%E9%98%B4/</loc>
-    <lastmod>2019-11-19T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://rjguanwen.cn/about/</loc>
     <lastmod>2019-11-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -353,20 +374,6 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/categories/%E8%AF%97%E8%AF%8D/</loc>
-    <lastmod>2019-11-19T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://rjguanwen.cn/tags/%E8%AF%97%E8%AF%8D/</loc>
-    <lastmod>2019-11-19T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://rjguanwen.cn/1/01/go_file/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -374,12 +381,6 @@
   
   <url>
     <loc>https://rjguanwen.cn/series/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://rjguanwen.cn/1/01/yzh/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
