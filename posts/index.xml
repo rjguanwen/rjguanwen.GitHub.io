@@ -5,10 +5,19 @@
     <link>https://rjguanwen.cn/posts/</link>
     <description>Recent content in 文章 on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 29 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://rjguanwen.cn/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Windows 更新 git 版本</title>
+      <link>https://rjguanwen.cn/2020/09/git_04/</link>
+      <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2020/09/git_04/</guid>
+      <description>1、查看当前安装的 git 版本 git --version 2、更新 git 版本是 2.17.1 之前的： git update git 版本是 2.17.1 之后的： git update-git-for-windows 3、如出现错误 重新下载新版本安装包，覆盖安装即可：https</description>
+    </item>
     
     <item>
       <title>六州歌头·少年侠气</title>
