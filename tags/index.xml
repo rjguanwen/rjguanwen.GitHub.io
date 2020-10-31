@@ -5,7 +5,7 @@
     <link>https://rjguanwen.cn/tags/</link>
     <description>Recent content in Tags on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 23 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://rjguanwen.cn/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +13,7 @@
     <item>
       <title>诗词</title>
       <link>https://rjguanwen.cn/tags/%E8%AF%97%E8%AF%8D/</link>
-      <pubDate>Fri, 23 Oct 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 31 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://rjguanwen.cn/tags/%E8%AF%97%E8%AF%8D/</guid>
       <description></description>
@@ -38,20 +38,20 @@
     </item>
     
     <item>
+      <title>golang</title>
+      <link>https://rjguanwen.cn/tags/golang/</link>
+      <pubDate>Thu, 27 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>gin</title>
       <link>https://rjguanwen.cn/tags/gin/</link>
       <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://rjguanwen.cn/tags/gin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>golang</title>
-      <link>https://rjguanwen.cn/tags/golang/</link>
-      <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://rjguanwen.cn/tags/golang/</guid>
       <description></description>
     </item>
     

@@ -5,10 +5,19 @@
     <link>https://rjguanwen.cn/tags/golang/</link>
     <description>Recent content in golang on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 13 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Aug 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://rjguanwen.cn/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Go 文件操作</title>
+      <link>https://rjguanwen.cn/2020/08/go_file/</link>
+      <pubDate>Thu, 27 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2020/08/go_file/</guid>
+      <description>&amp;lt;部分内容借鉴自网络，如有侵权，预先道歉，请及时联系（rjguanwen001@163.com），我会尽快删除，谢谢！&amp;gt; Go 文件操</description>
+    </item>
     
     <item>
       <title>Gin Quickstart</title>
@@ -44,15 +53,6 @@
       
       <guid>https://rjguanwen.cn/2019/11/govendor_use/</guid>
       <description>简单记录 govendor 的使用方式： 安装 go get -u -v github.com/kardianos/govendor 初始化 vendor 目录 govendor init 添加依赖包到 vendor 目录 govendor add +external 或 govendor add +e 从 $GOPATH 更新依赖包到 vendor 目录 govendor update +vendor 删除依赖包 govendor remove +vendor 常用的命令如</description>
-    </item>
-    
-    <item>
-      <title>Go 文件操作</title>
-      <link>https://rjguanwen.cn/1/01/go_file/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://rjguanwen.cn/1/01/go_file/</guid>
-      <description>&amp;lt;部分内容借鉴自网络，如有侵权，预先道歉，请及时联系（rjguanwen001@163.com），我会尽快删除，谢谢！&amp;gt; Go 文件操</description>
     </item>
     
   </channel>

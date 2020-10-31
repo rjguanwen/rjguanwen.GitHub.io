@@ -5,7 +5,7 @@
     <link>https://rjguanwen.cn/categories/</link>
     <description>Recent content in Categories on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 23 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://rjguanwen.cn/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +13,7 @@
     <item>
       <title>诗词</title>
       <link>https://rjguanwen.cn/categories/%E8%AF%97%E8%AF%8D/</link>
-      <pubDate>Fri, 23 Oct 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 31 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://rjguanwen.cn/categories/%E8%AF%97%E8%AF%8D/</guid>
       <description></description>
@@ -25,6 +25,15 @@
       <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://rjguanwen.cn/categories/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GOLANG</title>
+      <link>https://rjguanwen.cn/categories/golang/</link>
+      <pubDate>Thu, 27 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/categories/golang/</guid>
       <description></description>
     </item>
     
@@ -79,15 +88,6 @@
       <pubDate>Sat, 30 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://rjguanwen.cn/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GOLANG</title>
-      <link>https://rjguanwen.cn/categories/golang/</link>
-      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://rjguanwen.cn/categories/golang/</guid>
       <description></description>
     </item>
     

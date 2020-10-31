@@ -5,10 +5,19 @@
     <link>https://rjguanwen.cn/posts/</link>
     <description>Recent content in 文章 on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 23 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://rjguanwen.cn/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>与龚惟长先生书</title>
+      <link>https://rjguanwen.cn/2020/10/rswl/</link>
+      <pubDate>Sat, 31 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2020/10/rswl/</guid>
+      <description>与龚惟长先生书 【明】袁宏道 数年闲散，惹一场忙在后。如此人置如此地，作如此事，奈之何？嗟夫，电光泡影，后岁知几何？而奔走尘土，无复生人半刻之乐</description>
+    </item>
     
     <item>
       <title>定风波·南海归赠王定国侍人寓娘</title>
@@ -44,6 +53,15 @@
       
       <guid>https://rjguanwen.cn/2020/08/yzh/</guid>
       <description>南吕·一枝花·不服老 【元】关汉卿 攀出墙朵朵花，折临路枝枝柳； 花攀红蕊嫩，柳折翠条柔。 浪子风流。 凭着我折柳攀花手，直煞得花残柳败休。 半生来折柳</description>
+    </item>
+    
+    <item>
+      <title>Go 文件操作</title>
+      <link>https://rjguanwen.cn/2020/08/go_file/</link>
+      <pubDate>Thu, 27 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2020/08/go_file/</guid>
+      <description>&amp;lt;部分内容借鉴自网络，如有侵权，预先道歉，请及时联系（rjguanwen001@163.com），我会尽快删除，谢谢！&amp;gt; Go 文件操</description>
     </item>
     
     <item>
@@ -269,15 +287,6 @@
       
       <guid>https://rjguanwen.cn/2019/11/art-1/</guid>
       <description>苦昼短 【唐】李贺 飞光飞光，劝尔一杯酒。 吾不识青天高，黄地厚。 唯见月寒日暖，来煎人寿。 食熊则肥，食蛙则瘦。 神君何在？太一安有？ 天东有若木，下置</description>
-    </item>
-    
-    <item>
-      <title>Go 文件操作</title>
-      <link>https://rjguanwen.cn/1/01/go_file/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://rjguanwen.cn/1/01/go_file/</guid>
-      <description>&amp;lt;部分内容借鉴自网络，如有侵权，预先道歉，请及时联系（rjguanwen001@163.com），我会尽快删除，谢谢！&amp;gt; Go 文件操</description>
     </item>
     
   </channel>
