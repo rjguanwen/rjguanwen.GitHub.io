@@ -4,14 +4,49 @@
   
   <url>
     <loc>https://rjguanwen.cn/categories/</loc>
-    <lastmod>2020-10-31T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-23T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://rjguanwen.cn/tags/</loc>
-    <lastmod>2020-10-31T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/tags/%E4%B8%AA%E4%BA%BA/</loc>
+    <lastmod>2020-12-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/posts/</loc>
+    <lastmod>2020-12-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</loc>
+    <lastmod>2020-12-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/2020/12/nine_attitude/</loc>
+    <lastmod>2020-12-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/</loc>
+    <lastmod>2020-12-23T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -38,13 +73,6 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/posts/</loc>
-    <lastmod>2020-10-31T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://rjguanwen.cn/tags/%E7%8E%B0%E4%BB%A3%E8%AF%97/</loc>
     <lastmod>2020-10-31T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -59,13 +87,6 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/%E8%AF%97%E8%AF%8D/</loc>
-    <lastmod>2020-10-31T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://rjguanwen.cn/categories/%E8%AF%97%E8%AF%8D/</loc>
     <lastmod>2020-10-31T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -73,7 +94,7 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/</loc>
+    <loc>https://rjguanwen.cn/tags/%E8%AF%97%E8%AF%8D/</loc>
     <lastmod>2020-10-31T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -87,14 +108,14 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/categories/git/</loc>
+    <loc>https://rjguanwen.cn/tags/git/</loc>
     <lastmod>2020-09-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/git/</loc>
+    <loc>https://rjguanwen.cn/categories/git/</loc>
     <lastmod>2020-09-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -185,14 +206,14 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/docker/</loc>
+    <loc>https://rjguanwen.cn/categories/docker/</loc>
     <lastmod>2020-06-05T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/categories/docker/</loc>
+    <loc>https://rjguanwen.cn/tags/docker/</loc>
     <lastmod>2020-06-05T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -339,21 +360,7 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/%E4%B8%AA%E4%BA%BA/</loc>
-    <lastmod>2019-11-30T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://rjguanwen.cn/2019/11/good_habits/</loc>
-    <lastmod>2019-11-30T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://rjguanwen.cn/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</loc>
     <lastmod>2019-11-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
