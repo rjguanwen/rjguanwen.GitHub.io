@@ -5,10 +5,46 @@
     <link>https://rjguanwen.cn/tags/</link>
     <description>Recent content in Tags on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 23 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 Jan 2021 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://rjguanwen.cn/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Superset</title>
+      <link>https://rjguanwen.cn/tags/superset/</link>
+      <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/tags/superset/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>技术</title>
+      <link>https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/</link>
+      <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ignite</title>
+      <link>https://rjguanwen.cn/tags/ignite/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/tags/ignite/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://rjguanwen.cn/tags/docker/</link>
+      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/tags/docker/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>个人</title>
@@ -56,15 +92,6 @@
     </item>
     
     <item>
-      <title>技术</title>
-      <link>https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/</link>
-      <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>golang</title>
       <link>https://rjguanwen.cn/tags/golang/</link>
       <pubDate>Thu, 27 Aug 2020 00:00:00 +0000</pubDate>
@@ -88,15 +115,6 @@
       <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://rjguanwen.cn/tags/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>docker</title>
-      <link>https://rjguanwen.cn/tags/docker/</link>
-      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://rjguanwen.cn/tags/docker/</guid>
       <description></description>
     </item>
     

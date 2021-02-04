@@ -5,10 +5,19 @@
     <link>https://rjguanwen.cn/tags/docker/</link>
     <description>Recent content in docker on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 05 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Jan 2021 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://rjguanwen.cn/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>win10 的 Linux 子系统中安装 docker</title>
+      <link>https://rjguanwen.cn/2021/01/docker_wsl/</link>
+      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2021/01/docker_wsl/</guid>
+      <description>在 win10 的 Linux 子系统中实现 docker 的安装使用 1、安装 WSL2 此处注意，一定是 WSL2！wsl 坑太多，经常有莫名错误！ 1. 配置 WSL2 开启WSL 以管理员运行 Powers</description>
+    </item>
     
     <item>
       <title>Docker常用命令</title>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Superset on 飞光</title>
+    <link>https://rjguanwen.cn/categories/superset/</link>
+    <description>Recent content in Superset on 飞光</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 30 Jan 2021 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://rjguanwen.cn/categories/superset/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Apache Superset 简介</title>
+      <link>https://rjguanwen.cn/2021/01/superset_01/</link>
+      <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2021/01/superset_01/</guid>
+      <description>Apache Superset 简介 概要信息 项目 说明 官网 https://superset.apache.org/ 开源/闭源 开源 源码管理地址 https://github.com/apache/incubator-superset/wiki License类别 Mozilla Public License 2.0 开发语言 GO 操作系统支持 跨平台，支持多种操作系统 主要特性 Apache</description>
+    </item>
+    
+  </channel>
+</rss>

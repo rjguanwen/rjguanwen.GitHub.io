@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        Apache Ignite 实践记录 - 飞光
+      </title>
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="Apache Ignite 实践记录" />
+  <meta name="generator" content="Hugo 0.59.1 with theme pure" />
+  <title>Apache Ignite 实践记录 - 飞光</title>
+  
+
+  <link rel="stylesheet" href="https://rjguanwen.cn/css/style.css">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <meta property="og:title" content="Apache Ignite 实践记录" />
+<meta property="og:description" content="Apache Ignite 实践记录" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rjguanwen.cn/2021/01/ignite_02/" />
+<meta property="article:published_time" content="2021-01-12T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-01-12T00:00:00+00:00" />
+<meta itemprop="name" content="Apache Ignite 实践记录">
+<meta itemprop="description" content="Apache Ignite 实践记录">
+
+
+<meta itemprop="datePublished" content="2021-01-12T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-01-12T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="314">
+
+
+
+<meta itemprop="keywords" content="技术,Ignite," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Apache Ignite 实践记录"/>
+<meta name="twitter:description" content="Apache Ignite 实践记录"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  </head>
+  <body class="main-center" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/rjguanwen" target="_blank">
+            <img class="img-circle img-rotate" src="https://rjguanwen.cn/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">rjguanwen</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">食熊则肥  食蛙则瘦</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>山东 济南</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-主页">
+                <a href="/">
+                  <span class="menu-title">主页</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-文章">
+                <a href="/posts">
+                  <span class="menu-title">文章</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-目录">
+                <a href="/categories">
+                  <span class="menu-title">目录</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-标签">
+                <a href="/tags">
+                  <span class="menu-title">标签</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-关于">
+                <a href="/about">
+                  <span class="menu-title">关于</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>临渊羡鱼，<br/>不如退而结网！</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> 分类</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/centrifugo/" class="category-list-link">centrifugo</a><span class="category-list-count">10</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/docker/" class="category-list-link">docker</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/gin/" class="category-list-link">gin</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/git/" class="category-list-link">git</a><span class="category-list-count">4</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/golang/" class="category-list-link">golang</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/ignite/" class="category-list-link">ignite</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/redis/" class="category-list-link">redis</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/superset/" class="category-list-link">superset</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/" class="category-list-link">杂七杂八</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/" class="category-list-link">系统架构</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/%E8%AF%97%E8%AF%8D/" class="category-list-link">诗词</a><span class="category-list-count">7</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/centrifugo/" class="tag-list-link">centrifugo</a><span
+                    class="tag-list-count">10</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/docker/" class="tag-list-link">docker</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/gin/" class="tag-list-link">gin</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/git/" class="tag-list-link">git</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/golang/" class="tag-list-link">golang</a><span
+                    class="tag-list-count">5</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/ignite/" class="tag-list-link">ignite</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/redis/" class="tag-list-link">redis</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/superset/" class="tag-list-link">superset</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E4%B8%AA%E4%BA%BA/" class="tag-list-link">个人</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E5%8F%A5%E5%AD%90/" class="tag-list-link">句子</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E5%B0%8F%E5%93%81%E6%96%87/" class="tag-list-link">小品文</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/" class="tag-list-link">开发框架</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/" class="tag-list-link">技术</a><span
+                    class="tag-list-count">27</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E6%9D%82%E6%84%9F%E9%9A%8F%E7%AC%94/" class="tag-list-link">杂感随笔</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E7%8E%B0%E4%BB%A3%E8%AF%97/" class="tag-list-link">现代诗</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E8%AF%97%E8%AF%8D/" class="tag-list-link">诗词</a><span
+                    class="tag-list-count">5</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://rjguanwen.cn/2021/01/superset_01/" class="title">Apache Superset 简介</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-01-30 00:00:00 &#43;0000 UTC" itemprop="datePublished">2021-01-30</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://rjguanwen.cn/2021/01/ignite_02/" class="title">Apache Ignite 实践记录</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-01-12 00:00:00 &#43;0000 UTC" itemprop="datePublished">2021-01-12</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://rjguanwen.cn/2021/01/docker_wsl/" class="title">win10 的 Linux 子系统中安装 docker</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-01-05 00:00:00 &#43;0000 UTC" itemprop="datePublished">2021-01-05</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://rjguanwen.cn/2020/12/ignite_01/" class="title">Apache Ignite 简介</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-12-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-12-28</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://rjguanwen.cn/2020/12/nine_attitude/" class="title">锻炼好心态</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-12-23 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-12-23</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+  <aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+    <div class="slimContent">
+      <nav id="toc" class="article-toc">
+        <h3 class="toc-title">文章目录</h3>
+        <div class="toc-content always-active"><nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#apache-ignite-实践记录">Apache Ignite 实践记录</a>
+<ul>
+<li><a href="#使用-docker-安装">使用 Docker 安装</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+      </nav>
+    </div>
+  </aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2021/01/ignite_02/"
+    >Apache Ignite 实践记录</a
+  >
+</h1>
+
+      <div class="article-meta">
+        <span class="article-date">
+  <i class="icon icon-calendar-check"></i>
+<a href="https://rjguanwen.cn/2021/01/ignite_02/" class="article-date">
+  <time datetime="2021-01-12 00:00:00 &#43;0000 UTC" itemprop="datePublished">2021-01-12</time>
+</a>
+</span><span class="article-category">
+  <i class="icon icon-folder"></i>
+  <a class="article-category-link" href="/categories/ignite/"> Ignite </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+    <a class="article-tag-link" href="/tags/%E6%8A%80%E6%9C%AF/"> 技术 </a>
+    <a class="article-tag-link" href="/tags/ignite/"> Ignite </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/01/ignite_02/#comments"
+            class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:314字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长:1分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+
+<h2 id="apache-ignite-实践记录">Apache Ignite 实践记录</h2>
+
+<h3 id="使用-docker-安装">使用 Docker 安装</h3>
+
+<p><strong>基于 win10 WSL2(Ubuntu)</strong></p>
+
+<ol>
+<li><p>创建本地目录</p>
+
+<pre><code>mkdir ignite_dir
+</code></pre></li>
+
+<li><p>使用本地目录启动持久化集群</p>
+
+<pre><code>docker run -d \  
+-v ${PWD}/ignite_dir:/storage \  
+-e IGNITE_WORK_DIR=/storage \  
+apacheignite/ignite:2.9.0  
+</code></pre></li>
+
+<li><p>使用自定义配置文件</p>
+
+<ul>
+<li><p>通过 URI 传递配置文件</p>
+
+<pre><code>docker run -d \  
+-e CONFIG_URI=http://myserver/config.xml \  
+apacheignite/ignite:2.9.0  
+</code></pre></li>
+
+<li><p>使用本地配置文件</p>
+
+<pre><code>docker run -d \  
+-v /local/dir/config.xml:/config-file.xml \  
+-e CONFIG_URI=/config-file.xml \  
+apacheignite/ignite:2.9.0  
+</code></pre></li>
+</ul></li>
+
+<li><p>启用模块
+要启用特定模块，需要在 <code>OPTION_LIBS</code> 系统变量中指定。</p>
+
+<pre><code>sudo docker run -d \  
+-e &quot;OPTION_LIBS=ignite-rest-http,ignite-aws&quot; \  
+apacheignite/ignite:2.9.0  
+</code></pre>
+
+<p>Ignite 的 Docker 镜像默认会启用 <code>ignite-log4j</code>、<code>ignite-spring</code>、<code>ignite-indexing</code> 等模块。</p></li>
+
+<li><p>环境变量</p></li>
+</ol>
+
+<table>
+<thead>
+<tr>
+<th align="center">名称</th>
+<th align="left">描述</th>
+<th align="center">默认</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">CONFIG_URI</td>
+<td align="left">Ignite配置文件的URL，下载的配置文件会保存于<code>./ignite-config.xml</code></td>
+<td align="center">无</td>
+</tr>
+
+<tr>
+<td align="center">OPTION_LIBS</td>
+<td align="left">会被包含在类路径中的可选库</td>
+<td align="center"><code>ignite-log4j</code>, <code>ignite-spring</code>,<code>ignite-indexing</code></td>
+</tr>
+
+<tr>
+<td align="center">JVM_OPTS</td>
+<td align="left">传递给Ignite实例的JVM参数</td>
+<td align="center">无</td>
+</tr>
+
+<tr>
+<td align="center">EXTERNAL_LIBS</td>
+<td align="left">库文件URL列表</td>
+<td align="center">无</td>
+</tr>
+</tbody>
+</table>
+
+<ol>
+<li><p>web-console<br />
+拉取 Ignite Web Console 镜像：</p>
+
+<pre><code>docker pull apacheignite/web-console-standalone  
+</code></pre>
+
+<p>运行 docker：</p>
+
+<pre><code>docker run -d -p 80:80 -v ${PWD}/mongo:/var/lib/mongodb --name web-console-standalone apacheignite/web-console-standalone
+</code></pre></li>
+</ol>
+
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://rjguanwen.cn/2021/01/docker_wsl/" title="win10 的 Linux 子系统中安装 docker"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+            </li>
+            <li class="next">
+                <a href="https://rjguanwen.cn/2021/01/superset_01/"
+                    title="Apache Superset 简介"><span>下一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat"
+                data-mobile-sites="weibo,qq,qzone,wechat"></div>
+        </div>
+    </div>
+</nav>
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/rjguanwen" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://rjguanwen.cn/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2017  -
+    2021
+    
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+   window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/rust.min.js"></script>
+<script type="text/javascript"
+   src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script>
+hljs.configure({
+  tabReplace: '    ', 
+  classPrefix: ''     
+                      
+})
+hljs.initHighlightingOnLoad();
+</script>
+<script type="text/javascript" src="https://rjguanwen.cn/js/application.js"></script>
+<script type="text/javascript" src="https://rjguanwen.cn/js/plugin.js"></script>
+<script>
+      (function (window) {
+          var INSIGHT_CONFIG = {
+              TRANSLATION: {
+                  POSTS: '文章',
+                  PAGES: '页面',
+                  CATEGORIES: '分类',
+                  TAGS: '标签',
+                  UNTITLED: '(未命名)',
+              },
+              ROOT_URL: 'https:\/\/rjguanwen.cn\/',
+              CONTENT_URL: 'https:\/\/rjguanwen.cn\/\/searchindex.json ',
+          };
+          window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+      })(window);
+      </script>
+<script type="text/javascript" src="https://rjguanwen.cn/js/insight.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: 'fa63cb30ceea59ed6d75',
+        clientSecret: 'e06b033c38c44b3bc8d2bf15aa4ef888c6548e90',
+        repo: 'rjguanwen-blog-comments',
+        owner: 'rjguanwen',
+        admin: ['rjguanwen'],
+        id: md5(location.pathname),
+        distractionFreeMode: true
+    });
+    gitalk.render('comments');
+</script>
+  </body>
+</html>

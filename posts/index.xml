@@ -5,10 +5,46 @@
     <link>https://rjguanwen.cn/posts/</link>
     <description>Recent content in 文章 on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 23 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 Jan 2021 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://rjguanwen.cn/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Apache Superset 简介</title>
+      <link>https://rjguanwen.cn/2021/01/superset_01/</link>
+      <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2021/01/superset_01/</guid>
+      <description>Apache Superset 简介 概要信息 项目 说明 官网 https://superset.apache.org/ 开源/闭源 开源 源码管理地址 https://github.com/apache/incubator-superset/wiki License类别 Mozilla Public License 2.0 开发语言 GO 操作系统支持 跨平台，支持多种操作系统 主要特性 Apache</description>
+    </item>
+    
+    <item>
+      <title>Apache Ignite 实践记录</title>
+      <link>https://rjguanwen.cn/2021/01/ignite_02/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2021/01/ignite_02/</guid>
+      <description>Apache Ignite 实践记录 使用 Docker 安装 基于 win10 WSL2(Ubuntu) 创建本地目录 mkdir ignite_dir 使用本地目录启动持久化集群 docker run -d \ -v ${PWD}/ignite_dir:/storage \ -e IGNITE_WORK_DIR=/storage \ apacheignite/ignite:2.9.0 使用自定义配置文件 通过 URI 传递配置文件 docker run -d \ -e</description>
+    </item>
+    
+    <item>
+      <title>win10 的 Linux 子系统中安装 docker</title>
+      <link>https://rjguanwen.cn/2021/01/docker_wsl/</link>
+      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2021/01/docker_wsl/</guid>
+      <description>在 win10 的 Linux 子系统中实现 docker 的安装使用 1、安装 WSL2 此处注意，一定是 WSL2！wsl 坑太多，经常有莫名错误！ 1. 配置 WSL2 开启WSL 以管理员运行 Powers</description>
+    </item>
+    
+    <item>
+      <title>Apache Ignite 简介</title>
+      <link>https://rjguanwen.cn/2020/12/ignite_01/</link>
+      <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2020/12/ignite_01/</guid>
+      <description>Apache Ignite 简介 待完善</description>
+    </item>
     
     <item>
       <title>锻炼好心态</title>

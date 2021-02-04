@@ -5,10 +5,37 @@
     <link>https://rjguanwen.cn/categories/</link>
     <description>Recent content in Categories on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 23 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 Jan 2021 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://rjguanwen.cn/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Superset</title>
+      <link>https://rjguanwen.cn/categories/superset/</link>
+      <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/categories/superset/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ignite</title>
+      <link>https://rjguanwen.cn/categories/ignite/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/categories/ignite/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://rjguanwen.cn/categories/docker/</link>
+      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/categories/docker/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>杂七杂八</title>
@@ -52,15 +79,6 @@
       <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://rjguanwen.cn/categories/gin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>docker</title>
-      <link>https://rjguanwen.cn/categories/docker/</link>
-      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://rjguanwen.cn/categories/docker/</guid>
       <description></description>
     </item>
     
