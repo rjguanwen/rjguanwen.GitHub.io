@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on 飞光</title>
+    <link>https://rjguanwen.cn/categories/python/</link>
+    <description>Recent content in python on 飞光</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 30 Jul 2021 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://rjguanwen.cn/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>rasa 入门</title>
+      <link>https://rjguanwen.cn/2021/07/rasa-1/</link>
+      <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2021/07/rasa-1/</guid>
+      <description>rasa 安装 pip install -U rasa pip show rasa 注：我是用的 rasa 版本为 Version: 2.8.1 初始化项目 1、 在工作文件夹中执行 # 创建默认的初始化项目，加“--no-prompt”就避免了中间</description>
+    </item>
+    
+    <item>
+      <title>Anaconda 虚拟环境基础操作</title>
+      <link>https://rjguanwen.cn/2021/02/python-1/</link>
+      <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2021/02/python-1/</guid>
+      <description>Anaconda 虚拟环境基础操作 创建 创建的同时可以同时指定安装必要的包： conda create -n &amp;lt;虚拟环境名&amp;gt; [包名1 包名2 包名3] python=3.6 激活虚拟环境 Linux: source activate &amp;lt;</description>
+    </item>
+    
+  </channel>
+</rss>

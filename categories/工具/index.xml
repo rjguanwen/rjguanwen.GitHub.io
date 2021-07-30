@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>工具 on 飞光</title>
+    <link>https://rjguanwen.cn/categories/%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 工具 on 飞光</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 30 Jul 2021 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://rjguanwen.cn/categories/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>hugo 常用命令</title>
+      <link>https://rjguanwen.cn/2021/07/hugo_cmd/</link>
+      <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2021/07/hugo_cmd/</guid>
+      <description>常用命令 #使用方法: hugo hugo [flags] hugo [command] hugo [command] [flags] #查看版本 hugo version #版本和环境详细信息 hugo env #创建新站点 hugo new site &amp;quot;$mysite&amp;quot; #创建文章 hugo new index.md 在content/文件夹可以看</description>
+    </item>
+    
+  </channel>
+</rss>

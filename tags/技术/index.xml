@@ -5,10 +5,37 @@
     <link>https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/</link>
     <description>Recent content in 技术 on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 30 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Jul 2021 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>hugo 常用命令</title>
+      <link>https://rjguanwen.cn/2021/07/hugo_cmd/</link>
+      <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2021/07/hugo_cmd/</guid>
+      <description>常用命令 #使用方法: hugo hugo [flags] hugo [command] hugo [command] [flags] #查看版本 hugo version #版本和环境详细信息 hugo env #创建新站点 hugo new site &amp;quot;$mysite&amp;quot; #创建文章 hugo new index.md 在content/文件夹可以看</description>
+    </item>
+    
+    <item>
+      <title>rasa 入门</title>
+      <link>https://rjguanwen.cn/2021/07/rasa-1/</link>
+      <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2021/07/rasa-1/</guid>
+      <description>rasa 安装 pip install -U rasa pip show rasa 注：我是用的 rasa 版本为 Version: 2.8.1 初始化项目 1、 在工作文件夹中执行 # 创建默认的初始化项目，加“--no-prompt”就避免了中间</description>
+    </item>
+    
+    <item>
+      <title>Anaconda 虚拟环境基础操作</title>
+      <link>https://rjguanwen.cn/2021/02/python-1/</link>
+      <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2021/02/python-1/</guid>
+      <description>Anaconda 虚拟环境基础操作 创建 创建的同时可以同时指定安装必要的包： conda create -n &amp;lt;虚拟环境名&amp;gt; [包名1 包名2 包名3] python=3.6 激活虚拟环境 Linux: source activate &amp;lt;</description>
+    </item>
     
     <item>
       <title>Apache Superset 简介</title>
