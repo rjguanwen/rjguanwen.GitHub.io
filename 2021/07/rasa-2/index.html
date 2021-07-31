@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        飞光</title>
+        rasa 继续入门 - 语言模型与分词器 - 飞光
+      </title>
     <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -22,27 +23,34 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  
+  <meta name="description" content="rasa 学习验证过程记录" />
   <meta name="generator" content="Hugo 0.59.1 with theme pure" />
-  <title>飞光</title>
+  <title>rasa 继续入门 - 语言模型与分词器 - 飞光</title>
   
 
-  <link rel="alternate" type="application/rss+xml" href="https://rjguanwen.cn/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/index.xml" title="飞光" />
   <link rel="stylesheet" href="https://rjguanwen.cn/css/style.css">
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css"> 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-  <meta property="og:title" content="杂七杂八" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://rjguanwen.cn/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/" />
+  <meta property="og:title" content="rasa 继续入门 - 语言模型与分词器" />
+<meta property="og:description" content="rasa 学习验证过程记录" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rjguanwen.cn/2021/07/rasa-2/" />
+<meta property="article:published_time" content="2021-07-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-07-30T00:00:00+00:00" />
+<meta itemprop="name" content="rasa 继续入门 - 语言模型与分词器">
+<meta itemprop="description" content="rasa 学习验证过程记录">
 
-<meta property="og:updated_time" content="2020-12-23T00:00:00+00:00" />
-<meta itemprop="name" content="杂七杂八">
-<meta itemprop="description" content="">
 
+<meta itemprop="datePublished" content="2021-07-30T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-07-30T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1494">
+
+
+
+<meta itemprop="keywords" content="技术,python,rasa," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="杂七杂八"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="rasa 继续入门 - 语言模型与分词器"/>
+<meta name="twitter:description" content="rasa 学习验证过程记录"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -306,62 +314,205 @@
 
     
     
-<main class="main" role="main">
-    <article class="article article-categories article-type-list" itemscope="">
-        <header class="article-header">
-            <h1 itemprop="name" class="hidden-xs">杂七杂八</h1>
-            <p class="text-muted hidden-xs">共 14 个分类</p>
-            <nav role="navigation" id="nav-main" class="okayNav">
-                <ul>
-                    <li><a href="/categories">All</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/centrifugo/">Centrifugo</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/docker/">docker</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/gin/">gin</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/git/">GIT</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/golang/">GOLANG</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/ignite/">Ignite</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/python/">python</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/rasa/">rasa</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/redis/">redis</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/superset/">Superset</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/%E5%B7%A5%E5%85%B7/">工具</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/">杂七杂八</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/">系统架构</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/%E8%AF%97%E8%AF%8D/">诗词</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <div class="article-body">
-            <div class="panel panel-default b-no">
-                <div class="panel-heading" role="tab">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" href="#collapse70052213714f999be768f3c10196c903" aria-expanded="true">
-                            <i class="icon icon-folder text-active"></i><i class="icon icon-folder-open text"></i>杂七杂八
-                        </a>
-                        <small class="text-muted">(Total2 articles)</small>
-                    </h4>
-                </div>
-                <div id="collapse70052213714f999be768f3c10196c903" class="panel-collapse collapse in" role="tabpanel"
-                    aria-labelledby="heading70052213714f999be768f3c10196c903">
-                    <div class="panel-body">
-                        <div class="collection">
-<a href="https://rjguanwen.cn/2020/12/nine_attitude/" class="collection-item" itemprop="url"  target="_blank" >
-    <time datetime="2020-12-23 00:00:00 &#43;0000 UTC"
-        itemprop="datePublished">2020-12-23</time>
-    <span>&nbsp;&nbsp;&nbsp;</span>锻炼好心态
-</a>
-<a href="https://rjguanwen.cn/2019/11/good_habits/" class="collection-item" itemprop="url"  target="_blank" >
-    <time datetime="2019-11-30 00:00:00 &#43;0000 UTC"
-        itemprop="datePublished">2019-11-30</time>
-    <span>&nbsp;&nbsp;&nbsp;</span>坚持好习惯
-</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+    <div class="slimContent">
+      <nav id="toc" class="article-toc">
+        <h3 class="toc-title">文章目录</h3>
+        <div class="toc-content always-active"><nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#whitespacetokenizer">WhitespaceTokenizer</a></li>
+<li><a href="#jiebatokenizer">JiebaTokenizer</a></li>
+<li><a href="#spacynlp">SpaCyNLP</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
         </div>
-    </article>
+      </nav>
+    </div>
+  </aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2021/07/rasa-2/"
+    >rasa 继续入门 - 语言模型与分词器</a
+  >
+</h1>
+
+      <div class="article-meta">
+        <span class="article-date">
+  <i class="icon icon-calendar-check"></i>
+<a href="https://rjguanwen.cn/2021/07/rasa-2/" class="article-date">
+  <time datetime="2021-07-30 00:00:00 &#43;0000 UTC" itemprop="datePublished">2021-07-30</time>
+</a>
+</span><span class="article-category">
+  <i class="icon icon-folder"></i>
+  <a class="article-category-link" href="/categories/python/"> python </a>
+  <a class="article-category-link" href="/categories/rasa/"> rasa </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+    <a class="article-tag-link" href="/tags/%E6%8A%80%E6%9C%AF/"> 技术 </a>
+    <a class="article-tag-link" href="/tags/python/"> python </a>
+    <a class="article-tag-link" href="/tags/rasa/"> rasa </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/07/rasa-2/#comments"
+            class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:1494字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长:3分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+
+<p>rasa 支持多种语言模型与分词器，语言模型常用的有 MITIENLP 和 SpaCyNLP，分词器常用的有 WhitespaceTokenizer、JiebaTokenizer、MitieTokenizer、SpacyTokenizer 等。</p>
+
+<h3 id="whitespacetokenizer">WhitespaceTokenizer</h3>
+
+<p>空格分词器，每个空格间隔的文本，都将分为一个token，典型的英文句子的分词。该分词器不支持中文分词。配置方式如下：</p>
+
+<pre><code class="language-(yml)">pipeline:
+- name: &quot;WhitespaceTokenizer&quot;
+  # Flag to check whether to split intents
+  &quot;intent_tokenization_flag&quot;: False
+  # Symbol on which intent should be split
+  &quot;intent_split_symbol&quot;: &quot;+&quot;
+  # Regular expression to detect tokens
+  &quot;token_pattern&quot;: None
+</code></pre>
+
+<p>intent_tokenization_flag和intent_split_symbol是在nlu返回多意图的时候使用。当intent_tokenization_flag设置为False，nlu只返回一个置信度最高的意图。但有些时候，一句话包含多个意图，例如：</p>
+
+<pre><code>## intent: affirm+ask_transport
+- Yes. How do I get there?
+- Sounds good. Do you know how I could get there from home?
+</code></pre>
+
+<p>用户的回答包含2层意思，首先是同意我的建议，另外是询问怎么去。这时候，需要将intent_tokenization_flag设置为True，然后在训练数据里面编写多意图对应的话术，多个意图中间用intent_split_symbol去分割。在运行的时候，用户说“Sounds good. Do you know how I could get there from home?”，Rasa nlu就会返回affirm+ask_transport这个意图。</p>
+
+<p>token_pattern是一个正则表达式，是对分词后的结果做后处理，过程是这样：先对一句话进行分词，生成一个序列，然后将序列中每个token再应用到token_pattern处理一次，将新生成的词也放在最终分词列表里面。</p>
+
+<h3 id="jiebatokenizer">JiebaTokenizer</h3>
+
+<p>jieba分词器，仅可以在中文分词使用，支持自定义词库分词。词库的配置方法如下：</p>
+
+<pre><code>pipeline:
+- name: &quot;JiebaTokenizer&quot;
+  dictionary_path: &quot;path/to/custom/dictionary/dir&quot;
+  # Flag to check whether to split intents
+  &quot;intent_tokenization_flag&quot;: False
+  # Symbol on which intent should be split
+  &quot;intent_split_symbol&quot;: &quot;_&quot;
+  # Regular expression to detect tokens
+  &quot;token_pattern&quot;: None
+</code></pre>
+
+<p>其中，dictionary_path是字典文件所在路径。</p>
+
+<h3 id="spacynlp">SpaCyNLP</h3>
+
+<p>spaCy是一个用Python和Cython编写的高级自然语言处理的库。它跟踪最新的研究成果，并将其应用到实际产品。spaCy带有预训练的统计模型和单词向量，目前支持60多种语言。它用于标记任务，解析任务和命名实体识别任务的卷积神经网络模型，在非常快速的情况下，达到比较好的效果，并且易于在产品中集成应用。<br />
+<strong>1、安装并下载语言模型包：</strong></p>
+
+<pre><code class="language-(python)">pip install -U spacy
+# 中文包
+python -m spacy download zh_core_web_sm
+# 英文包
+python -m spacy download en_core_web_sm
+</code></pre>
+
+<p>如果通过命令下载不下来，可以下载包到本地安装。如下：<br />
+1.到 <a href="https://spacy.io/">https://spacy.io/</a> 下载响应的语言包<br />
+2.使用 <code>pip</code> 进行安装，如：</p>
+
+<pre><code class="language-(python)"># 中文包
+pip install \你的下载路径\zh_core_web_sm-3.1.0-py3-none-any.whl
+pip install \你的下载路径\zh_core_web_sm-3.1.0.tar.gz
+# 英文包
+pip install \你的下载路径\en_core_web_sm-3.1.0-py3-none-any.whl
+pip install \你的下载路径\en_core_web_sm-3.1.0.tar.gz
+</code></pre>
+
+<ul>
+<li><p>SpaCy的语言支撑的很多，每种语言又有不同的包，根据需要恰当选择吧<br />
+<strong>2、rasa 中配置：</strong><br />
+简单配置：</p>
+
+<pre><code>pipeline:
+- name: &quot;SpacyNLP&quot;
+model: &quot;zh_core_web_sm&quot;
+</code></pre>
+
+<p>更多的配置，具体参见 <a href="https://rasa.com/docs/rasa/language-support#spacy">https://rasa.com/docs/rasa/language-support#spacy</a> ：</p>
+
+<pre><code>pipeline:
+- name: &quot;SpacyNLP&quot;
+# language model to load
+  model: &quot;zh_core_web_sm&quot;
+- name: &quot;SpacyTokenizer&quot;
+  # Flag to check whether to split intents
+  &quot;intent_tokenization_flag&quot;: False
+  # Symbol on which intent should be split
+  &quot;intent_split_symbol&quot;: &quot;_&quot;
+  # Regular expression to detect tokens
+  &quot;token_pattern&quot;: None
+- name: &quot;SpacyFeaturizer&quot;
+  # Specify what pooling operation should be used to calculate the vector of
+  # the complete utterance. Available options: 'mean' and 'max'.
+  &quot;pooling&quot;: &quot;mean&quot;
+</code></pre>
+
+<p><font color="red">此处配置要注意引号和下划线的问题&hellip;</font><br />
+<font color="red">修改 <code>config.yml</code> 的时候别忘记修改最开头的语言配置 <code>language: en</code></font><br />
+<strong><font color="red">！！！不知为啥，我配上SpaCy后，<code>rasa shell</code> 就会 TimeoutError。暂时不知原因，回头解决吧！！！</font></strong><br />
+另，默认超时时间要修改的话，到这：<code>$python安装目录$\Lib\site-packages\rasa\core\channels\console.py</code>，修改 <code>DEFAULT_STREAM_READING_TIMEOUT_IN_SECONDS = 10</code> 为所需的值即可。</p></li>
+</ul>
+
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://rjguanwen.cn/2021/02/python-1/" title="Anaconda 虚拟环境基础操作"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+            </li>
+            <li class="next">
+                <a href="https://rjguanwen.cn/2021/07/rasa-1/"
+                    title="rasa 入门"><span>下一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat"
+                data-mobile-sites="weibo,qq,qzone,wechat"></div>
+        </div>
+    </div>
+</nav>
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 <ul class="social-links">
     <li><a href="https://github.com/rjguanwen" target="_blank" title="github" data-toggle=tooltip data-placement=top >
@@ -411,5 +562,20 @@ hljs.initHighlightingOnLoad();
       </script>
 <script type="text/javascript" src="https://rjguanwen.cn/js/insight.js"></script>
 
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: 'fa63cb30ceea59ed6d75',
+        clientSecret: 'e06b033c38c44b3bc8d2bf15aa4ef888c6548e90',
+        repo: 'rjguanwen-blog-comments',
+        owner: 'rjguanwen',
+        admin: ['rjguanwen'],
+        id: md5(location.pathname),
+        distractionFreeMode: true
+    });
+    gitalk.render('comments');
+</script>
   </body>
 </html>

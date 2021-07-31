@@ -20,6 +20,15 @@
     </item>
     
     <item>
+      <title>rasa 继续入门 - 语言模型与分词器</title>
+      <link>https://rjguanwen.cn/2021/07/rasa-2/</link>
+      <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2021/07/rasa-2/</guid>
+      <description>rasa 支持多种语言模型与分词器，语言模型常用的有 MITIENLP 和 SpaCyNLP，分词器常用的有 WhitespaceTokenizer、JiebaToken</description>
+    </item>
+    
+    <item>
       <title>Anaconda 虚拟环境基础操作</title>
       <link>https://rjguanwen.cn/2021/02/python-1/</link>
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
