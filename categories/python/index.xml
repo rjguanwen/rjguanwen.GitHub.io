@@ -16,7 +16,7 @@
       <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://rjguanwen.cn/2021/07/rasa-1/</guid>
-      <description>rasa 安装 pip install -U rasa pip show rasa 注：我是用的 rasa 版本为 Version: 2.8.1 初始化项目 1、 在工作文件夹中执行 # 创建默认的初始化项目，加“--no-prompt”就避免了中间</description>
+      <description>前言：没有比官网文档更好的资料了。看这里https://rasa.com/docs/rasa/ rasa 安装 pip install -U rasa pip show rasa 注：我是用的 rasa 版本为 Version: 2.8.1 初</description>
     </item>
     
     <item>
