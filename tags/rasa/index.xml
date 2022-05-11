@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rasa on 飞光</title>
+    <link>https://rjguanwen.cn/tags/rasa/</link>
+    <description>Recent content in rasa on 飞光</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 30 Jul 2021 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://rjguanwen.cn/tags/rasa/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>rasa 入门</title>
+      <link>https://rjguanwen.cn/2021/07/rasa-1/</link>
+      <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2021/07/rasa-1/</guid>
+      <description>前言：没有比官网文档更好的资料了。看这里https://rasa.com/docs/rasa/ rasa 安装 pip install -U rasa pip show rasa 注：我是用的 rasa 版本为 Version: 2.8.1 初</description>
+    </item>
+    
+    <item>
+      <title>rasa 继续入门 - 语言模型与分词器</title>
+      <link>https://rjguanwen.cn/2021/07/rasa-2/</link>
+      <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2021/07/rasa-2/</guid>
+      <description>rasa 支持多种语言模型与分词器，语言模型常用的有 MITIENLP 和 SpaCyNLP，分词器常用的有 WhitespaceTokenizer、JiebaToken</description>
+    </item>
+    
+  </channel>
+</rss>

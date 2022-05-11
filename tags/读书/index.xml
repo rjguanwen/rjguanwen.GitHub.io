@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>读书 on 飞光</title>
+    <link>https://rjguanwen.cn/tags/%E8%AF%BB%E4%B9%A6/</link>
+    <description>Recent content in 读书 on 飞光</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 23 Mar 2022 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://rjguanwen.cn/tags/%E8%AF%BB%E4%B9%A6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>读书 - 《数据资产论》</title>
+      <link>https://rjguanwen.cn/2022/03/sjzcl01/</link>
+      <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2022/03/sjzcl01/</guid>
+      <description>读书笔记 - 《数据资产论》 根据会计学的定义，资源要成为资产有一个必要条件：带来预期的经济收益。由此，不是所有的数据都可以称为资产，只有那些能够</description>
+    </item>
+    
+  </channel>
+</rss>

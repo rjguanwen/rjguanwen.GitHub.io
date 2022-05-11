@@ -5,10 +5,73 @@
     <link>https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/</link>
     <description>Recent content in 技术 on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 30 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Mar 2022 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>读书 - 《数据资产论》</title>
+      <link>https://rjguanwen.cn/2022/03/sjzcl01/</link>
+      <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2022/03/sjzcl01/</guid>
+      <description>读书笔记 - 《数据资产论》 根据会计学的定义，资源要成为资产有一个必要条件：带来预期的经济收益。由此，不是所有的数据都可以称为资产，只有那些能够</description>
+    </item>
+    
+    <item>
+      <title>Gin 表单与文件上传</title>
+      <link>https://rjguanwen.cn/2022/03/gin_03/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2022/03/gin_03/</guid>
+      <description>表单参数 表单传输为 POST 请求，http 常见的传输格式为四种： - application/json - application/x-www-form-urlencoded - application/xml - multipart/form-data 表单参数可以通过 PostForm() 方法获取，该方法默认解析的是 x-www-form-urlencoded 或 form-data 格式的参数。 简单</description>
+    </item>
+    
+    <item>
+      <title>Gin 路由</title>
+      <link>https://rjguanwen.cn/2021/09/gin_02/</link>
+      <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2021/09/gin_02/</guid>
+      <description>路由 核心功能 路由系统可根据请求方法、请求路径和路径参数来识别转发 可设置一个或者多个中间件用于在请求处理器前后处理特殊的事件 可以分组设置，将一</description>
+    </item>
+    
+    <item>
+      <title>hugo 常用命令</title>
+      <link>https://rjguanwen.cn/2021/07/hugo_cmd/</link>
+      <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2021/07/hugo_cmd/</guid>
+      <description>常用命令 #使用方法: hugo hugo [flags] hugo [command] hugo [command] [flags] #查看版本 hugo version #版本和环境详细信息 hugo env #创建新站点 hugo new site &amp;quot;$mysite&amp;quot; #创建文章 hugo new index.md 在content/文件夹可以看</description>
+    </item>
+    
+    <item>
+      <title>rasa 入门</title>
+      <link>https://rjguanwen.cn/2021/07/rasa-1/</link>
+      <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2021/07/rasa-1/</guid>
+      <description>前言：没有比官网文档更好的资料了。看这里https://rasa.com/docs/rasa/ rasa 安装 pip install -U rasa pip show rasa 注：我是用的 rasa 版本为 Version: 2.8.1 初</description>
+    </item>
+    
+    <item>
+      <title>rasa 继续入门 - 语言模型与分词器</title>
+      <link>https://rjguanwen.cn/2021/07/rasa-2/</link>
+      <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2021/07/rasa-2/</guid>
+      <description>rasa 支持多种语言模型与分词器，语言模型常用的有 MITIENLP 和 SpaCyNLP，分词器常用的有 WhitespaceTokenizer、JiebaToken</description>
+    </item>
+    
+    <item>
+      <title>Anaconda 虚拟环境基础操作</title>
+      <link>https://rjguanwen.cn/2021/02/python-1/</link>
+      <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/2021/02/python-1/</guid>
+      <description>Anaconda 虚拟环境基础操作 创建 创建的同时可以同时指定安装必要的包： conda create -n &amp;lt;虚拟环境名&amp;gt; [包名1 包名2 包名3] python=3.6 激活虚拟环境 Linux: source activate &amp;lt;</description>
+    </item>
     
     <item>
       <title>Apache Superset 简介</title>
@@ -71,15 +134,6 @@
       
       <guid>https://rjguanwen.cn/2020/06/gin_01/</guid>
       <description>Gin 使基于 go 语言的一个 web 框架，接口简洁，封装比较优雅，性能表现很好。 Gin 特性 快速：路由不使用反射，基于Radix树，内存占用少。 中间件：HTTP</description>
-    </item>
-    
-    <item>
-      <title>Gin Quickstart</title>
-      <link>https://rjguanwen.cn/2020/06/gin_02/</link>
-      <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://rjguanwen.cn/2020/06/gin_02/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -146,7 +200,7 @@
     </item>
     
     <item>
-      <title>Centrifugo（七）Server API</title>
+      <title>Centrifugo（七）Server HTTP API</title>
       <link>https://rjguanwen.cn/2019/12/centrifugo_07/</link>
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
       
