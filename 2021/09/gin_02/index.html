@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        Gin 路由 - 飞光
+      </title>
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="Gin 路由" />
+  <meta name="generator" content="Hugo 0.59.1 with theme pure" />
+  <title>Gin 路由 - 飞光</title>
+  
+
+  <link rel="stylesheet" href="https://rjguanwen.cn/css/style.css">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <meta property="og:title" content="Gin 路由" />
+<meta property="og:description" content="Gin 路由" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rjguanwen.cn/2021/09/gin_02/" />
+<meta property="article:published_time" content="2021-09-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-09-16T00:00:00+00:00" />
+<meta itemprop="name" content="Gin 路由">
+<meta itemprop="description" content="Gin 路由">
+
+
+<meta itemprop="datePublished" content="2021-09-16T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-09-16T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1374">
+
+
+
+<meta itemprop="keywords" content="技术,gin,golang,开发框架," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Gin 路由"/>
+<meta name="twitter:description" content="Gin 路由"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  </head>
+  <body class="main-center" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/rjguanwen" target="_blank">
+            <img class="img-circle img-rotate" src="https://rjguanwen.cn/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">rjguanwen</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">食熊则肥  食蛙则瘦</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>山东 济南</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-主页">
+                <a href="/">
+                  <span class="menu-title">主页</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-文章">
+                <a href="/posts">
+                  <span class="menu-title">文章</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-目录">
+                <a href="/categories">
+                  <span class="menu-title">目录</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-标签">
+                <a href="/tags">
+                  <span class="menu-title">标签</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-关于">
+                <a href="/about">
+                  <span class="menu-title">关于</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>临渊羡鱼，<br/>不如退而结网！</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> 分类</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/centrifugo/" class="category-list-link">centrifugo</a><span class="category-list-count">10</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/docker/" class="category-list-link">docker</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/gin/" class="category-list-link">gin</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/git/" class="category-list-link">git</a><span class="category-list-count">4</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/golang/" class="category-list-link">golang</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/ignite/" class="category-list-link">ignite</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/python/" class="category-list-link">python</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/rasa/" class="category-list-link">rasa</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/redis/" class="category-list-link">redis</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/superset/" class="category-list-link">superset</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/%E5%B7%A5%E5%85%B7/" class="category-list-link">工具</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/" class="category-list-link">杂七杂八</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/" class="category-list-link">系统架构</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/%E8%AF%97%E8%AF%8D/" class="category-list-link">诗词</a><span class="category-list-count">14</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/%E8%AF%BB%E4%B9%A6/" class="category-list-link">读书</a><span class="category-list-count">1</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/centrifugo/" class="tag-list-link">centrifugo</a><span
+                    class="tag-list-count">10</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/docker/" class="tag-list-link">docker</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/gin/" class="tag-list-link">gin</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/git/" class="tag-list-link">git</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/golang/" class="tag-list-link">golang</a><span
+                    class="tag-list-count">6</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/ignite/" class="tag-list-link">ignite</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/python/" class="tag-list-link">python</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/rasa/" class="tag-list-link">rasa</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/redis/" class="tag-list-link">redis</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/superset/" class="tag-list-link">superset</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E4%B8%AA%E4%BA%BA/" class="tag-list-link">个人</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E5%8F%A4%E6%96%87/" class="tag-list-link">古文</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E5%8F%A5%E5%AD%90/" class="tag-list-link">句子</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E5%B0%8F%E5%93%81%E6%96%87/" class="tag-list-link">小品文</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/" class="tag-list-link">开发框架</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/" class="tag-list-link">技术</a><span
+                    class="tag-list-count">33</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/" class="tag-list-link">杂七杂八</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E6%9D%82%E6%84%9F%E9%9A%8F%E7%AC%94/" class="tag-list-link">杂感随笔</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E7%8E%B0%E4%BB%A3%E8%AF%97/" class="tag-list-link">现代诗</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E8%AF%97%E8%AF%8D/" class="tag-list-link">诗词</a><span
+                    class="tag-list-count">9</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E8%AF%BB%E4%B9%A6/" class="tag-list-link">读书</a><span
+                    class="tag-list-count">1</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://rjguanwen.cn/2022/05/two_yz/" class="title">本身原则与理性原则</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2022-05-11 00:00:00 &#43;0000 UTC" itemprop="datePublished">2022-05-11</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://rjguanwen.cn/2022/03/sjzcl01/" class="title">读书 - 《数据资产论》</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2022-03-23 00:00:00 &#43;0000 UTC" itemprop="datePublished">2022-03-23</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://rjguanwen.cn/2022/03/gin_03/" class="title">Gin 表单与文件上传</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2022-03-08 00:00:00 &#43;0000 UTC" itemprop="datePublished">2022-03-08</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://rjguanwen.cn/2021/09/gin_02/" class="title">Gin 路由</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-09-16 00:00:00 &#43;0000 UTC" itemprop="datePublished">2021-09-16</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://rjguanwen.cn/2021/08/scsj-6/" class="title">《临江仙·夜登小阁忆洛中旧游》</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-08-12 00:00:00 &#43;0000 UTC" itemprop="datePublished">2021-08-12</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+  <aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+    <div class="slimContent">
+      <nav id="toc" class="article-toc">
+        <h3 class="toc-title">文章目录</h3>
+        <div class="toc-content always-active"><nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#路由">路由</a>
+<ul>
+<li><a href="#核心功能">核心功能</a></li>
+<li><a href="#基本语法">基本语法</a></li>
+<li><a href="#请求方法">请求方法</a>
+<ul>
+<li><a href="#快捷方法">快捷方法</a></li>
+<li><a href="#通用方法">通用方法</a></li>
+<li><a href="#任意方法">任意方法</a></li>
+</ul></li>
+<li><a href="#处理器">处理器</a></li>
+<li><a href="#路由参数">路由参数</a>
+<ul>
+<li><a href="#必选参数">必选参数</a></li>
+<li><a href="#可选参数">可选参数</a></li>
+<li><a href="#获取参数">获取参数</a></li>
+</ul></li>
+<li><a href="#路由分组">路由分组</a>
+<ul>
+<li><a href="#创建分组">创建分组</a></li>
+</ul></li>
+<li><a href="#中间件">中间件</a></li>
+<li><a href="#启动监听">启动监听</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+      </nav>
+    </div>
+  </aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2021/09/gin_02/"
+    >Gin 路由</a
+  >
+</h1>
+
+      <div class="article-meta">
+        <span class="article-date">
+  <i class="icon icon-calendar-check"></i>
+<a href="https://rjguanwen.cn/2021/09/gin_02/" class="article-date">
+  <time datetime="2021-09-16 00:00:00 &#43;0000 UTC" itemprop="datePublished">2021-09-16</time>
+</a>
+</span><span class="article-category">
+  <i class="icon icon-folder"></i>
+  <a class="article-category-link" href="/categories/gin/"> gin </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+    <a class="article-tag-link" href="/tags/%E6%8A%80%E6%9C%AF/"> 技术 </a>
+    <a class="article-tag-link" href="/tags/gin/"> gin </a>
+    <a class="article-tag-link" href="/tags/golang/"> golang </a>
+    <a class="article-tag-link" href="/tags/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/"> 开发框架 </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/09/gin_02/#comments"
+            class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:1374字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长:3分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+
+<h2 id="路由">路由</h2>
+
+<h3 id="核心功能">核心功能</h3>
+
+<ol>
+<li>路由系统可根据请求方法、请求路径和路径参数来识别转发</li>
+<li>可设置一个或者多个中间件用于在请求处理器前后处理特殊的事件</li>
+<li>可以分组设置，将一个或多个中间件作用在一组多个路由上</li>
+</ol>
+
+<h3 id="基本语法">基本语法</h3>
+
+<pre><code class="language-(golang)">//构建路由对象并注册请求路径对应的处理器
+r := gin.Default()
+r.GET(&quot;/ping&quot;, func(c *gin.Context) {
+    c.JSON(200, gin.H{
+        &quot;message&quot;: &quot;ping&quot;,
+    })
+})
+// 监听并在 0.0.0.0：8080 上启动服务
+r.Run()
+</code></pre>
+
+<p><strong>可以将路由的定义放在单独的文件中完成，如 <code>/router/api.go</code> :</strong></p>
+
+<pre><code class="language-(golang)">// file: /router/api.go
+func APIRouter() *gin.Engine {
+    r := gin.Default()
+    r.GET(&quot;/ping&quot;, func(c *gin.Context) {
+        c.JSON(200, gin.H{
+            &quot;message&quot;: &quot;ping&quot;
+        })
+    })
+    // 更多的注册
+    // r.POST()
+    // r.DELETE()
+    // r.PUT()
+    return r
+}
+</code></pre>
+
+<p>然后，在 <code>main()</code> 中完成调用和初始化，并启动监听：</p>
+
+<pre><code class="language-(golang)">// file /main.go
+func main() {
+    // 初始化路由
+    r := router.APIRouter()
+    // 启动服务
+    r.Run()
+}
+</code></pre>
+
+<h3 id="请求方法">请求方法</h3>
+
+<h4 id="快捷方法">快捷方法</h4>
+
+<p>除 <code>GET</code> 方法外，路由系统还支持任意方式的请求：<code>DELETE</code>、<code>GET</code>、<code>HEAD</code>、<code>OPTIONS</code>、<code>PATCH</code>、<code>POST</code>、<code>PUT</code>。</p>
+
+<h4 id="通用方法">通用方法</h4>
+
+<p>如果需要接收其他的请求方式，可以使用通用的方法 <code>Handle</code> 来注册：</p>
+
+<pre><code class="language-(golang)">func (group *RouterGroup) Handle(httpMethod, relativePath string, handlers ...HandlerFunc) IRoutes
+</code></pre>
+
+<p>其中 <code>httpMethod</code> 就是请求方法字符串，例如 <code>TRACE</code>、<code>CONNECT</code> 等。</p>
+
+<h4 id="任意方法">任意方法</h4>
+
+<p>若需要监听同一个请求路径的多个任意方法，可以使用 <code>Any()</code>：</p>
+
+<pre><code class="language-(golang)">func (group *RouterGroup) Any(relativePath string, handlers ...HandlerFunc) IRoutes
+</code></pre>
+
+<h3 id="处理器">处理器</h3>
+
+<p>handler 处理器（也被成为控制器），用来处理 HTTP 请求：</p>
+
+<pre><code class="language-(golang)">type HandlerFunc func(*Context)
+</code></pre>
+
+<p>handler 就是一个可以接收 <code>*Context</code> 类型的 <code>(*gin.Context)</code> 参数的函数。<br />
+处理器可以分为两类，中间件和请求处理器（也叫业务逻辑处理器）。在 <code>router.GET()</code> 之类的方法中，最后一个 Handler 就是请求处理器，除此之外前边的都是中间件。<br />
+处理器被调用时，会接收一个 <code>*Context</code> 参数，是请求上下文，用于获取请求和响应操作。</p>
+
+<h3 id="路由参数">路由参数</h3>
+
+<p>路由参数指在请求路径中定义的参数，例如请求的 URI 是 <code>/user/21</code>，21 作为用户的 ID，那么 21 就是路由参数。路由参数与查询字符串有区别，例如 <code>/user?ID=21</code>，这个 <code>ID=21</code> 叫做查询字符串。<br />
+使用路由参数的好处是将动态 URL 变为静态 URL，因为请求客户端会认为路由参数不是变化的数据，因此被视为静态 URL.<br />
+如需定义带有路由参数的路径，需要使用 <code>:param</code> 或 <code>*param</code> 的语法在路径中。</p>
+
+<h4 id="必选参数">必选参数</h4>
+
+<p>使用 <code>:param</code> 的语法完成必选参数的定义，例如 <code>/user/:ID</code>，即可匹配 <code>/user/21</code> 这个 URI，但不能匹配 <code>/user</code> 或 <code>/user/</code>。例如</p>
+
+<pre><code class="language-(golang)">router.GET(&quot;/user/:ID&quot;, func(c *gin.Context) {
+    ID := c.Para(&quot;ID&quot;)
+})
+</code></pre>
+
+<h4 id="可选参数">可选参数</h4>
+
+<p>使用 <code>*param</code> 的语法完成可选参数的定义，例如 <code>/user/*ID</code> 可以匹配 <code>/user/21</code> 和 <code>/user</code> 或 <code>/user/</code> 的 URI。例如：</p>
+
+<pre><code class="language-(golang)">router.GET(&quot;/user/*ID&quot;, func(c *gin.Context) {
+    ID := c.Para(&quot;ID&quot;)
+})
+</code></pre>
+
+<p>若没有匹配到，则 ID 为空字符串。</p>
+
+<h4 id="获取参数">获取参数</h4>
+
+<p>使用 gin.Context 对象的 <code>c.Param(&quot;param&quot;)</code> 来获取参数值。</p>
+
+<h3 id="路由分组">路由分组</h3>
+
+<p>路由分组用于将多个路由进行统一的处理，例如统一的前缀，统一的中间件等。例如在需要做认证的业务逻辑时，就可以将大量的需要身份认证的路由定义在一个组中，集中设置用于认证校验的中间件。</p>
+
+<h4 id="创建分组">创建分组</h4>
+
+<p>使用函数 <code>router.Group()</code> 完成分组的创建。创建时可以提供路径前缀和公用中间件：</p>
+
+<pre><code class="language-(golang)">func (group *RouterGroup) Group(relativePath string, handlers ...handlerFunc) *RouterGroup
+</code></pre>
+
+<p>调用该函数后，会形成一个分组路由对象，组内的路由需要使用该对象完成处理器的注册，例如：</p>
+
+<pre><code class="language-(golang)">// 简单的路由组
+v1 := router.Group(&quot;/v1&quot;)
+{
+    v1.Post(&quot;/login&quot;, loginEndpoint)
+    v1.Post(&quot;/submit&quot;, submitEndpoint)
+    v1.Post(&quot;/delete&quot;, deleteEndpoint)
+}
+
+v2 := router.Group(&quot;/v2&quot;)
+{
+    v2.Post(&quot;/login&quot;, loginEndpoint)
+    v2.Post(&quot;/submit&quot;, submitEndpoint)
+    v2.Post(&quot;/delete&quot;, deleteEndpoint)
+}
+</code></pre>
+
+<p>上面的代码创建了两个路由分组，前缀分别是 v1 和 v2。</p>
+
+<h3 id="中间件">中间件</h3>
+
+<p>中间件 middleware，也是一种处理器。主要用于在多个业务逻辑中间重用代码，例如认证校验、日志处理等。中间件需要附加在路由上，使用 <code>router.User()</code> 方法。<br />
+我们在使用 <code>gin.Default()</code> 初始化路由对象时，会随之附加两个中间件 <code>Logger</code> 和 <code>Recovery</code>，用于完成日志和恢复的相关处理：</p>
+
+<pre><code class="language-(golang)">func Default() *Engine {
+    debugPrintWARNINGDefault()
+    engine := New()
+    // 注册中间件
+    engine.Use(Logger(), Recovery())
+    return engine
+}
+</code></pre>
+
+<p>若不想使用任何中间件，可以使用函数 <code>gin.New()</code> 来创建空白的路由，例如：</p>
+
+<pre><code class="language-(golang)">router := gin.New()
+</code></pre>
+
+<p>此时的路由对象，不会自动附加任何的中间件。</p>
+
+<h3 id="启动监听">启动监听</h3>
+
+<p>函数 <code>router.Run()</code> 用于启动 HTTP 监听，函数接收监听地址作为参数，默认地址为 <code>:8080</code>。</p>
+
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://rjguanwen.cn/2021/08/scsj-6/" title="《临江仙·夜登小阁忆洛中旧游》"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+            </li>
+            <li class="next">
+                <a href="https://rjguanwen.cn/2022/03/gin_03/"
+                    title="Gin 表单与文件上传"><span>下一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat"
+                data-mobile-sites="weibo,qq,qzone,wechat"></div>
+        </div>
+    </div>
+</nav>
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/rjguanwen" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://rjguanwen.cn/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2017  -
+    2022
+    
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+   window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/rust.min.js"></script>
+<script type="text/javascript"
+   src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script>
+hljs.configure({
+  tabReplace: '    ', 
+  classPrefix: ''     
+                      
+})
+hljs.initHighlightingOnLoad();
+</script>
+<script type="text/javascript" src="https://rjguanwen.cn/js/application.js"></script>
+<script type="text/javascript" src="https://rjguanwen.cn/js/plugin.js"></script>
+<script>
+      (function (window) {
+          var INSIGHT_CONFIG = {
+              TRANSLATION: {
+                  POSTS: '文章',
+                  PAGES: '页面',
+                  CATEGORIES: '分类',
+                  TAGS: '标签',
+                  UNTITLED: '(未命名)',
+              },
+              ROOT_URL: 'https:\/\/rjguanwen.cn\/',
+              CONTENT_URL: 'https:\/\/rjguanwen.cn\/\/searchindex.json ',
+          };
+          window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+      })(window);
+      </script>
+<script type="text/javascript" src="https://rjguanwen.cn/js/insight.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: 'fa63cb30ceea59ed6d75',
+        clientSecret: 'e06b033c38c44b3bc8d2bf15aa4ef888c6548e90',
+        repo: 'rjguanwen-blog-comments',
+        owner: 'rjguanwen',
+        admin: ['rjguanwen'],
+        id: md5(location.pathname),
+        distractionFreeMode: true
+    });
+    gitalk.render('comments');
+</script>
+  </body>
+</html>
