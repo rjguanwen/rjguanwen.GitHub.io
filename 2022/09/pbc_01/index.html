@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        上传本地文件到git - 飞光
+        组装式应用思考 - 飞光
       </title>
     <head>
   <meta charset="utf-8">
@@ -23,34 +23,34 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <meta name="description" content="git使用中一些问题及解决方案的记录" />
+  <meta name="description" content="以组装式应用的思想为指导，对智能商业操作系统后续的考量。" />
   <meta name="generator" content="Hugo 0.59.1 with theme pure" />
-  <title>上传本地文件到git - 飞光</title>
+  <title>组装式应用思考 - 飞光</title>
   
 
   <link rel="stylesheet" href="https://rjguanwen.cn/css/style.css">
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css"> 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-  <meta property="og:title" content="上传本地文件到git" />
-<meta property="og:description" content="git使用中一些问题及解决方案的记录" />
+  <meta property="og:title" content="组装式应用思考" />
+<meta property="og:description" content="以组装式应用的思想为指导，对智能商业操作系统后续的考量。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://rjguanwen.cn/2019/12/git_02/" />
-<meta property="article:published_time" content="2019-12-17T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-12-17T00:00:00+00:00" />
-<meta itemprop="name" content="上传本地文件到git">
-<meta itemprop="description" content="git使用中一些问题及解决方案的记录">
+<meta property="og:url" content="https://rjguanwen.cn/2022/09/pbc_01/" />
+<meta property="article:published_time" content="2022-09-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-09-22T00:00:00+00:00" />
+<meta itemprop="name" content="组装式应用思考">
+<meta itemprop="description" content="以组装式应用的思想为指导，对智能商业操作系统后续的考量。">
 
 
-<meta itemprop="datePublished" content="2019-12-17T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2019-12-17T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="96">
+<meta itemprop="datePublished" content="2022-09-22T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2022-09-22T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="3023">
 
 
 
-<meta itemprop="keywords" content="技术,GIT," />
+<meta itemprop="keywords" content="技术," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="上传本地文件到git"/>
-<meta name="twitter:description" content="git使用中一些问题及解决方案的记录"/>
+<meta name="twitter:title" content="组装式应用思考"/>
+<meta name="twitter:description" content="以组装式应用的思想为指导，对智能商业操作系统后续的考量。"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -335,13 +335,21 @@
 <ul>
 <li>
 <ul>
-<li>
+<li><a href="#什么是组装式应用">什么是组装式应用?</a></li>
+<li><a href="#组装式应用的价值">组装式应用的价值</a></li>
+<li><a href="#组装式应用与低代码平台的关系">组装式应用与低代码平台的关系</a></li>
+<li><a href="#组装式应用的实现设想">组装式应用的实现设想</a>
 <ul>
 <li>
 <ul>
-<li><a href="#1-创建本地仓库">1、创建本地仓库</a></li>
-<li><a href="#2-关联-github-仓库">2、关联 github 仓库</a></li>
-<li><a href="#3-上传本地内容">3、上传本地内容</a></li>
+<li><a href="#1-组装式应用的底座">1、组装式应用的底座</a></li>
+<li><a href="#2-pbc的形态">2、PBC的形态</a>
+<ul>
+<li><a href="#2-1-业务服务类">2.1、业务服务类</a></li>
+<li><a href="#2-2-功能组件类">2.2、功能组件类</a></li>
+<li><a href="#2-3-应用模块类">2.3、应用模块类</a></li>
+</ul></li>
+<li><a href="#3-pbc研发管控平台">3、PBC研发管控平台</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -359,73 +367,85 @@
       <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2019/12/git_02/"
-    >上传本地文件到git</a
+    href="/2022/09/pbc_01/"
+    >组装式应用思考</a
   >
 </h1>
 
       <div class="article-meta">
         <span class="article-date">
   <i class="icon icon-calendar-check"></i>
-<a href="https://rjguanwen.cn/2019/12/git_02/" class="article-date">
-  <time datetime="2019-12-17 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-12-17</time>
+<a href="https://rjguanwen.cn/2022/09/pbc_01/" class="article-date">
+  <time datetime="2022-09-22 00:00:00 &#43;0000 UTC" itemprop="datePublished">2022-09-22</time>
 </a>
 </span><span class="article-category">
   <i class="icon icon-folder"></i>
-  <a class="article-category-link" href="/categories/git/"> GIT </a>
+  <a class="article-category-link" href="/categories/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/"> 系统架构 </a>
 </span>  
   <span class="article-tag">
     <i class="icon icon-tags"></i>
     <a class="article-tag-link" href="/tags/%E6%8A%80%E6%9C%AF/"> 技术 </a>
-    <a class="article-tag-link" href="/tags/git/"> GIT </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/12/git_02/#comments"
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/09/pbc_01/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:96字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长:1分 </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:3023字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长:7分 </span>
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
 
-<h4 id="1-创建本地仓库">1、创建本地仓库</h4>
+<h2 id="什么是组装式应用">什么是组装式应用?</h2>
 
-<ol>
-<li><p><code>cd</code> 到相应文件夹</p></li>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>组装式应用被Gartner连续两年列为重要战略技术趋势。</strong><br />
+<img src="/images/Gartner_2021.jpg" alt="Gartner 技术成熟度曲线 2021" /><br />
+<img src="/images/Gartner_2022.png" alt="Gartner 重要战略趋势 2022" /><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;之所以“组装式应用”能够成为近年来的重要战略技术趋势，究其原因是，由于互联网已经进入“下半场”，靠“堆人力”的研发方式已经不再具备竞争力了，真正可行且有效的方式是让系统能力变得可沉淀、可组合复用、可灵活应对各种变化。面对不断变化的业务环境、快速迭代的业务需求，急需通过组装式应用来提升企业的竞争力。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;那么什么是组装式应用呢？<br />
+  <strong>“组装式应用由以业务为中心的模块化组件构成，具备更易使用和可重复使用的代码，可加速新软件解决方案的上市时间，并释放企业价值。”</strong><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“组装式应用”可以理解为一种技术理念，倡导的是任何企业数字化技术元素均可被组合。组装式应用协力为企业提供更灵活的组装式部件，帮助企业应对不同环境带来的挑战，让企业更具韧性和抗风险能力。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;组装式应用是由一系列的“封装业务能力”（<strong>Packaged Business Capability，简称PBC</strong>）组成的。PBC是封装好的软件组件，代表定义良好的业务功能，业务用户可快速识别，并可对外开放API接口。PBC并没有规定的大小、功能范围或内部体系结构，但PBC只有在实现了模块化、可发现、自主和可编排（集成）的特征后才是有价值的。换句话说，封装好的业务能力，必须是独立的，对某类受众能体现出业务或技术价值。</p>
 
-<li><p>仓库初始化：</p>
+<h2 id="组装式应用的价值">组装式应用的价值</h2>
 
-<pre><code>git init
-</code></pre></li>
+<p>个人认为，组装式应用在两个方面有较大的意义：<br />
+1. 面向企业的价值，通过组装式应用的方式，可以重构企业的信息化架构，可以用搭积木的方式快速构建新型应用，为业务的快速变化提供敏捷的信息化支撑。这个可以看成是微服务的一个升级。<br />
+2. 面向软件开发商的价值，特别是像我们这样的，面向某个行业的软件开发商。通过这种模式，可以打造多行业相对通用的软件体系，方便在具体行业、具体企业时，快速定制开发个性化软件。<br />
+   接下来的论述主要针对第二种情况。</p>
 
-<li><p>将文件添加到仓库：</p>
+<h2 id="组装式应用与低代码平台的关系">组装式应用与低代码平台的关系</h2>
 
-<pre><code>git add .
-</code></pre></li>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;组装式应用与低代码平台关系非常密切，可以认为低代码平台应该是组装式应用架构里面很重要的一个组成部分。但是，从两者的定位来看，还是有明显差别的。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;组装式应用的核心是对业务的抽象，它的每一个PBC都有具体的业务含义与业务目标，甚至包含业务动作。而低代码平台的核心是提供了可复用的技术组件，业务人员可以用这些技术组之间来拼装成业务功能来支撑具体业务的开展。两者虽然都是为了敏捷开发，但是出发点是有巨大差异。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为什么说低代码平台是组装式应用架构的重要组成部分呢？关键在于两者虽然有差异，但是其互补性也非常强。两者一个注重技术一个注重业务，通过低代码的理念来实现PBC的组装，可以更高效、更精确的实现业务诉求。</p>
 
-<li><p>提交文件到仓库：</p>
+<h2 id="组装式应用的实现设想">组装式应用的实现设想</h2>
 
-<pre><code>git commit -m &quot;xxxxxxx&quot;
-</code></pre>
+<h4 id="1-组装式应用的底座">1、组装式应用的底座</h4>
 
-<h4 id="2-关联-github-仓库">2、关联 github 仓库</h4></li>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;所谓组装式应用的底座，就像汽车底盘一样，它是一个承载平台。同一个汽车底盘，通过配置不同的动力总成、车身、内饰、空调电子等，可以生产制造各种不同系列的汽车，例如：速腾、高尔夫、奥迪TT就都是基于PQ35平台研发生产的。组装式应用的底座应该也有同样的功效，它可以承载各种不同的PBC，为不同的行业、不同的企业构建出个性化十足的应用系统。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;个人认为组装式应用的底座应该就是企业数字中台，精确的来说就是业务中台+数据中台。数字中台天生具有成为底座资质，因为它本身就是对业务的抽象，可以为各个PBC提供稳定的原子服务，同时也为各PBC之间的连接提供了服务、流程与数据方面的保障。所以，数字中台的建设是组装式应用架构建设的基础。以快消品行业为例，我们要建设一套能适应多个快消品行业的组装式应用系统，那么我们首先要建设一个面向快消品领域且提出了具体行业属性的数字中台，基于这套中台，来构建面向各种具体业务的PBC，通过PBC的组装形成面向具体快消品行业（如烟、酒）的业务应用。</p>
 
-<li><p>添加远程仓库：</p>
+<h4 id="2-pbc的形态">2、PBC的形态</h4>
 
-<pre><code>git remote add origin https://github.com/rjguanwen/xxxx.git
-</code></pre></li>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关于PBC到底长啥样，应该以什么技术支持、以什么形态存在，这个暂时没有唯一正确的回答。我想，PBC应该是是分不同种类的，我将其分为三类：业务服务类、功能组件类、应用模块类。</p>
 
-<li><p>合并本地内容与远程内容：</p>
+<h5 id="2-1-业务服务类">2.1、业务服务类</h5>
 
-<pre><code>git pull --rebase origin master
-</code></pre>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业务服务类PBC以Rest服务的形式存在，包括数字中台的原子服务、通过中台原子服务封装的业务能力服务以及自定义服务。前两者很好理解，自定义服务是特指通过服务定义平台用SQL的方式生产的服务。自定义服务的特殊之处在于，它所连接的数据库可能不是中台这样的稳定的数据库，可能是归属于某一个应用的数据库。这样它的可用性要以该应用的在用为基础。这是需要在PBC管理上需要注意的。</p>
 
-<h4 id="3-上传本地内容">3、上传本地内容</h4>
+<h5 id="2-2-功能组件类">2.2、功能组件类</h5>
 
-<pre><code>git push -u origin master
-</code></pre></li>
-</ol>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;功能组件类PBC以web组件或页面组件的形式存在，举两个例子有助于理解：一是客户漏斗，它在系统里面可能表现为一个弹出框，但是它是具有一定的业务含义的。首先它要受到登录用户的数据权限控制，另外它也会收到上级页面上一些参数与选择条件的控制，最后它本身也集成了一些相关的能力，如基于标签、分类分档、经营情况的筛选等；二是订单明细，它在系统里面可能表现为一个设置一系列的页面组合。在业务系统中，每个显示了订单号的地方，都能将其挂载上去，用户客户虽然进入查看其明细设置统计信息；三是客户档案，客户档案除了包括客户的基本信息之外，可能还会包括客户画像、客户经营情况、客户诚信情况等等，与订单明细一样，它也可以提炼为一个PBC，在系统里面广泛应用。功能类组件在引入时应该提供相应的参数配置能力，以保证其适应性。</p>
+
+<h5 id="2-3-应用模块类">2.3、应用模块类</h5>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;应用模块类BPC比功能组件类更高了一个层次，它应该是以容器封装的微应用为主要形态。这类BPC的特点是具有相对高的业务通用性。例如问卷调查，它本身有足够高的可配置性，同时又有足够的通用性，这就可以抽象为一个BPC。各业务系统需要时，可以直接将其引入系统，需要重点考虑的是该组件与业务系统其他模块之间的互通问题，例如调查范围的选择可能要和系统中的客户、组织机构等打通；调查的结果可能要和具体的业务打通。</p>
+
+<h4 id="3-pbc研发管控平台">3、PBC研发管控平台</h4>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;只有好的管理才能有好的复用。PBC研发管控平台包括PBC定义、设计、发布、停用等生命周期管理及分类管理、引用管理等内容。具体不再详述。目标是最大限度的方便PBC在各业务系统中复用。</p>
 
     </div>
   </article>
@@ -436,14 +456,9 @@
     <div class="bar-inner">
         <ul class="pager pull-left">
             <li class="prev">
-                <a href="https://rjguanwen.cn/2019/12/centrifugo_03/" title="Centrifugo（三）安装与启动"><i
+                <a href="https://rjguanwen.cn/2022/05/two_yz/" title="本身原则与理性原则"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
-            </li>
-            <li class="next">
-                <a href="https://rjguanwen.cn/2019/12/centrifugo_06/"
-                    title="Centrifugo（六）引擎（Engines）"><span>下一篇&nbsp;&nbsp;</span><i
-                        class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
             <li class="toggle-toc">
