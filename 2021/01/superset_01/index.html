@@ -43,7 +43,7 @@
 
 <meta itemprop="datePublished" content="2021-01-30T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2021-01-30T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="622">
+<meta itemprop="wordCount" content="800">
 
 
 
@@ -167,7 +167,7 @@
             <li class="category-list-item"><a href="https://rjguanwen.cn/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/" class="category-list-link">杂七杂八</a><span class="category-list-count">3</span></li>
             <li class="category-list-item"><a href="https://rjguanwen.cn/categories/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/" class="category-list-link">系统架构</a><span class="category-list-count">3</span></li>
             <li class="category-list-item"><a href="https://rjguanwen.cn/categories/%E8%AF%97%E8%AF%8D/" class="category-list-link">诗词</a><span class="category-list-count">14</span></li>
-            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/%E8%AF%BB%E4%B9%A6/" class="category-list-link">读书</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/%E8%AF%BB%E4%B9%A6/" class="category-list-link">读书</a><span class="category-list-count">2</span></li>
         </ul>
     </div>
 </div>
@@ -258,7 +258,7 @@
             
             
             <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E8%AF%BB%E4%B9%A6/" class="tag-list-link">读书</a><span
-                    class="tag-list-count">1</span></li>
+                    class="tag-list-count">2</span></li>
             
         </ul>
 
@@ -276,6 +276,16 @@
                     </p>
                     <p class="item-date">
                         <time datetime="2022-09-22 00:00:00 &#43;0000 UTC" itemprop="datePublished">2022-09-22</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://rjguanwen.cn/2022/06/jingjixuetongshi_1/" class="title">读书 - 《经济学通识》</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2022-06-24 00:00:00 &#43;0000 UTC" itemprop="datePublished">2022-06-24</time>
                     </p>
                 </div>
             </li>
@@ -306,16 +316,6 @@
                     </p>
                     <p class="item-date">
                         <time datetime="2022-03-08 00:00:00 &#43;0000 UTC" itemprop="datePublished">2022-03-08</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://rjguanwen.cn/2021/09/gin_02/" class="title">Gin 路由</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2021-09-16 00:00:00 &#43;0000 UTC" itemprop="datePublished">2021-09-16</time>
                     </p>
                 </div>
             </li>
@@ -380,7 +380,7 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/01/superset_01/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:622字</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:800字</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长:2分 </span>
       </div>
     </div>
@@ -449,7 +449,7 @@
 
 <h3 id="基于-docker-部署使用">基于 docker 部署使用</h3>
 
-<p>1、 下载 superset 镜像</p>
+<p><strong>1、 下载 superset 镜像</strong></p>
 
 <pre><code>docker search superset
 </code></pre>
@@ -459,7 +459,7 @@
 <pre><code>docker pull amancevice/superset
 </code></pre>
 
-<p>2、启动并初始化<br />
+<p><strong>2、启动并初始化</strong><br />
 创建挂载目录：</p>
 
 <pre><code>mkdir /opt/docker/superset/conf &amp; mkdir /opt/docker/superset/data
@@ -477,7 +477,7 @@
 
 <p>此过程中，需要设置管理员用户名与密码。</p>
 
-<p>3、使用 superset
+<p><strong>3、使用 superset</strong>
 访问url：<a href="http://localhost:8088">http://localhost:8088</a><br />
 使用设置的管理员用户/密码登录系统<br />
 加载样例数据：</p>
@@ -487,7 +487,7 @@
 
 <h3 id="基于-python-虚拟环境部署">基于 python 虚拟环境部署</h3>
 
-<p>1、创建虚拟环境</p>
+<p><strong>1、创建虚拟环境</strong></p>
 
 <pre><code>conda create -n superset python=3.6
 </code></pre>
@@ -497,11 +497,45 @@
 <pre><code>activate superset
 </code></pre>
 
-<p>2、安装<br />
-为保证速度，使用豆瓣源安装 Superset：</p>
+<p><strong>2、安装</strong><br />
+为保证速度，使用国内源安装，如清华、豆瓣等。</p>
 
-<pre><code>
-</code></pre>
+<ul>
+<li><p>安装必须的依赖：</p>
+
+<pre><code>pip install setuptools_rust dataclasses pillow
+</code></pre></li>
+
+<li><p>安装 superset :</p>
+
+<pre><code>pip install apache-superset  
+</code></pre></li>
+
+<li><p>初始化数据库：</p>
+
+<pre><code>superset db upgrade  
+</code></pre></li>
+
+<li><p>运行superset，创建用户：</p>
+
+<pre><code># Create an admin user (you will be prompted to set a username, first and last name before setting a password)
+$ export FLASK_APP=superset
+superset fab create-admin
+ 
+# Load some data to play with（多半会失败，不需要样例则忽略）
+superset load_examples
+ 
+# Create default roles and permissions
+superset init
+ 
+# To start a development web server on port 8088, use -p to bind to another port（只能本地访问）
+superset run -p 8088 --with-threads --reload --debugger
+ 
+# 如果需要远程访问，需要使用以下命令运行superset
+superset run -h 0.0.0.0 -p 8089
+
+</code></pre></li>
+</ul>
 
     </div>
   </article>
