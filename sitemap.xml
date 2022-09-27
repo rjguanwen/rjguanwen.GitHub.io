@@ -52,14 +52,14 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/%E8%AF%BB%E4%B9%A6/</loc>
+    <loc>https://rjguanwen.cn/categories/%E8%AF%BB%E4%B9%A6/</loc>
     <lastmod>2022-06-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/categories/%E8%AF%BB%E4%B9%A6/</loc>
+    <loc>https://rjguanwen.cn/tags/%E8%AF%BB%E4%B9%A6/</loc>
     <lastmod>2022-06-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -80,14 +80,14 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</loc>
+    <loc>https://rjguanwen.cn/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</loc>
     <lastmod>2022-05-11T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</loc>
+    <loc>https://rjguanwen.cn/tags/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</loc>
     <lastmod>2022-05-11T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -101,14 +101,14 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/categories/gin/</loc>
+    <loc>https://rjguanwen.cn/tags/gin/</loc>
     <lastmod>2022-03-08T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/gin/</loc>
+    <loc>https://rjguanwen.cn/categories/gin/</loc>
     <lastmod>2022-03-08T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -304,13 +304,6 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/categories/ignite/</loc>
-    <lastmod>2021-01-12T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://rjguanwen.cn/tags/ignite/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -318,14 +311,21 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/docker/</loc>
-    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+    <loc>https://rjguanwen.cn/categories/ignite/</loc>
+    <lastmod>2021-01-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://rjguanwen.cn/categories/docker/</loc>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/tags/docker/</loc>
     <lastmod>2021-01-05T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -654,14 +654,14 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/about/</loc>
+    <loc>https://rjguanwen.cn/2019/11/art-1/</loc>
     <lastmod>2019-11-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/2019/11/art-1/</loc>
+    <loc>https://rjguanwen.cn/about/</loc>
     <lastmod>2019-11-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
