@@ -80,14 +80,14 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</loc>
+    <loc>https://rjguanwen.cn/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</loc>
     <lastmod>2022-05-11T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</loc>
+    <loc>https://rjguanwen.cn/tags/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</loc>
     <lastmod>2022-05-11T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -318,14 +318,14 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/categories/docker/</loc>
+    <loc>https://rjguanwen.cn/tags/docker/</loc>
     <lastmod>2021-01-05T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/docker/</loc>
+    <loc>https://rjguanwen.cn/categories/docker/</loc>
     <lastmod>2021-01-05T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -465,14 +465,14 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/redis/</loc>
+    <loc>https://rjguanwen.cn/categories/redis/</loc>
     <lastmod>2020-06-05T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/categories/redis/</loc>
+    <loc>https://rjguanwen.cn/tags/redis/</loc>
     <lastmod>2020-06-05T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -493,14 +493,14 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/centrifugo/</loc>
+    <loc>https://rjguanwen.cn/categories/centrifugo/</loc>
     <lastmod>2019-12-31T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/categories/centrifugo/</loc>
+    <loc>https://rjguanwen.cn/tags/centrifugo/</loc>
     <lastmod>2019-12-31T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
