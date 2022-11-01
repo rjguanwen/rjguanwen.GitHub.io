@@ -108,14 +108,14 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/categories/gin/</loc>
+    <loc>https://rjguanwen.cn/tags/gin/</loc>
     <lastmod>2022-03-08T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/gin/</loc>
+    <loc>https://rjguanwen.cn/categories/gin/</loc>
     <lastmod>2022-03-08T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -311,13 +311,6 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/ignite/</loc>
-    <lastmod>2021-01-12T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://rjguanwen.cn/categories/ignite/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -325,14 +318,21 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/categories/docker/</loc>
-    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+    <loc>https://rjguanwen.cn/tags/ignite/</loc>
+    <lastmod>2021-01-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://rjguanwen.cn/tags/docker/</loc>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rjguanwen.cn/categories/docker/</loc>
     <lastmod>2021-01-05T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -409,14 +409,14 @@
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/tags/git/</loc>
+    <loc>https://rjguanwen.cn/categories/git/</loc>
     <lastmod>2020-09-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rjguanwen.cn/categories/git/</loc>
+    <loc>https://rjguanwen.cn/tags/git/</loc>
     <lastmod>2020-09-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
