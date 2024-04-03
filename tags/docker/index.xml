@@ -1,31 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>docker on 飞光</title>
+    <title>Docker on 飞光</title>
     <link>https://rjguanwen.cn/tags/docker/</link>
-    <description>Recent content in docker on 飞光</description>
+    <description>Recent content in Docker on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 05 Jan 2021 00:00:00 +0000</lastBuildDate>
-    
-        <atom:link href="https://rjguanwen.cn/tags/docker/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>zh</language>
+    <lastBuildDate>Tue, 05 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>win10 的 Linux 子系统中安装 docker</title>
-      <link>https://rjguanwen.cn/2021/01/docker_wsl/</link>
+      <link>https://rjguanwen.cn/posts/docker/docker_wsl/</link>
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2021/01/docker_wsl/</guid>
-      <description>在 win10 的 Linux 子系统中实现 docker 的安装使用 1、安装 WSL2 此处注意，一定是 WSL2！wsl 坑太多，经常有莫名错误！ 1. 配置 WSL2 开启WSL 以管理员运行 Powers</description>
+      <guid>https://rjguanwen.cn/posts/docker/docker_wsl/</guid>
+      <description>
+        
+          
+            在 win10 的 Linux 子系统中实现 docker 的安装使用 1、安装 WSL2 此处注意，一定是 WSL2！wsl 坑太多，经常有莫名错误！
+1. 配置 WSL2 开启WSL 以管理员运行 Powershell： Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux 之后重启计算机。
+启用“虚拟机平台”可选组件：
+以管理员运行 Powershell： Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform 之后重启计算机。
+默认启用 WSL2
+运行 Powershell： wsl --set-default-version 2 2. 安装配置 Ubuntu 安装 Ubuntu 打开 Microsoft Store，搜索 ubuntu 并安装。
+之后启动刚刚安装的 Ubuntu。
+设置 Ubuntu 系统的 root 密码 Ubuntu 的默认 root 密码是随机的，即每次开机都有一个新的 root 密码。要修改密码，可在终端输入命令：
+$ sudo passwd 输入当前用户的密码，终端会提示我们输入新的密码并确认，此时的密码就是 root 新密码。
+2、安装 Docker 以管理员身份运行 Ubuntu，在终端中依次执行以下命令：
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Docker常用命令</title>
-      <link>https://rjguanwen.cn/2020/06/docker_01/</link>
+      <link>https://rjguanwen.cn/posts/docker/docker_01/</link>
       <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2020/06/docker_01/</guid>
-      <description>Redis 常用命令，备查！ 1、测试 Docker 是否正常安装 docker run hello-world 2、Docker 状态信息查看 docker info 3、Docker 镜像管理 3.1 创建镜像 方法一：根据 Dockerfile 创建镜像 创建D</description>
+      <guid>https://rjguanwen.cn/posts/docker/docker_01/</guid>
+      <description>
+        
+          
+            Redis 常用命令，备查！
+1、测试 Docker 是否正常安装 docker run hello-world 2、Docker 状态信息查看 docker info 3、Docker 镜像管理 3.1 创建镜像 方法一：根据 Dockerfile 创建镜像 创建Dockerfile文件及其相关依赖文件 切换到Dockerfile文件所在目录，执行如下命令： docker build -t &amp;lt;镜像名称&amp;gt; . 方法二：根据已有镜像实例化后进行交互式环境修改后保存 根据已有镜像实例化容器，记录容器ID，并进入交互式命令行 docker run -it &amp;lt;已有镜像名称&amp;gt; /bin/bash 在交互式命令行执行相关操作后退出交互式命令行 执行如下命令创建镜像 docker commit &amp;lt;容器ID&amp;gt; &amp;lt;镜像名称&amp;gt; 3.2 查看镜像 docker images 3.3 查看某个镜像详情 docker inspect &amp;lt;镜像名称&amp;gt; 3.4 删除镜像 docker rmi &amp;lt;镜像名称&amp;gt; PS：对于存在容器的镜像需要先删除容器
+3.5 为镜像添加标签 docker tag &amp;lt;旧镜像名称&amp;gt; &amp;lt;新镜像名称&amp;gt; PS：该命令会在原有的镜像上重新生成一个新的镜像名称对应该镜像
+3.6 拉取镜像 docker pull &amp;lt;镜像名称&amp;gt; 3.7 推送镜像 docker push &amp;lt;镜像名称&amp;gt; 4、容器操作 4.
+          
+          
+        
+      </description>
     </item>
     
   </channel>

@@ -1,22 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>工具 on 飞光</title>
     <link>https://rjguanwen.cn/categories/%E5%B7%A5%E5%85%B7/</link>
     <description>Recent content in 工具 on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 30 Jul 2021 00:00:00 +0000</lastBuildDate>
-    
-        <atom:link href="https://rjguanwen.cn/categories/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>zh</language>
+    <lastBuildDate>Fri, 30 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/categories/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>hugo 常用命令</title>
-      <link>https://rjguanwen.cn/2021/07/hugo_cmd/</link>
+      <link>https://rjguanwen.cn/posts/tec_ot/hugo_cmd/</link>
       <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2021/07/hugo_cmd/</guid>
-      <description>常用命令 #使用方法: hugo hugo [flags] hugo [command] hugo [command] [flags] #查看版本 hugo version #版本和环境详细信息 hugo env #创建新站点 hugo new site &amp;quot;$mysite&amp;quot; #创建文章 hugo new index.md 在content/文件夹可以看</description>
+      <guid>https://rjguanwen.cn/posts/tec_ot/hugo_cmd/</guid>
+      <description>
+        
+          
+            常用命令 #使用方法: hugo hugo [flags] hugo [command] hugo [command] [flags] #查看版本 hugo version #版本和环境详细信息 hugo env #创建新站点 hugo new site &amp;#34;$mysite&amp;#34; #创建文章 hugo new index.md 在content/文件夹可以看到，此时多了一个markdown格式的文件index.md，打开文件可以看到时间和文件名等信息已经自动加到文件开头，包括创建时间，页面名，是否为草稿等。 #编译生成静态文件 hugo Hugo将编译所有文件并输出到public目录 #编译生成静态文件并启动web服务 hugo server 常用参数 --bind=&amp;#34;127.0.0.1&amp;#34; 服务监听IP地址； -p, --port=1313 服务监听端口； -w, --watch[=true] 监听站点目录，发现文件变更自动编译； -D, --buildDrafts 包括被标记为draft的文章； -E, --buildExpired 包括已过期的文章； -F, --buildFuture 包括将在未来发布的文章； -b, --baseURL=&amp;#34;www.datals.com&amp;#34; 服务监听域名； --log[=false]: 开启日志； --logFile=&amp;#34;/var/log/hugo.log&amp;#34;: log输出路径； -t, --theme=&amp;#34;&amp;#34; 指定主题； -v, --verbose[=false]: 输出详细信息 
+          
+          
+        
+      </description>
     </item>
     
   </channel>

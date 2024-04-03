@@ -1,40 +1,69 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>gin on 飞光</title>
+    <title>Gin on 飞光</title>
     <link>https://rjguanwen.cn/tags/gin/</link>
-    <description>Recent content in gin on 飞光</description>
+    <description>Recent content in Gin on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate>
-    
-        <atom:link href="https://rjguanwen.cn/tags/gin/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>zh</language>
+    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/tags/gin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gin 表单与文件上传</title>
-      <link>https://rjguanwen.cn/2022/03/gin_03/</link>
+      <link>https://rjguanwen.cn/posts/gin/gin_03/</link>
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2022/03/gin_03/</guid>
-      <description>表单参数 表单传输为 POST 请求，http 常见的传输格式为四种： - application/json - application/x-www-form-urlencoded - application/xml - multipart/form-data 表单参数可以通过 PostForm() 方法获取，该方法默认解析的是 x-www-form-urlencoded 或 form-data 格式的参数。 简单</description>
+      <guid>https://rjguanwen.cn/posts/gin/gin_03/</guid>
+      <description>
+        
+          
+            表单参数 表单传输为 POST 请求，http 常见的传输格式为四种：
+application/json application/x-www-form-urlencoded application/xml multipart/form-data 表单参数可以通过 PostForm() 方法获取，该方法默认解析的是 x-www-form-urlencoded 或 form-data 格式的参数。
+简单的表单示例： &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;demo1&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;form action=&amp;#34;http://localhost:8080/form&amp;#34; method=&amp;#34;post&amp;#34; enctype=&amp;#34;application/x-www-form-urlencoded&amp;#34;&amp;gt; 用户名：&amp;lt;inpurt type=&amp;#34;text&amp;#34; name=&amp;#34;username&amp;#34; placeholder=&amp;#34;请输入你的用户名&amp;#34;&amp;gt; &amp;lt;br&amp;gt; 密&amp;amp;nbsp;&amp;amp;nbsp;码：&amp;lt;input type=&amp;#34;password&amp;#34; name=&amp;#34;password&amp;#34; placeholder=&amp;#34;请输入你的密码&amp;#34;&amp;gt; &amp;lt;br&amp;gt; &amp;lt;input type=&amp;#34;submit&amp;#34; value=&amp;#34;提交&amp;#34;&amp;gt; &amp;lt;/form&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; package main import ( &amp;#34;fmt&amp;#34; &amp;#34;github.com/gin-gonic/gin&amp;#34; &amp;#34;net/http&amp;#34; ) //表单参数 func main(){ r:=gin.Default() r.POST(&amp;#34;/form&amp;#34;, func(c *gin.Context) { types:=c.DefaultPostForm(&amp;#34;type&amp;#34;,&amp;#34;post&amp;#34;) // 键名和html页面属性名对应 username:=c.PostForm(&amp;#34;username&amp;#34;) password:=c.PostForm(&amp;#34;userpassword&amp;#34;) c.String(http.StatusOK,fmt.Sprintf(&amp;#34;username:%s,password:%s,types:%s&amp;#34;,username,password,types)) }) r.
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Gin 路由</title>
-      <link>https://rjguanwen.cn/2021/09/gin_02/</link>
+      <link>https://rjguanwen.cn/posts/gin/gin_02/</link>
       <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2021/09/gin_02/</guid>
-      <description>路由 核心功能 路由系统可根据请求方法、请求路径和路径参数来识别转发 可设置一个或者多个中间件用于在请求处理器前后处理特殊的事件 可以分组设置，将一</description>
+      <guid>https://rjguanwen.cn/posts/gin/gin_02/</guid>
+      <description>
+        
+          
+            路由 核心功能 路由系统可根据请求方法、请求路径和路径参数来识别转发 可设置一个或者多个中间件用于在请求处理器前后处理特殊的事件 可以分组设置，将一个或多个中间件作用在一组多个路由上 基本语法 //构建路由对象并注册请求路径对应的处理器 r := gin.Default() r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) { c.JSON(200, gin.H{ &amp;#34;message&amp;#34;: &amp;#34;ping&amp;#34;, }) }) // 监听并在 0.0.0.0：8080 上启动服务 r.Run() 可以将路由的定义放在单独的文件中完成，如 /router/api.go :
+// file: /router/api.go func APIRouter() *gin.Engine { r := gin.Default() r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) { c.JSON(200, gin.H{ &amp;#34;message&amp;#34;: &amp;#34;ping&amp;#34; }) }) // 更多的注册 // r.POST() // r.DELETE() // r.PUT() return r } 然后，在 main() 中完成调用和初始化，并启动监听：
+// file /main.go func main() { // 初始化路由 r := router.
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Gin Quickstart</title>
-      <link>https://rjguanwen.cn/2020/06/gin_01/</link>
+      <link>https://rjguanwen.cn/posts/gin/gin_01/</link>
       <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2020/06/gin_01/</guid>
-      <description>Gin 使基于 go 语言的一个 web 框架，接口简洁，封装比较优雅，性能表现很好。 Gin 特性 快速：路由不使用反射，基于Radix树，内存占用少。 中间件：HTTP</description>
+      <guid>https://rjguanwen.cn/posts/gin/gin_01/</guid>
+      <description>
+        
+          
+            Gin 使基于 go 语言的一个 web 框架，接口简洁，封装比较优雅，性能表现很好。
+Gin 特性 快速：路由不使用反射，基于Radix树，内存占用少。
+中间件：HTTP请求，可先经过一系列中间件处理，例如：Logger，Authorization，GZIP等。中间件机制极大地提高了框架的可扩展性。
+异常处理：服务始终可用，不会宕机。Gin 可以捕获 panic，并恢复。而且有极为便利的机制处理HTTP请求过程中发生的错误。
+JSON：Gin可以解析并验证请求的JSON。这个特性对Restful API的开发尤其有用。
+路由分组：例如将需要授权和不需要授权的API分组，不同版本的API分组。而且分组可嵌套，且性能不受影响。
+渲染内置：原生支持JSON，XML和HTML的渲染。
+Quickstart 安装 Gin 前，首先要安装 Go，并做好各种设置。Go 版本要求 1.9 以上。 下载并安装 Gin。 $ go get -u github.com/gin-gonic/gin 在代码中引入： import &amp;#34;github.com/gin-gonic/gin&amp;#34; 如果需要使用类似 http.StatusOK 的常量，则需引入 net/http。 import &amp;#34;net/http&amp;#34; 示例代码： package main import &amp;#34;github.com/gin-gonic/gin&amp;#34; func main() { r := gin.Default() r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) { c.JSON(200, gin.H{ &amp;#34;message&amp;#34;: &amp;#34;pong&amp;#34;, }) }) r.Run() // listen and serve on 0.0.0.0:8080 } 
+          
+          
+        
+      </description>
     </item>
     
   </channel>

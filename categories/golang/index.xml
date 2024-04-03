@@ -1,40 +1,81 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GOLANG on 飞光</title>
     <link>https://rjguanwen.cn/categories/golang/</link>
     <description>Recent content in GOLANG on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 27 Aug 2020 00:00:00 +0000</lastBuildDate>
-    
-        <atom:link href="https://rjguanwen.cn/categories/golang/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>zh</language>
+    <lastBuildDate>Thu, 27 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/categories/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go 文件操作</title>
-      <link>https://rjguanwen.cn/2020/08/go_file/</link>
+      <link>https://rjguanwen.cn/posts/golang/go_file/</link>
       <pubDate>Thu, 27 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2020/08/go_file/</guid>
-      <description>&amp;lt;部分内容借鉴自网络，如有侵权，预先道歉，请及时联系（rjguanwen001@163.com），我会尽快删除，谢谢！&amp;gt; Go 文件操</description>
+      <guid>https://rjguanwen.cn/posts/golang/go_file/</guid>
+      <description>
+        
+          
+            &amp;lt;部分内容借鉴自网络，如有侵权，预先道歉，请及时联系（rjguanwen001@163.com），我会尽快删除，谢谢！&amp;gt;
+Go 文件操作总结 1、基本操作 1.1 创建文件 package main import ( &amp;#34;log&amp;#34; &amp;#34;os&amp;#34; ) func main() { newFile, err := os.Create(&amp;#34;example_1.txt&amp;#34;) if err != nil { log.Fatal(err) } newFile.Close() } 1.2 Truncate文件 package main import ( &amp;#34;log&amp;#34; &amp;#34;os&amp;#34; ) func main(){ // 裁剪一个文件到100个字节。 // 如果文件本来就少于100个字节，则文件中原始内容得以保留，剩余的字节以null字节填充。 // 如果文件本来超过100个字节，则超过的字节会被抛弃。 // 这样我们总是得到精确的100个字节的文件。 // 传入0则会清空文件。 err := os.Truncate(&amp;#34;example_1.txt&amp;#34;, 100) if err != nil { log.Fatal(err) } } 1.3 获取文件信息 package main import ( &amp;#34;fmt&amp;#34; &amp;#34;log&amp;#34; &amp;#34;os&amp;#34; ) func main(){ fi, err := os.
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>gomod使用记录</title>
-      <link>https://rjguanwen.cn/2019/11/gomod_use/</link>
+      <link>https://rjguanwen.cn/posts/golang/gomod_use/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/11/gomod_use/</guid>
-      <description>简单记录 go mod 的使用方式： 代理配置 $env:GOPROXY = &amp;quot;https://goproxy.io&amp;quot; 或使用 goproxy.cn 初始化 go mod init ***，***为你要创建的mod名字，直接为工程名即可 自动下载依赖 go run *****.</description>
+      <guid>https://rjguanwen.cn/posts/golang/gomod_use/</guid>
+      <description>
+        
+          
+            简单记录 go mod 的使用方式：
+代理配置
+$env:GOPROXY = &amp;quot;https://goproxy.io&amp;quot; 或使用 goproxy.cn
+初始化 go mod init ***，***为你要创建的mod名字，直接为工程名即可
+自动下载依赖
+go run *****.go，在执行前会首先查找并下载安装依赖
+更新旧的 package import 方式，内部依赖也需要增加 mod 名
+package main import ( api &amp;#34;mymod/api&amp;#34; // mymod 是初始化的 mod 名 &amp;#34;github.com/labstack/echo&amp;#34; ) func main() { e := echo.New() e.GET(&amp;#34;/&amp;#34;, api.MyAPI) e.Logger.Fatal(e.Start(&amp;#34;:1234&amp;#34;)) } 使用 replace 替换无法直接获取的 package
+replace ( golang.org/x/crypto v0.0.0-20190313024323-a1f597ede03a =&amp;gt; github.com/golang/crypto v0.0.0-20190313024323-a1f597ede03a ) 检查并升级 package
+go list -m -u all
+go get -u need-upgrade-package 或者 go get -u
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>govendor使用记录</title>
-      <link>https://rjguanwen.cn/2019/11/govendor_use/</link>
+      <link>https://rjguanwen.cn/posts/golang/govendor_use/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/11/govendor_use/</guid>
-      <description>简单记录 govendor 的使用方式： 安装 go get -u -v github.com/kardianos/govendor 初始化 vendor 目录 govendor init 添加依赖包到 vendor 目录 govendor add +external 或 govendor add +e 从 $GOPATH 更新依赖包到 vendor 目录 govendor update +vendor 删除依赖包 govendor remove +vendor 常用的命令如</description>
+      <guid>https://rjguanwen.cn/posts/golang/govendor_use/</guid>
+      <description>
+        
+          
+            简单记录 govendor 的使用方式：
+安装
+go get -u -v github.com/kardianos/govendor
+初始化 vendor 目录
+govendor init
+添加依赖包到 vendor 目录
+govendor add +external 或 govendor add +e
+从 $GOPATH 更新依赖包到 vendor 目录
+govendor update +vendor
+删除依赖包
+govendor remove +vendor
+常用的命令如下：
+命令 功能 init 初始化 vendor 目录 list 列出所有依赖包 add 添加包到 vendor 目录 add PKG_PATH 添加指定依赖包到 vendor 目录 update 从 $GOPATH 更新依赖包到 vendor 目录 remove 从 vendor 管理中删除依赖 status 列出 vendor 管理的各个包的状态 fetch 添加或更新包到 vendor 目录 sync 同步，基于已存在的 vendor.
+          
+          
+        
+      </description>
     </item>
     
   </channel>

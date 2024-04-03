@@ -1,436 +1,653 @@
+
 <!DOCTYPE html>
-<html lang="zh">
+<html
+  lang="en"
+  data-figures=""
+  
+  
+  >
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>
-        飞光</title>
-    <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-  <meta name="renderer" content="webkit">
-  <meta http-equiv="Cache-Control" content="no-transform" />
-  <meta http-equiv="Cache-Control" content="no-siteapp" />
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="format-detection" content="telephone=no,email=no,adress=no">
-  
-  <meta name="theme-color" content="#000000" />
-  
-  <meta http-equiv="window-target" content="_top" />
-  
-  
-  
-  <meta name="generator" content="Hugo 0.59.1 with theme pure" />
-  <title>飞光</title>
-  
+<title>Python | 飞光</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <link rel="alternate" type="application/rss+xml" href="https://rjguanwen.cn/categories/python/index.xml" title="飞光" />
-  <link rel="stylesheet" href="https://rjguanwen.cn/css/style.css">
-  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css"> 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-  <meta property="og:title" content="python" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
+
+
+
+
+<meta property="og:locale" content="en" />
+
+<meta property="og:type" content="article">
+<meta name="description" content="" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="">
+<meta name="twitter:title" content="Python" />
+<meta name="twitter:image" content="https://rjguanwen.cn/"/>
 <meta property="og:url" content="https://rjguanwen.cn/categories/python/" />
+<meta property="og:title" content="Python" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="https://rjguanwen.cn/" />
 
-<meta property="og:updated_time" content="2021-07-30T00:00:00+00:00" />
-<meta itemprop="name" content="python">
-<meta itemprop="description" content="">
+<link rel="apple-touch-icon" sizes="180x180" href="https://rjguanwen.cn/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://rjguanwen.cn/icons/favicon-32x32.png">
+<link rel="manifest" href="https://rjguanwen.cn/icons/site.webmanifest">
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="python"/>
-<meta name="twitter:description" content=""/>
+<link rel="canonical" href="https://rjguanwen.cn/categories/python/">
+<link rel="alternate" type="application/rss+xml" href="https://rjguanwen.cn/categories/python/index.xml" title="飞光" />
 
-  <!--[if lte IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
-    <![endif]-->
 
-  <!--[if lt IE 9]>
-      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-    <![endif]-->
 
-</head>
+<link rel="preload" href="https://rjguanwen.cn/css/styles.42e2c5f6d8cf9c52872666f8d8b2678ad0c426978b9d78aff3c33b7a1e7f6f97f54bcdaf0518a25fb0fe26367d04f8b07c683b3b38b331cb098daadee06b1f3e.css" integrity = "sha512-QuLF9tjPnFKHJmb42LJnitDEJpeLnXiv88M7eh5/b5f1S82vBRiiX7D&#43;JjZ9BPiwfGg7OzizMcsJjare4GsfPg==" as="style" crossorigin="anonymous">
+
+
+
+<link rel="preload" href="https://rjguanwen.cn/en/js/bundle.6b673654bbfecd7319d6393fdb034a9854638ffe610c32f7ff72a5abb3878ded842069847c74a45347959cdf0abcaa4c0418bbe9420c1a47cc4a78f14dbf8320.js" as="script" integrity=
+"sha512-a2c2VLv&#43;zXMZ1jk/2wNKmFRjj/5hDDL3/3Klq7OHje2EIGmEfHSkU0eVnN8KvKpMBBi76UIMGkfMSnjxTb&#43;DIA==" crossorigin="anonymous">
+
+
+<link rel="stylesheet" type="text/css" href="https://rjguanwen.cn/css/styles.42e2c5f6d8cf9c52872666f8d8b2678ad0c426978b9d78aff3c33b7a1e7f6f97f54bcdaf0518a25fb0fe26367d04f8b07c683b3b38b331cb098daadee06b1f3e.css" integrity="sha512-QuLF9tjPnFKHJmb42LJnitDEJpeLnXiv88M7eh5/b5f1S82vBRiiX7D&#43;JjZ9BPiwfGg7OzizMcsJjare4GsfPg==" crossorigin="anonymous">
+
   </head>
-  <body class="main-center" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
-    <div class="slimContent">
-      <div class="navbar-header">
-        <div class="profile-block text-center">
-          <a id="avatar" href="https://github.com/rjguanwen" target="_blank">
-            <img class="img-circle img-rotate" src="https://rjguanwen.cn/avatar.png" width="200" height="200">
-          </a>
-          <h2 id="name" class="hidden-xs hidden-sm">rjguanwen</h2>
-          <h3 id="title" class="hidden-xs hidden-sm hidden-md">食熊则肥  食蛙则瘦</h3>
-          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>山东 济南</small>
-        </div><div class="search" id="search-form-wrap">
-    <form class="search-form sidebar-form">
-        <div class="input-group">
-            <input type="text" class="search-form-input form-control" placeholder="搜索" />
-            <span class="input-group-btn">
-                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
-                        class="icon icon-search"></i></button>
-            </span>
-        </div>
-        <div class="ins-search">
-            <div class="ins-search-mask"></div>
-            <div class="ins-search-container">
-                <div class="ins-input-wrapper">
-                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
-                        x-webkit-speech />
-                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
-                        aria-label="Close"><span aria-hidden="true">×</span></button>
-                </div>
-                <div class="ins-section-wrapper">
-                    <div class="ins-section-container"></div>
-                </div>
-            </div>
-        </div>
-    </form>
+  <body
+    data-code="100"
+    data-lines="false"
+    id="documentTop"
+    data-lang="en"
+  >
+
+<header class="nav_header" >
+  <nav class="nav"><a href='https://rjguanwen.cn/' class="nav_brand nav_item" title="飞光">飞光
+  <div class="nav_close">
+    <div><svg class="icon">
+  <title>open-menu</title>
+  <use xlink:href="#open-menu"></use>
+</svg>
+<svg class="icon">
+  <title>closeme</title>
+  <use xlink:href="#closeme"></use>
+</svg>
 </div>
-        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+  </div>
+</a>
+
+    <div class='nav_body nav_body_left'>
+      
+      
+      
+        
+
+      
+<div class='follow'>
+<div class="color_mode">
+  <input type="checkbox" class="color_choice" id="mode">
+</div>
+
+</div>
+
+    </div>
+  </nav>
+</header>
+
+    <main>
+
+
+
+<div class="grid-inverse wrap content">
+  <div>
+    <ul class="posts" id="posts">
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://rjguanwen.cn/posts/rasa/rasa-1/" title="rasa 入门">rasa 入门</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Jul 30, 2021</span>
+    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/' title="技术" class="post_tag button button_translucent">技术
+        </a><a href='https://rjguanwen.cn/tags/python/' title="python" class="post_tag button button_translucent">python
+        </a><a href='https://rjguanwen.cn/tags/rasa/' title="rasa" class="post_tag button button_translucent">rasa
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=rasa%20%e5%85%a5%e9%97%a8&url=https%3a%2f%2frjguanwen.cn%2fposts%2frasa%2frasa-1%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2frjguanwen.cn%2fposts%2frasa%2frasa-1%2f&t=rasa%20%e5%85%a5%e9%97%a8" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://rjguanwen.cn/posts/rasa/rasa-1/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p><p>**前言：没有比官网文档更好的资料了。**看这里https://rasa.com/docs/rasa/
+rasa 安装 pip install -U rasa pip show rasa 注：我是用的 rasa 版本为 Version: 2.8.1
+初始化项目 1、 在工作文件夹中执行</p>
+<h1 id="创建默认的初始化项目加--no-prompt就避免了中间的问题提示-rasa-init---no-prompt-该命令会在工作文件夹中创建一系列的文件关键文件如下">创建默认的初始化项目，加“&ndash;no-prompt”就避免了中间的问题提示 rasa init &ndash;no-prompt 该命令会在工作文件夹中创建一系列的文件，关键文件如下：</h1>
+<p>config.yml : Rasa NLU 和 Rasa Core 的配置文件 credentials.yml : 定义和其他服务连接的一些细节，例如rasa api …</p>
+</p>
+          
+          <br>
+          <a href="https://rjguanwen.cn/posts/rasa/rasa-1/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
       </div>
-      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
-        <ul class="nav navbar-nav main-nav">
-            <li class="menu-item menu-item-主页">
-                <a href="/">
-                  <span class="menu-title">主页</span>
-                </a>
-            </li>
-            <li class="menu-item menu-item-文章">
-                <a href="/posts">
-                  <span class="menu-title">文章</span>
-                </a>
-            </li>
-            <li class="menu-item menu-item-目录">
-                <a href="/categories">
-                  <span class="menu-title">目录</span>
-                </a>
-            </li>
-            <li class="menu-item menu-item-标签">
-                <a href="/tags">
-                  <span class="menu-title">标签</span>
-                </a>
-            </li>
-            <li class="menu-item menu-item-关于">
-                <a href="/about">
-                  <span class="menu-title">关于</span>
-                </a>
-            </li>
-        </ul>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://rjguanwen.cn/posts/rasa/rasa-2/" title="rasa 继续入门 - 语言模型与分词器">rasa 继续入门 - 语言模型与分词器</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Jul 30, 2021</span>
+    <span class="post_time"> · 2 min read</span><span>&nbsp;· <a href='https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/' title="技术" class="post_tag button button_translucent">技术
+        </a><a href='https://rjguanwen.cn/tags/python/' title="python" class="post_tag button button_translucent">python
+        </a><a href='https://rjguanwen.cn/tags/rasa/' title="rasa" class="post_tag button button_translucent">rasa
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=rasa%20%e7%bb%a7%e7%bb%ad%e5%85%a5%e9%97%a8%20-%20%e8%af%ad%e8%a8%80%e6%a8%a1%e5%9e%8b%e4%b8%8e%e5%88%86%e8%af%8d%e5%99%a8&url=https%3a%2f%2frjguanwen.cn%2fposts%2frasa%2frasa-2%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2frjguanwen.cn%2fposts%2frasa%2frasa-2%2f&t=rasa%20%e7%bb%a7%e7%bb%ad%e5%85%a5%e9%97%a8%20-%20%e8%af%ad%e8%a8%80%e6%a8%a1%e5%9e%8b%e4%b8%8e%e5%88%86%e8%af%8d%e5%99%a8" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://rjguanwen.cn/posts/rasa/rasa-2/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>rasa 支持多种语言模型与分词器，语言模型常用的有 MITIENLP 和 SpaCyNLP，分词器常用的有 WhitespaceTokenizer、JiebaTokenizer、MitieTokenizer、SpacyTokenizer 等。
+WhitespaceTokenizer 空格分词器，每个空格间隔的文本，都将分为一个token，典型的英文句子的分词。该分词器不支持中文分词。配置方式如下：
+pipeline: - name: &quot;WhitespaceTokenizer&quot; # Flag to check whether to split intents …</p>
+          
+          <br>
+          <a href="https://rjguanwen.cn/posts/rasa/rasa-2/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://rjguanwen.cn/posts/python/python-1/" title="Anaconda 虚拟环境基础操作">Anaconda 虚拟环境基础操作</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Feb 4, 2021</span>
+    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/' title="技术" class="post_tag button button_translucent">技术
+        </a><a href='https://rjguanwen.cn/tags/python/' title="python" class="post_tag button button_translucent">python
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=Anaconda%20%e8%99%9a%e6%8b%9f%e7%8e%af%e5%a2%83%e5%9f%ba%e7%a1%80%e6%93%8d%e4%bd%9c&url=https%3a%2f%2frjguanwen.cn%2fposts%2fpython%2fpython-1%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2frjguanwen.cn%2fposts%2fpython%2fpython-1%2f&t=Anaconda%20%e8%99%9a%e6%8b%9f%e7%8e%af%e5%a2%83%e5%9f%ba%e7%a1%80%e6%93%8d%e4%bd%9c" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://rjguanwen.cn/posts/python/python-1/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>Anaconda 虚拟环境基础操作 创建 创建的同时可以同时指定安装必要的包：
+conda create -n &lt;虚拟环境名&gt; [包名1 包名2 包名3] python=3.6 激活虚拟环境 Linux:
+source activate &lt;虚拟环境名&gt; Windows：
+activate &lt;虚拟环境名&gt; 退出虚拟环境 Linux：
+source deactivate &lt;虚拟环境名&gt; Windows：
+deactivate &lt;虚拟环境名&gt; 删除虚拟环境 conda remove -n &lt;虚拟环境名&gt; &ndash;all 其他 conda 常用命令 conda list：查 …</p>
+          
+          <br>
+          <a href="https://rjguanwen.cn/posts/python/python-1/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+      <li>
+      </li>
+    </ul>
+  </div>
+<aside class="sidebar">
+  <section class="sidebar_inner">
+    <br>
+    
+
+
+    
+    
+    <h2 class="mt-4">Recent Posts</h2>
+    <ul class="flex-column">
+      <li>
+        <a href="https://rjguanwen.cn/posts/ot/soeandpe/" class="nav-link" title="国企与民企的最大区别">国企与民企的最大区别</a>
+      </li>
+      <li>
+        <a href="https://rjguanwen.cn/posts/ot/soeandpe2/" class="nav-link" title="国企与资本，人民至上与盈利模式">国企与资本，人民至上与盈利模式</a>
+      </li>
+      <li>
+        <a href="https://rjguanwen.cn/posts/ot/wuhezhizhong/" class="nav-link" title="关于《乌合之众》的要点">关于《乌合之众》的要点</a>
+      </li>
+      <li>
+        <a href="https://rjguanwen.cn/posts/ot/infoandl/" class="nav-link" title="互联网社会生态的思考：信息泛滥与乌合之众">互联网社会生态的思考：信息泛滥与乌合之众</a>
+      </li>
+      <li>
+        <a href="https://rjguanwen.cn/posts/tec_ot/omtm/" class="nav-link" title="北极星指标">北极星指标</a>
+      </li>
+      <li>
+        <a href="https://rjguanwen.cn/posts/tec_ot/gartner_01/" class="nav-link" title="Gartner战略技术趋势（2021-2023）">Gartner战略技术趋势（2021-2023）</a>
+      </li>
+      <li>
+        <a href="https://rjguanwen.cn/posts/tec_ot/pbc_01/" class="nav-link" title="组装式应用思考">组装式应用思考</a>
+      </li>
+      <li>
+        <a href="https://rjguanwen.cn/posts/books/jingjixuetongshi_1/" class="nav-link" title="读书 - 《经济学通识》">读书 - 《经济学通识》</a>
+      </li>
+    </ul>
+    <div>
+      <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
+      <nav class="tags_nav">
+        <a href='https://rjguanwen.cn/categories/%E8%AF%97%E8%AF%8D/' class="post_tag button button_translucent" title="诗词">
+          诗词
+          <span class="button_tally">14</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/categories/centrifugo/' class="post_tag button button_translucent" title="centrifugo">
+          CENTRIFUGO
+          <span class="button_tally">10</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/categories/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/' class="post_tag button button_translucent" title="系统架构">
+          系统架构
+          <span class="button_tally">5</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/categories/git/' class="post_tag button button_translucent" title="git">
+          GIT
+          <span class="button_tally">4</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/categories/%E6%80%9D%E8%80%83/' class="post_tag button button_translucent" title="思考">
+          思考
+          <span class="button_tally">4</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/categories/gin/' class="post_tag button button_translucent" title="gin">
+          GIN
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/categories/golang/' class="post_tag button button_translucent" title="golang">
+          GOLANG
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/categories/python/' class="post_tag button button_translucent" title="python">
+          PYTHON
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/' class="post_tag button button_translucent" title="杂七杂八">
+          杂七杂八
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/categories/docker/' class="post_tag button button_translucent" title="docker">
+          DOCKER
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/categories/ignite/' class="post_tag button button_translucent" title="ignite">
+          IGNITE
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/categories/rasa/' class="post_tag button button_translucent" title="rasa">
+          RASA
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/categories/%E8%AF%BB%E4%B9%A6/' class="post_tag button button_translucent" title="读书">
+          读书
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/categories/redis/' class="post_tag button button_translucent" title="redis">
+          REDIS
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/categories/superset/' class="post_tag button button_translucent" title="superset">
+          SUPERSET
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/categories/%E5%B7%A5%E5%85%B7/' class="post_tag button button_translucent" title="工具">
+          工具
+          <span class="button_tally">1</span>
+        </a>
+        
+        
       </nav>
     </div>
-  </header>
-  <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
-  <div class="slimContent">
-    
-      <div class="widget">
-    <h3 class="widget-title">公告</h3>
-    <div class="widget-body">
-        <div id="board">
-            <div class="content"><p>临渊羡鱼，<br/>不如退而结网！</p>
-            </div>
-        </div>
+    <div>
+      <h2 class="mt-4 taxonomy" id="tags-section">Tags</h2>
+      <nav class="tags_nav">
+        <a href='https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/' class="post_tag button button_translucent" title="技术">
+          技术
+          <span class="button_tally">36</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/tags/centrifugo/' class="post_tag button button_translucent" title="centrifugo">
+          CENTRIFUGO
+          <span class="button_tally">10</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/tags/%E8%AF%97%E8%AF%8D/' class="post_tag button button_translucent" title="诗词">
+          诗词
+          <span class="button_tally">9</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/tags/golang/' class="post_tag button button_translucent" title="golang">
+          GOLANG
+          <span class="button_tally">6</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/tags/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/' class="post_tag button button_translucent" title="杂七杂八">
+          杂七杂八
+          <span class="button_tally">5</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/tags/git/' class="post_tag button button_translucent" title="git">
+          GIT
+          <span class="button_tally">4</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/tags/gin/' class="post_tag button button_translucent" title="gin">
+          GIN
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/tags/python/' class="post_tag button button_translucent" title="python">
+          PYTHON
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/tags/%E5%8F%A4%E6%96%87/' class="post_tag button button_translucent" title="古文">
+          古文
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/tags/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/' class="post_tag button button_translucent" title="开发框架">
+          开发框架
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/tags/docker/' class="post_tag button button_translucent" title="docker">
+          DOCKER
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/tags/ignite/' class="post_tag button button_translucent" title="ignite">
+          IGNITE
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/tags/rasa/' class="post_tag button button_translucent" title="rasa">
+          RASA
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/tags/%E4%B8%AA%E4%BA%BA/' class="post_tag button button_translucent" title="个人">
+          个人
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/tags/%E8%AF%BB%E4%B9%A6/' class="post_tag button button_translucent" title="读书">
+          读书
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/tags/index/' class="post_tag button button_translucent" title="index">
+          INDEX
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/tags/redis/' class="post_tag button button_translucent" title="redis">
+          REDIS
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/tags/superset/' class="post_tag button button_translucent" title="superset">
+          SUPERSET
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/tags/%E5%8F%A5%E5%AD%90/' class="post_tag button button_translucent" title="句子">
+          句子
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/tags/%E5%B0%8F%E5%93%81%E6%96%87/' class="post_tag button button_translucent" title="小品文">
+          小品文
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/tags/%E6%9D%82%E6%84%9F%E9%9A%8F%E7%AC%94/' class="post_tag button button_translucent" title="杂感随笔">
+          杂感随笔
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://rjguanwen.cn/tags/%E7%8E%B0%E4%BB%A3%E8%AF%97/' class="post_tag button button_translucent" title="现代诗">
+          现代诗
+          <span class="button_tally">1</span>
+        </a>
+        
+        
+      </nav>
     </div>
-</div>
-
-      <div class="widget">
-    <h3 class="widget-title"> 分类</h3>
-    <div class="widget-body">
-        <ul class="category-list">
-            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/centrifugo/" class="category-list-link">centrifugo</a><span class="category-list-count">10</span></li>
-            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/docker/" class="category-list-link">docker</a><span class="category-list-count">2</span></li>
-            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/gin/" class="category-list-link">gin</a><span class="category-list-count">3</span></li>
-            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/git/" class="category-list-link">git</a><span class="category-list-count">4</span></li>
-            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/golang/" class="category-list-link">golang</a><span class="category-list-count">3</span></li>
-            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/ignite/" class="category-list-link">ignite</a><span class="category-list-count">2</span></li>
-            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/python/" class="category-list-link">python</a><span class="category-list-count">3</span></li>
-            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/rasa/" class="category-list-link">rasa</a><span class="category-list-count">2</span></li>
-            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/redis/" class="category-list-link">redis</a><span class="category-list-count">1</span></li>
-            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/superset/" class="category-list-link">superset</a><span class="category-list-count">1</span></li>
-            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/%E5%B7%A5%E5%85%B7/" class="category-list-link">工具</a><span class="category-list-count">1</span></li>
-            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/%E6%80%9D%E8%80%83/" class="category-list-link">思考</a><span class="category-list-count">4</span></li>
-            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/" class="category-list-link">杂七杂八</a><span class="category-list-count">3</span></li>
-            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/" class="category-list-link">系统架构</a><span class="category-list-count">5</span></li>
-            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/%E8%AF%97%E8%AF%8D/" class="category-list-link">诗词</a><span class="category-list-count">14</span></li>
-            <li class="category-list-item"><a href="https://rjguanwen.cn/categories/%E8%AF%BB%E4%B9%A6/" class="category-list-link">读书</a><span class="category-list-count">2</span></li>
-        </ul>
-    </div>
-</div>
-      <div class="widget">
-    <h3 class="widget-title"> 标签</h3>
-    <div class="widget-body">
-        <ul class="tag-list">
-            
-            
-            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/centrifugo/" class="tag-list-link">centrifugo</a><span
-                    class="tag-list-count">10</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/docker/" class="tag-list-link">docker</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/gin/" class="tag-list-link">gin</a><span
-                    class="tag-list-count">3</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/git/" class="tag-list-link">git</a><span
-                    class="tag-list-count">4</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/golang/" class="tag-list-link">golang</a><span
-                    class="tag-list-count">6</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/ignite/" class="tag-list-link">ignite</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/python/" class="tag-list-link">python</a><span
-                    class="tag-list-count">3</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/rasa/" class="tag-list-link">rasa</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/redis/" class="tag-list-link">redis</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/superset/" class="tag-list-link">superset</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E4%B8%AA%E4%BA%BA/" class="tag-list-link">个人</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E5%8F%A4%E6%96%87/" class="tag-list-link">古文</a><span
-                    class="tag-list-count">3</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E5%8F%A5%E5%AD%90/" class="tag-list-link">句子</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E5%B0%8F%E5%93%81%E6%96%87/" class="tag-list-link">小品文</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/" class="tag-list-link">开发框架</a><span
-                    class="tag-list-count">3</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/" class="tag-list-link">技术</a><span
-                    class="tag-list-count">36</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/" class="tag-list-link">杂七杂八</a><span
-                    class="tag-list-count">5</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E6%9D%82%E6%84%9F%E9%9A%8F%E7%AC%94/" class="tag-list-link">杂感随笔</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E7%8E%B0%E4%BB%A3%E8%AF%97/" class="tag-list-link">现代诗</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E8%AF%97%E8%AF%8D/" class="tag-list-link">诗词</a><span
-                    class="tag-list-count">9</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://rjguanwen.cn/tags/%E8%AF%BB%E4%B9%A6/" class="tag-list-link">读书</a><span
-                    class="tag-list-count">2</span></li>
-            
-        </ul>
-
-    </div>
-</div>
-      
-<div class="widget">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget-body">
-        <ul class="recent-post-list list-unstyled no-thumbnail">
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://rjguanwen.cn/2023/04/soeandpe/" class="title">国企与民企的最大区别</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2023-04-25 00:00:00 &#43;0000 UTC" itemprop="datePublished">2023-04-25</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://rjguanwen.cn/2023/04/soeandpe2/" class="title">国企与资本，人民至上与盈利模式</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2023-04-25 00:00:00 &#43;0000 UTC" itemprop="datePublished">2023-04-25</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://rjguanwen.cn/2023/04/wuhezhizhong/" class="title">关于《乌合之众》的要点</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2023-04-07 00:00:00 &#43;0000 UTC" itemprop="datePublished">2023-04-07</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://rjguanwen.cn/2023/03/infoandl/" class="title">互联网社会生态的思考：信息泛滥与乌合之众</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2023-03-20 00:00:00 &#43;0000 UTC" itemprop="datePublished">2023-03-20</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://rjguanwen.cn/2022/11/omtm/" class="title">北极星指标</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2022-11-03 00:00:00 &#43;0000 UTC" itemprop="datePublished">2022-11-03</time>
-                    </p>
-                </div>
-            </li>
-        </ul>
-    </div>
-</div>
-  </div>
+  </section>
 </aside>
 
-    
-    
-<main class="main" role="main">
-    <article class="article article-categories article-type-list" itemscope="">
-        <header class="article-header">
-            <h1 itemprop="name" class="hidden-xs">python</h1>
-            <p class="text-muted hidden-xs">共 16 个分类</p>
-            <nav role="navigation" id="nav-main" class="okayNav">
-                <ul>
-                    <li><a href="/categories">All</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/centrifugo/">Centrifugo</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/docker/">docker</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/gin/">gin</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/git/">GIT</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/golang/">GOLANG</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/ignite/">Ignite</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/python/">python</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/rasa/">rasa</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/redis/">redis</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/superset/">Superset</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/%E5%B7%A5%E5%85%B7/">工具</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/%E6%80%9D%E8%80%83/">思考</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/">杂七杂八</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/">系统架构</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/%E8%AF%97%E8%AF%8D/">诗词</a></li>
-                    <li><a href="https://rjguanwen.cn/categories/%E8%AF%BB%E4%B9%A6/">读书</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <div class="article-body">
-            <div class="panel panel-default b-no">
-                <div class="panel-heading" role="tab">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" href="#collapse23eeeb4347bdd26bfc6b7ee9a3b755dd" aria-expanded="true">
-                            <i class="icon icon-folder text-active"></i><i class="icon icon-folder-open text"></i>python
-                        </a>
-                        <small class="text-muted">(Total3 articles)</small>
-                    </h4>
-                </div>
-                <div id="collapse23eeeb4347bdd26bfc6b7ee9a3b755dd" class="panel-collapse collapse in" role="tabpanel"
-                    aria-labelledby="heading23eeeb4347bdd26bfc6b7ee9a3b755dd">
-                    <div class="panel-body">
-                        <div class="collection">
-<a href="https://rjguanwen.cn/2021/07/rasa-1/" class="collection-item" itemprop="url"  target="_blank" >
-    <time datetime="2021-07-30 00:00:00 &#43;0000 UTC"
-        itemprop="datePublished">2021-07-30</time>
-    <span>&nbsp;&nbsp;&nbsp;</span>rasa 入门
+</div>
+
+
+    </main><svg width="0" height="0" class="hidden">
+  <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
+    <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.001 18.001" id="twitter">
+    <path d="M15.891 4.013c.808-.496 1.343-1.173 1.605-2.034a8.68 8.68 0 0 1-2.351.861c-.703-.756-1.593-1.14-2.66-1.14-1.043 0-1.924.366-2.643 1.078a3.56 3.56 0 0 0-1.076 2.605c0 .309.039.585.117.819-3.076-.105-5.622-1.381-7.628-3.837-.34.601-.51 1.213-.51 1.846 0 1.301.549 2.332 1.645 3.089-.625-.053-1.176-.211-1.645-.47 0 .929.273 1.705.82 2.388a3.623 3.623 0 0 0 2.115 1.291c-.312.08-.641.118-.979.118-.312 0-.533-.026-.664-.083.23.757.664 1.371 1.291 1.841a3.652 3.652 0 0 0 2.152.743C4.148 14.173 2.625 14.69.902 14.69c-.422 0-.721-.006-.902-.038 1.697 1.102 3.586 1.649 5.676 1.649 2.139 0 4.029-.542 5.674-1.626 1.645-1.078 2.859-2.408 3.639-3.974a10.77 10.77 0 0 0 1.172-4.892v-.468a7.788 7.788 0 0 0 1.84-1.921 8.142 8.142 0 0 1-2.11.593z"
+      ></path>
+  </symbol>
+  <symbol aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="mail">
+    <path  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="calendar">
+    <path d="M452 40h-24V0h-40v40H124V0H84v40H60C26.916 40 0 66.916 0 100v352c0 33.084 26.916 60 60 60h392c33.084 0 60-26.916 60-60V100c0-33.084-26.916-60-60-60zm20 412c0 11.028-8.972 20-20 20H60c-11.028 0-20-8.972-20-20V188h432v264zm0-304H40v-48c0-11.028 8.972-20 20-20h24v40h40V80h264v40h40V80h24c11.028 0 20 8.972 20 20v48z"></path>
+    <path d="M76 230h40v40H76zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zM76 310h40v40H76zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zM76 390h40v40H76zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zm80-80h40v40h-40z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="github">
+    <path d="M255.968 5.329C114.624 5.329 0 120.401 0 262.353c0 113.536 73.344 209.856 175.104 243.872 12.8 2.368 17.472-5.568 17.472-12.384 0-6.112-.224-22.272-.352-43.712-71.2 15.52-86.24-34.464-86.24-34.464-11.616-29.696-28.416-37.6-28.416-37.6-23.264-15.936 1.728-15.616 1.728-15.616 25.696 1.824 39.2 26.496 39.2 26.496 22.848 39.264 59.936 27.936 74.528 21.344 2.304-16.608 8.928-27.936 16.256-34.368-56.832-6.496-116.608-28.544-116.608-127.008 0-28.064 9.984-51.008 26.368-68.992-2.656-6.496-11.424-32.64 2.496-68 0 0 21.504-6.912 70.4 26.336 20.416-5.696 42.304-8.544 64.096-8.64 21.728.128 43.648 2.944 64.096 8.672 48.864-33.248 70.336-26.336 70.336-26.336 13.952 35.392 5.184 61.504 2.56 68 16.416 17.984 26.304 40.928 26.304 68.992 0 98.72-59.84 120.448-116.864 126.816 9.184 7.936 17.376 23.616 17.376 47.584 0 34.368-.32 62.08-.32 70.496 0 6.88 4.608 14.88 17.6 12.352C438.72 472.145 512 375.857 512 262.353 512 120.401 397.376 5.329 255.968 5.329z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 212" id="gitlab">
+    <path d="M12.3 74.7h54L43.3 3c-1-3.6-6.4-3.6-7.6 0L12.3 74.8z" />
+    <path d="M12.3 74.7L.5 111c-1 3.2 0 6.8 3 8.8l101.6 74-92.5-119z"/>
+    <path d="M105 193.7l-38.6-119h-54l92.7 119z"/>
+    <path d="M105 193.7l38.7-119H66.4l38.7 119z"/>
+    <path d="M105 193.7l38.7-119H198l-93 119z"/>
+    <path d="M198 74.7l11.6 36.2c1 3 0 6.6-3 8.6l-101.5 74 93-119z"/>
+    <path d="M198 74.7h-54.3L167 3c1.2-3.6 6.4-3.6 7.6 0L198 74.8z"/>
+  </symbol>
+  <symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="rss">
+    <circle cx="3.429" cy="20.571" r="3.429"></circle>
+    <path d="M11.429 24h4.57C15.999 15.179 8.821 8.001 0 8v4.572c6.302.001 11.429 5.126 11.429 11.428z"></path>
+    <path d="M24 24C24 10.766 13.234 0 0 0v4.571c10.714 0 19.43 8.714 19.43 19.429z"></path>
+  </symbol>
+  <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="linkedin">
+    <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h362c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zM181 406h-60V196h60zm0-240h-60v-60h60zm210 240h-60V286c0-16.54-13.46-30-30-30s-30 13.46-30 30v120h-60V196h60v11.309C286.719 202.422 296.93 196 316 196c40.691.043 75 36.547 75 79.688zm0 0"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612" id="to-top">
+    <path d="M604.501 440.509L325.398 134.956c-5.331-5.357-12.423-7.627-19.386-7.27-6.989-.357-14.056 1.913-19.387 7.27L7.499 440.509c-9.999 10.024-9.999 26.298 0 36.323s26.223 10.024 36.222 0l262.293-287.164L568.28 476.832c9.999 10.024 26.222 10.024 36.221 0 9.999-10.023 9.999-26.298 0-36.323z"></path>
+  </symbol>
+  <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="carly">
+    <path d="M504.971 239.029L448 182.059V84c0-46.317-37.682-84-84-84h-44c-13.255 0-24 10.745-24 24s10.745 24 24 24h44c19.851 0 36 16.149 36 36v108c0 6.365 2.529 12.47 7.029 16.971L454.059 256l-47.029 47.029A24.002 24.002 0 0 0 400 320v108c0 19.851-16.149 36-36 36h-44c-13.255 0-24 10.745-24 24s10.745 24 24 24h44c46.318 0 84-37.683 84-84v-98.059l56.971-56.971c9.372-9.372 9.372-24.568 0-33.941zM112 192V84c0-19.851 16.149-36 36-36h44c13.255 0 24-10.745 24-24S205.255 0 192 0h-44c-46.318 0-84 37.683-84 84v98.059l-56.971 56.97c-9.373 9.373-9.373 24.568 0 33.941L64 329.941V428c0 46.317 37.682 84 84 84h44c13.255 0 24-10.745 24-24s-10.745-24-24-24h-44c-19.851 0-36-16.149-36-36V320c0-6.365-2.529-12.47-7.029-16.971L57.941 256l47.029-47.029A24.002 24.002 0 0 0 112 192z"></path>
+  </symbol>
+  <symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="copy">
+    <path d="M23 2.75A2.75 2.75 0 0 0 20.25 0H8.75A2.75 2.75 0 0 0 6 2.75v13.5A2.75 2.75 0 0 0 8.75 19h11.5A2.75 2.75 0 0 0 23 16.25zM18.25 14.5h-7.5a.75.75 0 0 1 0-1.5h7.5a.75.75 0 0 1 0 1.5zm0-3h-7.5a.75.75 0 0 1 0-1.5h7.5a.75.75 0 0 1 0 1.5zm0-3h-7.5a.75.75 0 0 1 0-1.5h7.5a.75.75 0 0 1 0 1.5z"></path>
+    <path d="M8.75 20.5a4.255 4.255 0 0 1-4.25-4.25V2.75c0-.086.02-.166.025-.25H3.75A2.752 2.752 0 0 0 1 5.25v16A2.752 2.752 0 0 0 3.75 24h12a2.752 2.752 0 0 0 2.75-2.75v-.75z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.001 512.001" id="closeme">
+    <path d="M284.286 256.002L506.143 34.144c7.811-7.811 7.811-20.475 0-28.285-7.811-7.81-20.475-7.811-28.285 0L256 227.717 34.143 5.859c-7.811-7.811-20.475-7.811-28.285 0-7.81 7.811-7.811 20.475 0 28.285l221.857 221.857L5.858 477.859c-7.811 7.811-7.811 20.475 0 28.285a19.938 19.938 0 0 0 14.143 5.857 19.94 19.94 0 0 0 14.143-5.857L256 284.287l221.857 221.857c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285L284.286 256.002z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="open-menu">
+    <path d="M492 236H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zm0-160H20C8.954 76 0 84.954 0 96s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zm0 320H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="instagram">
+    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id=youtube>
+    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="stackoverflow">
+    <path d="M21 27v-8h3v11H0V19h3v8h18z"></path><path d="M17.1.2L15 1.8l7.9 10.6 2.1-1.6L17.1.2zm3.7 14.7L10.6 6.4l1.7-2 10.2 8.5-1.7 2zM7.2 12.3l12 5.6 1.1-2.4-12-5.6-1.1 2.4zm-1.8 6.8l13.56 1.96.17-2.38-13.26-2.55-.47 2.97zM19 25H5v-3h14v3z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="xing">
+    <path d="M18.188 0c-.517 0-.741.325-.927.66 0 0-7.455 13.224-7.702 13.657.015.024 4.919 9.023 4.919 9.023.17.308.436.66.967.66h3.454c.211 0 .375-.078.463-.22.089-.151.089-.346-.009-.536l-4.879-8.916c-.004-.006-.004-.016 0-.022L22.139.756c.095-.191.097-.387.006-.535C22.056.078 21.894 0 21.686 0h-3.498zM3.648 4.74c-.211 0-.385.074-.473.216-.09.149-.078.339.02.531l2.34 4.05c.004.01.004.016 0 .021L1.86 16.051c-.099.188-.093.381 0 .529.085.142.239.234.45.234h3.461c.518 0 .766-.348.945-.667l3.734-6.609-2.378-4.155c-.172-.315-.434-.659-.962-.659H3.648v.016z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 55" id="discord">
+    <path d="M60.1045 4.8978C55.5792 2.8214 50.7265 1.2916 45.6527 0.41542C45.5603 0.39851 45.468 0.440769 45.4204 0.525289C44.7963 1.6353 44.105 3.0834 43.6209 4.2216C38.1637 3.4046 32.7345 3.4046 27.3892 4.2216C26.905 3.0581 26.1886 1.6353 25.5617 0.525289C25.5141 0.443589 25.4218 0.40133 25.3294 0.41542C20.2584 1.2888 15.4057 2.8186 10.8776 4.8978C10.8384 4.9147 10.8048 4.9429 10.7825 4.9795C1.57795 18.7309 -0.943561 32.1443 0.293408 45.3914C0.299005 45.4562 0.335386 45.5182 0.385761 45.5576C6.45866 50.0174 12.3413 52.7249 18.1147 54.5195C18.2071 54.5477 18.305 54.5139 18.3638 54.4378C19.7295 52.5728 20.9469 50.6063 21.9907 48.5383C22.0523 48.4172 21.9935 48.2735 21.8676 48.2256C19.9366 47.4931 18.0979 46.6 16.3292 45.5858C16.1893 45.5041 16.1781 45.304 16.3068 45.2082C16.679 44.9293 17.0513 44.6391 17.4067 44.3461C17.471 44.2926 17.5606 44.2813 17.6362 44.3151C29.2558 49.6202 41.8354 49.6202 53.3179 44.3151C53.3935 44.2785 53.4831 44.2898 53.5502 44.3433C53.9057 44.6363 54.2779 44.9293 54.6529 45.2082C54.7816 45.304 54.7732 45.5041 54.6333 45.5858C52.8646 46.6197 51.0259 47.4931 49.0921 48.2228C48.9662 48.2707 48.9102 48.4172 48.9718 48.5383C50.038 50.6034 51.2554 52.5699 52.5959 54.435C52.6519 54.5139 52.7526 54.5477 52.845 54.5195C58.6464 52.7249 64.529 50.0174 70.6019 45.5576C70.6551 45.5182 70.6887 45.459 70.6943 45.3942C72.1747 30.0791 68.2147 16.7757 60.1968 4.9823C60.1772 4.9429 60.1437 4.9147 60.1045 4.8978ZM23.7259 37.3253C20.2276 37.3253 17.3451 34.1136 17.3451 30.1693C17.3451 26.225 20.1717 23.0133 23.7259 23.0133C27.308 23.0133 30.1626 26.2532 30.1066 30.1693C30.1066 34.1136 27.28 37.3253 23.7259 37.3253ZM47.3178 37.3253C43.8196 37.3253 40.9371 34.1136 40.9371 30.1693C40.9371 26.225 43.7636 23.0133 47.3178 23.0133C50.9 23.0133 53.7545 26.2532 53.6986 30.1693C53.6986 34.1136 50.9 37.3253 47.3178 37.3253Z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 18" id="mastodon">
+    <path
+    fill="#ffffff"
+    d="m 15.054695,9.8859583 c -0.22611,1.1632697 -2.02517,2.4363497 -4.09138,2.6830797 -1.0774504,0.12856 -2.1382704,0.24673 -3.2694704,0.19484 -1.84996,-0.0848 -3.30971,-0.44157 -3.30971,-0.44157 0,0.1801 0.0111,0.35157 0.0333,0.51194 0.24051,1.82571 1.81034,1.93508 3.29737,1.98607 1.50088,0.0514 2.8373104,-0.37004 2.8373104,-0.37004 l 0.0617,1.35686 c 0,0 -1.0498104,0.56374 -2.9199404,0.66742 -1.03124,0.0567 -2.3117,-0.0259 -3.80308,-0.42069 -3.23454998,-0.85613 -3.79081998,-4.304 -3.87592998,-7.8024197 -0.026,-1.03871 -0.01,-2.01815 -0.01,-2.83732 0,-3.57732 2.34385998,-4.62587996 2.34385998,-4.62587996 1.18184,-0.54277 3.20976,-0.77101 5.318,-0.7882499985409 h 0.0518 C 9.8267646,0.01719834 11.856025,0.24547834 13.037775,0.78824834 c 0,0 2.34377,1.04855996 2.34377,4.62587996 0,0 0.0294,2.63937 -0.32687,4.47183"/>
+ <path
+    fill="#000000"
+    d="m 12.616925,5.6916583 v 4.3315297 h -1.71607 V 5.8189683 c 0,-0.88624 -0.37289,-1.33607 -1.1187604,-1.33607 -0.82467,0 -1.23799,0.53361 -1.23799,1.58875 v 2.30122 h -1.70594 v -2.30122 c 0,-1.05514 -0.4134,-1.58875 -1.23808,-1.58875 -0.74587,0 -1.11876,0.44983 -1.11876,1.33607 v 4.2042197 h -1.71607 V 5.6916583 c 0,-0.88527 0.22541,-1.58876 0.67817,-2.10922 0.46689,-0.52047 1.07833,-0.78727 1.83735,-0.78727 0.87816,0 1.54317,0.33752 1.98288,1.01267 l 0.42744,0.71655 0.42753,-0.71655 c 0.43961,-0.67515 1.10463,-1.01267 1.9828704,-1.01267 0.75893,0 1.37037,0.2668 1.83735,0.78727 0.45268,0.52046 0.67808,1.22395 0.67808,2.10922"/>
+  </symbol>
+</svg>
+
+<footer class="footer">
+  <div class="footer_inner wrap pale">
+    <img src='https://rjguanwen.cn/icons/apple-touch-icon.png' class="icon icon_2 transparent" alt="飞光">
+    <p>Copyright&nbsp;<span class="year"></span>&nbsp;飞光. All Rights Reserved</p><a class="to_top" href="#documentTop">
+  <svg class="icon">
+  <title>to-top</title>
+  <use xlink:href="#to-top"></use>
+</svg>
+
 </a>
-<a href="https://rjguanwen.cn/2021/07/rasa-2/" class="collection-item" itemprop="url"  target="_blank" >
-    <time datetime="2021-07-30 00:00:00 &#43;0000 UTC"
-        itemprop="datePublished">2021-07-30</time>
-    <span>&nbsp;&nbsp;&nbsp;</span>rasa 继续入门 - 语言模型与分词器
-</a>
-<a href="https://rjguanwen.cn/2021/02/python-1/" class="collection-item" itemprop="url"  target="_blank" >
-    <time datetime="2021-02-04 00:00:00 &#43;0000 UTC"
-        itemprop="datePublished">2021-02-04</time>
-    <span>&nbsp;&nbsp;&nbsp;</span>Anaconda 虚拟环境基础操作
-</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </article>
-</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
-<ul class="social-links">
-    <li><a href="https://github.com/rjguanwen" target="_blank" title="github" data-toggle=tooltip data-placement=top >
-            <i class="icon icon-github"></i></a></li>
-    <li><a href="https://rjguanwen.cn/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
-            <i class="icon icon-rss"></i></a></li>
-</ul>
-  <div class="copyright">
-    &copy;2017  -
-    2023
-    
+
   </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
-<script>
-   window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
-</script>
-<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
-<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/rust.min.js"></script>
-<script type="text/javascript"
-   src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
-<script>
-hljs.configure({
-  tabReplace: '    ', 
-  classPrefix: ''     
-                      
-})
-hljs.initHighlightingOnLoad();
-</script>
-<script type="text/javascript" src="https://rjguanwen.cn/js/application.js"></script>
-<script type="text/javascript" src="https://rjguanwen.cn/js/plugin.js"></script>
-<script>
-      (function (window) {
-          var INSIGHT_CONFIG = {
-              TRANSLATION: {
-                  POSTS: '文章',
-                  PAGES: '页面',
-                  CATEGORIES: '分类',
-                  TAGS: '标签',
-                  UNTITLED: '(未命名)',
-              },
-              ROOT_URL: 'https:\/\/rjguanwen.cn\/',
-              CONTENT_URL: 'https:\/\/rjguanwen.cn\/\/searchindex.json ',
-          };
-          window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-      })(window);
-      </script>
-<script type="text/javascript" src="https://rjguanwen.cn/js/insight.js"></script>
 
+<script type="text/javascript" src="https://rjguanwen.cn/en/js/bundle.6b673654bbfecd7319d6393fdb034a9854638ffe610c32f7ff72a5abb3878ded842069847c74a45347959cdf0abcaa4c0418bbe9420c1a47cc4a78f14dbf8320.js" integrity="sha512-a2c2VLv&#43;zXMZ1jk/2wNKmFRjj/5hDDL3/3Klq7OHje2EIGmEfHSkU0eVnN8KvKpMBBi76UIMGkfMSnjxTb&#43;DIA==" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -1,337 +1,814 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>技术 on 飞光</title>
     <link>https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/</link>
     <description>Recent content in 技术 on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 03 Nov 2022 00:00:00 +0000</lastBuildDate>
-    
-        <atom:link href="https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>zh</language>
+    <lastBuildDate>Thu, 03 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>北极星指标</title>
-      <link>https://rjguanwen.cn/2022/11/omtm/</link>
+      <link>https://rjguanwen.cn/posts/tec_ot/omtm/</link>
       <pubDate>Thu, 03 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2022/11/omtm/</guid>
-      <description>北极星指标的意义与设定原则 什么是北极星指标 北极星指标也叫唯一关键指标（OMTM，One metric that matters），北极星指标是公司最关键最重要的业</description>
+      <guid>https://rjguanwen.cn/posts/tec_ot/omtm/</guid>
+      <description>
+        
+          
+            北极星指标的意义与设定原则 什么是北极星指标 北极星指标也叫唯一关键指标（OMTM，One metric that matters），北极星指标是公司最关键最重要的业务指标，直接承接了公司的战略和发展目标，公司制定的发展目标是否能实现，通过观察北极星指标就可以发现。
+之所以取名为北极星指标，是因为它像夜晚的北极星一样，指引公司全体人员朝着制定的同一目标努力，它是指明灯和方向。
+北极星指标的设定原则 1、北极星指标应符合SMART原则。 SMART原则（S=Specific、M=Measurable、A=Attainable、R=Relevant、T=Time-bound）
+S代表目标必须是具体(Specific)，比如目标定为我要减肥，就不如我要减肥10斤具体; M代表目标是可以衡量的(Measurable)，如果制定的目标都没办法衡量，那跟没有目标没差别; A代表可实现(Attainable)，在付出努力的情况下可以实现，避免设立过高或过低的目标，一般设定的目标是踮踮脚可以达到的； R代表相关性(Relevant），指绩效指标是与工作的其它目标是相关联的，如果公司的每个部门的目标跟公司的总体目标方向不一致的化，就会导致大家不再一个方向上努力; T代表有明确的截止期限(Time-bound); 2、北极星指标是可以拆解的，可以将责任落实到相应的部门。 比如GMV=客单价用户数量购买频次，分别可以由用户运营、用户补贴、用户拉新部门去承接这些子指标。
+3、北极星指标不是一成不变的，应该随着公司业务重心的变化而变化。 比如目前的外卖平台关注GMV指标，等规模遭遇瓶颈后，可能就会关注利润了。 比如头条这样的资讯平台，刚开始关注用户规模，等用户规模达到瓶颈后，就开始关注用户停留时长了。
+4、北极星指标不是唯一的，且可以引入反向互斥指标互相制衡。 比如外卖和电商公司若一味追求GMV的增长，就容易忽视一个严重的问题，那就是用户退费或退单，从长远来看，对公司发展是非常不利的。
+在这种情况下，可引入【退费率】和【GMV】一起作为北极星指标，以避免一味追求高GMV而忽视退费影响公司的长远发展。
+北极星指标的几个作用: 北极星指引公司发展方向，所有工作都是由此展开的 北极星指标可以帮助大家明确任务的优先级，不然在公司运营上可能会导致胡子眉毛一把抓，无法集中火力抓住重点 提高行动力，一旦选定你的目标，你只有一件事可以做，努力达到目标。 如何制订北极星指标 如果要公司持续稳健的增长下去，那公司必须首先能提供给用户稳定持续的价值，同时还能保持盈利以进一步驱动公司的良性发展，所以北极星指标应该是用户价值和公司商业目标的交集
+6个标准筛选是否是合适的北极星指标 **能够反映用户从产品获得核心价值。**对于一个投资应用，其核心价值就是投资，所以这个北极星指标应该和用户进行投资有关。对于电商应用，给用户的核心价值就是能够买到合适的东西，核心是交易，那北极星指标必须和交易相关，比如GMV、销售额等。对于知乎这类问答社区来说，给用户的价值是得到问题的答案，那北极星指标必须与回答问题有关系。 **能否为产品达到长期商业目标奠定基础。**公司不仅仅要给用户提供价值，公司本身要能赚钱才能保证持续的为用户提供服务，否则一切都是白谈。 **能否反应用户活跃程度。**MySpace以“总注册用户数”作为北极星指标，就是一个累积的静态指标，没有反映出用户当前的活跃程度。 **指标变好，能否预示公司在往好的方向发展。**对于Uber来说，如果只是把注册司机数作为北极星指标，显然就忽略了乘客这一方面，仅仅是注册司机变多而乘客数没有跟上，并不一定说明Uber的生意变好了。因此Uber的北极星指标应该能够反映司机和乘客的供需平衡，因此“总乘车数”就是更为合适的一个指标。 **是否简单，直观，容易获得，可拆解。**比如，“总订单数”就比“订单额超过100元的订单比例”容易理解，也更便于各个团队之间协作和交流。 **是否是先导指标，而非滞后指标。**SaaS公司可能会使用月费收入作为北极星指标，这不是一个坏指标，但是它却是一个滞后指标 几个注意事项 北极星指标并非绝对唯一，很多指标都具有相关性，在公司的一定阶段都可以作为北极星指标 北极星指标代表了公司的战略方向，变动周期应该以年为单位，但可能随着公司的不同发展阶段而变化（探索期：留存率活跃度，成长期：用户增长、总活跃用户数，成熟期：营收利润，付费用户数，衰退期：营收利润，新产品指标 如果发现单一指标不能反映公司的经营情况，可以考虑加入反向指标作为“制衡指标”（电商：北极星指标=GMV，反向指标：退货率） 案例 以交易为主的公司，比如外卖和电商公司（美团、饿了么、天猫、淘宝、京东）等，北极星指标以GMV为主。 以社交为主的公司，比如微信、Facebook等，北极星指标应以用户数量、对话数量和关系数量为主。 以内容分发为主的公司，比如头条、天天快报、腾讯新闻等，北极星指标应以用户数量、阅读文章数量、浏览时长为主。 以工具类为主的公司，如墨迹天气、手机助手等，北极星指标应以打开次数、使用频率为主。 
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Gartner战略技术趋势（2021-2023）</title>
-      <link>https://rjguanwen.cn/2022/10/gartner_01/</link>
+      <link>https://rjguanwen.cn/posts/tec_ot/gartner_01/</link>
       <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2022/10/gartner_01/</guid>
-      <description>&amp;lt;部分内容借鉴自网络，如有侵权，预先道歉，请及时联系（rjguanwen001@163.com），我会尽快删除，谢谢！&amp;gt; Gart</description>
+      <guid>https://rjguanwen.cn/posts/tec_ot/gartner_01/</guid>
+      <description>
+        
+          
+            &amp;lt;部分内容借鉴自网络，如有侵权，预先道歉，请及时联系（rjguanwen001@163.com），我会尽快删除，谢谢！&amp;gt;
+Gartner战略技术趋势（2021-2023） 一、总览 二、2021年 2.1、技术成熟度曲线 2.2、2021战略技术趋势 2021年的十大战略技术趋势，将主要趋势分为“以人为本”，“位置独立性”和“弹性交付”。 以人为本重视技术影响整个生态系统中利益相关方的方式；重点关注人们的行为，经验和隐私将如何变化。位置独立性关注员工，供应商和客户可以在任何地方工作或者使用产品。新冠大流行加速了远程渠道的使用率。分布式云，无处不在的操作以及新的安全性范式推动了这一需求的发展。弹性交付创建了一个技术组织，该组织可以迅速适应以克服新挑战并支持新的运营。其中包括创建可组合的业务架构，并得到AI工程师和超自动化技术的支持。
+2.3、行为互联网（Internet of Behaviors） 行为互联网（IoB）不断涌现，许多技术都在捕获并使用人们日常生活中的“数字尘埃”。IoB汇集了面部识别、位置跟踪和大数据等当前直接关注个人的技术，并将结果数据与现金购买或设备使用等相关的行为事件相关联。
+企业机构使用该数据来影响人的行为。例如为了在疫情期间监控对健康规定的遵守情况，企业机构可以通过使用IoB计算机视觉来查看员工是否戴着口罩或通过热成像来识别发热者。
+Gartner预测，到2025年末，全球一半以上的人口将至少参加一项商业或政府的IoB计划。虽然IoB在技术上可成为可能，但社会各界将对各种影响行为的方法展开广泛的伦理和社会学讨论。
+2.4、全面体验（Total Experience） Burke表示：“去年，Gartner将多重体验定义为一种重要的战略科技趋势。而在今年，这一趋势又进一步发展成为全面体验（TX），将多重体验与客户、员工和用户体验相联系。Gartner预计在未来三年中，提供TX的企业机构在关键满意度指标方面的表现将超越竞争对手。”
+由于新冠疫情，移动、虚拟和分布式互动日益盛行，因此企业机构需要有TX策略。TX将改善体验的各个组成部分，实现业务成果的转型。这些相互交织的体验是企业运用创新革命性体验实现差异化，从而从疫情中恢复的关键驱动力。
+2.5、隐私增强计算（Privacy-Enhancing Computation） 随着全球数据保护法规的成熟，各地区首席信息官所面临的隐私和违规风险超过了以往任何时候。不同于常见的静态数据安全控制，隐私增强计算可在确保保密性或隐私的同时，保护正在使用的数据。
+Gartner认为，到2025年将有一半的大型企业机构使用隐私增强计算在不受信任的环境和多方数据分析用例中处理数据。企业机构应在开始确认隐私增强计算候选对象时，评估要求个人数据转移、数据货币化、欺诈分析和其他高度敏感数据用例的数据处理活动。
+2.6、分布式云（Distributed Cloud） 分布式云将公有云分布到不同的物理位置，但服务的运营、治理和发展依然由公有云提供商负责。它为具有低延迟、降低数据成本需求和数据驻留要求的企业机构方案提供了一个灵活的环境，同时还使客户的云计算资源能够更靠近发生数据和业务活动的物理位置。
+到2025年，大多数云服务平台至少都能提供一些可以根据需要执行的分布式云服务。Burke先生认为：“分布式云可以取代私有云，并为云计算提供边缘云和其他新用例。它代表了云计算的未来。”
+2.7、随处运营（Anywhere Operations） 随处运营是一种为全球各地客户提供支持、赋能全球各地员工并管理各类分布式基础设施业务服务部署的IT运营模式。它所涵盖的不仅仅是在家工作或与客户进行虚拟互动，还能提供所有五个核心领域的独特增值体验，分别是：协作和生产力、安全远程访问、云和边缘基础设施、数字化体验量化以及远程运营自动化支持。
+到2023年末，40%的企业机构将通过随处运营提供经过优化与混合的虚拟/物理客户与员工体验。
+2.8、网络安全网格（Cybersecurity Mesh） 网络安全网格使任何人都可以安全地访问任何数字资产，无论资产或人员位于何处。它通过云交付模型解除策略执行与策略决策之间的关联，并使身份验证成为新的安全边界。到2025年，网络安全网格将支持超过一半的数字访问控制请求。
+Burke先生认为：“新冠疫情加快了耗时数十年的数字化企业变革过程。我们已经越过了一个转折点，大多数企业机构的网络资产现在都已超出传统的物理和逻辑安全边界。随着随处运营的不断发展，网络安全网状组网将成为从非受控设备安全访问和使用云端应用与分布式数据的最实用方法。”
+2.9、组装式智能企业（Intelligent Composable Business） Burke先生表示：“为了提高效率而建立的静态业务流程非常脆弱，因此在疫情的冲击下变得支离破碎。首席信息官和IT领导者正在努力收拾残局，他们开始了解适应业务变化速度的业务能力有多么重要。”
+智能组合型业务通过获取更好的信息并对此做出更敏锐的响应来彻底改变决策。依靠丰富的数据和洞见，未来的机器将具有更强大的决策能力。智能组合型业务将为重新设计数字化业务时刻、新业务模式、自主运营和新产品、各类服务及渠道铺平道路。
+2.10、人工智能工程化（AI Engineering） Gartner的研究表明，只有53%的项目能够从人工智能（AI）原型转化为生产。首席信息官和IT领导者发现，由于缺乏创建和管理生产级人工智能管道的工具，人工智能项目的扩展难度很大。为了将人工智能转化为生产力，就必须转向人工智能工程化这门专注于各种人工智能操作化和决策模型（例如机器学习或知识图）治理与生命周期管理的学科。
+人工智能工程化立足于三大核心支柱：数据运维、模型运维和开发运维。强大的人工智能工程化策略将促进人工智能模型的性能、可扩展性、可解释性和可靠性，完全实现人工智能投资的价值。
+2.11、超级自动化（Hyperautomation） 业务驱动型超级自动化是一项可用于快速识别、审查和自动执行大量获准业务和IT流程的严格方法。在过去几年中，超级自动化一直在持续不断地发展。而因为疫情，一切事物都被突然要求首先实现数字化，这大大增加了市场的需求。业务利益相关者所积压的需求已促使70%以上的商业机构实施了数十种超级自动化计划。
+Burke先生表示：“超级自动化是一股不可避免且不可逆转的趋势。一切可以而且应该被自动化的事物都将被自动化。”
+三、2022年 3.1、技术成熟度曲线 3.2、2022战略技术趋势 10 月 19 日，Gartner 发布了 2022 年重要战略技术趋势，包括生成式人工智能、数据编织、分布式企业、云原生平台、自治系统、决策智能、组装式应用程序、超级自动化、隐私增强计算、网络安全网格、人工智能工程化、全面体验等十二项技术。
+3.3、主题一、工程化信任 工程化信任（Engineering Trust），本质上是为了构建一个安全可靠的数据处理基础设施，它为数字经济夯实数据基础。
+3.3.1、数据编织（Data Fabric） 在过去的十年里，数据和应用孤岛的数量激增，而数据和分析（D&amp;amp;A）团队的技能型人才数量却保持不变，甚至下降。如何把企业的数据整合起来、编织起来，是数据编织想要解决的问题。
+数据编织是一种新型的数据管理设计理念。作为一种跨平台和业务用户的灵活、弹性数据整合方式，数据编织能够简化企业机构的数据、整合基础设施并创建一个可扩展数据架构来减少大多数数据和分析团队因整合难度上升而出现的技术债务。这个数据架构里包括的数据元素，可以是传统的关系型数据库，也可以是非结构化数据库、数据湖、云数据库等。
+从业务的角度看，数据编织是指，现在很多企业在拥有大量离散数据的情况下如何用一套新的架构把不同的数据连接起来，并对应真实世界中的业务场景。
+数据编织的真正价值在于它能够通过内置的分析技术动态改进数据的使用，使数据管理工作量减少 70% 并加快价值实现时间。
+3.3.2、网络安全网格（Cybersecurity Mesh） Groombridge 表示：“数据贯穿了今年的许多趋势，但只有当企业能够信任数据时，数据才会变得有用。如今，资产和用户可能出现在任何地方，这意味着传统的安全边界已经消失。这就需要有网络安全网格架构（CSMA）。”
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>组装式应用思考</title>
-      <link>https://rjguanwen.cn/2022/09/pbc_01/</link>
+      <link>https://rjguanwen.cn/posts/tec_ot/pbc_01/</link>
       <pubDate>Thu, 22 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2022/09/pbc_01/</guid>
-      <description>什么是组装式应用? &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;组装式应用被Gartner连续两年列为重要战略技术</description>
+      <guid>https://rjguanwen.cn/posts/tec_ot/pbc_01/</guid>
+      <description>
+        
+          
+            什么是组装式应用? 组装式应用被Gartner连续两年列为重要战略技术趋势。
+之所以“组装式应用”能够成为近年来的重要战略技术趋势，究其原因是，由于互联网已经进入“下半场”，靠“堆人力”的研发方式已经不再具备竞争力了，真正可行且有效的方式是让系统能力变得可沉淀、可组合复用、可灵活应对各种变化。面对不断变化的业务环境、快速迭代的业务需求，急需通过组装式应用来提升企业的竞争力。
+那么什么是组装式应用呢？
+“组装式应用由以业务为中心的模块化组件构成，具备更易使用和可重复使用的代码，可加速新软件解决方案的上市时间，并释放企业价值。”
+“组装式应用”可以理解为一种技术理念，倡导的是任何企业数字化技术元素均可被组合。组装式应用协力为企业提供更灵活的组装式部件，帮助企业应对不同环境带来的挑战，让企业更具韧性和抗风险能力。
+组装式应用是由一系列的“封装业务能力”（Packaged Business Capability，简称PBC）组成的。PBC是封装好的软件组件，代表定义良好的业务功能，业务用户可快速识别，并可对外开放API接口。PBC并没有规定的大小、功能范围或内部体系结构，但PBC只有在实现了模块化、可发现、自主和可编排（集成）的特征后才是有价值的。换句话说，封装好的业务能力，必须是独立的，对某类受众能体现出业务或技术价值。
+组装式应用的价值 个人认为，组装式应用在两个方面有较大的意义：
+面向企业的价值，通过组装式应用的方式，可以重构企业的信息化架构，可以用搭积木的方式快速构建新型应用，为业务的快速变化提供敏捷的信息化支撑。这个可以看成是微服务的一个升级。 面向软件开发商的价值，特别是像我们这样的，面向某个行业的软件开发商。通过这种模式，可以打造多行业相对通用的软件体系，方便在具体行业、具体企业时，快速定制开发个性化软件。
+接下来的论述主要针对第二种情况。 组装式应用与低代码平台的关系 组装式应用与低代码平台关系非常密切，可以认为低代码平台应该是组装式应用架构里面很重要的一个组成部分。但是，从两者的定位来看，还是有明显差别的。
+组装式应用的核心是对业务的抽象，它的每一个PBC都有具体的业务含义与业务目标，甚至包含业务动作。而低代码平台的核心是提供了可复用的技术组件，业务人员可以用这些技术组之间来拼装成业务功能来支撑具体业务的开展。两者虽然都是为了敏捷开发，但是出发点是有巨大差异。
+为什么说低代码平台是组装式应用架构的重要组成部分呢？关键在于两者虽然有差异，但是其互补性也非常强。两者一个注重技术一个注重业务，通过低代码的理念来实现PBC的组装，可以更高效、更精确的实现业务诉求。
+组装式应用的实现设想 1、组装式应用的底座 所谓组装式应用的底座，就像汽车底盘一样，它是一个承载平台。同一个汽车底盘，通过配置不同的动力总成、车身、内饰、空调电子等，可以生产制造各种不同系列的汽车，例如：速腾、高尔夫、奥迪TT就都是基于PQ35平台研发生产的。组装式应用的底座应该也有同样的功效，它可以承载各种不同的PBC，为不同的行业、不同的企业构建出个性化十足的应用系统。
+个人认为组装式应用的底座应该就是企业数字中台，精确的来说就是业务中台+数据中台。数字中台天生具有成为底座资质，因为它本身就是对业务的抽象，可以为各个PBC提供稳定的原子服务，同时也为各PBC之间的连接提供了服务、流程与数据方面的保障。所以，数字中台的建设是组装式应用架构建设的基础。以快消品行业为例，我们要建设一套能适应多个快消品行业的组装式应用系统，那么我们首先要建设一个面向快消品领域且提出了具体行业属性的数字中台，基于这套中台，来构建面向各种具体业务的PBC，通过PBC的组装形成面向具体快消品行业（如烟、酒）的业务应用。
+2、PBC的形态 关于PBC到底长啥样，应该以什么技术支持、以什么形态存在，这个暂时没有唯一正确的回答。我想，PBC应该是是分不同种类的，我将其分为三类：业务服务类、功能组件类、应用模块类。
+2.1、业务服务类 业务服务类PBC以Rest服务的形式存在，包括数字中台的原子服务、通过中台原子服务封装的业务能力服务以及自定义服务。前两者很好理解，自定义服务是特指通过服务定义平台用SQL的方式生产的服务。自定义服务的特殊之处在于，它所连接的数据库可能不是中台这样的稳定的数据库，可能是归属于某一个应用的数据库。这样它的可用性要以该应用的在用为基础。这是需要在PBC管理上需要注意的。
+2.2、功能组件类 功能组件类PBC以web组件或页面组件的形式存在，举两个例子有助于理解：一是客户漏斗，它在系统里面可能表现为一个弹出框，但是它是具有一定的业务含义的。首先它要受到登录用户的数据权限控制，另外它也会收到上级页面上一些参数与选择条件的控制，最后它本身也集成了一些相关的能力，如基于标签、分类分档、经营情况的筛选等；二是订单明细，它在系统里面可能表现为一个设置一系列的页面组合。在业务系统中，每个显示了订单号的地方，都能将其挂载上去，用户客户虽然进入查看其明细设置统计信息；三是客户档案，客户档案除了包括客户的基本信息之外，可能还会包括客户画像、客户经营情况、客户诚信情况等等，与订单明细一样，它也可以提炼为一个PBC，在系统里面广泛应用。功能类组件在引入时应该提供相应的参数配置能力，以保证其适应性。
+2.3、应用模块类 应用模块类BPC比功能组件类更高了一个层次，它应该是以容器封装的微应用为主要形态。这类BPC的特点是具有相对高的业务通用性。例如问卷调查，它本身有足够高的可配置性，同时又有足够的通用性，这就可以抽象为一个BPC。各业务系统需要时，可以直接将其引入系统，需要重点考虑的是该组件与业务系统其他模块之间的互通问题，例如调查范围的选择可能要和系统中的客户、组织机构等打通；调查的结果可能要和具体的业务打通。
+3、PBC研发管控平台 只有好的管理才能有好的复用。PBC研发管控平台包括PBC定义、设计、发布、停用等生命周期管理及分类管理、引用管理等内容。具体不再详述。目标是最大限度的方便PBC在各业务系统中复用。
+4、总体架构图 
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>读书 - 《数据资产论》</title>
-      <link>https://rjguanwen.cn/2022/03/sjzcl01/</link>
+      <link>https://rjguanwen.cn/posts/books/sjzcl01/</link>
       <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2022/03/sjzcl01/</guid>
-      <description>读书笔记 - 《数据资产论》 根据会计学的定义，资源要成为资产有一个必要条件：带来预期的经济收益。由此，不是所有的数据都可以称为资产，只有那些能够</description>
+      <guid>https://rjguanwen.cn/posts/books/sjzcl01/</guid>
+      <description>
+        
+          
+            读书笔记 - 《数据资产论》 根据会计学的定义，资源要成为资产有一个必要条件：带来预期的经济收益。由此，不是所有的数据都可以称为资产，只有那些能够产生商业价值的数据才可以成为资产。
+数据资产的彰显需要一个必要条件：业务场景。业务场景可以孤立于数据之外而产生价值，但是数据却无法孤立于业务场景之外产生价值。数据价值之道在于：场景为王，数据次之，算法最后。 不确定性产生有两大根本原因：一是无知；二是无奈。无知所对应的不确定性，可以通过数据的无限积累、算法的不断改良、知识的持续增加而逐步化解。无奈所对应的不确定性，其根源是人类对稀缺资源的无限博弈，我们对它无可奈何，它将长期广泛的存在，甚至不回衰减。我们要分清数据分析中“可为”与“不可为”之间的区别。 
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Gin 表单与文件上传</title>
-      <link>https://rjguanwen.cn/2022/03/gin_03/</link>
+      <link>https://rjguanwen.cn/posts/gin/gin_03/</link>
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2022/03/gin_03/</guid>
-      <description>表单参数 表单传输为 POST 请求，http 常见的传输格式为四种： - application/json - application/x-www-form-urlencoded - application/xml - multipart/form-data 表单参数可以通过 PostForm() 方法获取，该方法默认解析的是 x-www-form-urlencoded 或 form-data 格式的参数。 简单</description>
+      <guid>https://rjguanwen.cn/posts/gin/gin_03/</guid>
+      <description>
+        
+          
+            表单参数 表单传输为 POST 请求，http 常见的传输格式为四种：
+application/json application/x-www-form-urlencoded application/xml multipart/form-data 表单参数可以通过 PostForm() 方法获取，该方法默认解析的是 x-www-form-urlencoded 或 form-data 格式的参数。
+简单的表单示例： &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;demo1&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;form action=&amp;#34;http://localhost:8080/form&amp;#34; method=&amp;#34;post&amp;#34; enctype=&amp;#34;application/x-www-form-urlencoded&amp;#34;&amp;gt; 用户名：&amp;lt;inpurt type=&amp;#34;text&amp;#34; name=&amp;#34;username&amp;#34; placeholder=&amp;#34;请输入你的用户名&amp;#34;&amp;gt; &amp;lt;br&amp;gt; 密&amp;amp;nbsp;&amp;amp;nbsp;码：&amp;lt;input type=&amp;#34;password&amp;#34; name=&amp;#34;password&amp;#34; placeholder=&amp;#34;请输入你的密码&amp;#34;&amp;gt; &amp;lt;br&amp;gt; &amp;lt;input type=&amp;#34;submit&amp;#34; value=&amp;#34;提交&amp;#34;&amp;gt; &amp;lt;/form&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; package main import ( &amp;#34;fmt&amp;#34; &amp;#34;github.com/gin-gonic/gin&amp;#34; &amp;#34;net/http&amp;#34; ) //表单参数 func main(){ r:=gin.Default() r.POST(&amp;#34;/form&amp;#34;, func(c *gin.Context) { types:=c.DefaultPostForm(&amp;#34;type&amp;#34;,&amp;#34;post&amp;#34;) // 键名和html页面属性名对应 username:=c.PostForm(&amp;#34;username&amp;#34;) password:=c.PostForm(&amp;#34;userpassword&amp;#34;) c.String(http.StatusOK,fmt.Sprintf(&amp;#34;username:%s,password:%s,types:%s&amp;#34;,username,password,types)) }) r.
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Gin 路由</title>
-      <link>https://rjguanwen.cn/2021/09/gin_02/</link>
+      <link>https://rjguanwen.cn/posts/gin/gin_02/</link>
       <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2021/09/gin_02/</guid>
-      <description>路由 核心功能 路由系统可根据请求方法、请求路径和路径参数来识别转发 可设置一个或者多个中间件用于在请求处理器前后处理特殊的事件 可以分组设置，将一</description>
+      <guid>https://rjguanwen.cn/posts/gin/gin_02/</guid>
+      <description>
+        
+          
+            路由 核心功能 路由系统可根据请求方法、请求路径和路径参数来识别转发 可设置一个或者多个中间件用于在请求处理器前后处理特殊的事件 可以分组设置，将一个或多个中间件作用在一组多个路由上 基本语法 //构建路由对象并注册请求路径对应的处理器 r := gin.Default() r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) { c.JSON(200, gin.H{ &amp;#34;message&amp;#34;: &amp;#34;ping&amp;#34;, }) }) // 监听并在 0.0.0.0：8080 上启动服务 r.Run() 可以将路由的定义放在单独的文件中完成，如 /router/api.go :
+// file: /router/api.go func APIRouter() *gin.Engine { r := gin.Default() r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) { c.JSON(200, gin.H{ &amp;#34;message&amp;#34;: &amp;#34;ping&amp;#34; }) }) // 更多的注册 // r.POST() // r.DELETE() // r.PUT() return r } 然后，在 main() 中完成调用和初始化，并启动监听：
+// file /main.go func main() { // 初始化路由 r := router.
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>hugo 常用命令</title>
-      <link>https://rjguanwen.cn/2021/07/hugo_cmd/</link>
+      <link>https://rjguanwen.cn/posts/tec_ot/hugo_cmd/</link>
       <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2021/07/hugo_cmd/</guid>
-      <description>常用命令 #使用方法: hugo hugo [flags] hugo [command] hugo [command] [flags] #查看版本 hugo version #版本和环境详细信息 hugo env #创建新站点 hugo new site &amp;quot;$mysite&amp;quot; #创建文章 hugo new index.md 在content/文件夹可以看</description>
+      <guid>https://rjguanwen.cn/posts/tec_ot/hugo_cmd/</guid>
+      <description>
+        
+          
+            常用命令 #使用方法: hugo hugo [flags] hugo [command] hugo [command] [flags] #查看版本 hugo version #版本和环境详细信息 hugo env #创建新站点 hugo new site &amp;#34;$mysite&amp;#34; #创建文章 hugo new index.md 在content/文件夹可以看到，此时多了一个markdown格式的文件index.md，打开文件可以看到时间和文件名等信息已经自动加到文件开头，包括创建时间，页面名，是否为草稿等。 #编译生成静态文件 hugo Hugo将编译所有文件并输出到public目录 #编译生成静态文件并启动web服务 hugo server 常用参数 --bind=&amp;#34;127.0.0.1&amp;#34; 服务监听IP地址； -p, --port=1313 服务监听端口； -w, --watch[=true] 监听站点目录，发现文件变更自动编译； -D, --buildDrafts 包括被标记为draft的文章； -E, --buildExpired 包括已过期的文章； -F, --buildFuture 包括将在未来发布的文章； -b, --baseURL=&amp;#34;www.datals.com&amp;#34; 服务监听域名； --log[=false]: 开启日志； --logFile=&amp;#34;/var/log/hugo.log&amp;#34;: log输出路径； -t, --theme=&amp;#34;&amp;#34; 指定主题； -v, --verbose[=false]: 输出详细信息 
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>rasa 入门</title>
-      <link>https://rjguanwen.cn/2021/07/rasa-1/</link>
+      <link>https://rjguanwen.cn/posts/rasa/rasa-1/</link>
       <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2021/07/rasa-1/</guid>
-      <description>前言：没有比官网文档更好的资料了。看这里https://rasa.com/docs/rasa/ rasa 安装 pip install -U rasa pip show rasa 注：我是用的 rasa 版本为 Version: 2.8.1 初</description>
+      <guid>https://rjguanwen.cn/posts/rasa/rasa-1/</guid>
+      <description>
+        
+          
+            **前言：没有比官网文档更好的资料了。**看这里https://rasa.com/docs/rasa/
+rasa 安装 pip install -U rasa pip show rasa 注：我是用的 rasa 版本为 Version: 2.8.1
+初始化项目 1、 在工作文件夹中执行
+# 创建默认的初始化项目，加“--no-prompt”就避免了中间的问题提示 rasa init --no-prompt 该命令会在工作文件夹中创建一系列的文件，关键文件如下：
+config.yml : Rasa NLU 和 Rasa Core 的配置文件 credentials.yml : 定义和其他服务连接的一些细节，例如rasa api接口 data/nlu.yml : Rasa NLU 的训练数据 data/stories.yml : Rasa stories 数据 data/rule.yml : Rasa 规则数据 endpoints.yml : 和外部消息服务对接的配置 models/.tar.gz : 初始训练的模型数据 以上文件都打开看一下，基本能明白是啥意思。
+2、 训练模型
+如果添加了 NLU 或者 Core 数据，或者修改了domain和配置文件，需要重新训练模型：
+rasa train 3、 对话应用
+rasa shell 可能因训练数据的问题，bot 表现的挺傻的，呵呵~
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>rasa 继续入门 - 语言模型与分词器</title>
-      <link>https://rjguanwen.cn/2021/07/rasa-2/</link>
+      <link>https://rjguanwen.cn/posts/rasa/rasa-2/</link>
       <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2021/07/rasa-2/</guid>
-      <description>rasa 支持多种语言模型与分词器，语言模型常用的有 MITIENLP 和 SpaCyNLP，分词器常用的有 WhitespaceTokenizer、JiebaToken</description>
+      <guid>https://rjguanwen.cn/posts/rasa/rasa-2/</guid>
+      <description>
+        
+          
+            rasa 支持多种语言模型与分词器，语言模型常用的有 MITIENLP 和 SpaCyNLP，分词器常用的有 WhitespaceTokenizer、JiebaTokenizer、MitieTokenizer、SpacyTokenizer 等。
+WhitespaceTokenizer 空格分词器，每个空格间隔的文本，都将分为一个token，典型的英文句子的分词。该分词器不支持中文分词。配置方式如下：
+pipeline: - name: &amp;#34;WhitespaceTokenizer&amp;#34; # Flag to check whether to split intents &amp;#34;intent_tokenization_flag&amp;#34;: False # Symbol on which intent should be split &amp;#34;intent_split_symbol&amp;#34;: &amp;#34;+&amp;#34; # Regular expression to detect tokens &amp;#34;token_pattern&amp;#34;: None intent_tokenization_flag和intent_split_symbol是在nlu返回多意图的时候使用。当intent_tokenization_flag设置为False，nlu只返回一个置信度最高的意图。但有些时候，一句话包含多个意图，例如：
+## intent: affirm+ask_transport - Yes. How do I get there? - Sounds good. Do you know how I could get there from home? 用户的回答包含2层意思，首先是同意我的建议，另外是询问怎么去。这时候，需要将intent_tokenization_flag设置为True，然后在训练数据里面编写多意图对应的话术，多个意图中间用intent_split_symbol去分割。在运行的时候，用户说“Sounds good. Do you know how I could get there from home?
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Anaconda 虚拟环境基础操作</title>
-      <link>https://rjguanwen.cn/2021/02/python-1/</link>
+      <link>https://rjguanwen.cn/posts/python/python-1/</link>
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2021/02/python-1/</guid>
-      <description>Anaconda 虚拟环境基础操作 创建 创建的同时可以同时指定安装必要的包： conda create -n &amp;lt;虚拟环境名&amp;gt; [包名1 包名2 包名3] python=3.6 激活虚拟环境 Linux: source activate &amp;lt;</description>
+      <guid>https://rjguanwen.cn/posts/python/python-1/</guid>
+      <description>
+        
+          
+            Anaconda 虚拟环境基础操作 创建 创建的同时可以同时指定安装必要的包：
+conda create -n &amp;lt;虚拟环境名&amp;gt; [包名1 包名2 包名3] python=3.6 激活虚拟环境 Linux:
+source activate &amp;lt;虚拟环境名&amp;gt; Windows：
+activate &amp;lt;虚拟环境名&amp;gt; 退出虚拟环境 Linux：
+source deactivate &amp;lt;虚拟环境名&amp;gt; Windows：
+deactivate &amp;lt;虚拟环境名&amp;gt; 删除虚拟环境 conda remove -n &amp;lt;虚拟环境名&amp;gt; --all 其他 conda 常用命令 conda list：查看安装了哪些包 conda install package_name(包名)：安装包 conda env list 或 conda info -e：查看当前存在哪些虚拟环境 conda update conda：检查更新当前conda 
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Apache Superset 简介</title>
-      <link>https://rjguanwen.cn/2021/01/superset_01/</link>
+      <link>https://rjguanwen.cn/posts/superset/superset_01/</link>
       <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2021/01/superset_01/</guid>
-      <description>Apache Superset 简介 概要信息 项目 说明 官网 https://superset.apache.org/ 开源/闭源 开源 源码管理地址 https://github.com/apache/incubator-superset/wiki License类别 Mozilla Public License 2.0 开发语言 GO 操作系统支持 跨平台，支持多种操作系统 主要特性 Apache</description>
+      <guid>https://rjguanwen.cn/posts/superset/superset_01/</guid>
+      <description>
+        
+          
+            Apache Superset 简介 概要信息 项目 说明 官网 https://superset.apache.org/ 开源/闭源 开源 源码管理地址 https://github.com/apache/incubator-superset/wiki License类别 Mozilla Public License 2.0 开发语言 GO 操作系统支持 跨平台，支持多种操作系统 主要特性 Apache Superset是一款快速直观的轻量级工具，具有丰富的功能选项，各种用户都可以轻松地以可视化的方式浏览数据，从简单的折线图到高度详细的地理空间图，Apache Superset无所不能，提供了如下主要特性：
+强大易用：可以快速容易地集成，从而浏览数据，而这一切通过SQL IDE或者无需编写代码，通过可视化构建器即可完成。
+架构设计：Superset轻巧且极具可扩展性，它可以利用既存的数据基础框架而不需要另外一个接收层。
+丰富的可视化方式与仪表盘：Superset提供了多种精美的可视化效果。可视化插件体系结构使得构建自定义的可视化变得更为容易。
+支持多种数据库：可以通过SQL Alchemy连接到任何基于SQL的数据源，包括云原生的数据库以及PB级的数据引擎。比如：
+基于 docker 部署使用 1、 下载 superset 镜像
+docker search superset 选择 STARTS 最高的镜像
+docker pull amancevice/superset 2、启动并初始化
+创建挂载目录：
+mkdir /opt/docker/superset/conf &amp;amp; mkdir /opt/docker/superset/data 启动镜像：
+docker run --name superset -u 0 -d -p 8088:8088 -v /opt/docker/superset/conf:/etc/superset -v /opt/docker/superset/data:/var/lib/superset amancevice/superset 初始化 superset：
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Apache Ignite 实践记录</title>
-      <link>https://rjguanwen.cn/2021/01/ignite_02/</link>
+      <link>https://rjguanwen.cn/posts/ignite/ignite_02/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2021/01/ignite_02/</guid>
-      <description>Apache Ignite 实践记录 使用 Docker 安装 基于 win10 WSL2(Ubuntu) 创建本地目录 mkdir ignite_dir 使用本地目录启动持久化集群 docker run -d \ -v ${PWD}/ignite_dir:/storage \ -e IGNITE_WORK_DIR=/storage \ apacheignite/ignite:2.9.0 使用自定义配置文件 通过 URI 传递配置文件 docker run -d \ -e</description>
+      <guid>https://rjguanwen.cn/posts/ignite/ignite_02/</guid>
+      <description>
+        
+          
+            Apache Ignite 实践记录 使用 Docker 安装 基于 win10 WSL2(Ubuntu)
+创建本地目录 mkdir ignite_dir 使用本地目录启动持久化集群 docker run -d \ -v ${PWD}/ignite_dir:/storage \ -e IGNITE_WORK_DIR=/storage \ apacheignite/ignite:2.9.0 使用自定义配置文件 通过 URI 传递配置文件 docker run -d \ -e CONFIG_URI=http://myserver/config.xml \ apacheignite/ignite:2.9.0 使用本地配置文件 docker run -d \ -v /local/dir/config.xml:/config-file.xml \ -e CONFIG_URI=/config-file.xml \ apacheignite/ignite:2.9.0 启用模块 要启用特定模块，需要在 OPTION_LIBS 系统变量中指定。 sudo docker run -d \ -e &amp;#34;OPTION_LIBS=ignite-rest-http,ignite-aws&amp;#34; \ apacheignite/ignite:2.9.0 Ignite 的 Docker 镜像默认会启用 ignite-log4j、ignite-spring、ignite-indexing 等模块。
+环境变量 名称 描述 默认 CONFIG_URI Ignite配置文件的URL，下载的配置文件会保存于.
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>win10 的 Linux 子系统中安装 docker</title>
-      <link>https://rjguanwen.cn/2021/01/docker_wsl/</link>
+      <link>https://rjguanwen.cn/posts/docker/docker_wsl/</link>
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2021/01/docker_wsl/</guid>
-      <description>在 win10 的 Linux 子系统中实现 docker 的安装使用 1、安装 WSL2 此处注意，一定是 WSL2！wsl 坑太多，经常有莫名错误！ 1. 配置 WSL2 开启WSL 以管理员运行 Powers</description>
+      <guid>https://rjguanwen.cn/posts/docker/docker_wsl/</guid>
+      <description>
+        
+          
+            在 win10 的 Linux 子系统中实现 docker 的安装使用 1、安装 WSL2 此处注意，一定是 WSL2！wsl 坑太多，经常有莫名错误！
+1. 配置 WSL2 开启WSL 以管理员运行 Powershell： Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux 之后重启计算机。
+启用“虚拟机平台”可选组件：
+以管理员运行 Powershell： Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform 之后重启计算机。
+默认启用 WSL2
+运行 Powershell： wsl --set-default-version 2 2. 安装配置 Ubuntu 安装 Ubuntu 打开 Microsoft Store，搜索 ubuntu 并安装。
+之后启动刚刚安装的 Ubuntu。
+设置 Ubuntu 系统的 root 密码 Ubuntu 的默认 root 密码是随机的，即每次开机都有一个新的 root 密码。要修改密码，可在终端输入命令：
+$ sudo passwd 输入当前用户的密码，终端会提示我们输入新的密码并确认，此时的密码就是 root 新密码。
+2、安装 Docker 以管理员身份运行 Ubuntu，在终端中依次执行以下命令：
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Apache Ignite 简介</title>
-      <link>https://rjguanwen.cn/2020/12/ignite_01/</link>
+      <link>https://rjguanwen.cn/posts/ignite/ignite_01/</link>
       <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2020/12/ignite_01/</guid>
-      <description>Apache Ignite 简介 待完善</description>
+      <guid>https://rjguanwen.cn/posts/ignite/ignite_01/</guid>
+      <description>
+        
+          
+            Apache Ignite 简介 待完善
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Windows 更新 git 版本</title>
-      <link>https://rjguanwen.cn/2020/09/git_04/</link>
+      <link>https://rjguanwen.cn/posts/git/git_04/</link>
       <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2020/09/git_04/</guid>
-      <description>1、查看当前安装的 git 版本 git --version 2、更新 git 版本是 2.17.1 之前的： git update git 版本是 2.17.1 之后的： git update-git-for-windows 3、如出现错误 重新下载新版本安装包，覆盖安装即可：https</description>
+      <guid>https://rjguanwen.cn/posts/git/git_04/</guid>
+      <description>
+        
+          
+            1、查看当前安装的 git 版本 git --version 2、更新 git 版本是 2.17.1 之前的：
+git update git 版本是 2.17.1 之后的：
+git update-git-for-windows 3、如出现错误 重新下载新版本安装包，覆盖安装即可：https://git-scm.com/download/win
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Go 文件操作</title>
-      <link>https://rjguanwen.cn/2020/08/go_file/</link>
+      <link>https://rjguanwen.cn/posts/golang/go_file/</link>
       <pubDate>Thu, 27 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2020/08/go_file/</guid>
-      <description>&amp;lt;部分内容借鉴自网络，如有侵权，预先道歉，请及时联系（rjguanwen001@163.com），我会尽快删除，谢谢！&amp;gt; Go 文件操</description>
+      <guid>https://rjguanwen.cn/posts/golang/go_file/</guid>
+      <description>
+        
+          
+            &amp;lt;部分内容借鉴自网络，如有侵权，预先道歉，请及时联系（rjguanwen001@163.com），我会尽快删除，谢谢！&amp;gt;
+Go 文件操作总结 1、基本操作 1.1 创建文件 package main import ( &amp;#34;log&amp;#34; &amp;#34;os&amp;#34; ) func main() { newFile, err := os.Create(&amp;#34;example_1.txt&amp;#34;) if err != nil { log.Fatal(err) } newFile.Close() } 1.2 Truncate文件 package main import ( &amp;#34;log&amp;#34; &amp;#34;os&amp;#34; ) func main(){ // 裁剪一个文件到100个字节。 // 如果文件本来就少于100个字节，则文件中原始内容得以保留，剩余的字节以null字节填充。 // 如果文件本来超过100个字节，则超过的字节会被抛弃。 // 这样我们总是得到精确的100个字节的文件。 // 传入0则会清空文件。 err := os.Truncate(&amp;#34;example_1.txt&amp;#34;, 100) if err != nil { log.Fatal(err) } } 1.3 获取文件信息 package main import ( &amp;#34;fmt&amp;#34; &amp;#34;log&amp;#34; &amp;#34;os&amp;#34; ) func main(){ fi, err := os.
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Gin Quickstart</title>
-      <link>https://rjguanwen.cn/2020/06/gin_01/</link>
+      <link>https://rjguanwen.cn/posts/gin/gin_01/</link>
       <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2020/06/gin_01/</guid>
-      <description>Gin 使基于 go 语言的一个 web 框架，接口简洁，封装比较优雅，性能表现很好。 Gin 特性 快速：路由不使用反射，基于Radix树，内存占用少。 中间件：HTTP</description>
+      <guid>https://rjguanwen.cn/posts/gin/gin_01/</guid>
+      <description>
+        
+          
+            Gin 使基于 go 语言的一个 web 框架，接口简洁，封装比较优雅，性能表现很好。
+Gin 特性 快速：路由不使用反射，基于Radix树，内存占用少。
+中间件：HTTP请求，可先经过一系列中间件处理，例如：Logger，Authorization，GZIP等。中间件机制极大地提高了框架的可扩展性。
+异常处理：服务始终可用，不会宕机。Gin 可以捕获 panic，并恢复。而且有极为便利的机制处理HTTP请求过程中发生的错误。
+JSON：Gin可以解析并验证请求的JSON。这个特性对Restful API的开发尤其有用。
+路由分组：例如将需要授权和不需要授权的API分组，不同版本的API分组。而且分组可嵌套，且性能不受影响。
+渲染内置：原生支持JSON，XML和HTML的渲染。
+Quickstart 安装 Gin 前，首先要安装 Go，并做好各种设置。Go 版本要求 1.9 以上。 下载并安装 Gin。 $ go get -u github.com/gin-gonic/gin 在代码中引入： import &amp;#34;github.com/gin-gonic/gin&amp;#34; 如果需要使用类似 http.StatusOK 的常量，则需引入 net/http。 import &amp;#34;net/http&amp;#34; 示例代码： package main import &amp;#34;github.com/gin-gonic/gin&amp;#34; func main() { r := gin.Default() r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) { c.JSON(200, gin.H{ &amp;#34;message&amp;#34;: &amp;#34;pong&amp;#34;, }) }) r.Run() // listen and serve on 0.0.0.0:8080 } 
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Docker常用命令</title>
-      <link>https://rjguanwen.cn/2020/06/docker_01/</link>
+      <link>https://rjguanwen.cn/posts/docker/docker_01/</link>
       <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2020/06/docker_01/</guid>
-      <description>Redis 常用命令，备查！ 1、测试 Docker 是否正常安装 docker run hello-world 2、Docker 状态信息查看 docker info 3、Docker 镜像管理 3.1 创建镜像 方法一：根据 Dockerfile 创建镜像 创建D</description>
+      <guid>https://rjguanwen.cn/posts/docker/docker_01/</guid>
+      <description>
+        
+          
+            Redis 常用命令，备查！
+1、测试 Docker 是否正常安装 docker run hello-world 2、Docker 状态信息查看 docker info 3、Docker 镜像管理 3.1 创建镜像 方法一：根据 Dockerfile 创建镜像 创建Dockerfile文件及其相关依赖文件 切换到Dockerfile文件所在目录，执行如下命令： docker build -t &amp;lt;镜像名称&amp;gt; . 方法二：根据已有镜像实例化后进行交互式环境修改后保存 根据已有镜像实例化容器，记录容器ID，并进入交互式命令行 docker run -it &amp;lt;已有镜像名称&amp;gt; /bin/bash 在交互式命令行执行相关操作后退出交互式命令行 执行如下命令创建镜像 docker commit &amp;lt;容器ID&amp;gt; &amp;lt;镜像名称&amp;gt; 3.2 查看镜像 docker images 3.3 查看某个镜像详情 docker inspect &amp;lt;镜像名称&amp;gt; 3.4 删除镜像 docker rmi &amp;lt;镜像名称&amp;gt; PS：对于存在容器的镜像需要先删除容器
+3.5 为镜像添加标签 docker tag &amp;lt;旧镜像名称&amp;gt; &amp;lt;新镜像名称&amp;gt; PS：该命令会在原有的镜像上重新生成一个新的镜像名称对应该镜像
+3.6 拉取镜像 docker pull &amp;lt;镜像名称&amp;gt; 3.7 推送镜像 docker push &amp;lt;镜像名称&amp;gt; 4、容器操作 4.
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Redis 常用命令</title>
-      <link>https://rjguanwen.cn/2020/06/redis_01/</link>
+      <link>https://rjguanwen.cn/posts/redis/redis_01/</link>
       <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2020/06/redis_01/</guid>
-      <description>Redis 常用命令，备查！ &amp;lt;部分内容摘抄自网络，如有侵权，预先道歉，请及时联系（rjguanwen001@163.com），我会尽快删除，谢谢</description>
+      <guid>https://rjguanwen.cn/posts/redis/redis_01/</guid>
+      <description>
+        
+          
+            Redis 常用命令，备查！
+&amp;lt;部分内容摘抄自网络，如有侵权，预先道歉，请及时联系（rjguanwen001@163.com），我会尽快删除，谢谢！&amp;gt;
+一、管理命令 1 启动 Redis &amp;gt; redis-server [--port 6379] 如果命令参数过多，建议通过配置文件来启动 Redis。
+&amp;gt; redis-server [xx/xx/redis.conf] 2 连接 Redis &amp;gt; ./redis-cli [-h 127.0.0.1 -p 6379] 3 停止 Reids &amp;gt; redis-cli shutdown &amp;gt; kill redis-pid 以上两条命令，效果一样
+4 发送命令 给 Redis 发送命令有两种方式： 1、redis-cli 带参数运行
+&amp;gt; redis-cli &amp;lt;命令，如 shutdown&amp;gt; 2、redis-cli不带参数运行，先执行 redis-cli，进入命令行执行命令
+5 测试连通性 &amp;gt; ping 二、key 操作命令 1 获取所有键 语法：keys pattern
+&amp;gt; keys * 表示通配符，表示任意字符，会遍历所有键显示所有的键列表，时间复杂度O(n)，在生产环境不建议使用。 2 获取键总数 语法：dbsize
+获取键总数时不会遍历所有的键，直接获取内部变量，时间复杂度O(1)。 3 查询键是否存在 语法：exists key [key &amp;hellip;]
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>架构决策记录（ADR）</title>
-      <link>https://rjguanwen.cn/2020/02/adr/</link>
+      <link>https://rjguanwen.cn/posts/tec_ot/adr/</link>
       <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2020/02/adr/</guid>
-      <description>什么是ADR ADR（Architecture Decision Records）即架构决策记录。 架构决策（AD）是一种软件设计选择，针对功能性或非功能性的需求</description>
+      <guid>https://rjguanwen.cn/posts/tec_ot/adr/</guid>
+      <description>
+        
+          
+            什么是ADR ADR（Architecture Decision Records）即架构决策记录。
+架构决策（AD）是一种软件设计选择，针对功能性或非功能性的需求进行的选择设计。软件架构决策需要在软件质量属性、成本、时间以及其他各种因素之间，做出正确的权衡。架构决策记录（ADR） 是跟踪软件设计选择的一种方法，其应能向项目经理、架构师、开发人员及软件的其他利益相关者，清楚阐明选择何种解决方案以及为此做出的权衡。
+架构决策记录记啥？ 架构决策记录（ADR）首先要解决的基本问题：“我们做了什么决策？”、“为什么这样决策？”，稍次要的问题包括：“我们还考虑过哪些解决方案？”、“为什么没有采用？”等。
+架构决策记录的作用 可以作为和开发人员进行沟通的工具，说明应遵循的重要架构原则 当开发人员对架构背后的逻辑提出质疑时，使团队成员能够“就事论事”，提高效率。（如果事实表明你的决策站不住脚，便应虚心接受批评，改正架构） 向领导和利益相关者说明这样构建软件的确切原因（比如，采用某种较为昂贵的硬件或软件的必要性等） 要把项目移交给下任架构师时，保持架构设计的有序传承 如果相关条件发生变化，需要对决策重新评估时，它可以作为一个起点 架构决策记录也会倒逼架构师在进行架构决策时更严谨，有助于确保基础的扎实稳固 架构决策记录的组成部分 每个架构决策至少有 6 部分组成：标题、时间、状态（Status）、上下文（Context）、决策（Decision）、后果（Consequences）。
+标题：按数字顺序编号，简要描述架构决策内容
+时间：在标题下一行，记录架构决策做出的日期，如 日期：2020年2月28日
+状态：表示本架构决策当前所处的状态，可选项包括：
+提议：决策已被提出讨论，但是利益相关方尚未达成一致。 公认：决策已讨论通过并达成一致。 已取代：因条件变化，已有新的架构决策取代本决策。此时需要给出新决策链接。 已弃用：本架构决策已撤销，不再使用。 上下文：架构决策相关的背景及决策原因。本部分的语言应该是价值中立的，只用于描述事实
+决策：本部分简洁明了的描述我们最终确定的架构决策
+后果：本部分描述应用决策后产生的影响，所有的影响都应该列在这里，包括“积极的”、“中性的”与消极的”
+其他关键问题 架构决策按照顺序和数字编号，不要打乱顺序。
+已记录的架构决策不应该被删除，如果被取代掉或已不符合当前情况，请将其标记为 已取代 或 已弃用
+一个架构决策记录示例 1. 使用 ssh key 替换用户名密码方式登录日期: 2019年11月12日状态：公认上下文：当前我们使用的是用户名、密码方式进行服务器登录，存在以下问题安全性问题，密码面临被破解的风险；易用性问题，无法使用 config 记录密码，可以使用第三方软件解决，如，SecureCRT，ZOC7；无法充分使用 local terminal，如 iTerm2；参考:SSH: passwords or keys? https://lwn.net/Articles/369703/Why is SSH key authentication better than password authentication?
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Centrifugo（九）使用 Redis 实现伸缩</title>
-      <link>https://rjguanwen.cn/2019/12/centrifugo_09/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_09/</link>
       <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/12/centrifugo_09/</guid>
-      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Centrifugo 服务器支持多节点部署，并支持对客户端请求的负载均衡。本文中，我们将启动三个 Centrifugo 服务节点来进行演示，这些节点通过 Redis 互相连接。为了达到这个目的，</description>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_09/</guid>
+      <description>
+        
+          
+            Centrifugo 服务器支持多节点部署，并支持对客户端请求的负载均衡。本文中，我们将启动三个 Centrifugo 服务节点来进行演示，这些节点通过 Redis 互相连接。为了达到这个目的，我们将使用前面章节中讲到的 Redis engine。
+首先，我们需要有一个处在运行状态的 Redis 服务器。然后，我们可以一次启动三个 Cetrifugofu 服务节点：
+打开命令行窗口，启动第一个节点：
+centrifugo --config=config.json --port=8000 --engine=redis --redis_host=127.0.0.1 --redis_port=6379 如果 Redis 和 Centrifugo 运行在同一台机器，并且使用了默认的端口号，上面命令中的 redis_host 与 redis_port 选项可以省略。
+然后打开一个新的命令行窗口，启动第二个节点：
+centrifugo --config=config.json --port=8001 --engine=redis --redis_host=127.0.0.1 --redis_port=6379 此命令中，我们指定了一个新的端口 8001，以防与节点一出现端口冲突。如果你的两个节点不在一台机器上，则不存在该问题。
+接下来再次开启一个新的命令行窗口，启动第三个节点：
+centrifugo --config=config.json --port=8002 --engine=redis --redis_host=127.0.0.1 --redis_port=6379 现在你已经拥有了三个 Centrifugo 实例，分别运行在 8000、8001、8002 端口，客户端可以选择连接任何一个实例。同样，你也可以发送 API 请求到任何一个节点。这三个节点通过 Redis 的 PUB/SUB 机制实现消息共享。
+多个节点之间的负载均衡可以通过 Nginx 实现。要非常注意的一点是，如果你的客户端使用了 SockJS 连接到 Centrifugo 节点，那么接下来的该客户端的请求只能路由到同一节点，因为该节点保存了客户端的会话信息。而使用 websocket 则不存在该问题。
+Redis 分片
+从 V1.6.0 开始 Centrifugo 内置了对 Redis 分片的支持。
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Centrifugo（十）令牌和签名</title>
-      <link>https://rjguanwen.cn/2019/12/centrifugo_10/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_10/</link>
       <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/12/centrifugo_10/</guid>
-      <description>Centrifugo 使用具有 SHA-256 摘要算法的 HMAC（Hash-based Message Authentication Code）来创建连接令牌以及对数据进行签名。 &amp;ensp;&amp;ensp;&amp;ensp;&amp;e</description>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_10/</guid>
+      <description>
+        
+          
+            Centrifugo 使用具有 SHA-256 摘要算法的 HMAC（Hash-based Message Authentication Code）来创建连接令牌以及对数据进行签名。
+本文主要描述如何针对不同的动作（actions）生成令牌及签名。如果你使用 Python，那么所有所需的方法都已经封装到 Cent 库中，你直接使用即可。针对 PHP、GO、Ruby、NodeJs等常用开发语言，同样有官方 HTTP API clients 提供，可以直接使用。
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Centrifugo（八）连接检查</title>
-      <link>https://rjguanwen.cn/2019/12/centrifugo_08/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_08/</link>
       <pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/12/centrifugo_08/</guid>
-      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;当客户端使用适当的凭据连接到 Centrifugo 后，连接是一直存在的，哪怕你在应用程序中禁止了该用户，他也能从</description>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_08/</guid>
+      <description>
+        
+          
+            当客户端使用适当的凭据连接到 Centrifugo 后，连接是一直存在的，哪怕你在应用程序中禁止了该用户，他也能从他已订阅的频道中读取消息。在有些时候，这不是我们想要的。因此，我们需要连接检查机制。
+Centrifugo 有一个选项 connection_lifetime。其默认值为 0，此时，连接检查机制处于关闭状态。当该选项设置的数值大于 0 时，连接检查机制开启，并且这个数值表示成功连接后，连接保持的时长（以秒为单位）。例如，将 connection_lifetime 设置为 60，表示连接保持时长为 60 秒。当连接时长到期时，Javascript 浏览器客户端将向应用程序后端发送 AJAX POST 请求。默认情况下，此请求发送到 URL /centrifuge/refresh。你可以使用 Javascript 客户端配置选项 refreshEndpoint 进行更改。应用服务器需要返回带有连接凭据的 JSON 作为响应。返回相应示例（Python）：
+to_return = {&amp;#39;user&amp;#39;: &amp;#34;USER ID&amp;#34;,&amp;#39;timestamp&amp;#39;: &amp;#34;CURRENT TIMESTAMP AS INTEGER&amp;#34;,&amp;#39;info&amp;#39;: &amp;#34;ADDITIONAL CONNECTION INFO&amp;#34;,&amp;#39;token&amp;#39;: &amp;#34;TOKEN BASED ON PARAMS ABOVE&amp;#34;,}return json.dumps(to_return) 你在响应中返回的连接凭据必须与页面初始化时的凭据一致，其中 timestamp 要使用当前的时间戳。然后，Javascript 客户端会将凭据发送到 Centrifugo 服务器，并刷新连接时长。
+如果你不想保持该连接，应用程序后端只需要向 AJAX POST 请求返回 403 响应即可。
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>常用 Git 命令清单</title>
-      <link>https://rjguanwen.cn/2019/12/git_03/</link>
+      <link>https://rjguanwen.cn/posts/git/git_03/</link>
       <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/12/git_03/</guid>
-      <description>经常记不住 Git 命令，备查！ 本篇博客是转发的别人的，原文地址：http://www.ruanyifeng.com/blog/2015/12/gi</description>
+      <guid>https://rjguanwen.cn/posts/git/git_03/</guid>
+      <description>
+        
+          
+            经常记不住 Git 命令，备查！
+本篇博客是转发的别人的，原文地址：http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
+一般来说，日常使用只要记住下图 6 个命令即可。
+专用名词译名：
+Workspace: 工作区 Index/Stage: 暂存区 Repository: 仓库区（或本地仓库） Remote: 远程仓库 一、新建代码库 # 在当前目录新建一个Git代码库 $ git init # 新建一个目录，将其初始化为Git代码库 $ git init [project-name] # 下载一个项目和它的整个代码历史 $ git clone [url] 二、配置 Git 的配置文件为 .gitconfig，它可以在用户主目录下（全局配置），也可以在项目目录下（项目配置）。
+# 显示当前的Git配置 $ git config --list # 编辑Git配置文件 $ git config -e [--global] # 设置提交代码时的用户信息 $ git config [--global] user.name &amp;#34;[NAME]&amp;#34; $ git config [--global] user.email &amp;#34;[EMAIL ADDRESS]&amp;#34; 三、增加/删除文件 # 添加指定文件到暂存区 $ git add [file1] [file2] .
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Centrifugo（七）Server HTTP API</title>
-      <link>https://rjguanwen.cn/2019/12/centrifugo_07/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_07/</link>
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/12/centrifugo_07/</guid>
-      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;HTTP API 是最常用的向 Centrifugo 发送指令的一种方式。本文专门讲解 HTTP API。 Centrifugo API 的 url 为 /api/。如果你的 Centrifugo 服务域名是 https://centrifugo.</description>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_07/</guid>
+      <description>
+        
+          
+            HTTP API 是最常用的向 Centrifugo 发送指令的一种方式。本文专门讲解 HTTP API。
+Centrifugo API 的 url 为 /api/。如果你的 Centrifugo 服务域名是 https://centrifugo.rjguanwen.cn，那么 API 地址则是 https://centrifugo.rjguanwen.cn/api/。
+当使用 HTTP API 时，你需要做的是向正确的地址发送正确构造的 POST 请求。
+API 请求是一个 POST application/json 请求，指令包含在请求体，并带有一个附加的header X-API-Sign。请求体是 JSON 结构，其中包含了你需要执行的指令，指令可以是单条也可以是多条。
+X-API-Sign 标头是基于 Centrifugo 密钥和要发送的 JSON 正文的 SHA-256 HMAC 字符串。该字符串主要用于 Centrifugo 对请求进行验证，以防假冒。在大多数情况下，你可以使用防火墙规则保护 Centrifugo API 端点，并且在 Centrifugo 启动时使用 --api_insecure 选项禁用验证检查。在此模式下，你使用 HTTP API 只需要发送 POST 请求，而不需要额外的 X-API-Sign 标头。
+请求体是 JSON 对象，包括两个属性：method 和 params：
+# 一条指令command = json.dumps({&amp;#34;method&amp;#34;: &amp;#34;publish&amp;#34;,&amp;#34;params&amp;#34;: {&amp;#34;channel&amp;#34;: &amp;#34;news&amp;#34;, &amp;#34;data&amp;#34;:{}}})# 多条指令command = json.
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Centrifugo（六）引擎（Engines）</title>
-      <link>https://rjguanwen.cn/2019/12/centrifugo_06/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_06/</link>
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/12/centrifugo_06/</guid>
-      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Centrifugo 引擎负责如何发布消息、处理订阅、状态及历史数据的保存及恢复等。 &amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Centrifugo 可选的引擎为 Memory 和 Redis，默认使用 Memory。两者最大的不同在于，Me</description>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_06/</guid>
+      <description>
+        
+          
+            Centrifugo 引擎负责如何发布消息、处理订阅、状态及历史数据的保存及恢复等。
+Centrifugo 可选的引擎为 Memory 和 Redis，默认使用 Memory。两者最大的不同在于，Memory 引擎只支持一个 Centrifugo 节点，而 Redis 引擎支持多节点部署。可以通过配置文件中的 engine 属性来设置 Centrifugo 使用的引擎，也可以在启动命令中通过 engine 参数指定：
+centrifugo --config=config.json --engine=redis 也可以在配置文件中指定：
+{...&amp;#34;engine&amp;#34;: &amp;#34;redis&amp;#34;} Memory engine 只支持一个节点，所有信息存储在服务器内存中。
+优点 速度快 简单，不需要安装 Redis 缺点 无法扩展节点 Redis engine 支持 Centrifugo 在多服务器伸缩部署，使用 Redis 作为消息路由，状态信息及历史数据保存在 Redis 内存数据库中，内部节点之间的通讯通过 Redis 的发布/订阅机制来进行通信。同时，此模式支持 API 命令排队。
+Redis 最低版本要求为 v3.2.0
+与 Redis 引擎相关的配置选项如下：
+redis_host (string, default &amp;quot;127.0.0.1&amp;quot;) redis_port (int, default 6379) redis_url (string, default &amp;quot;&amp;quot;): optional Redis connection URL redis_password (string, default &amp;quot;&amp;quot;) redis_db (int, default 0): number of Redis db to use redis_tls (boolean, default false): enable Redis TLS connection (new in v2.
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>上传本地文件到git</title>
-      <link>https://rjguanwen.cn/2019/12/git_02/</link>
+      <link>https://rjguanwen.cn/posts/git/git_02/</link>
       <pubDate>Tue, 17 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/12/git_02/</guid>
-      <description>1、创建本地仓库 cd 到相应文件夹 仓库初始化： git init 将文件添加到仓库： git add . 提交文件到仓库： git commit -m &amp;quot;xxxxxxx&amp;quot; 2、关联 github 仓库 添加远程仓库： git remote add origin https://github.com/rjguanwen/xxxx.git 合并本地</description>
+      <guid>https://rjguanwen.cn/posts/git/git_02/</guid>
+      <description>
+        
+          
+            1、创建本地仓库 cd 到相应文件夹
+仓库初始化：
+git init 将文件添加到仓库： git add . 提交文件到仓库： git commit -m &amp;#34;xxxxxxx&amp;#34; 2、关联 github 仓库 添加远程仓库： git remote add origin https://github.com/rjguanwen/xxxx.git 合并本地内容与远程内容： git pull --rebase origin master 3、上传本地内容 git push -u origin master 
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Centrifugo（三）安装与启动</title>
-      <link>https://rjguanwen.cn/2019/12/centrifugo_03/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_03/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/12/centrifugo_03/</guid>
-      <description>一、下载安装程序 &amp;ensp;&amp;ensp;Centrifugo 使用 Go 语言开发，GO 语言可以将应用程序编译为单一的二进制执行文件，并且具备交叉编译的能力。因此，Centrifugo 可以方</description>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_03/</guid>
+      <description>
+        
+          
+            一、下载安装程序 Centrifugo 使用 Go 语言开发，GO 语言可以将应用程序编译为单一的二进制执行文件，并且具备交叉编译的能力。因此，Centrifugo 可以方便的编译为各个平台的执行程序。Centrifugo 安装首先根据操作系统获取最新版本的安装程序（lastest release）。
+二、生成配置文件 Centrifugo 运行需要依赖配置文件，最小化的配置文件可以通过命令自动生成：
+./centrifugo genconfig以上命令，会在当前目录生成一个 config.json 文件，其中包含自动生成的 secret key，你可以根据自己的喜好对其进行修改。
+三、运行 Centerfugo ./centrifugo --config=config.json四、检查配置文件 ./centrifugo checkconfig --config=config.json当配置文件出现问题时，可以使用该命令检查。
+五、Linux 安装包及 Docker 镜像 参考 RPM and DEB packages 及 Docker image
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Centrifugo（二）基本使用</title>
-      <link>https://rjguanwen.cn/2019/12/centrifugo_02/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_02/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/12/centrifugo_02/</guid>
-      <description>Centrifugo 是一个用 Golang 实现的基于 Websocket 或者 SockJS 的实时通信平台。 基本运行框架： Centrifugo 的使用场景一般涉及三个部分：客户端（前端）、应用程序（后端）和 Centrifu</description>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_02/</guid>
+      <description>
+        
+          
+            Centrifugo 是一个用 Golang 实现的基于 Websocket 或者 SockJS 的实时通信平台。
+基本运行框架：
+Centrifugo 的使用场景一般涉及三个部分：客户端（前端）、应用程序（后端）和 Centrifugo。当然，也可以只有客户端和 Centrifugo。基本使用流程如下：
+下载并安装
+下载并安装Centrifugo，推荐使用 docker 方式。安装教程
+配置运行
+创建基础配置文件，设置 token_hmac_secret_key(or token_rsa_public_key) 和 api_key，然后运行Centrifugo。配置文件（config.json）可以通过命令自动创建：
+./centrifugo genconfig 关键配置项
+在后端应用程序配置文件中设置三个变量：Centrifugo secret、Centrifugo API Key 以及 Centrifugo API address。Centrifugo API address 默认为 http://localhost:8000/api。Centrifugo secret 和 Centrifugo API Key 是关键信息，不能泄露到客户端。
+连接到 Centrifugo
+根据客户端语言下载相应的客户端库（支持的客户端库列表）。客户端库中有连接到 Centrifugo 的方法。在连接时，客户端需要提供令牌（Token JWT）。令牌的生成应该在应用程序后端进行，然后提供给客户端，可以考虑在页面模板上下文中传递令牌给客户端或者提供令牌获取服务供已登录的客户端调用。令牌的生成需要依赖 Centrifugo secret。 客户端库一般都有 setToken 方法供使用。注意：对于 RSA 令牌，需要使用私钥生成 JWT。（JWT生成方法）
+Centrifugo v2.3.0 之后，可以不使用 JWT 进行连接认证，参见 proxying to backend
+频道订阅
+客户端连接到 Centrifugo 后，即可根据需要订阅相关的频道（Channel）。所有的客户端库都提供了处理所订阅频道（Channel）消息的方法。
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Centrifugo（五）频道（Channel）</title>
-      <link>https://rjguanwen.cn/2019/12/centrifugo_05/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_05/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/12/centrifugo_05/</guid>
-      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;频道（Channel）是消息发布的通道。客户端通过订阅频道来接收与频道相关的事件，包括发布到</description>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_05/</guid>
+      <description>
+        
+          
+            频道（Channel）是消息发布的通道。客户端通过订阅频道来接收与频道相关的事件，包括发布到本频道的消息、用户订阅/取消订阅的消息等等。同样，客户端也需要订阅频道来获取频道的状态（presence）和历史消息。
+频道的生命周期比较短暂，不需要显式的去声明。当第一个客户端进行订阅时，Centrifugo 会自动创建相应频道。当最后一个客户端取消订阅时，频道会立即自动被销毁。
+频道的命名规则 频道以字符串为标识，由字母、数字、下划线或连接符组成，长度必须大于2（^[-azA-Z0-9_]{2,}$），默认最大长度为255，如需修改可以通过配置文件中的 channel_max_length 参数进行调整。
+以下几个符号是 Centrifugo 的内部保留符号：
+: - 命名空间分隔符 $ - 私有频道前缀 # - 用户频道分隔符 * - 保留字符 &amp;amp; - 保留字符 / - 保留字符 **命名空间分隔符（:）：**如果频道名称为 public:chat，该频道的配置信息将使用 public 命名空间的配置参数设置。
+**私有频道前缀（$）：**如果频道名称以 $ 开头，则意味着该频道为私有频道。订阅私有频道必须通过应用程序后端签名。
+**用户频道分隔符（#）：**该字符用于创建用户专属频道，而无需向后端Web应用程序发送POST请求。例如，频道名 news#42，表示只有 ID 为 42 的用户可以订阅该频道。客户端在连接 Centrifugo 时需要提供 Token，其中包含了 user ID，因此 Centrifugo 清楚每个客户端的 user ID。另外，用户频道可以支持多个 user ID，user ID 之间通过逗号分隔，例如 dialog#42,43。此种类型的频道适用于固定用户，例如用户个人消息通道、确定用户之间的对话通道，一旦需要动态用户访问频道，此频道类型就不合适了。
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Centrifugo（四）配置文件说明</title>
-      <link>https://rjguanwen.cn/2019/12/centrifugo_04/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_04/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/12/centrifugo_04/</guid>
-      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Centrifugo 支持 JSON、TOML和YAML三种格式的配置文件。 &amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;通过 ./centrifugo -h 命令，可以查看所有的可用选型，</description>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_04/</guid>
+      <description>
+        
+          
+            Centrifugo 支持 JSON、TOML和YAML三种格式的配置文件。
+通过 ./centrifugo -h 命令，可以查看所有的可用选型，如下：
+Centrifugo – real-time messaging serverUsage:[flags] [command]Available Commands:checkconfig Check configuration filegenconfig Generate simple configuration file to start withhelp Help about any commandversion Centrifugo version informationFlags:-a, --address string interface address to listen on 服务的地址--admin enable admin web interface 是否开启admin的管理界面--admin_insecure use insecure admin mode – no auth required for admin socket admin安全验证, 节点: /, 可直接访问admin管理界面, 默认为false, 登录admin需要admin_password, 反之可直接登录--api_insecure use insecure API mode 后台推送安全验证, 节点: /api.
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Centrifugo（一）简介</title>
-      <link>https://rjguanwen.cn/2019/12/centrifugo_01/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_01/</link>
       <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/12/centrifugo_01/</guid>
-      <description>Centrifugo 是一个用 Golang 实现的基于 Websocket 或者 SockJS 的实时通信平台。 提供基于频道的发布/订阅（PUB/SUB）模式。 容易和现有系统集成– 不改变已有后端情况下为系统</description>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_01/</guid>
+      <description>
+        
+          
+            Centrifugo 是一个用 Golang 实现的基于 Websocket 或者 SockJS 的实时通信平台。
+提供基于频道的发布/订阅（PUB/SUB）模式。
+容易和现有系统集成– 不改变已有后端情况下为系统提供实时通信能力。
+HTTP API 和已有后端通信 . API clients for Python, Ruby, PHP, Go, NodeJS。
+浏览器可以通过SockJS或者纯粹Websocket协议和centrifugal通信。 提供 iOS和Android平台SDK。
+采用Redis实现分布式部署，也支持使用Memory引擎单机简单部署。
+SHA-256 HMAC连接认证和隐私保护。
+多种类型的频道 – 私有, 用户限制，客户端限制。
+通过名字空间灵活配置频道。
+支持即时消息和历史消息。
+支持用户加入/离开消息。
+网络重连后可以恢复消息。
+内置管理界面，提供多种计量(Metrics)。
+可用于WebRTC信令服务器。
+多种部署手段(docker 镜像, RPM/DEB 包, Nginx 配置, TLS certificates)。
+MIT license。
+基本运行框架：
+​ Centrifugo 作为独立服务器运行，可以处理来自应用程序用户的持久连接。应用的前端和后端可以基于任何语言进行开发。你的客户端使用应用程序后端提供的令牌(Token JWT)连接到 Centrifugo，并订阅频道（Channel）。当有事件发生时，后端应用可以使用 Centrifugo 的 API 发布消息到相关 Channel。随后，消息会被投递到所有订阅本 Channel 的客户端。
+项目地址：https://github.com/centrifugal/centrifugo
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>数据加解传输过程</title>
-      <link>https://rjguanwen.cn/2019/11/data_translet_safely/</link>
+      <link>https://rjguanwen.cn/posts/tec_ot/data_translet_safely/</link>
       <pubDate>Tue, 26 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/11/data_translet_safely/</guid>
-      <description>数据传输加密流程：</description>
+      <guid>https://rjguanwen.cn/posts/tec_ot/data_translet_safely/</guid>
+      <description>
+        
+          
+            数据传输加密流程：
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>gomod使用记录</title>
-      <link>https://rjguanwen.cn/2019/11/gomod_use/</link>
+      <link>https://rjguanwen.cn/posts/golang/gomod_use/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/11/gomod_use/</guid>
-      <description>简单记录 go mod 的使用方式： 代理配置 $env:GOPROXY = &amp;quot;https://goproxy.io&amp;quot; 或使用 goproxy.cn 初始化 go mod init ***，***为你要创建的mod名字，直接为工程名即可 自动下载依赖 go run *****.</description>
+      <guid>https://rjguanwen.cn/posts/golang/gomod_use/</guid>
+      <description>
+        
+          
+            简单记录 go mod 的使用方式：
+代理配置
+$env:GOPROXY = &amp;quot;https://goproxy.io&amp;quot; 或使用 goproxy.cn
+初始化 go mod init ***，***为你要创建的mod名字，直接为工程名即可
+自动下载依赖
+go run *****.go，在执行前会首先查找并下载安装依赖
+更新旧的 package import 方式，内部依赖也需要增加 mod 名
+package main import ( api &amp;#34;mymod/api&amp;#34; // mymod 是初始化的 mod 名 &amp;#34;github.com/labstack/echo&amp;#34; ) func main() { e := echo.New() e.GET(&amp;#34;/&amp;#34;, api.MyAPI) e.Logger.Fatal(e.Start(&amp;#34;:1234&amp;#34;)) } 使用 replace 替换无法直接获取的 package
+replace ( golang.org/x/crypto v0.0.0-20190313024323-a1f597ede03a =&amp;gt; github.com/golang/crypto v0.0.0-20190313024323-a1f597ede03a ) 检查并升级 package
+go list -m -u all
+go get -u need-upgrade-package 或者 go get -u
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>govendor使用记录</title>
-      <link>https://rjguanwen.cn/2019/11/govendor_use/</link>
+      <link>https://rjguanwen.cn/posts/golang/govendor_use/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/11/govendor_use/</guid>
-      <description>简单记录 govendor 的使用方式： 安装 go get -u -v github.com/kardianos/govendor 初始化 vendor 目录 govendor init 添加依赖包到 vendor 目录 govendor add +external 或 govendor add +e 从 $GOPATH 更新依赖包到 vendor 目录 govendor update +vendor 删除依赖包 govendor remove +vendor 常用的命令如</description>
+      <guid>https://rjguanwen.cn/posts/golang/govendor_use/</guid>
+      <description>
+        
+          
+            简单记录 govendor 的使用方式：
+安装
+go get -u -v github.com/kardianos/govendor
+初始化 vendor 目录
+govendor init
+添加依赖包到 vendor 目录
+govendor add +external 或 govendor add +e
+从 $GOPATH 更新依赖包到 vendor 目录
+govendor update +vendor
+删除依赖包
+govendor remove +vendor
+常用的命令如下：
+命令 功能 init 初始化 vendor 目录 list 列出所有依赖包 add 添加包到 vendor 目录 add PKG_PATH 添加指定依赖包到 vendor 目录 update 从 $GOPATH 更新依赖包到 vendor 目录 remove 从 vendor 管理中删除依赖 status 列出 vendor 管理的各个包的状态 fetch 添加或更新包到 vendor 目录 sync 同步，基于已存在的 vendor.
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>git错误解决</title>
-      <link>https://rjguanwen.cn/2019/11/git_01/</link>
+      <link>https://rjguanwen.cn/posts/git/git_01/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/11/git_01/</guid>
-      <description>pull仓库时：refusing to merge unrelated histories 问题原因： 在远端已经建立好了仓库，在本地又 init 了一个仓库，然后使用 git remote add origin xxxxx 添加远端，之后进行pull</description>
+      <guid>https://rjguanwen.cn/posts/git/git_01/</guid>
+      <description>
+        
+          
+            pull仓库时：refusing to merge unrelated histories 问题原因： 在远端已经建立好了仓库，在本地又 init 了一个仓库，然后使用 git remote add origin xxxxx 添加远端，之后进行pull，此时在较新的git版本上会报错。因为git认为两个仓库可能不是同一个，报错是为了防止开发者上传错误。
+解决办法： 在 pull 命令的最后增加--allow-unrelated-histories
+          
+          
+        
+      </description>
     </item>
     
   </channel>

@@ -1,22 +1,36 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Superset on 飞光</title>
     <link>https://rjguanwen.cn/categories/superset/</link>
     <description>Recent content in Superset on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 30 Jan 2021 00:00:00 +0000</lastBuildDate>
-    
-        <atom:link href="https://rjguanwen.cn/categories/superset/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>zh</language>
+    <lastBuildDate>Sat, 30 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/categories/superset/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Apache Superset 简介</title>
-      <link>https://rjguanwen.cn/2021/01/superset_01/</link>
+      <link>https://rjguanwen.cn/posts/superset/superset_01/</link>
       <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2021/01/superset_01/</guid>
-      <description>Apache Superset 简介 概要信息 项目 说明 官网 https://superset.apache.org/ 开源/闭源 开源 源码管理地址 https://github.com/apache/incubator-superset/wiki License类别 Mozilla Public License 2.0 开发语言 GO 操作系统支持 跨平台，支持多种操作系统 主要特性 Apache</description>
+      <guid>https://rjguanwen.cn/posts/superset/superset_01/</guid>
+      <description>
+        
+          
+            Apache Superset 简介 概要信息 项目 说明 官网 https://superset.apache.org/ 开源/闭源 开源 源码管理地址 https://github.com/apache/incubator-superset/wiki License类别 Mozilla Public License 2.0 开发语言 GO 操作系统支持 跨平台，支持多种操作系统 主要特性 Apache Superset是一款快速直观的轻量级工具，具有丰富的功能选项，各种用户都可以轻松地以可视化的方式浏览数据，从简单的折线图到高度详细的地理空间图，Apache Superset无所不能，提供了如下主要特性：
+强大易用：可以快速容易地集成，从而浏览数据，而这一切通过SQL IDE或者无需编写代码，通过可视化构建器即可完成。
+架构设计：Superset轻巧且极具可扩展性，它可以利用既存的数据基础框架而不需要另外一个接收层。
+丰富的可视化方式与仪表盘：Superset提供了多种精美的可视化效果。可视化插件体系结构使得构建自定义的可视化变得更为容易。
+支持多种数据库：可以通过SQL Alchemy连接到任何基于SQL的数据源，包括云原生的数据库以及PB级的数据引擎。比如：
+基于 docker 部署使用 1、 下载 superset 镜像
+docker search superset 选择 STARTS 最高的镜像
+docker pull amancevice/superset 2、启动并初始化
+创建挂载目录：
+mkdir /opt/docker/superset/conf &amp;amp; mkdir /opt/docker/superset/data 启动镜像：
+docker run --name superset -u 0 -d -p 8088:8088 -v /opt/docker/superset/conf:/etc/superset -v /opt/docker/superset/data:/var/lib/superset amancevice/superset 初始化 superset：
+          
+          
+        
+      </description>
     </item>
     
   </channel>

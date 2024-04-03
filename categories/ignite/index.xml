@@ -1,31 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ignite on 飞光</title>
     <link>https://rjguanwen.cn/categories/ignite/</link>
     <description>Recent content in Ignite on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate>
-    
-        <atom:link href="https://rjguanwen.cn/categories/ignite/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>zh</language>
+    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/categories/ignite/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Apache Ignite 实践记录</title>
-      <link>https://rjguanwen.cn/2021/01/ignite_02/</link>
+      <link>https://rjguanwen.cn/posts/ignite/ignite_02/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2021/01/ignite_02/</guid>
-      <description>Apache Ignite 实践记录 使用 Docker 安装 基于 win10 WSL2(Ubuntu) 创建本地目录 mkdir ignite_dir 使用本地目录启动持久化集群 docker run -d \ -v ${PWD}/ignite_dir:/storage \ -e IGNITE_WORK_DIR=/storage \ apacheignite/ignite:2.9.0 使用自定义配置文件 通过 URI 传递配置文件 docker run -d \ -e</description>
+      <guid>https://rjguanwen.cn/posts/ignite/ignite_02/</guid>
+      <description>
+        
+          
+            Apache Ignite 实践记录 使用 Docker 安装 基于 win10 WSL2(Ubuntu)
+创建本地目录 mkdir ignite_dir 使用本地目录启动持久化集群 docker run -d \ -v ${PWD}/ignite_dir:/storage \ -e IGNITE_WORK_DIR=/storage \ apacheignite/ignite:2.9.0 使用自定义配置文件 通过 URI 传递配置文件 docker run -d \ -e CONFIG_URI=http://myserver/config.xml \ apacheignite/ignite:2.9.0 使用本地配置文件 docker run -d \ -v /local/dir/config.xml:/config-file.xml \ -e CONFIG_URI=/config-file.xml \ apacheignite/ignite:2.9.0 启用模块 要启用特定模块，需要在 OPTION_LIBS 系统变量中指定。 sudo docker run -d \ -e &amp;#34;OPTION_LIBS=ignite-rest-http,ignite-aws&amp;#34; \ apacheignite/ignite:2.9.0 Ignite 的 Docker 镜像默认会启用 ignite-log4j、ignite-spring、ignite-indexing 等模块。
+环境变量 名称 描述 默认 CONFIG_URI Ignite配置文件的URL，下载的配置文件会保存于.
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Apache Ignite 简介</title>
-      <link>https://rjguanwen.cn/2020/12/ignite_01/</link>
+      <link>https://rjguanwen.cn/posts/ignite/ignite_01/</link>
       <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2020/12/ignite_01/</guid>
-      <description>Apache Ignite 简介 待完善</description>
+      <guid>https://rjguanwen.cn/posts/ignite/ignite_01/</guid>
+      <description>
+        
+          
+            Apache Ignite 简介 待完善
+          
+          
+        
+      </description>
     </item>
     
   </channel>

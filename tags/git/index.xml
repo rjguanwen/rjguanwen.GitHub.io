@@ -1,49 +1,84 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GIT on 飞光</title>
     <link>https://rjguanwen.cn/tags/git/</link>
     <description>Recent content in GIT on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 17 Sep 2020 00:00:00 +0000</lastBuildDate>
-    
-        <atom:link href="https://rjguanwen.cn/tags/git/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>zh</language>
+    <lastBuildDate>Thu, 17 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows 更新 git 版本</title>
-      <link>https://rjguanwen.cn/2020/09/git_04/</link>
+      <link>https://rjguanwen.cn/posts/git/git_04/</link>
       <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2020/09/git_04/</guid>
-      <description>1、查看当前安装的 git 版本 git --version 2、更新 git 版本是 2.17.1 之前的： git update git 版本是 2.17.1 之后的： git update-git-for-windows 3、如出现错误 重新下载新版本安装包，覆盖安装即可：https</description>
+      <guid>https://rjguanwen.cn/posts/git/git_04/</guid>
+      <description>
+        
+          
+            1、查看当前安装的 git 版本 git --version 2、更新 git 版本是 2.17.1 之前的：
+git update git 版本是 2.17.1 之后的：
+git update-git-for-windows 3、如出现错误 重新下载新版本安装包，覆盖安装即可：https://git-scm.com/download/win
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>常用 Git 命令清单</title>
-      <link>https://rjguanwen.cn/2019/12/git_03/</link>
+      <link>https://rjguanwen.cn/posts/git/git_03/</link>
       <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/12/git_03/</guid>
-      <description>经常记不住 Git 命令，备查！ 本篇博客是转发的别人的，原文地址：http://www.ruanyifeng.com/blog/2015/12/gi</description>
+      <guid>https://rjguanwen.cn/posts/git/git_03/</guid>
+      <description>
+        
+          
+            经常记不住 Git 命令，备查！
+本篇博客是转发的别人的，原文地址：http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
+一般来说，日常使用只要记住下图 6 个命令即可。
+专用名词译名：
+Workspace: 工作区 Index/Stage: 暂存区 Repository: 仓库区（或本地仓库） Remote: 远程仓库 一、新建代码库 # 在当前目录新建一个Git代码库 $ git init # 新建一个目录，将其初始化为Git代码库 $ git init [project-name] # 下载一个项目和它的整个代码历史 $ git clone [url] 二、配置 Git 的配置文件为 .gitconfig，它可以在用户主目录下（全局配置），也可以在项目目录下（项目配置）。
+# 显示当前的Git配置 $ git config --list # 编辑Git配置文件 $ git config -e [--global] # 设置提交代码时的用户信息 $ git config [--global] user.name &amp;#34;[NAME]&amp;#34; $ git config [--global] user.email &amp;#34;[EMAIL ADDRESS]&amp;#34; 三、增加/删除文件 # 添加指定文件到暂存区 $ git add [file1] [file2] .
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>上传本地文件到git</title>
-      <link>https://rjguanwen.cn/2019/12/git_02/</link>
+      <link>https://rjguanwen.cn/posts/git/git_02/</link>
       <pubDate>Tue, 17 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/12/git_02/</guid>
-      <description>1、创建本地仓库 cd 到相应文件夹 仓库初始化： git init 将文件添加到仓库： git add . 提交文件到仓库： git commit -m &amp;quot;xxxxxxx&amp;quot; 2、关联 github 仓库 添加远程仓库： git remote add origin https://github.com/rjguanwen/xxxx.git 合并本地</description>
+      <guid>https://rjguanwen.cn/posts/git/git_02/</guid>
+      <description>
+        
+          
+            1、创建本地仓库 cd 到相应文件夹
+仓库初始化：
+git init 将文件添加到仓库： git add . 提交文件到仓库： git commit -m &amp;#34;xxxxxxx&amp;#34; 2、关联 github 仓库 添加远程仓库： git remote add origin https://github.com/rjguanwen/xxxx.git 合并本地内容与远程内容： git pull --rebase origin master 3、上传本地内容 git push -u origin master 
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>git错误解决</title>
-      <link>https://rjguanwen.cn/2019/11/git_01/</link>
+      <link>https://rjguanwen.cn/posts/git/git_01/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/11/git_01/</guid>
-      <description>pull仓库时：refusing to merge unrelated histories 问题原因： 在远端已经建立好了仓库，在本地又 init 了一个仓库，然后使用 git remote add origin xxxxx 添加远端，之后进行pull</description>
+      <guid>https://rjguanwen.cn/posts/git/git_01/</guid>
+      <description>
+        
+          
+            pull仓库时：refusing to merge unrelated histories 问题原因： 在远端已经建立好了仓库，在本地又 init 了一个仓库，然后使用 git remote add origin xxxxx 添加远端，之后进行pull，此时在较新的git版本上会报错。因为git认为两个仓库可能不是同一个，报错是为了防止开发者上传错误。
+解决办法： 在 pull 命令的最后增加--allow-unrelated-histories
+          
+          
+        
+      </description>
     </item>
     
   </channel>

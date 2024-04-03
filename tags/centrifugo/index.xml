@@ -1,103 +1,240 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Centrifugo on 飞光</title>
     <link>https://rjguanwen.cn/tags/centrifugo/</link>
     <description>Recent content in Centrifugo on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 31 Dec 2019 00:00:00 +0000</lastBuildDate>
-    
-        <atom:link href="https://rjguanwen.cn/tags/centrifugo/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>zh</language>
+    <lastBuildDate>Tue, 31 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/tags/centrifugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Centrifugo（九）使用 Redis 实现伸缩</title>
-      <link>https://rjguanwen.cn/2019/12/centrifugo_09/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_09/</link>
       <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/12/centrifugo_09/</guid>
-      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Centrifugo 服务器支持多节点部署，并支持对客户端请求的负载均衡。本文中，我们将启动三个 Centrifugo 服务节点来进行演示，这些节点通过 Redis 互相连接。为了达到这个目的，</description>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_09/</guid>
+      <description>
+        
+          
+            Centrifugo 服务器支持多节点部署，并支持对客户端请求的负载均衡。本文中，我们将启动三个 Centrifugo 服务节点来进行演示，这些节点通过 Redis 互相连接。为了达到这个目的，我们将使用前面章节中讲到的 Redis engine。
+首先，我们需要有一个处在运行状态的 Redis 服务器。然后，我们可以一次启动三个 Cetrifugofu 服务节点：
+打开命令行窗口，启动第一个节点：
+centrifugo --config=config.json --port=8000 --engine=redis --redis_host=127.0.0.1 --redis_port=6379 如果 Redis 和 Centrifugo 运行在同一台机器，并且使用了默认的端口号，上面命令中的 redis_host 与 redis_port 选项可以省略。
+然后打开一个新的命令行窗口，启动第二个节点：
+centrifugo --config=config.json --port=8001 --engine=redis --redis_host=127.0.0.1 --redis_port=6379 此命令中，我们指定了一个新的端口 8001，以防与节点一出现端口冲突。如果你的两个节点不在一台机器上，则不存在该问题。
+接下来再次开启一个新的命令行窗口，启动第三个节点：
+centrifugo --config=config.json --port=8002 --engine=redis --redis_host=127.0.0.1 --redis_port=6379 现在你已经拥有了三个 Centrifugo 实例，分别运行在 8000、8001、8002 端口，客户端可以选择连接任何一个实例。同样，你也可以发送 API 请求到任何一个节点。这三个节点通过 Redis 的 PUB/SUB 机制实现消息共享。
+多个节点之间的负载均衡可以通过 Nginx 实现。要非常注意的一点是，如果你的客户端使用了 SockJS 连接到 Centrifugo 节点，那么接下来的该客户端的请求只能路由到同一节点，因为该节点保存了客户端的会话信息。而使用 websocket 则不存在该问题。
+Redis 分片
+从 V1.6.0 开始 Centrifugo 内置了对 Redis 分片的支持。
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Centrifugo（十）令牌和签名</title>
-      <link>https://rjguanwen.cn/2019/12/centrifugo_10/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_10/</link>
       <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/12/centrifugo_10/</guid>
-      <description>Centrifugo 使用具有 SHA-256 摘要算法的 HMAC（Hash-based Message Authentication Code）来创建连接令牌以及对数据进行签名。 &amp;ensp;&amp;ensp;&amp;ensp;&amp;e</description>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_10/</guid>
+      <description>
+        
+          
+            Centrifugo 使用具有 SHA-256 摘要算法的 HMAC（Hash-based Message Authentication Code）来创建连接令牌以及对数据进行签名。
+本文主要描述如何针对不同的动作（actions）生成令牌及签名。如果你使用 Python，那么所有所需的方法都已经封装到 Cent 库中，你直接使用即可。针对 PHP、GO、Ruby、NodeJs等常用开发语言，同样有官方 HTTP API clients 提供，可以直接使用。
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Centrifugo（八）连接检查</title>
-      <link>https://rjguanwen.cn/2019/12/centrifugo_08/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_08/</link>
       <pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/12/centrifugo_08/</guid>
-      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;当客户端使用适当的凭据连接到 Centrifugo 后，连接是一直存在的，哪怕你在应用程序中禁止了该用户，他也能从</description>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_08/</guid>
+      <description>
+        
+          
+            当客户端使用适当的凭据连接到 Centrifugo 后，连接是一直存在的，哪怕你在应用程序中禁止了该用户，他也能从他已订阅的频道中读取消息。在有些时候，这不是我们想要的。因此，我们需要连接检查机制。
+Centrifugo 有一个选项 connection_lifetime。其默认值为 0，此时，连接检查机制处于关闭状态。当该选项设置的数值大于 0 时，连接检查机制开启，并且这个数值表示成功连接后，连接保持的时长（以秒为单位）。例如，将 connection_lifetime 设置为 60，表示连接保持时长为 60 秒。当连接时长到期时，Javascript 浏览器客户端将向应用程序后端发送 AJAX POST 请求。默认情况下，此请求发送到 URL /centrifuge/refresh。你可以使用 Javascript 客户端配置选项 refreshEndpoint 进行更改。应用服务器需要返回带有连接凭据的 JSON 作为响应。返回相应示例（Python）：
+to_return = {&amp;#39;user&amp;#39;: &amp;#34;USER ID&amp;#34;,&amp;#39;timestamp&amp;#39;: &amp;#34;CURRENT TIMESTAMP AS INTEGER&amp;#34;,&amp;#39;info&amp;#39;: &amp;#34;ADDITIONAL CONNECTION INFO&amp;#34;,&amp;#39;token&amp;#39;: &amp;#34;TOKEN BASED ON PARAMS ABOVE&amp;#34;,}return json.dumps(to_return) 你在响应中返回的连接凭据必须与页面初始化时的凭据一致，其中 timestamp 要使用当前的时间戳。然后，Javascript 客户端会将凭据发送到 Centrifugo 服务器，并刷新连接时长。
+如果你不想保持该连接，应用程序后端只需要向 AJAX POST 请求返回 403 响应即可。
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Centrifugo（七）Server HTTP API</title>
-      <link>https://rjguanwen.cn/2019/12/centrifugo_07/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_07/</link>
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/12/centrifugo_07/</guid>
-      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;HTTP API 是最常用的向 Centrifugo 发送指令的一种方式。本文专门讲解 HTTP API。 Centrifugo API 的 url 为 /api/。如果你的 Centrifugo 服务域名是 https://centrifugo.</description>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_07/</guid>
+      <description>
+        
+          
+            HTTP API 是最常用的向 Centrifugo 发送指令的一种方式。本文专门讲解 HTTP API。
+Centrifugo API 的 url 为 /api/。如果你的 Centrifugo 服务域名是 https://centrifugo.rjguanwen.cn，那么 API 地址则是 https://centrifugo.rjguanwen.cn/api/。
+当使用 HTTP API 时，你需要做的是向正确的地址发送正确构造的 POST 请求。
+API 请求是一个 POST application/json 请求，指令包含在请求体，并带有一个附加的header X-API-Sign。请求体是 JSON 结构，其中包含了你需要执行的指令，指令可以是单条也可以是多条。
+X-API-Sign 标头是基于 Centrifugo 密钥和要发送的 JSON 正文的 SHA-256 HMAC 字符串。该字符串主要用于 Centrifugo 对请求进行验证，以防假冒。在大多数情况下，你可以使用防火墙规则保护 Centrifugo API 端点，并且在 Centrifugo 启动时使用 --api_insecure 选项禁用验证检查。在此模式下，你使用 HTTP API 只需要发送 POST 请求，而不需要额外的 X-API-Sign 标头。
+请求体是 JSON 对象，包括两个属性：method 和 params：
+# 一条指令command = json.dumps({&amp;#34;method&amp;#34;: &amp;#34;publish&amp;#34;,&amp;#34;params&amp;#34;: {&amp;#34;channel&amp;#34;: &amp;#34;news&amp;#34;, &amp;#34;data&amp;#34;:{}}})# 多条指令command = json.
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Centrifugo（六）引擎（Engines）</title>
-      <link>https://rjguanwen.cn/2019/12/centrifugo_06/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_06/</link>
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/12/centrifugo_06/</guid>
-      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Centrifugo 引擎负责如何发布消息、处理订阅、状态及历史数据的保存及恢复等。 &amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Centrifugo 可选的引擎为 Memory 和 Redis，默认使用 Memory。两者最大的不同在于，Me</description>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_06/</guid>
+      <description>
+        
+          
+            Centrifugo 引擎负责如何发布消息、处理订阅、状态及历史数据的保存及恢复等。
+Centrifugo 可选的引擎为 Memory 和 Redis，默认使用 Memory。两者最大的不同在于，Memory 引擎只支持一个 Centrifugo 节点，而 Redis 引擎支持多节点部署。可以通过配置文件中的 engine 属性来设置 Centrifugo 使用的引擎，也可以在启动命令中通过 engine 参数指定：
+centrifugo --config=config.json --engine=redis 也可以在配置文件中指定：
+{...&amp;#34;engine&amp;#34;: &amp;#34;redis&amp;#34;} Memory engine 只支持一个节点，所有信息存储在服务器内存中。
+优点 速度快 简单，不需要安装 Redis 缺点 无法扩展节点 Redis engine 支持 Centrifugo 在多服务器伸缩部署，使用 Redis 作为消息路由，状态信息及历史数据保存在 Redis 内存数据库中，内部节点之间的通讯通过 Redis 的发布/订阅机制来进行通信。同时，此模式支持 API 命令排队。
+Redis 最低版本要求为 v3.2.0
+与 Redis 引擎相关的配置选项如下：
+redis_host (string, default &amp;quot;127.0.0.1&amp;quot;) redis_port (int, default 6379) redis_url (string, default &amp;quot;&amp;quot;): optional Redis connection URL redis_password (string, default &amp;quot;&amp;quot;) redis_db (int, default 0): number of Redis db to use redis_tls (boolean, default false): enable Redis TLS connection (new in v2.
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Centrifugo（三）安装与启动</title>
-      <link>https://rjguanwen.cn/2019/12/centrifugo_03/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_03/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/12/centrifugo_03/</guid>
-      <description>一、下载安装程序 &amp;ensp;&amp;ensp;Centrifugo 使用 Go 语言开发，GO 语言可以将应用程序编译为单一的二进制执行文件，并且具备交叉编译的能力。因此，Centrifugo 可以方</description>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_03/</guid>
+      <description>
+        
+          
+            一、下载安装程序 Centrifugo 使用 Go 语言开发，GO 语言可以将应用程序编译为单一的二进制执行文件，并且具备交叉编译的能力。因此，Centrifugo 可以方便的编译为各个平台的执行程序。Centrifugo 安装首先根据操作系统获取最新版本的安装程序（lastest release）。
+二、生成配置文件 Centrifugo 运行需要依赖配置文件，最小化的配置文件可以通过命令自动生成：
+./centrifugo genconfig以上命令，会在当前目录生成一个 config.json 文件，其中包含自动生成的 secret key，你可以根据自己的喜好对其进行修改。
+三、运行 Centerfugo ./centrifugo --config=config.json四、检查配置文件 ./centrifugo checkconfig --config=config.json当配置文件出现问题时，可以使用该命令检查。
+五、Linux 安装包及 Docker 镜像 参考 RPM and DEB packages 及 Docker image
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Centrifugo（二）基本使用</title>
-      <link>https://rjguanwen.cn/2019/12/centrifugo_02/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_02/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/12/centrifugo_02/</guid>
-      <description>Centrifugo 是一个用 Golang 实现的基于 Websocket 或者 SockJS 的实时通信平台。 基本运行框架： Centrifugo 的使用场景一般涉及三个部分：客户端（前端）、应用程序（后端）和 Centrifu</description>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_02/</guid>
+      <description>
+        
+          
+            Centrifugo 是一个用 Golang 实现的基于 Websocket 或者 SockJS 的实时通信平台。
+基本运行框架：
+Centrifugo 的使用场景一般涉及三个部分：客户端（前端）、应用程序（后端）和 Centrifugo。当然，也可以只有客户端和 Centrifugo。基本使用流程如下：
+下载并安装
+下载并安装Centrifugo，推荐使用 docker 方式。安装教程
+配置运行
+创建基础配置文件，设置 token_hmac_secret_key(or token_rsa_public_key) 和 api_key，然后运行Centrifugo。配置文件（config.json）可以通过命令自动创建：
+./centrifugo genconfig 关键配置项
+在后端应用程序配置文件中设置三个变量：Centrifugo secret、Centrifugo API Key 以及 Centrifugo API address。Centrifugo API address 默认为 http://localhost:8000/api。Centrifugo secret 和 Centrifugo API Key 是关键信息，不能泄露到客户端。
+连接到 Centrifugo
+根据客户端语言下载相应的客户端库（支持的客户端库列表）。客户端库中有连接到 Centrifugo 的方法。在连接时，客户端需要提供令牌（Token JWT）。令牌的生成应该在应用程序后端进行，然后提供给客户端，可以考虑在页面模板上下文中传递令牌给客户端或者提供令牌获取服务供已登录的客户端调用。令牌的生成需要依赖 Centrifugo secret。 客户端库一般都有 setToken 方法供使用。注意：对于 RSA 令牌，需要使用私钥生成 JWT。（JWT生成方法）
+Centrifugo v2.3.0 之后，可以不使用 JWT 进行连接认证，参见 proxying to backend
+频道订阅
+客户端连接到 Centrifugo 后，即可根据需要订阅相关的频道（Channel）。所有的客户端库都提供了处理所订阅频道（Channel）消息的方法。
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Centrifugo（五）频道（Channel）</title>
-      <link>https://rjguanwen.cn/2019/12/centrifugo_05/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_05/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/12/centrifugo_05/</guid>
-      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;频道（Channel）是消息发布的通道。客户端通过订阅频道来接收与频道相关的事件，包括发布到</description>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_05/</guid>
+      <description>
+        
+          
+            频道（Channel）是消息发布的通道。客户端通过订阅频道来接收与频道相关的事件，包括发布到本频道的消息、用户订阅/取消订阅的消息等等。同样，客户端也需要订阅频道来获取频道的状态（presence）和历史消息。
+频道的生命周期比较短暂，不需要显式的去声明。当第一个客户端进行订阅时，Centrifugo 会自动创建相应频道。当最后一个客户端取消订阅时，频道会立即自动被销毁。
+频道的命名规则 频道以字符串为标识，由字母、数字、下划线或连接符组成，长度必须大于2（^[-azA-Z0-9_]{2,}$），默认最大长度为255，如需修改可以通过配置文件中的 channel_max_length 参数进行调整。
+以下几个符号是 Centrifugo 的内部保留符号：
+: - 命名空间分隔符 $ - 私有频道前缀 # - 用户频道分隔符 * - 保留字符 &amp;amp; - 保留字符 / - 保留字符 **命名空间分隔符（:）：**如果频道名称为 public:chat，该频道的配置信息将使用 public 命名空间的配置参数设置。
+**私有频道前缀（$）：**如果频道名称以 $ 开头，则意味着该频道为私有频道。订阅私有频道必须通过应用程序后端签名。
+**用户频道分隔符（#）：**该字符用于创建用户专属频道，而无需向后端Web应用程序发送POST请求。例如，频道名 news#42，表示只有 ID 为 42 的用户可以订阅该频道。客户端在连接 Centrifugo 时需要提供 Token，其中包含了 user ID，因此 Centrifugo 清楚每个客户端的 user ID。另外，用户频道可以支持多个 user ID，user ID 之间通过逗号分隔，例如 dialog#42,43。此种类型的频道适用于固定用户，例如用户个人消息通道、确定用户之间的对话通道，一旦需要动态用户访问频道，此频道类型就不合适了。
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Centrifugo（四）配置文件说明</title>
-      <link>https://rjguanwen.cn/2019/12/centrifugo_04/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_04/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/12/centrifugo_04/</guid>
-      <description>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;Centrifugo 支持 JSON、TOML和YAML三种格式的配置文件。 &amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;通过 ./centrifugo -h 命令，可以查看所有的可用选型，</description>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_04/</guid>
+      <description>
+        
+          
+            Centrifugo 支持 JSON、TOML和YAML三种格式的配置文件。
+通过 ./centrifugo -h 命令，可以查看所有的可用选型，如下：
+Centrifugo – real-time messaging serverUsage:[flags] [command]Available Commands:checkconfig Check configuration filegenconfig Generate simple configuration file to start withhelp Help about any commandversion Centrifugo version informationFlags:-a, --address string interface address to listen on 服务的地址--admin enable admin web interface 是否开启admin的管理界面--admin_insecure use insecure admin mode – no auth required for admin socket admin安全验证, 节点: /, 可直接访问admin管理界面, 默认为false, 登录admin需要admin_password, 反之可直接登录--api_insecure use insecure API mode 后台推送安全验证, 节点: /api.
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Centrifugo（一）简介</title>
-      <link>https://rjguanwen.cn/2019/12/centrifugo_01/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_01/</link>
       <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2019/12/centrifugo_01/</guid>
-      <description>Centrifugo 是一个用 Golang 实现的基于 Websocket 或者 SockJS 的实时通信平台。 提供基于频道的发布/订阅（PUB/SUB）模式。 容易和现有系统集成– 不改变已有后端情况下为系统</description>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_01/</guid>
+      <description>
+        
+          
+            Centrifugo 是一个用 Golang 实现的基于 Websocket 或者 SockJS 的实时通信平台。
+提供基于频道的发布/订阅（PUB/SUB）模式。
+容易和现有系统集成– 不改变已有后端情况下为系统提供实时通信能力。
+HTTP API 和已有后端通信 . API clients for Python, Ruby, PHP, Go, NodeJS。
+浏览器可以通过SockJS或者纯粹Websocket协议和centrifugal通信。 提供 iOS和Android平台SDK。
+采用Redis实现分布式部署，也支持使用Memory引擎单机简单部署。
+SHA-256 HMAC连接认证和隐私保护。
+多种类型的频道 – 私有, 用户限制，客户端限制。
+通过名字空间灵活配置频道。
+支持即时消息和历史消息。
+支持用户加入/离开消息。
+网络重连后可以恢复消息。
+内置管理界面，提供多种计量(Metrics)。
+可用于WebRTC信令服务器。
+多种部署手段(docker 镜像, RPM/DEB 包, Nginx 配置, TLS certificates)。
+MIT license。
+基本运行框架：
+​ Centrifugo 作为独立服务器运行，可以处理来自应用程序用户的持久连接。应用的前端和后端可以基于任何语言进行开发。你的客户端使用应用程序后端提供的令牌(Token JWT)连接到 Centrifugo，并订阅频道（Channel）。当有事件发生时，后端应用可以使用 Centrifugo 的 API 发布消息到相关 Channel。随后，消息会被投递到所有订阅本 Channel 的客户端。
+项目地址：https://github.com/centrifugal/centrifugo
+          
+          
+        
+      </description>
     </item>
     
   </channel>

@@ -1,31 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>读书 on 飞光</title>
     <link>https://rjguanwen.cn/categories/%E8%AF%BB%E4%B9%A6/</link>
     <description>Recent content in 读书 on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 24 Jun 2022 00:00:00 +0000</lastBuildDate>
-    
-        <atom:link href="https://rjguanwen.cn/categories/%E8%AF%BB%E4%B9%A6/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>zh</language>
+    <lastBuildDate>Fri, 24 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/categories/%E8%AF%BB%E4%B9%A6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>读书 - 《经济学通识》</title>
-      <link>https://rjguanwen.cn/2022/06/jingjixuetongshi_1/</link>
+      <link>https://rjguanwen.cn/posts/books/jingjixuetongshi_1/</link>
       <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2022/06/jingjixuetongshi_1/</guid>
-      <description>读书笔记 - 《经济学通识》 &amp;mdash;&amp;mdash;&amp;mdash;- 原文摘抄 &amp;mdash;&amp;mdash;&amp;mdash;- 以淳朴的眼光看，人类至少面临四项普遍约束： 1. 东西不够 2. 生命有限 3. 互相依赖 4. 需要协作 人类种种制度的安排，一</description>
+      <guid>https://rjguanwen.cn/posts/books/jingjixuetongshi_1/</guid>
+      <description>
+        
+          
+            读书笔记 - 《经济学通识》 &amp;mdash;&amp;mdash;&amp;mdash;- 原文摘抄 &amp;mdash;&amp;mdash;&amp;mdash;-
+以淳朴的眼光看，人类至少面临四项普遍约束：
+东西不够 生命有限 互相依赖 需要协作
+人类种种制度的安排，一概是为了应付这些约束而衍生的。粗略地概括，这四项约束对应着四类经济理论： 需求定律 利息理论 制度理论 宏观理论
+…… 
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>读书 - 《数据资产论》</title>
-      <link>https://rjguanwen.cn/2022/03/sjzcl01/</link>
+      <link>https://rjguanwen.cn/posts/books/sjzcl01/</link>
       <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2022/03/sjzcl01/</guid>
-      <description>读书笔记 - 《数据资产论》 根据会计学的定义，资源要成为资产有一个必要条件：带来预期的经济收益。由此，不是所有的数据都可以称为资产，只有那些能够</description>
+      <guid>https://rjguanwen.cn/posts/books/sjzcl01/</guid>
+      <description>
+        
+          
+            读书笔记 - 《数据资产论》 根据会计学的定义，资源要成为资产有一个必要条件：带来预期的经济收益。由此，不是所有的数据都可以称为资产，只有那些能够产生商业价值的数据才可以成为资产。
+数据资产的彰显需要一个必要条件：业务场景。业务场景可以孤立于数据之外而产生价值，但是数据却无法孤立于业务场景之外产生价值。数据价值之道在于：场景为王，数据次之，算法最后。 不确定性产生有两大根本原因：一是无知；二是无奈。无知所对应的不确定性，可以通过数据的无限积累、算法的不断改良、知识的持续增加而逐步化解。无奈所对应的不确定性，其根源是人类对稀缺资源的无限博弈，我们对它无可奈何，它将长期广泛的存在，甚至不回衰减。我们要分清数据分析中“可为”与“不可为”之间的区别。 
+          
+          
+        
+      </description>
     </item>
     
   </channel>

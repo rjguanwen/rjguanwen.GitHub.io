@@ -1,40 +1,74 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>python on 飞光</title>
+    <title>Python on 飞光</title>
     <link>https://rjguanwen.cn/tags/python/</link>
-    <description>Recent content in python on 飞光</description>
+    <description>Recent content in Python on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 30 Jul 2021 00:00:00 +0000</lastBuildDate>
-    
-        <atom:link href="https://rjguanwen.cn/tags/python/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>zh</language>
+    <lastBuildDate>Fri, 30 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>rasa 入门</title>
-      <link>https://rjguanwen.cn/2021/07/rasa-1/</link>
+      <link>https://rjguanwen.cn/posts/rasa/rasa-1/</link>
       <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2021/07/rasa-1/</guid>
-      <description>前言：没有比官网文档更好的资料了。看这里https://rasa.com/docs/rasa/ rasa 安装 pip install -U rasa pip show rasa 注：我是用的 rasa 版本为 Version: 2.8.1 初</description>
+      <guid>https://rjguanwen.cn/posts/rasa/rasa-1/</guid>
+      <description>
+        
+          
+            **前言：没有比官网文档更好的资料了。**看这里https://rasa.com/docs/rasa/
+rasa 安装 pip install -U rasa pip show rasa 注：我是用的 rasa 版本为 Version: 2.8.1
+初始化项目 1、 在工作文件夹中执行
+# 创建默认的初始化项目，加“--no-prompt”就避免了中间的问题提示 rasa init --no-prompt 该命令会在工作文件夹中创建一系列的文件，关键文件如下：
+config.yml : Rasa NLU 和 Rasa Core 的配置文件 credentials.yml : 定义和其他服务连接的一些细节，例如rasa api接口 data/nlu.yml : Rasa NLU 的训练数据 data/stories.yml : Rasa stories 数据 data/rule.yml : Rasa 规则数据 endpoints.yml : 和外部消息服务对接的配置 models/.tar.gz : 初始训练的模型数据 以上文件都打开看一下，基本能明白是啥意思。
+2、 训练模型
+如果添加了 NLU 或者 Core 数据，或者修改了domain和配置文件，需要重新训练模型：
+rasa train 3、 对话应用
+rasa shell 可能因训练数据的问题，bot 表现的挺傻的，呵呵~
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>rasa 继续入门 - 语言模型与分词器</title>
-      <link>https://rjguanwen.cn/2021/07/rasa-2/</link>
+      <link>https://rjguanwen.cn/posts/rasa/rasa-2/</link>
       <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2021/07/rasa-2/</guid>
-      <description>rasa 支持多种语言模型与分词器，语言模型常用的有 MITIENLP 和 SpaCyNLP，分词器常用的有 WhitespaceTokenizer、JiebaToken</description>
+      <guid>https://rjguanwen.cn/posts/rasa/rasa-2/</guid>
+      <description>
+        
+          
+            rasa 支持多种语言模型与分词器，语言模型常用的有 MITIENLP 和 SpaCyNLP，分词器常用的有 WhitespaceTokenizer、JiebaTokenizer、MitieTokenizer、SpacyTokenizer 等。
+WhitespaceTokenizer 空格分词器，每个空格间隔的文本，都将分为一个token，典型的英文句子的分词。该分词器不支持中文分词。配置方式如下：
+pipeline: - name: &amp;#34;WhitespaceTokenizer&amp;#34; # Flag to check whether to split intents &amp;#34;intent_tokenization_flag&amp;#34;: False # Symbol on which intent should be split &amp;#34;intent_split_symbol&amp;#34;: &amp;#34;+&amp;#34; # Regular expression to detect tokens &amp;#34;token_pattern&amp;#34;: None intent_tokenization_flag和intent_split_symbol是在nlu返回多意图的时候使用。当intent_tokenization_flag设置为False，nlu只返回一个置信度最高的意图。但有些时候，一句话包含多个意图，例如：
+## intent: affirm+ask_transport - Yes. How do I get there? - Sounds good. Do you know how I could get there from home? 用户的回答包含2层意思，首先是同意我的建议，另外是询问怎么去。这时候，需要将intent_tokenization_flag设置为True，然后在训练数据里面编写多意图对应的话术，多个意图中间用intent_split_symbol去分割。在运行的时候，用户说“Sounds good. Do you know how I could get there from home?
+          
+          
+        
+      </description>
     </item>
     
     <item>
       <title>Anaconda 虚拟环境基础操作</title>
-      <link>https://rjguanwen.cn/2021/02/python-1/</link>
+      <link>https://rjguanwen.cn/posts/python/python-1/</link>
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/2021/02/python-1/</guid>
-      <description>Anaconda 虚拟环境基础操作 创建 创建的同时可以同时指定安装必要的包： conda create -n &amp;lt;虚拟环境名&amp;gt; [包名1 包名2 包名3] python=3.6 激活虚拟环境 Linux: source activate &amp;lt;</description>
+      <guid>https://rjguanwen.cn/posts/python/python-1/</guid>
+      <description>
+        
+          
+            Anaconda 虚拟环境基础操作 创建 创建的同时可以同时指定安装必要的包：
+conda create -n &amp;lt;虚拟环境名&amp;gt; [包名1 包名2 包名3] python=3.6 激活虚拟环境 Linux:
+source activate &amp;lt;虚拟环境名&amp;gt; Windows：
+activate &amp;lt;虚拟环境名&amp;gt; 退出虚拟环境 Linux：
+source deactivate &amp;lt;虚拟环境名&amp;gt; Windows：
+deactivate &amp;lt;虚拟环境名&amp;gt; 删除虚拟环境 conda remove -n &amp;lt;虚拟环境名&amp;gt; --all 其他 conda 常用命令 conda list：查看安装了哪些包 conda install package_name(包名)：安装包 conda env list 或 conda info -e：查看当前存在哪些虚拟环境 conda update conda：检查更新当前conda 
+          
+          
+        
+      </description>
     </item>
     
   </channel>
