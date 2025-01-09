@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dart on 飞光</title>
+    <link>https://rjguanwen.cn/tags/dart/</link>
+    <description>Recent content in Dart on 飞光</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 09 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/tags/dart/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dart语言基础</title>
+      <link>https://rjguanwen.cn/posts/flutter/dart-1/</link>
+      <pubDate>Thu, 09 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/posts/flutter/dart-1/</guid>
+      <description>
+        
+          
+            Dart编码规范 1、样式规范 类、枚举、类型定义：使用大写开头的驼峰命名法 元数据：使用大写开头的驼峰命名法 命名库、包、目录、dart文件：使用小写加下划线 将引用的库使用as转换的名字：使用小写加下划线 变量名、方法名、参数名：使用小写开头的驼峰命名法 只有一个 if 语句且没有 else 的时候，并且在一行内能够很好的展示就不用花括号 2、注释规范 不要使用块注释 /* ... */ 作解释说明（块注释仅用在注释掉一段代码） 使用文档注释（三个斜杠 /// ）来注释成员和类型 要让文档注释的第一句从段落中分开，将第一句与其他内容分割开来（加一个空行） 推荐在注释里面使用方括号 [] 去声明参数、返回值，以及抛出异常 要把注释文档放到注解之前 文档注释中允许使用大多数 markdown 格式 3、使用规范 依赖：推荐使用相对路径导入依赖 赋值：使用 ?? 将 null 值进行转换（?? 表示当一个值为空时会给他赋值 ?? 后面的数据） 不推荐使用加号 + 去连接两个字符串，而使用回车键直接分割字符串 4、格式化 推荐使用 dart format 格式化你的代码 避免单行超过80个字符 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
