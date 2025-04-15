@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "styles.css",
-	"sourceRoot": "d:/workspaces/blogs/rjguanwen-blog",
+	"sourceRoot": "D:/workspaces/blogs/rjguanwen-blog",
 	"sources": [
 		"themes/Clarity/assets/sass/main.sass",
 		"themes/Clarity/assets/sass/_variables.sass",
