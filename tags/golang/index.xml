@@ -18,7 +18,7 @@
           
             表单参数 表单传输为 POST 请求，http 常见的传输格式为四种：
 application/json application/x-www-form-urlencoded application/xml multipart/form-data 表单参数可以通过 PostForm() 方法获取，该方法默认解析的是 x-www-form-urlencoded 或 form-data 格式的参数。
-简单的表单示例： &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;demo1&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;form action=&amp;#34;http://localhost:8080/form&amp;#34; method=&amp;#34;post&amp;#34; enctype=&amp;#34;application/x-www-form-urlencoded&amp;#34;&amp;gt; 用户名：&amp;lt;inpurt type=&amp;#34;text&amp;#34; name=&amp;#34;username&amp;#34; placeholder=&amp;#34;请输入你的用户名&amp;#34;&amp;gt; &amp;lt;br&amp;gt; 密&amp;amp;nbsp;&amp;amp;nbsp;码：&amp;lt;input type=&amp;#34;password&amp;#34; name=&amp;#34;password&amp;#34; placeholder=&amp;#34;请输入你的密码&amp;#34;&amp;gt; &amp;lt;br&amp;gt; &amp;lt;input type=&amp;#34;submit&amp;#34; value=&amp;#34;提交&amp;#34;&amp;gt; &amp;lt;/form&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; package main import ( &amp;#34;fmt&amp;#34; &amp;#34;github.com/gin-gonic/gin&amp;#34; &amp;#34;net/http&amp;#34; ) //表单参数 func main(){ r:=gin.Default() r.POST(&amp;#34;/form&amp;#34;, func(c *gin.Context) { types:=c.DefaultPostForm(&amp;#34;type&amp;#34;,&amp;#34;post&amp;#34;) // 键名和html页面属性名对应 username:=c.PostForm(&amp;#34;username&amp;#34;) password:=c.PostForm(&amp;#34;userpassword&amp;#34;) c.String(http.StatusOK,fmt.Sprintf(&amp;#34;username:%s,password:%s,types:%s&amp;#34;,username,password,types)) }) r.
+简单的表单示例： &amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt;&amp;lt;head&amp;gt;&amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt;&amp;lt;title&amp;gt;demo1&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;&amp;lt;form action=&amp;#34;http://localhost:8080/form&amp;#34; method=&amp;#34;post&amp;#34; enctype=&amp;#34;application/x-www-form-urlencoded&amp;#34;&amp;gt;用户名：&amp;lt;inpurt type=&amp;#34;text&amp;#34; name=&amp;#34;username&amp;#34; placeholder=&amp;#34;请输入你的用户名&amp;#34;&amp;gt; &amp;lt;br&amp;gt;密&amp;amp;nbsp;&amp;amp;nbsp;码：&amp;lt;input type=&amp;#34;password&amp;#34; name=&amp;#34;password&amp;#34; placeholder=&amp;#34;请输入你的密码&amp;#34;&amp;gt; &amp;lt;br&amp;gt;&amp;lt;input type=&amp;#34;submit&amp;#34; value=&amp;#34;提交&amp;#34;&amp;gt;&amp;lt;/form&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt; package mainimport (&amp;#34;fmt&amp;#34;&amp;#34;github.com/gin-gonic/gin&amp;#34;&amp;#34;net/http&amp;#34;)//表单参数func main(){r:=gin.Default()r.POST(&amp;#34;/form&amp;#34;, func(c *gin.Context) {types:=c.DefaultPostForm(&amp;#34;type&amp;#34;,&amp;#34;post&amp;#34;)// 键名和html页面属性名对应username:=c.PostForm(&amp;#34;username&amp;#34;)password:=c.PostForm(&amp;#34;userpassword&amp;#34;)c.String(http.StatusOK,fmt.Sprintf(&amp;#34;username:%s,password:%s,types:%s&amp;#34;,username,password,types))})r.
           
           
         
@@ -34,9 +34,9 @@ application/json application/x-www-form-urlencoded application/xml multipart/for
       <description>
         
           
-            路由 核心功能 路由系统可根据请求方法、请求路径和路径参数来识别转发 可设置一个或者多个中间件用于在请求处理器前后处理特殊的事件 可以分组设置，将一个或多个中间件作用在一组多个路由上 基本语法 //构建路由对象并注册请求路径对应的处理器 r := gin.Default() r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) { c.JSON(200, gin.H{ &amp;#34;message&amp;#34;: &amp;#34;ping&amp;#34;, }) }) // 监听并在 0.0.0.0：8080 上启动服务 r.Run() 可以将路由的定义放在单独的文件中完成，如 /router/api.go :
-// file: /router/api.go func APIRouter() *gin.Engine { r := gin.Default() r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) { c.JSON(200, gin.H{ &amp;#34;message&amp;#34;: &amp;#34;ping&amp;#34; }) }) // 更多的注册 // r.POST() // r.DELETE() // r.PUT() return r } 然后，在 main() 中完成调用和初始化，并启动监听：
-// file /main.go func main() { // 初始化路由 r := router.
+            路由 核心功能 路由系统可根据请求方法、请求路径和路径参数来识别转发 可设置一个或者多个中间件用于在请求处理器前后处理特殊的事件 可以分组设置，将一个或多个中间件作用在一组多个路由上 基本语法 //构建路由对象并注册请求路径对应的处理器r := gin.Default()r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) {c.JSON(200, gin.H{&amp;#34;message&amp;#34;: &amp;#34;ping&amp;#34;,})})// 监听并在 0.0.0.0：8080 上启动服务r.Run() 可以将路由的定义放在单独的文件中完成，如 /router/api.go :
+// file: /router/api.gofunc APIRouter() *gin.Engine {r := gin.Default()r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) {c.JSON(200, gin.H{&amp;#34;message&amp;#34;: &amp;#34;ping&amp;#34;})})// 更多的注册// r.POST()// r.DELETE()// r.PUT()return r} 然后，在 main() 中完成调用和初始化，并启动监听：
+// file /main.gofunc main() {// 初始化路由r := router.
           
           
         
@@ -53,7 +53,7 @@ application/json application/x-www-form-urlencoded application/xml multipart/for
         
           
             &amp;lt;部分内容借鉴自网络，如有侵权，预先道歉，请及时联系（rjguanwen001@163.com），我会尽快删除，谢谢！&amp;gt;
-Go 文件操作总结 1、基本操作 1.1 创建文件 package main import ( &amp;#34;log&amp;#34; &amp;#34;os&amp;#34; ) func main() { newFile, err := os.Create(&amp;#34;example_1.txt&amp;#34;) if err != nil { log.Fatal(err) } newFile.Close() } 1.2 Truncate文件 package main import ( &amp;#34;log&amp;#34; &amp;#34;os&amp;#34; ) func main(){ // 裁剪一个文件到100个字节。 // 如果文件本来就少于100个字节，则文件中原始内容得以保留，剩余的字节以null字节填充。 // 如果文件本来超过100个字节，则超过的字节会被抛弃。 // 这样我们总是得到精确的100个字节的文件。 // 传入0则会清空文件。 err := os.Truncate(&amp;#34;example_1.txt&amp;#34;, 100) if err != nil { log.Fatal(err) } } 1.3 获取文件信息 package main import ( &amp;#34;fmt&amp;#34; &amp;#34;log&amp;#34; &amp;#34;os&amp;#34; ) func main(){ fi, err := os.
+Go 文件操作总结 1、基本操作 1.1 创建文件 package mainimport (&amp;#34;log&amp;#34;&amp;#34;os&amp;#34;)func main() {newFile, err := os.Create(&amp;#34;example_1.txt&amp;#34;)if err != nil {log.Fatal(err)}newFile.Close()} 1.2 Truncate文件 package mainimport (&amp;#34;log&amp;#34;&amp;#34;os&amp;#34;)func main(){// 裁剪一个文件到100个字节。// 如果文件本来就少于100个字节，则文件中原始内容得以保留，剩余的字节以null字节填充。// 如果文件本来超过100个字节，则超过的字节会被抛弃。// 这样我们总是得到精确的100个字节的文件。// 传入0则会清空文件。err := os.Truncate(&amp;#34;example_1.txt&amp;#34;, 100)if err != nil {log.Fatal(err)}} 1.3 获取文件信息 package mainimport (&amp;#34;fmt&amp;#34;&amp;#34;log&amp;#34;&amp;#34;os&amp;#34;)func main(){fi, err := os.
           
           
         
@@ -76,7 +76,7 @@ Gin 特性 快速：路由不使用反射，基于Radix树，内存占用少。
 JSON：Gin可以解析并验证请求的JSON。这个特性对Restful API的开发尤其有用。
 路由分组：例如将需要授权和不需要授权的API分组，不同版本的API分组。而且分组可嵌套，且性能不受影响。
 渲染内置：原生支持JSON，XML和HTML的渲染。
-Quickstart 安装 Gin 前，首先要安装 Go，并做好各种设置。Go 版本要求 1.9 以上。 下载并安装 Gin。 $ go get -u github.com/gin-gonic/gin 在代码中引入： import &amp;#34;github.com/gin-gonic/gin&amp;#34; 如果需要使用类似 http.StatusOK 的常量，则需引入 net/http。 import &amp;#34;net/http&amp;#34; 示例代码： package main import &amp;#34;github.com/gin-gonic/gin&amp;#34; func main() { r := gin.Default() r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) { c.JSON(200, gin.H{ &amp;#34;message&amp;#34;: &amp;#34;pong&amp;#34;, }) }) r.Run() // listen and serve on 0.0.0.0:8080 } 
+Quickstart 安装 Gin 前，首先要安装 Go，并做好各种设置。Go 版本要求 1.9 以上。 下载并安装 Gin。 $ go get -u github.com/gin-gonic/gin 在代码中引入： import &amp;#34;github.com/gin-gonic/gin&amp;#34; 如果需要使用类似 http.StatusOK 的常量，则需引入 net/http。 import &amp;#34;net/http&amp;#34; 示例代码： package mainimport &amp;#34;github.com/gin-gonic/gin&amp;#34;func main() {r := gin.Default()r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) {c.JSON(200, gin.H{&amp;#34;message&amp;#34;: &amp;#34;pong&amp;#34;,})})r.Run() // listen and serve on 0.0.0.0:8080} 
           
           
         
@@ -99,8 +99,8 @@ $env:GOPROXY = &amp;quot;https://goproxy.io&amp;quot; 或使用 goproxy.cn
 自动下载依赖
 go run *****.go，在执行前会首先查找并下载安装依赖
 更新旧的 package import 方式，内部依赖也需要增加 mod 名
-package main import ( api &amp;#34;mymod/api&amp;#34; // mymod 是初始化的 mod 名 &amp;#34;github.com/labstack/echo&amp;#34; ) func main() { e := echo.New() e.GET(&amp;#34;/&amp;#34;, api.MyAPI) e.Logger.Fatal(e.Start(&amp;#34;:1234&amp;#34;)) } 使用 replace 替换无法直接获取的 package
-replace ( golang.org/x/crypto v0.0.0-20190313024323-a1f597ede03a =&amp;gt; github.com/golang/crypto v0.0.0-20190313024323-a1f597ede03a ) 检查并升级 package
+package mainimport (api &amp;#34;mymod/api&amp;#34; // mymod 是初始化的 mod 名 &amp;#34;github.com/labstack/echo&amp;#34;)func main() {e := echo.New()e.GET(&amp;#34;/&amp;#34;, api.MyAPI)e.Logger.Fatal(e.Start(&amp;#34;:1234&amp;#34;))} 使用 replace 替换无法直接获取的 package
+replace (golang.org/x/crypto v0.0.0-20190313024323-a1f597ede03a =&amp;gt; github.com/golang/crypto v0.0.0-20190313024323-a1f597ede03a) 检查并升级 package
 go list -m -u all
 go get -u need-upgrade-package 或者 go get -u
           

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>语言工具 on 飞光</title>
+    <link>https://rjguanwen.cn/categories/%E8%AF%AD%E8%A8%80%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 语言工具 on 飞光</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 09 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/categories/%E8%AF%AD%E8%A8%80%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dart语言基础</title>
+      <link>https://rjguanwen.cn/posts/flutter/dart-1/</link>
+      <pubDate>Thu, 09 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/posts/flutter/dart-1/</guid>
+      <description>
+        
+          
+            Dart编码规范 1、样式规范 类、枚举、类型定义：使用大写开头的驼峰命名法 元数据：使用大写开头的驼峰命名法 命名库、包、目录、dart文件：使用小写加下划线 将引用的库使用as转换的名字：使用小写加下划线 变量名、方法名、参数名：使用小写开头的驼峰命名法 只有一个 if 语句且没有 else 的时候，并且在一行内能够很好的展示就不用花括号 2、注释规范 不要使用块注释 /* ... */ 作解释说明（块注释仅用在注释掉一段代码） 使用文档注释（三个斜杠 /// ）来注释成员和类型 要让文档注释的第一句从段落中分开，将第一句与其他内容分割开来（加一个空行） 推荐在注释里面使用方括号 [] 去声明参数、返回值，以及抛出异常 要把注释文档放到注解之前 文档注释中允许使用大多数 markdown 格式 3、使用规范 依赖：推荐使用相对路径导入依赖 赋值：使用 ?? 将 null 值进行转换（?? 表示当一个值为空时会给他赋值 ?? 后面的数据） 不推荐使用加号 + 去连接两个字符串，而使用回车键直接分割字符串 4、格式化 推荐使用 dart format 格式化你的代码 避免单行超过80个字符 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Anaconda 虚拟环境基础操作</title>
+      <link>https://rjguanwen.cn/posts/python/python-1/</link>
+      <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/posts/python/python-1/</guid>
+      <description>
+        
+          
+            Anaconda 虚拟环境基础操作 创建 创建的同时可以同时指定安装必要的包：
+conda create -n &amp;lt;虚拟环境名&amp;gt; [包名1 包名2 包名3] python=3.6 激活虚拟环境 Linux:
+source activate &amp;lt;虚拟环境名&amp;gt; Windows：
+activate &amp;lt;虚拟环境名&amp;gt; 退出虚拟环境 Linux：
+source deactivate &amp;lt;虚拟环境名&amp;gt; Windows：
+deactivate &amp;lt;虚拟环境名&amp;gt; 删除虚拟环境 conda remove -n &amp;lt;虚拟环境名&amp;gt; --all 其他 conda 常用命令 conda list：查看安装了哪些包 conda install package_name(包名)：安装包 conda env list 或 conda info -e：查看当前存在哪些虚拟环境 conda update conda：检查更新当前conda 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>win10 的 Linux 子系统中安装 docker</title>
+      <link>https://rjguanwen.cn/posts/docker/docker_wsl/</link>
+      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/posts/docker/docker_wsl/</guid>
+      <description>
+        
+          
+            在 win10 的 Linux 子系统中实现 docker 的安装使用 1、安装 WSL2 此处注意，一定是 WSL2！wsl 坑太多，经常有莫名错误！
+1. 配置 WSL2 开启WSL 以管理员运行 Powershell： Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux 之后重启计算机。
+启用“虚拟机平台”可选组件：
+以管理员运行 Powershell： Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform 之后重启计算机。
+默认启用 WSL2
+运行 Powershell： wsl --set-default-version 2 2. 安装配置 Ubuntu 安装 Ubuntu 打开 Microsoft Store，搜索 ubuntu 并安装。
+之后启动刚刚安装的 Ubuntu。
+设置 Ubuntu 系统的 root 密码 Ubuntu 的默认 root 密码是随机的，即每次开机都有一个新的 root 密码。要修改密码，可在终端输入命令：
+$ sudo passwd 输入当前用户的密码，终端会提示我们输入新的密码并确认，此时的密码就是 root 新密码。
+2、安装 Docker 以管理员身份运行 Ubuntu，在终端中依次执行以下命令：
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Go 文件操作</title>
+      <link>https://rjguanwen.cn/posts/golang/go_file/</link>
+      <pubDate>Thu, 27 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/posts/golang/go_file/</guid>
+      <description>
+        
+          
+            &amp;lt;部分内容借鉴自网络，如有侵权，预先道歉，请及时联系（rjguanwen001@163.com），我会尽快删除，谢谢！&amp;gt;
+Go 文件操作总结 1、基本操作 1.1 创建文件 package mainimport (&amp;#34;log&amp;#34;&amp;#34;os&amp;#34;)func main() {newFile, err := os.Create(&amp;#34;example_1.txt&amp;#34;)if err != nil {log.Fatal(err)}newFile.Close()} 1.2 Truncate文件 package mainimport (&amp;#34;log&amp;#34;&amp;#34;os&amp;#34;)func main(){// 裁剪一个文件到100个字节。// 如果文件本来就少于100个字节，则文件中原始内容得以保留，剩余的字节以null字节填充。// 如果文件本来超过100个字节，则超过的字节会被抛弃。// 这样我们总是得到精确的100个字节的文件。// 传入0则会清空文件。err := os.Truncate(&amp;#34;example_1.txt&amp;#34;, 100)if err != nil {log.Fatal(err)}} 1.3 获取文件信息 package mainimport (&amp;#34;fmt&amp;#34;&amp;#34;log&amp;#34;&amp;#34;os&amp;#34;)func main(){fi, err := os.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docker常用命令</title>
+      <link>https://rjguanwen.cn/posts/docker/docker_01/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/posts/docker/docker_01/</guid>
+      <description>
+        
+          
+            Redis 常用命令，备查！
+1、测试 Docker 是否正常安装 docker run hello-world 2、Docker 状态信息查看 docker info 3、Docker 镜像管理 3.1 创建镜像 方法一：根据 Dockerfile 创建镜像 创建Dockerfile文件及其相关依赖文件 切换到Dockerfile文件所在目录，执行如下命令： docker build -t &amp;lt;镜像名称&amp;gt; . 方法二：根据已有镜像实例化后进行交互式环境修改后保存 根据已有镜像实例化容器，记录容器ID，并进入交互式命令行 docker run -it &amp;lt;已有镜像名称&amp;gt; /bin/bash 在交互式命令行执行相关操作后退出交互式命令行 执行如下命令创建镜像 docker commit &amp;lt;容器ID&amp;gt; &amp;lt;镜像名称&amp;gt; 3.2 查看镜像 docker images 3.3 查看某个镜像详情 docker inspect &amp;lt;镜像名称&amp;gt; 3.4 删除镜像 docker rmi &amp;lt;镜像名称&amp;gt; PS：对于存在容器的镜像需要先删除容器
+3.5 为镜像添加标签 docker tag &amp;lt;旧镜像名称&amp;gt; &amp;lt;新镜像名称&amp;gt; PS：该命令会在原有的镜像上重新生成一个新的镜像名称对应该镜像
+3.6 拉取镜像 docker pull &amp;lt;镜像名称&amp;gt; 3.7 推送镜像 docker push &amp;lt;镜像名称&amp;gt; 4、容器操作 4.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>gomod使用记录</title>
+      <link>https://rjguanwen.cn/posts/golang/gomod_use/</link>
+      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/posts/golang/gomod_use/</guid>
+      <description>
+        
+          
+            简单记录 go mod 的使用方式：
+代理配置
+$env:GOPROXY = &amp;quot;https://goproxy.io&amp;quot; 或使用 goproxy.cn
+初始化 go mod init ***，***为你要创建的mod名字，直接为工程名即可
+自动下载依赖
+go run *****.go，在执行前会首先查找并下载安装依赖
+更新旧的 package import 方式，内部依赖也需要增加 mod 名
+package mainimport (api &amp;#34;mymod/api&amp;#34; // mymod 是初始化的 mod 名 &amp;#34;github.com/labstack/echo&amp;#34;)func main() {e := echo.New()e.GET(&amp;#34;/&amp;#34;, api.MyAPI)e.Logger.Fatal(e.Start(&amp;#34;:1234&amp;#34;))} 使用 replace 替换无法直接获取的 package
+replace (golang.org/x/crypto v0.0.0-20190313024323-a1f597ede03a =&amp;gt; github.com/golang/crypto v0.0.0-20190313024323-a1f597ede03a) 检查并升级 package
+go list -m -u all
+go get -u need-upgrade-package 或者 go get -u
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>govendor使用记录</title>
+      <link>https://rjguanwen.cn/posts/golang/govendor_use/</link>
+      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/posts/golang/govendor_use/</guid>
+      <description>
+        
+          
+            简单记录 govendor 的使用方式：
+安装
+go get -u -v github.com/kardianos/govendor
+初始化 vendor 目录
+govendor init
+添加依赖包到 vendor 目录
+govendor add +external 或 govendor add +e
+从 $GOPATH 更新依赖包到 vendor 目录
+govendor update +vendor
+删除依赖包
+govendor remove +vendor
+常用的命令如下：
+命令 功能 init 初始化 vendor 目录 list 列出所有依赖包 add 添加包到 vendor 目录 add PKG_PATH 添加指定依赖包到 vendor 目录 update 从 $GOPATH 更新依赖包到 vendor 目录 remove 从 vendor 管理中删除依赖 status 列出 vendor 管理的各个包的状态 fetch 添加或更新包到 vendor 目录 sync 同步，基于已存在的 vendor.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

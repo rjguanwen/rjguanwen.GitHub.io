@@ -6,7 +6,26 @@
     <description>Recent content on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 13 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>基于 TOTP 的多因素身份验证</title>
+      <link>https://rjguanwen.cn/posts/tec_ot/totp/</link>
+      <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/posts/tec_ot/totp/</guid>
+      <description>
+        
+          
+            基于 TOTP 的多因素身份验证 现在很多网站登录时都需要双因子身份验证，例如Github，你如果选择了验证器的方式进行身份验证。那么你每次登录时需要使用微软身份验证器、腾讯身份验证器等生成临时的验证码完成登录认证。 腾讯身份验证器长这样：这个验证码每30秒刷新一次，只要将验证码输入Github的登录验证框即可完成登录。期间腾讯身份验证器和Github是不进行信息交互的。它具体如何实现的呢？
+这些验证码生成使用的技术就是 TOTP（Time-based One-time Password，中文名：基于时间的一次性口令）。
+TOTP原理：
+概述：TOTP 算法基于当前时间和一个共享密钥来生成动态的、一次性使用的密码。共享密钥由服务提供方（在本例中就是Github）提供。 工作流程： 密钥分配： 当用户开启多因素身份验证时，服务提供商（如 Github）会为用户的账户分配一个唯一的共享密钥。这个密钥通常以二维码的形式展示给用户，用户使用身份验证器应用扫描该二维码，将密钥存储在应用中。 验证码生成： 用户打开手机上的身份验证器应用时，身份验证器使用存储的共享密钥和当前时间戳，按照 TOTP 算法生成一个 6 位或 8 位的一次性验证码。TOTP 算法会将时间戳按一定的时间间隔（通常为 30 秒）进行划分，在每个时间间隔内生成的验证码是唯一的。 验证码校验：当用户登录账户时，除了输入密码外，还需要输入身份验证器应用生成的一次性验证码。服务提供商的服务器使用相同的共享密钥和当前时间戳，按照 TOTP 算法生成一个预期的验证码，并将其与用户输入的验证码进行比对。如果两者匹配，则验证通过。 
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>为之建立  为之崩解</title>
       <link>https://rjguanwen.cn/posts/mine/aiqing/</link>
@@ -313,7 +332,7 @@ Cross-cultural研究显示：西方个体更倾向存储以自我为中心的事
             北极星指标的意义与设定原则 什么是北极星指标 北极星指标也叫唯一关键指标（OMTM，One metric that matters），北极星指标是公司最关键最重要的业务指标，直接承接了公司的战略和发展目标，公司制定的发展目标是否能实现，通过观察北极星指标就可以发现。
 之所以取名为北极星指标，是因为它像夜晚的北极星一样，指引公司全体人员朝着制定的同一目标努力，它是指明灯和方向。
 北极星指标的设定原则 1、北极星指标应符合SMART原则。 SMART原则（S=Specific、M=Measurable、A=Attainable、R=Relevant、T=Time-bound）
-S代表目标必须是具体(Specific)，比如目标定为我要减肥，就不如我要减肥10斤具体; M代表目标是可以衡量的(Measurable)，如果制定的目标都没办法衡量，那跟没有目标没差别; A代表可实现(Attainable)，在付出努力的情况下可以实现，避免设立过高或过低的目标，一般设定的目标是踮踮脚可以达到的； R代表相关性(Relevant），指绩效指标是与工作的其它目标是相关联的，如果公司的每个部门的目标跟公司的总体目标方向不一致的化，就会导致大家不再一个方向上努力; T代表有明确的截止期限(Time-bound); 2、北极星指标是可以拆解的，可以将责任落实到相应的部门。 比如GMV=客单价用户数量购买频次，分别可以由用户运营、用户补贴、用户拉新部门去承接这些子指标。
+S代表目标必须是具体(Specific)，比如目标定为我要减肥，就不如我要减肥10斤具体; M代表目标是可以衡量的(Measurable)，如果制定的目标都没办法衡量，那跟没有目标没差别; A代表可实现(Attainable)，在付出努力的情况下可以实现，避免设立过高或过低的目标，一般设定的目标是踮踮脚可以达到的； R代表相关性(Relevant），指绩效指标是与工作的其它目标是相关联的，如果公司的每个部门的目标跟公司的总体目标方向不一致的化，就会导致大家不再一个方向上努力; T代表有明确的截止期限(Time-bound); 2、北极星指标是可以拆解的，可以将责任落实到相应的部门。 比如GMV=客单价*用户数量*购买频次，分别可以由用户运营、用户补贴、用户拉新部门去承接这些子指标。
 3、北极星指标不是一成不变的，应该随着公司业务重心的变化而变化。 比如目前的外卖平台关注GMV指标，等规模遭遇瓶颈后，可能就会关注利润了。 比如头条这样的资讯平台，刚开始关注用户规模，等用户规模达到瓶颈后，就开始关注用户停留时长了。
 4、北极星指标不是唯一的，且可以引入反向互斥指标互相制衡。 比如外卖和电商公司若一味追求GMV的增长，就容易忽视一个严重的问题，那就是用户退费或退单，从长远来看，对公司发展是非常不利的。
 在这种情况下，可引入【退费率】和【GMV】一起作为北极星指标，以避免一味追求高GMV而忽视退费影响公司的长远发展。
@@ -470,7 +489,7 @@ Burke先生表示：“超级自动化是一股不可避免且不可逆转的趋
           
             表单参数 表单传输为 POST 请求，http 常见的传输格式为四种：
 application/json application/x-www-form-urlencoded application/xml multipart/form-data 表单参数可以通过 PostForm() 方法获取，该方法默认解析的是 x-www-form-urlencoded 或 form-data 格式的参数。
-简单的表单示例： &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;demo1&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;form action=&amp;#34;http://localhost:8080/form&amp;#34; method=&amp;#34;post&amp;#34; enctype=&amp;#34;application/x-www-form-urlencoded&amp;#34;&amp;gt; 用户名：&amp;lt;inpurt type=&amp;#34;text&amp;#34; name=&amp;#34;username&amp;#34; placeholder=&amp;#34;请输入你的用户名&amp;#34;&amp;gt; &amp;lt;br&amp;gt; 密&amp;amp;nbsp;&amp;amp;nbsp;码：&amp;lt;input type=&amp;#34;password&amp;#34; name=&amp;#34;password&amp;#34; placeholder=&amp;#34;请输入你的密码&amp;#34;&amp;gt; &amp;lt;br&amp;gt; &amp;lt;input type=&amp;#34;submit&amp;#34; value=&amp;#34;提交&amp;#34;&amp;gt; &amp;lt;/form&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; package main import ( &amp;#34;fmt&amp;#34; &amp;#34;github.com/gin-gonic/gin&amp;#34; &amp;#34;net/http&amp;#34; ) //表单参数 func main(){ r:=gin.Default() r.POST(&amp;#34;/form&amp;#34;, func(c *gin.Context) { types:=c.DefaultPostForm(&amp;#34;type&amp;#34;,&amp;#34;post&amp;#34;) // 键名和html页面属性名对应 username:=c.PostForm(&amp;#34;username&amp;#34;) password:=c.PostForm(&amp;#34;userpassword&amp;#34;) c.String(http.StatusOK,fmt.Sprintf(&amp;#34;username:%s,password:%s,types:%s&amp;#34;,username,password,types)) }) r.
+简单的表单示例： &amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt;&amp;lt;head&amp;gt;&amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt;&amp;lt;title&amp;gt;demo1&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;&amp;lt;form action=&amp;#34;http://localhost:8080/form&amp;#34; method=&amp;#34;post&amp;#34; enctype=&amp;#34;application/x-www-form-urlencoded&amp;#34;&amp;gt;用户名：&amp;lt;inpurt type=&amp;#34;text&amp;#34; name=&amp;#34;username&amp;#34; placeholder=&amp;#34;请输入你的用户名&amp;#34;&amp;gt; &amp;lt;br&amp;gt;密&amp;amp;nbsp;&amp;amp;nbsp;码：&amp;lt;input type=&amp;#34;password&amp;#34; name=&amp;#34;password&amp;#34; placeholder=&amp;#34;请输入你的密码&amp;#34;&amp;gt; &amp;lt;br&amp;gt;&amp;lt;input type=&amp;#34;submit&amp;#34; value=&amp;#34;提交&amp;#34;&amp;gt;&amp;lt;/form&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt; package mainimport (&amp;#34;fmt&amp;#34;&amp;#34;github.com/gin-gonic/gin&amp;#34;&amp;#34;net/http&amp;#34;)//表单参数func main(){r:=gin.Default()r.POST(&amp;#34;/form&amp;#34;, func(c *gin.Context) {types:=c.DefaultPostForm(&amp;#34;type&amp;#34;,&amp;#34;post&amp;#34;)// 键名和html页面属性名对应username:=c.PostForm(&amp;#34;username&amp;#34;)password:=c.PostForm(&amp;#34;userpassword&amp;#34;)c.String(http.StatusOK,fmt.Sprintf(&amp;#34;username:%s,password:%s,types:%s&amp;#34;,username,password,types))})r.
           
           
         
@@ -486,9 +505,9 @@ application/json application/x-www-form-urlencoded application/xml multipart/for
       <description>
         
           
-            路由 核心功能 路由系统可根据请求方法、请求路径和路径参数来识别转发 可设置一个或者多个中间件用于在请求处理器前后处理特殊的事件 可以分组设置，将一个或多个中间件作用在一组多个路由上 基本语法 //构建路由对象并注册请求路径对应的处理器 r := gin.Default() r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) { c.JSON(200, gin.H{ &amp;#34;message&amp;#34;: &amp;#34;ping&amp;#34;, }) }) // 监听并在 0.0.0.0：8080 上启动服务 r.Run() 可以将路由的定义放在单独的文件中完成，如 /router/api.go :
-// file: /router/api.go func APIRouter() *gin.Engine { r := gin.Default() r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) { c.JSON(200, gin.H{ &amp;#34;message&amp;#34;: &amp;#34;ping&amp;#34; }) }) // 更多的注册 // r.POST() // r.DELETE() // r.PUT() return r } 然后，在 main() 中完成调用和初始化，并启动监听：
-// file /main.go func main() { // 初始化路由 r := router.
+            路由 核心功能 路由系统可根据请求方法、请求路径和路径参数来识别转发 可设置一个或者多个中间件用于在请求处理器前后处理特殊的事件 可以分组设置，将一个或多个中间件作用在一组多个路由上 基本语法 //构建路由对象并注册请求路径对应的处理器r := gin.Default()r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) {c.JSON(200, gin.H{&amp;#34;message&amp;#34;: &amp;#34;ping&amp;#34;,})})// 监听并在 0.0.0.0：8080 上启动服务r.Run() 可以将路由的定义放在单独的文件中完成，如 /router/api.go :
+// file: /router/api.gofunc APIRouter() *gin.Engine {r := gin.Default()r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) {c.JSON(200, gin.H{&amp;#34;message&amp;#34;: &amp;#34;ping&amp;#34;})})// 更多的注册// r.POST()// r.DELETE()// r.PUT()return r} 然后，在 main() 中完成调用和初始化，并启动监听：
+// file /main.gofunc main() {// 初始化路由r := router.
           
           
         
@@ -682,7 +701,7 @@ application/json application/x-www-form-urlencoded application/xml multipart/for
       <description>
         
           
-            常用命令 #使用方法: hugo hugo [flags] hugo [command] hugo [command] [flags] #查看版本 hugo version #版本和环境详细信息 hugo env #创建新站点 hugo new site &amp;#34;$mysite&amp;#34; #创建文章 hugo new index.md 在content/文件夹可以看到，此时多了一个markdown格式的文件index.md，打开文件可以看到时间和文件名等信息已经自动加到文件开头，包括创建时间，页面名，是否为草稿等。 #编译生成静态文件 hugo Hugo将编译所有文件并输出到public目录 #编译生成静态文件并启动web服务 hugo server 常用参数 --bind=&amp;#34;127.0.0.1&amp;#34; 服务监听IP地址； -p, --port=1313 服务监听端口； -w, --watch[=true] 监听站点目录，发现文件变更自动编译； -D, --buildDrafts 包括被标记为draft的文章； -E, --buildExpired 包括已过期的文章； -F, --buildFuture 包括将在未来发布的文章； -b, --baseURL=&amp;#34;www.datals.com&amp;#34; 服务监听域名； --log[=false]: 开启日志； --logFile=&amp;#34;/var/log/hugo.log&amp;#34;: log输出路径； -t, --theme=&amp;#34;&amp;#34; 指定主题； -v, --verbose[=false]: 输出详细信息 
+            常用命令 #使用方法:hugohugo [flags]hugo [command]hugo [command] [flags]#查看版本hugo version#版本和环境详细信息hugo env#创建新站点hugo new site &amp;#34;$mysite&amp;#34;#创建文章hugo new index.md 在content/文件夹可以看到，此时多了一个markdown格式的文件index.md，打开文件可以看到时间和文件名等信息已经自动加到文件开头，包括创建时间，页面名，是否为草稿等。#编译生成静态文件hugoHugo将编译所有文件并输出到public目录 #编译生成静态文件并启动web服务hugo server 常用参数 --bind=&amp;#34;127.0.0.1&amp;#34; 服务监听IP地址；-p, --port=1313 服务监听端口；-w, --watch[=true] 监听站点目录，发现文件变更自动编译；-D, --buildDrafts 包括被标记为draft的文章；-E, --buildExpired 包括已过期的文章；-F, --buildFuture 包括将在未来发布的文章；-b, --baseURL=&amp;#34;www.datals.com&amp;#34; 服务监听域名；--log[=false]: 开启日志；--logFile=&amp;#34;/var/log/hugo.log&amp;#34;: log输出路径；-t, --theme=&amp;#34;&amp;#34; 指定主题；-v, --verbose[=false]: 输出详细信息 
           
           
         
@@ -701,7 +720,7 @@ application/json application/x-www-form-urlencoded application/xml multipart/for
             **前言：没有比官网文档更好的资料了。**看这里https://rasa.com/docs/rasa/
 rasa 安装 pip install -U rasa pip show rasa 注：我是用的 rasa 版本为 Version: 2.8.1
 初始化项目 1、 在工作文件夹中执行
-# 创建默认的初始化项目，加“--no-prompt”就避免了中间的问题提示 rasa init --no-prompt 该命令会在工作文件夹中创建一系列的文件，关键文件如下：
+# 创建默认的初始化项目，加“--no-prompt”就避免了中间的问题提示rasa init --no-prompt 该命令会在工作文件夹中创建一系列的文件，关键文件如下：
 config.yml : Rasa NLU 和 Rasa Core 的配置文件 credentials.yml : 定义和其他服务连接的一些细节，例如rasa api接口 data/nlu.yml : Rasa NLU 的训练数据 data/stories.yml : Rasa stories 数据 data/rule.yml : Rasa 规则数据 endpoints.yml : 和外部消息服务对接的配置 models/.tar.gz : 初始训练的模型数据 以上文件都打开看一下，基本能明白是啥意思。
 2、 训练模型
 如果添加了 NLU 或者 Core 数据，或者修改了domain和配置文件，需要重新训练模型：
@@ -724,8 +743,8 @@ rasa shell 可能因训练数据的问题，bot 表现的挺傻的，呵呵~
           
             rasa 支持多种语言模型与分词器，语言模型常用的有 MITIENLP 和 SpaCyNLP，分词器常用的有 WhitespaceTokenizer、JiebaTokenizer、MitieTokenizer、SpacyTokenizer 等。
 WhitespaceTokenizer 空格分词器，每个空格间隔的文本，都将分为一个token，典型的英文句子的分词。该分词器不支持中文分词。配置方式如下：
-pipeline: - name: &amp;#34;WhitespaceTokenizer&amp;#34; # Flag to check whether to split intents &amp;#34;intent_tokenization_flag&amp;#34;: False # Symbol on which intent should be split &amp;#34;intent_split_symbol&amp;#34;: &amp;#34;+&amp;#34; # Regular expression to detect tokens &amp;#34;token_pattern&amp;#34;: None intent_tokenization_flag和intent_split_symbol是在nlu返回多意图的时候使用。当intent_tokenization_flag设置为False，nlu只返回一个置信度最高的意图。但有些时候，一句话包含多个意图，例如：
-## intent: affirm+ask_transport - Yes. How do I get there? - Sounds good. Do you know how I could get there from home? 用户的回答包含2层意思，首先是同意我的建议，另外是询问怎么去。这时候，需要将intent_tokenization_flag设置为True，然后在训练数据里面编写多意图对应的话术，多个意图中间用intent_split_symbol去分割。在运行的时候，用户说“Sounds good. Do you know how I could get there from home?
+pipeline:- name: &amp;#34;WhitespaceTokenizer&amp;#34;# Flag to check whether to split intents&amp;#34;intent_tokenization_flag&amp;#34;: False# Symbol on which intent should be split&amp;#34;intent_split_symbol&amp;#34;: &amp;#34;+&amp;#34;# Regular expression to detect tokens&amp;#34;token_pattern&amp;#34;: None intent_tokenization_flag和intent_split_symbol是在nlu返回多意图的时候使用。当intent_tokenization_flag设置为False，nlu只返回一个置信度最高的意图。但有些时候，一句话包含多个意图，例如：
+## intent: affirm+ask_transport- Yes. How do I get there?- Sounds good. Do you know how I could get there from home? 用户的回答包含2层意思，首先是同意我的建议，另外是询问怎么去。这时候，需要将intent_tokenization_flag设置为True，然后在训练数据里面编写多意图对应的话术，多个意图中间用intent_split_symbol去分割。在运行的时候，用户说“Sounds good. Do you know how I could get there from home?
           
           
         
@@ -1056,7 +1075,7 @@ git update-git-for-windows 3、如出现错误 重新下载新版本安装包，
         
           
             &amp;lt;部分内容借鉴自网络，如有侵权，预先道歉，请及时联系（rjguanwen001@163.com），我会尽快删除，谢谢！&amp;gt;
-Go 文件操作总结 1、基本操作 1.1 创建文件 package main import ( &amp;#34;log&amp;#34; &amp;#34;os&amp;#34; ) func main() { newFile, err := os.Create(&amp;#34;example_1.txt&amp;#34;) if err != nil { log.Fatal(err) } newFile.Close() } 1.2 Truncate文件 package main import ( &amp;#34;log&amp;#34; &amp;#34;os&amp;#34; ) func main(){ // 裁剪一个文件到100个字节。 // 如果文件本来就少于100个字节，则文件中原始内容得以保留，剩余的字节以null字节填充。 // 如果文件本来超过100个字节，则超过的字节会被抛弃。 // 这样我们总是得到精确的100个字节的文件。 // 传入0则会清空文件。 err := os.Truncate(&amp;#34;example_1.txt&amp;#34;, 100) if err != nil { log.Fatal(err) } } 1.3 获取文件信息 package main import ( &amp;#34;fmt&amp;#34; &amp;#34;log&amp;#34; &amp;#34;os&amp;#34; ) func main(){ fi, err := os.
+Go 文件操作总结 1、基本操作 1.1 创建文件 package mainimport (&amp;#34;log&amp;#34;&amp;#34;os&amp;#34;)func main() {newFile, err := os.Create(&amp;#34;example_1.txt&amp;#34;)if err != nil {log.Fatal(err)}newFile.Close()} 1.2 Truncate文件 package mainimport (&amp;#34;log&amp;#34;&amp;#34;os&amp;#34;)func main(){// 裁剪一个文件到100个字节。// 如果文件本来就少于100个字节，则文件中原始内容得以保留，剩余的字节以null字节填充。// 如果文件本来超过100个字节，则超过的字节会被抛弃。// 这样我们总是得到精确的100个字节的文件。// 传入0则会清空文件。err := os.Truncate(&amp;#34;example_1.txt&amp;#34;, 100)if err != nil {log.Fatal(err)}} 1.3 获取文件信息 package mainimport (&amp;#34;fmt&amp;#34;&amp;#34;log&amp;#34;&amp;#34;os&amp;#34;)func main(){fi, err := os.
           
           
         
@@ -1079,7 +1098,7 @@ Gin 特性 快速：路由不使用反射，基于Radix树，内存占用少。
 JSON：Gin可以解析并验证请求的JSON。这个特性对Restful API的开发尤其有用。
 路由分组：例如将需要授权和不需要授权的API分组，不同版本的API分组。而且分组可嵌套，且性能不受影响。
 渲染内置：原生支持JSON，XML和HTML的渲染。
-Quickstart 安装 Gin 前，首先要安装 Go，并做好各种设置。Go 版本要求 1.9 以上。 下载并安装 Gin。 $ go get -u github.com/gin-gonic/gin 在代码中引入： import &amp;#34;github.com/gin-gonic/gin&amp;#34; 如果需要使用类似 http.StatusOK 的常量，则需引入 net/http。 import &amp;#34;net/http&amp;#34; 示例代码： package main import &amp;#34;github.com/gin-gonic/gin&amp;#34; func main() { r := gin.Default() r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) { c.JSON(200, gin.H{ &amp;#34;message&amp;#34;: &amp;#34;pong&amp;#34;, }) }) r.Run() // listen and serve on 0.0.0.0:8080 } 
+Quickstart 安装 Gin 前，首先要安装 Go，并做好各种设置。Go 版本要求 1.9 以上。 下载并安装 Gin。 $ go get -u github.com/gin-gonic/gin 在代码中引入： import &amp;#34;github.com/gin-gonic/gin&amp;#34; 如果需要使用类似 http.StatusOK 的常量，则需引入 net/http。 import &amp;#34;net/http&amp;#34; 示例代码： package mainimport &amp;#34;github.com/gin-gonic/gin&amp;#34;func main() {r := gin.Default()r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) {c.JSON(200, gin.H{&amp;#34;message&amp;#34;: &amp;#34;pong&amp;#34;,})})r.Run() // listen and serve on 0.0.0.0:8080} 
           
           
         
@@ -1117,7 +1136,7 @@ Quickstart 安装 Gin 前，首先要安装 Go，并做好各种设置。Go 版�
             Redis 常用命令，备查！
 &amp;lt;部分内容摘抄自网络，如有侵权，预先道歉，请及时联系（rjguanwen001@163.com），我会尽快删除，谢谢！&amp;gt;
 一、管理命令 1 启动 Redis &amp;gt; redis-server [--port 6379] 如果命令参数过多，建议通过配置文件来启动 Redis。
-&amp;gt; redis-server [xx/xx/redis.conf] 2 连接 Redis &amp;gt; ./redis-cli [-h 127.0.0.1 -p 6379] 3 停止 Reids &amp;gt; redis-cli shutdown &amp;gt; kill redis-pid 以上两条命令，效果一样
+&amp;gt; redis-server [xx/xx/redis.conf] 2 连接 Redis &amp;gt; ./redis-cli [-h 127.0.0.1 -p 6379] 3 停止 Reids &amp;gt; redis-cli shutdown&amp;gt; kill redis-pid 以上两条命令，效果一样
 4 发送命令 给 Redis 发送命令有两种方式： 1、redis-cli 带参数运行
 &amp;gt; redis-cli &amp;lt;命令，如 shutdown&amp;gt; 2、redis-cli不带参数运行，先执行 redis-cli，进入命令行执行命令
 5 测试连通性 &amp;gt; ping 二、key 操作命令 1 获取所有键 语法：keys pattern
@@ -1232,8 +1251,8 @@ to_return = {&amp;#39;user&amp;#39;: &amp;#34;USER ID&amp;#34;,&amp;#39;timest
 本篇博客是转发的别人的，原文地址：http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
 一般来说，日常使用只要记住下图 6 个命令即可。
 专用名词译名：
-Workspace: 工作区 Index/Stage: 暂存区 Repository: 仓库区（或本地仓库） Remote: 远程仓库 一、新建代码库 # 在当前目录新建一个Git代码库 $ git init # 新建一个目录，将其初始化为Git代码库 $ git init [project-name] # 下载一个项目和它的整个代码历史 $ git clone [url] 二、配置 Git 的配置文件为 .gitconfig，它可以在用户主目录下（全局配置），也可以在项目目录下（项目配置）。
-# 显示当前的Git配置 $ git config --list # 编辑Git配置文件 $ git config -e [--global] # 设置提交代码时的用户信息 $ git config [--global] user.name &amp;#34;[NAME]&amp;#34; $ git config [--global] user.email &amp;#34;[EMAIL ADDRESS]&amp;#34; 三、增加/删除文件 # 添加指定文件到暂存区 $ git add [file1] [file2] .
+Workspace: 工作区 Index/Stage: 暂存区 Repository: 仓库区（或本地仓库） Remote: 远程仓库 一、新建代码库 # 在当前目录新建一个Git代码库$ git init# 新建一个目录，将其初始化为Git代码库$ git init [project-name]# 下载一个项目和它的整个代码历史$ git clone [url] 二、配置 Git 的配置文件为 .gitconfig，它可以在用户主目录下（全局配置），也可以在项目目录下（项目配置）。
+# 显示当前的Git配置$ git config --list# 编辑Git配置文件$ git config -e [--global]# 设置提交代码时的用户信息$ git config [--global] user.name &amp;#34;[NAME]&amp;#34;$ git config [--global] user.email &amp;#34;[EMAIL ADDRESS]&amp;#34; 三、增加/删除文件 # 添加指定文件到暂存区$ git add [file1] [file2] .
           
           
         
@@ -1476,8 +1495,8 @@ $env:GOPROXY = &amp;quot;https://goproxy.io&amp;quot; 或使用 goproxy.cn
 自动下载依赖
 go run *****.go，在执行前会首先查找并下载安装依赖
 更新旧的 package import 方式，内部依赖也需要增加 mod 名
-package main import ( api &amp;#34;mymod/api&amp;#34; // mymod 是初始化的 mod 名 &amp;#34;github.com/labstack/echo&amp;#34; ) func main() { e := echo.New() e.GET(&amp;#34;/&amp;#34;, api.MyAPI) e.Logger.Fatal(e.Start(&amp;#34;:1234&amp;#34;)) } 使用 replace 替换无法直接获取的 package
-replace ( golang.org/x/crypto v0.0.0-20190313024323-a1f597ede03a =&amp;gt; github.com/golang/crypto v0.0.0-20190313024323-a1f597ede03a ) 检查并升级 package
+package mainimport (api &amp;#34;mymod/api&amp;#34; // mymod 是初始化的 mod 名 &amp;#34;github.com/labstack/echo&amp;#34;)func main() {e := echo.New()e.GET(&amp;#34;/&amp;#34;, api.MyAPI)e.Logger.Fatal(e.Start(&amp;#34;:1234&amp;#34;))} 使用 replace 替换无法直接获取的 package
+replace (golang.org/x/crypto v0.0.0-20190313024323-a1f597ede03a =&amp;gt; github.com/golang/crypto v0.0.0-20190313024323-a1f597ede03a) 检查并升级 package
 go list -m -u all
 go get -u need-upgrade-package 或者 go get -u
           
@@ -1548,25 +1567,6 @@ govendor remove +vendor
     </item>
     
     <item>
-      <title>杂句摘抄</title>
-      <link>https://rjguanwen.cn/posts/somewords_01/</link>
-      <pubDate>Tue, 19 Nov 2019 18:13:06 +0800</pubDate>
-      
-      <guid>https://rjguanwen.cn/posts/somewords_01/</guid>
-      <description>
-        
-          
-             读书不是为了雄辩与驳斥，也不是为了轻信与盲从，而是为了思考和权衡。很多人觉得他们在思考，而实际上他们是在重新整理自己的偏见。 用一套程序保证问题会摆在桌面上，同时确保问题根源会得到剖析，这样才能实现持续的改进。 “勤劳的人会发自内心的看不起懒惰的人”，这是一种心理效应。 “如果尖锐的批评完全消失，温和的批评将会变得刺耳。
-如果温和的批评也不被允许，沉默将被认为居心叵测。
-如果沉默也不再允许，赞扬不够卖力将是一种罪行。
-如果只允许一种声音存在，那么，唯一存在的那个声音就是谎言。” 破山中贼易，破心中贼难。 比征服客户更难的是征服内部环境。 
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
       <title>《苦昼短》</title>
       <link>https://rjguanwen.cn/posts/art-1/</link>
       <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
@@ -1587,6 +1587,25 @@ govendor remove +vendor
 何为服黄金、吞白玉？
 谁似任公子，云中骑碧驴？
 刘彻茂陵多滞骨，嬴政梓棺费鲍鱼。
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>杂句摘抄</title>
+      <link>https://rjguanwen.cn/posts/somewords_01/</link>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/posts/somewords_01/</guid>
+      <description>
+        
+          
+             读书不是为了雄辩与驳斥，也不是为了轻信与盲从，而是为了思考和权衡。很多人觉得他们在思考，而实际上他们是在重新整理自己的偏见。 用一套程序保证问题会摆在桌面上，同时确保问题根源会得到剖析，这样才能实现持续的改进。 “勤劳的人会发自内心的看不起懒惰的人”，这是一种心理效应。 “如果尖锐的批评完全消失，温和的批评将会变得刺耳。
+如果温和的批评也不被允许，沉默将被认为居心叵测。
+如果沉默也不再允许，赞扬不够卖力将是一种罪行。
+如果只允许一种声音存在，那么，唯一存在的那个声音就是谎言。” 破山中贼易，破心中贼难。 比征服客户更难的是征服内部环境。 
           
           
         

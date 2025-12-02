@@ -3,12 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://rjguanwen.cn/categories/</loc>
-    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rjguanwen.cn/tags/index/</loc>
-    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rjguanwen.cn/tags/</loc>
+    <lastmod>2025-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rjguanwen.cn/posts/tec_ot/totp/</loc>
+    <lastmod>2025-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rjguanwen.cn/tags/%E5%AE%89%E5%85%A8/</loc>
+    <lastmod>2025-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rjguanwen.cn/categories/%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84/</loc>
+    <lastmod>2025-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rjguanwen.cn/posts/</loc>
+    <lastmod>2025-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rjguanwen.cn/</loc>
+    <lastmod>2025-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rjguanwen.cn/categories/%E4%B8%AA%E4%BA%BA%E5%88%9B%E4%BD%9C/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rjguanwen.cn/posts/mine/aiqing/</loc>
@@ -17,34 +35,19 @@
     <loc>https://rjguanwen.cn/tags/%E5%8E%9F%E5%88%9B/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://rjguanwen.cn/posts/</loc>
-    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rjguanwen.cn/categories/%E6%9D%82%E6%96%87/</loc>
-    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rjguanwen.cn/</loc>
-    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://rjguanwen.cn/tags/%E4%B8%AA%E4%BA%BA/</loc>
     <lastmod>2025-04-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://rjguanwen.cn/categories/%E8%AE%B0%E5%BF%86%E7%9A%84%E6%9C%AC%E8%B4%A8/</loc>
+    <loc>https://rjguanwen.cn/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</loc>
     <lastmod>2025-04-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rjguanwen.cn/posts/mine/memory/</loc>
     <lastmod>2025-04-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://rjguanwen.cn/categories/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4/</loc>
-    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://rjguanwen.cn/posts/mine/jian/</loc>
     <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rjguanwen.cn/tags/dart/</loc>
-    <lastmod>2024-05-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rjguanwen.cn/categories/dart/</loc>
     <lastmod>2024-05-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rjguanwen.cn/posts/flutter/dart-1/</loc>
@@ -53,13 +56,16 @@
     <loc>https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2024-05-09T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://rjguanwen.cn/categories/%E8%AF%AD%E8%A8%80%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2024-05-09T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://rjguanwen.cn/posts/arts/scsj-8/</loc>
     <lastmod>2024-05-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://rjguanwen.cn/tags/%E5%8F%A4%E6%96%87/</loc>
+    <loc>https://rjguanwen.cn/categories/%E4%BC%91%E9%97%B2%E5%A8%B1%E4%B9%90/</loc>
     <lastmod>2024-05-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://rjguanwen.cn/categories/%E8%AF%97%E8%AF%8D/</loc>
+    <loc>https://rjguanwen.cn/tags/%E5%8F%A4%E6%96%87/</loc>
     <lastmod>2024-05-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rjguanwen.cn/posts/arts/sc-sdp-1/</loc>
@@ -71,28 +77,31 @@
     <loc>https://rjguanwen.cn/tags/%E8%AF%97%E8%AF%8D/</loc>
     <lastmod>2023-05-18T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://rjguanwen.cn/tags/%E4%BC%81%E4%B8%9A/</loc>
+    <lastmod>2023-04-25T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://rjguanwen.cn/posts/ot/soeandpe/</loc>
     <lastmod>2023-04-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rjguanwen.cn/posts/ot/soeandpe2/</loc>
     <lastmod>2023-04-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://rjguanwen.cn/categories/%E6%80%9D%E8%80%83/</loc>
-    <lastmod>2023-04-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rjguanwen.cn/tags/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</loc>
-    <lastmod>2023-04-25T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://rjguanwen.cn/posts/ot/wuhezhizhong/</loc>
     <lastmod>2023-04-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rjguanwen.cn/tags/%E7%A4%BE%E4%BC%9A/</loc>
+    <lastmod>2023-04-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rjguanwen.cn/categories/%E8%AF%BB%E4%B9%A6%E9%9A%8F%E7%AC%94/</loc>
+    <lastmod>2023-04-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rjguanwen.cn/tags/%E4%BA%92%E8%81%94%E7%BD%91%E7%94%9F%E6%80%81/</loc>
+    <lastmod>2023-03-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rjguanwen.cn/posts/ot/infoandl/</loc>
     <lastmod>2023-03-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rjguanwen.cn/posts/tec_ot/omtm/</loc>
-    <lastmod>2022-11-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rjguanwen.cn/categories/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/</loc>
     <lastmod>2022-11-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rjguanwen.cn/posts/tec_ot/gartner_01/</loc>
@@ -104,25 +113,19 @@
     <loc>https://rjguanwen.cn/tags/%E8%AF%BB%E4%B9%A6/</loc>
     <lastmod>2022-06-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://rjguanwen.cn/categories/%E8%AF%BB%E4%B9%A6/</loc>
-    <lastmod>2022-06-24T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://rjguanwen.cn/posts/books/jingjixuetongshi_1/</loc>
     <lastmod>2022-06-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://rjguanwen.cn/posts/ot/two_yz/</loc>
+    <loc>https://rjguanwen.cn/tags/%E5%8E%9F%E5%88%99/</loc>
     <lastmod>2022-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://rjguanwen.cn/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</loc>
+    <loc>https://rjguanwen.cn/posts/ot/two_yz/</loc>
     <lastmod>2022-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rjguanwen.cn/posts/books/sjzcl01/</loc>
     <lastmod>2022-03-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rjguanwen.cn/tags/gin/</loc>
-    <lastmod>2022-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rjguanwen.cn/categories/gin/</loc>
     <lastmod>2022-03-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rjguanwen.cn/posts/gin/gin_03/</loc>
@@ -132,6 +135,9 @@
     <lastmod>2022-03-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rjguanwen.cn/tags/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/</loc>
+    <lastmod>2022-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rjguanwen.cn/categories/%E6%A1%86%E6%9E%B6%E7%BB%84%E4%BB%B6/</loc>
     <lastmod>2022-03-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rjguanwen.cn/posts/gin/gin_02/</loc>
@@ -164,22 +170,13 @@
     <loc>https://rjguanwen.cn/tags/python/</loc>
     <lastmod>2021-07-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://rjguanwen.cn/categories/python/</loc>
-    <lastmod>2021-07-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://rjguanwen.cn/tags/rasa/</loc>
-    <lastmod>2021-07-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rjguanwen.cn/categories/rasa/</loc>
     <lastmod>2021-07-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rjguanwen.cn/posts/rasa/rasa-1/</loc>
     <lastmod>2021-07-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rjguanwen.cn/posts/rasa/rasa-2/</loc>
-    <lastmod>2021-07-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rjguanwen.cn/categories/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2021-07-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rjguanwen.cn/posts/python/python-1/</loc>
@@ -191,22 +188,13 @@
     <loc>https://rjguanwen.cn/tags/superset/</loc>
     <lastmod>2021-01-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://rjguanwen.cn/categories/superset/</loc>
-    <lastmod>2021-01-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://rjguanwen.cn/posts/ignite/ignite_02/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rjguanwen.cn/tags/ignite/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://rjguanwen.cn/categories/ignite/</loc>
-    <lastmod>2021-01-12T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://rjguanwen.cn/tags/docker/</loc>
-    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rjguanwen.cn/categories/docker/</loc>
     <lastmod>2021-01-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rjguanwen.cn/posts/docker/docker_wsl/</loc>
@@ -239,9 +227,6 @@
     <loc>https://rjguanwen.cn/tags/git/</loc>
     <lastmod>2020-09-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://rjguanwen.cn/categories/git/</loc>
-    <lastmod>2020-09-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://rjguanwen.cn/posts/git/git_04/</loc>
     <lastmod>2020-09-17T00:00:00+00:00</lastmod>
   </url><url>
@@ -254,9 +239,6 @@
     <loc>https://rjguanwen.cn/posts/golang/go_file/</loc>
     <lastmod>2020-08-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://rjguanwen.cn/categories/golang/</loc>
-    <lastmod>2020-08-27T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://rjguanwen.cn/posts/gin/gin_01/</loc>
     <lastmod>2020-06-13T00:00:00+00:00</lastmod>
   </url><url>
@@ -266,19 +248,16 @@
     <loc>https://rjguanwen.cn/tags/redis/</loc>
     <lastmod>2020-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://rjguanwen.cn/categories/redis/</loc>
-    <lastmod>2020-06-05T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://rjguanwen.cn/posts/redis/redis_01/</loc>
     <lastmod>2020-06-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rjguanwen.cn/posts/tec_ot/adr/</loc>
     <lastmod>2020-02-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://rjguanwen.cn/tags/centrifugo/</loc>
-    <lastmod>2019-12-31T00:00:00+00:00</lastmod>
+    <loc>https://rjguanwen.cn/tags/%E8%A7%84%E8%8C%83/</loc>
+    <lastmod>2020-02-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://rjguanwen.cn/categories/centrifugo/</loc>
+    <loc>https://rjguanwen.cn/tags/centrifugo/</loc>
     <lastmod>2019-12-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rjguanwen.cn/posts/centrifugo/centrifugo_09/</loc>
@@ -335,19 +314,16 @@
     <loc>https://rjguanwen.cn/posts/mine/any_01/</loc>
     <lastmod>2019-11-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://rjguanwen.cn/tags/%E6%9D%82%E6%84%9F%E9%9A%8F%E7%AC%94/</loc>
+    <loc>https://rjguanwen.cn/tags/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</loc>
     <lastmod>2019-11-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rjguanwen.cn/tags/%E5%8F%A5%E5%AD%90/</loc>
-    <lastmod>2019-11-19T18:13:06+08:00</lastmod>
-  </url><url>
-    <loc>https://rjguanwen.cn/posts/somewords_01/</loc>
-    <lastmod>2019-11-19T18:13:06+08:00</lastmod>
   </url><url>
     <loc>https://rjguanwen.cn/posts/art-1/</loc>
     <lastmod>2019-11-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rjguanwen.cn/about/</loc>
+    <lastmod>2019-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rjguanwen.cn/posts/somewords_01/</loc>
     <lastmod>2019-11-19T00:00:00+00:00</lastmod>
   </url>
 </urlset>

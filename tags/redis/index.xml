@@ -19,7 +19,7 @@
             Redis 常用命令，备查！
 &amp;lt;部分内容摘抄自网络，如有侵权，预先道歉，请及时联系（rjguanwen001@163.com），我会尽快删除，谢谢！&amp;gt;
 一、管理命令 1 启动 Redis &amp;gt; redis-server [--port 6379] 如果命令参数过多，建议通过配置文件来启动 Redis。
-&amp;gt; redis-server [xx/xx/redis.conf] 2 连接 Redis &amp;gt; ./redis-cli [-h 127.0.0.1 -p 6379] 3 停止 Reids &amp;gt; redis-cli shutdown &amp;gt; kill redis-pid 以上两条命令，效果一样
+&amp;gt; redis-server [xx/xx/redis.conf] 2 连接 Redis &amp;gt; ./redis-cli [-h 127.0.0.1 -p 6379] 3 停止 Reids &amp;gt; redis-cli shutdown&amp;gt; kill redis-pid 以上两条命令，效果一样
 4 发送命令 给 Redis 发送命令有两种方式： 1、redis-cli 带参数运行
 &amp;gt; redis-cli &amp;lt;命令，如 shutdown&amp;gt; 2、redis-cli不带参数运行，先执行 redis-cli，进入命令行执行命令
 5 测试连通性 &amp;gt; ping 二、key 操作命令 1 获取所有键 语法：keys pattern

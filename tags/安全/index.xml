@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>安全 on 飞光</title>
+    <link>https://rjguanwen.cn/tags/%E5%AE%89%E5%85%A8/</link>
+    <description>Recent content in 安全 on 飞光</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 27 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/tags/%E5%AE%89%E5%85%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>基于 TOTP 的多因素身份验证</title>
+      <link>https://rjguanwen.cn/posts/tec_ot/totp/</link>
+      <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/posts/tec_ot/totp/</guid>
+      <description>
+        
+          
+            基于 TOTP 的多因素身份验证 现在很多网站登录时都需要双因子身份验证，例如Github，你如果选择了验证器的方式进行身份验证。那么你每次登录时需要使用微软身份验证器、腾讯身份验证器等生成临时的验证码完成登录认证。 腾讯身份验证器长这样：这个验证码每30秒刷新一次，只要将验证码输入Github的登录验证框即可完成登录。期间腾讯身份验证器和Github是不进行信息交互的。它具体如何实现的呢？
+这些验证码生成使用的技术就是 TOTP（Time-based One-time Password，中文名：基于时间的一次性口令）。
+TOTP原理：
+概述：TOTP 算法基于当前时间和一个共享密钥来生成动态的、一次性使用的密码。共享密钥由服务提供方（在本例中就是Github）提供。 工作流程： 密钥分配： 当用户开启多因素身份验证时，服务提供商（如 Github）会为用户的账户分配一个唯一的共享密钥。这个密钥通常以二维码的形式展示给用户，用户使用身份验证器应用扫描该二维码，将密钥存储在应用中。 验证码生成： 用户打开手机上的身份验证器应用时，身份验证器使用存储的共享密钥和当前时间戳，按照 TOTP 算法生成一个 6 位或 8 位的一次性验证码。TOTP 算法会将时间戳按一定的时间间隔（通常为 30 秒）进行划分，在每个时间间隔内生成的验证码是唯一的。 验证码校验：当用户登录账户时，除了输入密码外，还需要输入身份验证器应用生成的一次性验证码。服务提供商的服务器使用相同的共享密钥和当前时间戳，按照 TOTP 算法生成一个预期的验证码，并将其与用户输入的验证码进行比对。如果两者匹配，则验证通过。 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

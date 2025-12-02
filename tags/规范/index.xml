@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>规范 on 飞光</title>
+    <link>https://rjguanwen.cn/tags/%E8%A7%84%E8%8C%83/</link>
+    <description>Recent content in 规范 on 飞光</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Sat, 29 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/tags/%E8%A7%84%E8%8C%83/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>架构决策记录（ADR）</title>
+      <link>https://rjguanwen.cn/posts/tec_ot/adr/</link>
+      <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/posts/tec_ot/adr/</guid>
+      <description>
+        
+          
+            什么是ADR ADR（Architecture Decision Records）即架构决策记录。
+架构决策（AD）是一种软件设计选择，针对功能性或非功能性的需求进行的选择设计。软件架构决策需要在软件质量属性、成本、时间以及其他各种因素之间，做出正确的权衡。架构决策记录（ADR） 是跟踪软件设计选择的一种方法，其应能向项目经理、架构师、开发人员及软件的其他利益相关者，清楚阐明选择何种解决方案以及为此做出的权衡。
+架构决策记录记啥？ 架构决策记录（ADR）首先要解决的基本问题：“我们做了什么决策？”、“为什么这样决策？”，稍次要的问题包括：“我们还考虑过哪些解决方案？”、“为什么没有采用？”等。
+架构决策记录的作用 可以作为和开发人员进行沟通的工具，说明应遵循的重要架构原则 当开发人员对架构背后的逻辑提出质疑时，使团队成员能够“就事论事”，提高效率。（如果事实表明你的决策站不住脚，便应虚心接受批评，改正架构） 向领导和利益相关者说明这样构建软件的确切原因（比如，采用某种较为昂贵的硬件或软件的必要性等） 要把项目移交给下任架构师时，保持架构设计的有序传承 如果相关条件发生变化，需要对决策重新评估时，它可以作为一个起点 架构决策记录也会倒逼架构师在进行架构决策时更严谨，有助于确保基础的扎实稳固 架构决策记录的组成部分 每个架构决策至少有 6 部分组成：标题、时间、状态（Status）、上下文（Context）、决策（Decision）、后果（Consequences）。
+标题：按数字顺序编号，简要描述架构决策内容
+时间：在标题下一行，记录架构决策做出的日期，如 日期：2020年2月28日
+状态：表示本架构决策当前所处的状态，可选项包括：
+提议：决策已被提出讨论，但是利益相关方尚未达成一致。 公认：决策已讨论通过并达成一致。 已取代：因条件变化，已有新的架构决策取代本决策。此时需要给出新决策链接。 已弃用：本架构决策已撤销，不再使用。 上下文：架构决策相关的背景及决策原因。本部分的语言应该是价值中立的，只用于描述事实
+决策：本部分简洁明了的描述我们最终确定的架构决策
+后果：本部分描述应用决策后产生的影响，所有的影响都应该列在这里，包括“积极的”、“中性的”与消极的”
+其他关键问题 架构决策按照顺序和数字编号，不要打乱顺序。
+已记录的架构决策不应该被删除，如果被取代掉或已不符合当前情况，请将其标记为 已取代 或 已弃用
+一个架构决策记录示例 1. 使用 ssh key 替换用户名密码方式登录日期: 2019年11月12日状态：公认上下文：当前我们使用的是用户名、密码方式进行服务器登录，存在以下问题安全性问题，密码面临被破解的风险；易用性问题，无法使用 config 记录密码，可以使用第三方软件解决，如，SecureCRT，ZOC7；无法充分使用 local terminal，如 iTerm2；参考:SSH: passwords or keys? https://lwn.net/Articles/369703/Why is SSH key authentication better than password authentication?
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
