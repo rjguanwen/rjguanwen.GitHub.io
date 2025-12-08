@@ -4,10 +4,12 @@
   lang="en"
   data-figures=""
   
+    class="page"
+  
   
   >
   <head>
-<title>Index | 飞光</title>
+<title>Go 命名规范 | 飞光</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,25 +18,25 @@
 
 
 
+  
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="" />
+<meta name="description" content="GO 语言程序命名规范" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
-<meta name="twitter:title" content="Index" />
+<meta name="twitter:title" content="Go 命名规范" />
 <meta name="twitter:image" content="https://rjguanwen.cn/"/>
-<meta property="og:url" content="https://rjguanwen.cn/tags/index/" />
-<meta property="og:title" content="Index" />
-<meta property="og:description" content="" />
+<meta property="og:url" content="https://rjguanwen.cn/posts/golang/naming_convention/" />
+<meta property="og:title" content="Go 命名规范" />
+<meta property="og:description" content="GO 语言程序命名规范" />
 <meta property="og:image" content="https://rjguanwen.cn/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://rjguanwen.cn/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://rjguanwen.cn/icons/favicon-32x32.png">
 <link rel="manifest" href="https://rjguanwen.cn/icons/site.webmanifest">
 
-<link rel="canonical" href="https://rjguanwen.cn/tags/index/">
-<link rel="alternate" type="application/rss+xml" href="https://rjguanwen.cn/tags/index/index.xml" title="飞光" />
+<link rel="canonical" href="https://rjguanwen.cn/posts/golang/naming_convention/">
 
 
 
@@ -90,19 +92,10 @@
 </header>
 
     <main>
-
-
-
+  
 <div class="grid-inverse wrap content">
-  <div>
-    <ul class="posts" id="posts">
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://rjguanwen.cn/posts/" title="文章">文章</a>
-      </h3>
-      
+  <article class="post_content">
+    <h1 class="post_title">Go 命名规范</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -111,20 +104,21 @@
 </span>
     <span class="post_date">
       Dec 8, 2025</span>
-    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://rjguanwen.cn/tags/index/' title="index" class="post_tag button button_translucent">index
+    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/' title="技术" class="post_tag button button_translucent">技术
+        </a><a href='https://rjguanwen.cn/tags/golang/' title="GOLANG" class="post_tag button button_translucent">GOLANG
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=%e6%96%87%e7%ab%a0&url=https%3a%2f%2frjguanwen.cn%2fposts%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=Go%20%e5%91%bd%e5%90%8d%e8%a7%84%e8%8c%83&url=https%3a%2f%2frjguanwen.cn%2fposts%2fgolang%2fnaming_convention%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2frjguanwen.cn%2fposts%2f&t=%e6%96%87%e7%ab%a0" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2frjguanwen.cn%2fposts%2fgolang%2fnaming_convention%2f&t=Go%20%e5%91%bd%e5%90%8d%e8%a7%84%e8%8c%83" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -138,7 +132,7 @@
 </svg>
 
     </a>
-    <a href="https://rjguanwen.cn/posts/" title="Copy Link" class="link link_yank">
+    <a href="https://rjguanwen.cn/posts/golang/naming_convention/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -149,23 +143,27 @@
   </span>
   </div>
 
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>the index.md in posts.</p>
-          
-          <br>
-          <a href="https://rjguanwen.cn/posts/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
+    <div class="post_body"><h2 id="go-命名规范">GO 命名规范</h2>
+<ol>
+<li><strong>包</strong>的命名：包名应该简短而具有描述性。<strong>使用小写字母，不要使用下划线或者混合大小写</strong>。应该具有明确的含义，避免过于泛化。包名最好和目录保持一致。</li>
+<li><strong>程序文件</strong>命名：<strong>文件名必须为小写单词</strong>，尽量不加下划线。</li>
+<li><strong>变量和常量</strong>命名：<strong>变量名使用驼峰命名法</strong>。应该简短而具有描述性，避免使用单字母名称，除非是循环变量。如果变量类型为 <code>bool</code>,则名称应以 <code>Has</code>、<code>Is</code>、<code>Can</code> 或 <code>Allow</code> 开头。<strong>常量名应采用驼峰命名法</strong>，相关常量应该分组声明，可以使用空白行分隔不同组的常量。</li>
+<li><strong>函数和方法</strong>命名：<strong>函数和方法名使用驼峰命名法</strong>。应该清晰的表达其功能和用途。函数名应该<strong>使用动词或动宾结构</strong>，明确描述函数的操作。</li>
+<li><strong>结构体和接口</strong>命名：<strong>结构体和接口使用驼峰命名法</strong>。应该简介而具有描述性。<strong>尽量避免缩写</strong>，除非是广泛接受的行业标准。</li>
+<li><strong>测试文件</strong>命名：<strong>测试文件以 <code>_test.go</code> 结尾</strong>，<strong>测试函数以 <code>Test</code> 前缀，后面跟被测试的函数名</strong>。</li>
+</ol>
 
-      <li>
-      </li>
-    </ul>
-  </div>
+    </div>
+<div class="post_comments">
+  
+  
+  
+</div>
+
+
+
+
+  </article>
 <aside class="sidebar">
   <section class="sidebar_inner">
     <br>
@@ -396,9 +394,8 @@
   </section>
 </aside>
 
+  
 </div>
-
-
     </main><svg width="0" height="0" class="hidden">
   <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
     <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>

@@ -6,7 +6,23 @@
     <description>Recent content in GOLANG on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go 命名规范</title>
+      <link>https://rjguanwen.cn/posts/golang/naming_convention/</link>
+      <pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://rjguanwen.cn/posts/golang/naming_convention/</guid>
+      <description>
+        
+          
+            GO 命名规范 包的命名：包名应该简短而具有描述性。使用小写字母，不要使用下划线或者混合大小写。应该具有明确的含义，避免过于泛化。包名最好和目录保持一致。 程序文件命名：文件名必须为小写单词，尽量不加下划线。 变量和常量命名：变量名使用驼峰命名法。应该简短而具有描述性，避免使用单字母名称，除非是循环变量。如果变量类型为 bool,则名称应以 Has、Is、Can 或 Allow 开头。常量名应采用驼峰命名法，相关常量应该分组声明，可以使用空白行分隔不同组的常量。 函数和方法命名：函数和方法名使用驼峰命名法。应该清晰的表达其功能和用途。函数名应该使用动词或动宾结构，明确描述函数的操作。 结构体和接口命名：结构体和接口使用驼峰命名法。应该简介而具有描述性。尽量避免缩写，除非是广泛接受的行业标准。 测试文件命名：测试文件以 _test.go 结尾，测试函数以 Test 前缀，后面跟被测试的函数名。 
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Gin 表单与文件上传</title>
       <link>https://rjguanwen.cn/posts/gin/gin_03/</link>
