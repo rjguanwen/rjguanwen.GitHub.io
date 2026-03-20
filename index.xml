@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>飞光</title>
-    <link>https://rjguanwen.cn/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 08 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go 命名规范</title>
-      <link>https://rjguanwen.cn/posts/golang/naming_convention/</link>
+      <link>http://localhost:1313/posts/golang/naming_convention/</link>
       <pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/golang/naming_convention/</guid>
+      <guid>http://localhost:1313/posts/golang/naming_convention/</guid>
       <description>
         
           
@@ -25,10 +25,10 @@
     
     <item>
       <title>基于 TOTP 的多因素身份验证</title>
-      <link>https://rjguanwen.cn/posts/tec_ot/totp/</link>
+      <link>http://localhost:1313/posts/tec_ot/totp/</link>
       <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/tec_ot/totp/</guid>
+      <guid>http://localhost:1313/posts/tec_ot/totp/</guid>
       <description>
         
           
@@ -44,10 +44,10 @@ TOTP原理：
     
     <item>
       <title>为之建立  为之崩解</title>
-      <link>https://rjguanwen.cn/posts/mine/aiqing/</link>
+      <link>http://localhost:1313/posts/mine/aiqing/</link>
       <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/mine/aiqing/</guid>
+      <guid>http://localhost:1313/posts/mine/aiqing/</guid>
       <description>
         
           
@@ -65,10 +65,10 @@ TOTP原理：
     
     <item>
       <title>记忆的本质</title>
-      <link>https://rjguanwen.cn/posts/mine/memory/</link>
+      <link>http://localhost:1313/posts/mine/memory/</link>
       <pubDate>Thu, 03 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/mine/memory/</guid>
+      <guid>http://localhost:1313/posts/mine/memory/</guid>
       <description>
         
           
@@ -107,10 +107,10 @@ Cross-cultural研究显示：西方个体更倾向存储以自我为中心的事
     
     <item>
       <title>茧</title>
-      <link>https://rjguanwen.cn/posts/mine/jian/</link>
+      <link>http://localhost:1313/posts/mine/jian/</link>
       <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/mine/jian/</guid>
+      <guid>http://localhost:1313/posts/mine/jian/</guid>
       <description>
         
           
@@ -165,10 +165,10 @@ Cross-cultural研究显示：西方个体更倾向存储以自我为中心的事
     
     <item>
       <title>Dart语言基础</title>
-      <link>https://rjguanwen.cn/posts/flutter/dart-1/</link>
+      <link>http://localhost:1313/posts/flutter/dart-1/</link>
       <pubDate>Thu, 09 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/flutter/dart-1/</guid>
+      <guid>http://localhost:1313/posts/flutter/dart-1/</guid>
       <description>
         
           
@@ -181,10 +181,10 @@ Cross-cultural研究显示：西方个体更倾向存储以自我为中心的事
     
     <item>
       <title>《诫子书》</title>
-      <link>https://rjguanwen.cn/posts/arts/scsj-8/</link>
+      <link>http://localhost:1313/posts/arts/scsj-8/</link>
       <pubDate>Tue, 07 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/scsj-8/</guid>
+      <guid>http://localhost:1313/posts/arts/scsj-8/</guid>
       <description>
         
           
@@ -201,11 +201,27 @@ Cross-cultural研究显示：西方个体更倾向存储以自我为中心的事
     </item>
     
     <item>
+      <title>My First Post</title>
+      <link>http://localhost:1313/posts/my-first-post/</link>
+      <pubDate>Wed, 03 Apr 2024 10:23:57 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <description>
+        
+          
+            试一试新版本的hugo 也不是这么好用的嘛 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>《行香子·述怀》</title>
-      <link>https://rjguanwen.cn/posts/arts/sc-sdp-1/</link>
+      <link>http://localhost:1313/posts/arts/sc-sdp-1/</link>
       <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/sc-sdp-1/</guid>
+      <guid>http://localhost:1313/posts/arts/sc-sdp-1/</guid>
       <description>
         
           
@@ -226,10 +242,10 @@ Cross-cultural研究显示：西方个体更倾向存储以自我为中心的事
     
     <item>
       <title>国企与民企的最大区别</title>
-      <link>https://rjguanwen.cn/posts/ot/soeandpe/</link>
+      <link>http://localhost:1313/posts/ot/soeandpe/</link>
       <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/ot/soeandpe/</guid>
+      <guid>http://localhost:1313/posts/ot/soeandpe/</guid>
       <description>
         
           
@@ -261,10 +277,10 @@ Cross-cultural研究显示：西方个体更倾向存储以自我为中心的事
     
     <item>
       <title>国企与资本，人民至上与盈利模式</title>
-      <link>https://rjguanwen.cn/posts/ot/soeandpe2/</link>
+      <link>http://localhost:1313/posts/ot/soeandpe2/</link>
       <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/ot/soeandpe2/</guid>
+      <guid>http://localhost:1313/posts/ot/soeandpe2/</guid>
       <description>
         
           
@@ -290,10 +306,10 @@ Cross-cultural研究显示：西方个体更倾向存储以自我为中心的事
     
     <item>
       <title>关于《乌合之众》的要点</title>
-      <link>https://rjguanwen.cn/posts/ot/wuhezhizhong/</link>
+      <link>http://localhost:1313/posts/ot/wuhezhizhong/</link>
       <pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/ot/wuhezhizhong/</guid>
+      <guid>http://localhost:1313/posts/ot/wuhezhizhong/</guid>
       <description>
         
           
@@ -308,10 +324,10 @@ Cross-cultural研究显示：西方个体更倾向存储以自我为中心的事
     
     <item>
       <title>互联网社会生态的思考：信息泛滥与乌合之众</title>
-      <link>https://rjguanwen.cn/posts/ot/infoandl/</link>
+      <link>http://localhost:1313/posts/ot/infoandl/</link>
       <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/ot/infoandl/</guid>
+      <guid>http://localhost:1313/posts/ot/infoandl/</guid>
       <description>
         
           
@@ -324,9 +340,9 @@ Cross-cultural研究显示：西方个体更倾向存储以自我为中心的事
 内容平台的推荐机制，加速了信息茧房的形成，使得互联网用户在不知不觉中就陷身于信息茧房之中。还是以今日头条为例来说一说自媒体平台的推荐机制。今日头条属于机器智能个性化推荐机制，通过机器算法将用户发表的内容 (视频、文章)分发给内容的受众。 智能个性化推荐引擎会根据文章特征 (内容质量、内容特征、首发情况、互动情况)、用户特征 (头条号历史表、头条号订阅情况)以及环境特征 (时间、地域、天气)等等，为文章找到可能感兴趣的读者并推荐给他们。从这个推荐机制可以看到，它将内容特征与用户特征进行了匹配，然后有针对性的为用户进行内容推荐。而正常来说，我们每个人的信息需求并非全方位的，大家只关注自己喜欢的话题和使自己愉悦的领域，只点赞与自己相近的思想与观点，久而久之，平台为你推送的将全是此类内容，而你也将大概率陷身于此类信息的包围之中，就像蚕茧一样，被同质化的信息包围。其他自媒体的平台的推荐机制与今日头条大同小异，随着技术的发展，推荐越来越精准，我们每个人的信息茧房也愈发的牢固。
 三、网络人的非理性：乌合之众已形成 通常情况下，我们认为人是理性的动物，在两千多年前亚里士多德就提出了这个命题，后续的多位著名哲学家、思想家都对这个命题进行过诸多的思辨与论述。总结来说，理性的含义有三个方面：一、理性是认识事物本质和规律的逻辑思维能力，与感性相对；二、理性是在&amp;quot;慎思明辨&amp;quot;指导下的行动的非盲目性；三、理性是一种“合目的性”，是在目标指引下行为的有序性和合理性。明白了理性，那么我们也就明白了什么是非理性。虽然我们都以“理性”自居，但非理性的行为其实在日常生活中无处不在，例如：因为商城大促销而买回家的一次都没用过的物品、从概率上来说就必然赔本的博彩、为点点虚荣心而欠下的难以偿还的网贷等等。在网络上的非理性主要表现为非理性的表达，所谓非理性表达是指当人们在网络上表达自己意见时，更多的是建立在本能和感觉等非逻辑思维基础上的，是非条理化、非逻辑化和非秩序化的，其突出特征是情绪化。因为网络的开放性、匿名性和互动性，网络人的非理性表现的尤为显著。在一些热点和重大事件发生时，网民群情激愤，失去理智，放纵自我，肆无忌惮的用偏激的语言发表极端的意见，网络成为了情绪的“垃圾场”，又因为网络上超强的多对多的互动性，很容易形成极端意见群体，网络中的舆论浪潮也随着围观队伍的不断壮大一浪高过一浪。“民意在网络上的现身，不再是嘘的一声，而是轰的一声，不再是意见领袖的振臂高呼，而是陌生人的成群结队”。至此，乌合之众已经形成。
 四、乌合之众的特征：被情绪裹挟的非理性群体 乌合之众不是一个新概念，它出自法国社会心理学家勒庞在19世纪末出版的书籍《乌合之众：大众心理研究》。乌合之众是指“由于大量个体的情感、行为和思想受到类似的因素影响，这些人形成一种从属于群体的心理状态，集体行动的状态，也就是大众心理”。其中群体指的是具有同样心理的一群人。群体未必一定是同一时间汇集在同一地点的人，当某个心理一致性形成后，很多散布在社会各个角落里的、各式各样的人，尽管他们没有直接面对面凑在一起，尽管他们可能相互也不认识，但他们依旧可以成为一个群体，展现出群体特有的那些特征。具体来说，有三个主要特征：
-**1. 群体的智力水平低于个体平均智力水平的。**群体一旦形成，思维就会显示出非理性、简单化、缺乏常识和逻辑等一些特征，甚至看起来非常像个傻瓜。（例如：群体只乐于接受简单明了的号召和主张，不关心证据和论述，不进行分析和判断。越是迎合人群基本需求的简单主张，越容易得到群体的拥护和支持。因为整体智力的下降，所以群体特别容易被暗示所误导，相信并传播荒诞不经的谣言，接受稀奇古怪的理念。）
-**2. 自信心爆棚，敢想敢干，横冲直撞。**当个体汇聚为群体之后，会非常的“胆大妄为”、“无法无天”，啥都敢想，啥都敢干。可能的原因有两个：一是个体力量实现不了的目标，群体的力量可以轻易实现；二是个体汇入群体后减弱或者消除了对被惩罚的恐惧。
-**3. 情绪化、敏感化，急于采取行动。**群体的产生和发展是靠情绪传染实现的，群体在总是被情绪驱使，越激烈的情绪越可能成为主导力量。在越来越激烈的情绪推动下，群体倾向于尽快采取实际行动。
+1. **群体的智力水平低于个体平均智力水平的。**群体一旦形成，思维就会显示出非理性、简单化、缺乏常识和逻辑等一些特征，甚至看起来非常像个傻瓜。（例如：群体只乐于接受简单明了的号召和主张，不关心证据和论述，不进行分析和判断。越是迎合人群基本需求的简单主张，越容易得到群体的拥护和支持。因为整体智力的下降，所以群体特别容易被暗示所误导，相信并传播荒诞不经的谣言，接受稀奇古怪的理念。）
+2. **自信心爆棚，敢想敢干，横冲直撞。**当个体汇聚为群体之后，会非常的“胆大妄为”、“无法无天”，啥都敢想，啥都敢干。可能的原因有两个：一是个体力量实现不了的目标，群体的力量可以轻易实现；二是个体汇入群体后减弱或者消除了对被惩罚的恐惧。
+3. **情绪化、敏感化，急于采取行动。**群体的产生和发展是靠情绪传染实现的，群体在总是被情绪驱使，越激烈的情绪越可能成为主导力量。在越来越激烈的情绪推动下，群体倾向于尽快采取实际行动。
 从历史来看，这种群体的例子有很多：原本温和的公民变成纳粹分子、狂热的FL功教徒、英国公投脱欧、全民DYJ等。群体可以表现的比个人更坏也可以表现的比个人更好，如抗日战争中的前赴后继等。
 五、我们的自处之道： 一、独立、自由、自主之精神
 二、强大、坚定、丰富的内心
@@ -338,10 +354,10 @@ Cross-cultural研究显示：西方个体更倾向存储以自我为中心的事
     
     <item>
       <title>北极星指标</title>
-      <link>https://rjguanwen.cn/posts/tec_ot/omtm/</link>
+      <link>http://localhost:1313/posts/tec_ot/omtm/</link>
       <pubDate>Thu, 03 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/tec_ot/omtm/</guid>
+      <guid>http://localhost:1313/posts/tec_ot/omtm/</guid>
       <description>
         
           
@@ -362,10 +378,10 @@ S代表目标必须是具体(Specific)，比如目标定为我要减肥，就不
     
     <item>
       <title>Gartner战略技术趋势（2021-2023）</title>
-      <link>https://rjguanwen.cn/posts/tec_ot/gartner_01/</link>
+      <link>http://localhost:1313/posts/tec_ot/gartner_01/</link>
       <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/tec_ot/gartner_01/</guid>
+      <guid>http://localhost:1313/posts/tec_ot/gartner_01/</guid>
       <description>
         
           
@@ -405,10 +421,10 @@ Burke先生表示：“超级自动化是一股不可避免且不可逆转的趋
     
     <item>
       <title>组装式应用思考</title>
-      <link>https://rjguanwen.cn/posts/tec_ot/pbc_01/</link>
+      <link>http://localhost:1313/posts/tec_ot/pbc_01/</link>
       <pubDate>Thu, 22 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/tec_ot/pbc_01/</guid>
+      <guid>http://localhost:1313/posts/tec_ot/pbc_01/</guid>
       <description>
         
           
@@ -439,10 +455,10 @@ Burke先生表示：“超级自动化是一股不可避免且不可逆转的趋
     
     <item>
       <title>读书 - 《经济学通识》</title>
-      <link>https://rjguanwen.cn/posts/books/jingjixuetongshi_1/</link>
+      <link>http://localhost:1313/posts/books/jingjixuetongshi_1/</link>
       <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/books/jingjixuetongshi_1/</guid>
+      <guid>http://localhost:1313/posts/books/jingjixuetongshi_1/</guid>
       <description>
         
           
@@ -459,10 +475,10 @@ Burke先生表示：“超级自动化是一股不可避免且不可逆转的趋
     
     <item>
       <title>本身原则与理性原则</title>
-      <link>https://rjguanwen.cn/posts/ot/two_yz/</link>
+      <link>http://localhost:1313/posts/ot/two_yz/</link>
       <pubDate>Wed, 11 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/ot/two_yz/</guid>
+      <guid>http://localhost:1313/posts/ot/two_yz/</guid>
       <description>
         
           
@@ -479,10 +495,10 @@ Burke先生表示：“超级自动化是一股不可避免且不可逆转的趋
     
     <item>
       <title>读书 - 《数据资产论》</title>
-      <link>https://rjguanwen.cn/posts/books/sjzcl01/</link>
+      <link>http://localhost:1313/posts/books/sjzcl01/</link>
       <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/books/sjzcl01/</guid>
+      <guid>http://localhost:1313/posts/books/sjzcl01/</guid>
       <description>
         
           
@@ -496,10 +512,10 @@ Burke先生表示：“超级自动化是一股不可避免且不可逆转的趋
     
     <item>
       <title>Gin 表单与文件上传</title>
-      <link>https://rjguanwen.cn/posts/gin/gin_03/</link>
+      <link>http://localhost:1313/posts/gin/gin_03/</link>
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/gin/gin_03/</guid>
+      <guid>http://localhost:1313/posts/gin/gin_03/</guid>
       <description>
         
           
@@ -514,10 +530,10 @@ application/json application/x-www-form-urlencoded application/xml multipart/for
     
     <item>
       <title>Gin 路由</title>
-      <link>https://rjguanwen.cn/posts/gin/gin_02/</link>
+      <link>http://localhost:1313/posts/gin/gin_02/</link>
       <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/gin/gin_02/</guid>
+      <guid>http://localhost:1313/posts/gin/gin_02/</guid>
       <description>
         
           
@@ -532,10 +548,10 @@ application/json application/x-www-form-urlencoded application/xml multipart/for
     
     <item>
       <title>《临江仙·夜登小阁忆洛中旧游》</title>
-      <link>https://rjguanwen.cn/posts/arts/scsj-6/</link>
+      <link>http://localhost:1313/posts/arts/scsj-6/</link>
       <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/scsj-6/</guid>
+      <guid>http://localhost:1313/posts/arts/scsj-6/</guid>
       <description>
         
           
@@ -546,6 +562,7 @@ application/json application/x-www-form-urlencoded application/xml multipart/for
 二十余年如一梦，此身虽在堪惊。
 闲登小阁看新晴。
 古今多少事，渔唱起三更。
+【注】：第一次读这首词是在《亮剑》这本书的结尾，思及书中诸豪英的命运，感慨颇深&amp;hellip;
           
           
         
@@ -554,10 +571,10 @@ application/json application/x-www-form-urlencoded application/xml multipart/for
     
     <item>
       <title>《师旷劝学》</title>
-      <link>https://rjguanwen.cn/posts/arts/scsj-5/</link>
+      <link>http://localhost:1313/posts/arts/scsj-5/</link>
       <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/scsj-5/</guid>
+      <guid>http://localhost:1313/posts/arts/scsj-5/</guid>
       <description>
         
           
@@ -571,10 +588,10 @@ application/json application/x-www-form-urlencoded application/xml multipart/for
     
     <item>
       <title>《贺新郎·甚矣吾衰矣》</title>
-      <link>https://rjguanwen.cn/posts/arts/scsj-4/</link>
+      <link>http://localhost:1313/posts/arts/scsj-4/</link>
       <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/scsj-4/</guid>
+      <guid>http://localhost:1313/posts/arts/scsj-4/</guid>
       <description>
         
           
@@ -600,10 +617,10 @@ application/json application/x-www-form-urlencoded application/xml multipart/for
     
     <item>
       <title>《鹧鸪天·吴子似过秋水》</title>
-      <link>https://rjguanwen.cn/posts/arts/scsj-3/</link>
+      <link>http://localhost:1313/posts/arts/scsj-3/</link>
       <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/scsj-3/</guid>
+      <guid>http://localhost:1313/posts/arts/scsj-3/</guid>
       <description>
         
           
@@ -622,10 +639,10 @@ application/json application/x-www-form-urlencoded application/xml multipart/for
     
     <item>
       <title>《鹧鸪天•西都作》</title>
-      <link>https://rjguanwen.cn/posts/arts/scsj-7/</link>
+      <link>http://localhost:1313/posts/arts/scsj-7/</link>
       <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/scsj-7/</guid>
+      <guid>http://localhost:1313/posts/arts/scsj-7/</guid>
       <description>
         
           
@@ -642,10 +659,10 @@ application/json application/x-www-form-urlencoded application/xml multipart/for
     
     <item>
       <title>《天台石梁雨后观瀑歌》</title>
-      <link>https://rjguanwen.cn/posts/arts/scsj-1/</link>
+      <link>http://localhost:1313/posts/arts/scsj-1/</link>
       <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/scsj-1/</guid>
+      <guid>http://localhost:1313/posts/arts/scsj-1/</guid>
       <description>
         
           
@@ -679,10 +696,10 @@ application/json application/x-www-form-urlencoded application/xml multipart/for
     
     <item>
       <title>《清江引·弃微名去来心快哉》</title>
-      <link>https://rjguanwen.cn/posts/arts/scsj-2/</link>
+      <link>http://localhost:1313/posts/arts/scsj-2/</link>
       <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/scsj-2/</guid>
+      <guid>http://localhost:1313/posts/arts/scsj-2/</guid>
       <description>
         
           
@@ -710,10 +727,10 @@ application/json application/x-www-form-urlencoded application/xml multipart/for
     
     <item>
       <title>hugo 常用命令</title>
-      <link>https://rjguanwen.cn/posts/tec_ot/hugo_cmd/</link>
+      <link>http://localhost:1313/posts/tec_ot/hugo_cmd/</link>
       <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/tec_ot/hugo_cmd/</guid>
+      <guid>http://localhost:1313/posts/tec_ot/hugo_cmd/</guid>
       <description>
         
           
@@ -726,10 +743,10 @@ application/json application/x-www-form-urlencoded application/xml multipart/for
     
     <item>
       <title>rasa 入门</title>
-      <link>https://rjguanwen.cn/posts/rasa/rasa-1/</link>
+      <link>http://localhost:1313/posts/rasa/rasa-1/</link>
       <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/rasa/rasa-1/</guid>
+      <guid>http://localhost:1313/posts/rasa/rasa-1/</guid>
       <description>
         
           
@@ -750,10 +767,10 @@ rasa shell 可能因训练数据的问题，bot 表现的挺傻的，呵呵~
     
     <item>
       <title>rasa 继续入门 - 语言模型与分词器</title>
-      <link>https://rjguanwen.cn/posts/rasa/rasa-2/</link>
+      <link>http://localhost:1313/posts/rasa/rasa-2/</link>
       <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/rasa/rasa-2/</guid>
+      <guid>http://localhost:1313/posts/rasa/rasa-2/</guid>
       <description>
         
           
@@ -769,10 +786,10 @@ pipeline:- name: &amp;#34;WhitespaceTokenizer&amp;#34;# Flag to check whether 
     
     <item>
       <title>Anaconda 虚拟环境基础操作</title>
-      <link>https://rjguanwen.cn/posts/python/python-1/</link>
+      <link>http://localhost:1313/posts/python/python-1/</link>
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/python/python-1/</guid>
+      <guid>http://localhost:1313/posts/python/python-1/</guid>
       <description>
         
           
@@ -790,10 +807,10 @@ deactivate &amp;lt;虚拟环境名&amp;gt; 删除虚拟环境 conda remove -n &a
     
     <item>
       <title>Apache Superset 简介</title>
-      <link>https://rjguanwen.cn/posts/superset/superset_01/</link>
+      <link>http://localhost:1313/posts/superset/superset_01/</link>
       <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/superset/superset_01/</guid>
+      <guid>http://localhost:1313/posts/superset/superset_01/</guid>
       <description>
         
           
@@ -816,10 +833,10 @@ docker run --name superset -u 0 -d -p 8088:8088 -v /opt/docker/superset/conf:/et
     
     <item>
       <title>Apache Ignite 实践记录</title>
-      <link>https://rjguanwen.cn/posts/ignite/ignite_02/</link>
+      <link>http://localhost:1313/posts/ignite/ignite_02/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/ignite/ignite_02/</guid>
+      <guid>http://localhost:1313/posts/ignite/ignite_02/</guid>
       <description>
         
           
@@ -834,10 +851,10 @@ docker run --name superset -u 0 -d -p 8088:8088 -v /opt/docker/superset/conf:/et
     
     <item>
       <title>win10 的 Linux 子系统中安装 docker</title>
-      <link>https://rjguanwen.cn/posts/docker/docker_wsl/</link>
+      <link>http://localhost:1313/posts/docker/docker_wsl/</link>
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/docker/docker_wsl/</guid>
+      <guid>http://localhost:1313/posts/docker/docker_wsl/</guid>
       <description>
         
           
@@ -859,10 +876,10 @@ $ sudo passwd 输入当前用户的密码，终端会提示我们输入新的密
     
     <item>
       <title>Apache Ignite 简介</title>
-      <link>https://rjguanwen.cn/posts/ignite/ignite_01/</link>
+      <link>http://localhost:1313/posts/ignite/ignite_01/</link>
       <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/ignite/ignite_01/</guid>
+      <guid>http://localhost:1313/posts/ignite/ignite_01/</guid>
       <description>
         
           
@@ -875,10 +892,10 @@ $ sudo passwd 输入当前用户的密码，终端会提示我们输入新的密
     
     <item>
       <title>锻炼好心态</title>
-      <link>https://rjguanwen.cn/posts/mine/nine_attitude/</link>
+      <link>http://localhost:1313/posts/mine/nine_attitude/</link>
       <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/mine/nine_attitude/</guid>
+      <guid>http://localhost:1313/posts/mine/nine_attitude/</guid>
       <description>
         
           
@@ -896,10 +913,10 @@ $ sudo passwd 输入当前用户的密码，终端会提示我们输入新的密
     
     <item>
       <title>《与龚惟长先生书》</title>
-      <link>https://rjguanwen.cn/posts/arts/rswl/</link>
+      <link>http://localhost:1313/posts/arts/rswl/</link>
       <pubDate>Sat, 31 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/rswl/</guid>
+      <guid>http://localhost:1313/posts/arts/rswl/</guid>
       <description>
         
           
@@ -913,10 +930,10 @@ $ sudo passwd 输入当前用户的密码，终端会提示我们输入新的密
     
     <item>
       <title>《你还在我身旁》</title>
-      <link>https://rjguanwen.cn/posts/arts/xds-1/</link>
+      <link>http://localhost:1313/posts/arts/xds-1/</link>
       <pubDate>Sat, 31 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/xds-1/</guid>
+      <guid>http://localhost:1313/posts/arts/xds-1/</guid>
       <description>
         
           
@@ -938,10 +955,10 @@ $ sudo passwd 输入当前用户的密码，终端会提示我们输入新的密
     
     <item>
       <title>纳兰性德诗词一</title>
-      <link>https://rjguanwen.cn/posts/arts/nlxd-1/</link>
+      <link>http://localhost:1313/posts/arts/nlxd-1/</link>
       <pubDate>Sat, 31 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/nlxd-1/</guid>
+      <guid>http://localhost:1313/posts/arts/nlxd-1/</guid>
       <description>
         
           
@@ -972,10 +989,10 @@ $ sudo passwd 输入当前用户的密码，终端会提示我们输入新的密
     
     <item>
       <title>《定风波·南海归赠王定国侍人寓娘》</title>
-      <link>https://rjguanwen.cn/posts/arts/dfb-1/</link>
+      <link>http://localhost:1313/posts/arts/dfb-1/</link>
       <pubDate>Fri, 23 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/dfb-1/</guid>
+      <guid>http://localhost:1313/posts/arts/dfb-1/</guid>
       <description>
         
           
@@ -996,10 +1013,10 @@ $ sudo passwd 输入当前用户的密码，终端会提示我们输入新的密
     
     <item>
       <title>Windows 更新 git 版本</title>
-      <link>https://rjguanwen.cn/posts/git/git_04/</link>
+      <link>http://localhost:1313/posts/git/git_04/</link>
       <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/git/git_04/</guid>
+      <guid>http://localhost:1313/posts/git/git_04/</guid>
       <description>
         
           
@@ -1014,10 +1031,10 @@ git update-git-for-windows 3、如出现错误 重新下载新版本安装包，
     
     <item>
       <title>《六州歌头·少年侠气》</title>
-      <link>https://rjguanwen.cn/posts/arts/lzgt/</link>
+      <link>http://localhost:1313/posts/arts/lzgt/</link>
       <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/lzgt/</guid>
+      <guid>http://localhost:1313/posts/arts/lzgt/</guid>
       <description>
         
           
@@ -1045,10 +1062,10 @@ git update-git-for-windows 3、如出现错误 重新下载新版本安装包，
     
     <item>
       <title>《南吕·一枝花·不服老》</title>
-      <link>https://rjguanwen.cn/posts/arts/yzh/</link>
+      <link>http://localhost:1313/posts/arts/yzh/</link>
       <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/yzh/</guid>
+      <guid>http://localhost:1313/posts/arts/yzh/</guid>
       <description>
         
           
@@ -1083,10 +1100,10 @@ git update-git-for-windows 3、如出现错误 重新下载新版本安装包，
     
     <item>
       <title>Go 文件操作</title>
-      <link>https://rjguanwen.cn/posts/golang/go_file/</link>
+      <link>http://localhost:1313/posts/golang/go_file/</link>
       <pubDate>Thu, 27 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/golang/go_file/</guid>
+      <guid>http://localhost:1313/posts/golang/go_file/</guid>
       <description>
         
           
@@ -1100,10 +1117,10 @@ Go 文件操作总结 1、基本操作 1.1 创建文件 package mainimport (&a
     
     <item>
       <title>Gin Quickstart</title>
-      <link>https://rjguanwen.cn/posts/gin/gin_01/</link>
+      <link>http://localhost:1313/posts/gin/gin_01/</link>
       <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/gin/gin_01/</guid>
+      <guid>http://localhost:1313/posts/gin/gin_01/</guid>
       <description>
         
           
@@ -1123,10 +1140,10 @@ Quickstart 安装 Gin 前，首先要安装 Go，并做好各种设置。Go 版�
     
     <item>
       <title>Docker常用命令</title>
-      <link>https://rjguanwen.cn/posts/docker/docker_01/</link>
+      <link>http://localhost:1313/posts/docker/docker_01/</link>
       <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/docker/docker_01/</guid>
+      <guid>http://localhost:1313/posts/docker/docker_01/</guid>
       <description>
         
           
@@ -1142,10 +1159,10 @@ Quickstart 安装 Gin 前，首先要安装 Go，并做好各种设置。Go 版�
     
     <item>
       <title>Redis 常用命令</title>
-      <link>https://rjguanwen.cn/posts/redis/redis_01/</link>
+      <link>http://localhost:1313/posts/redis/redis_01/</link>
       <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/redis/redis_01/</guid>
+      <guid>http://localhost:1313/posts/redis/redis_01/</guid>
       <description>
         
           
@@ -1166,10 +1183,10 @@ Quickstart 安装 Gin 前，首先要安装 Go，并做好各种设置。Go 版�
     
     <item>
       <title>架构决策记录（ADR）</title>
-      <link>https://rjguanwen.cn/posts/tec_ot/adr/</link>
+      <link>http://localhost:1313/posts/tec_ot/adr/</link>
       <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/tec_ot/adr/</guid>
+      <guid>http://localhost:1313/posts/tec_ot/adr/</guid>
       <description>
         
           
@@ -1194,10 +1211,10 @@ Quickstart 安装 Gin 前，首先要安装 Go，并做好各种设置。Go 版�
     
     <item>
       <title>Centrifugo（九）使用 Redis 实现伸缩</title>
-      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_09/</link>
+      <link>http://localhost:1313/posts/centrifugo/centrifugo_09/</link>
       <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_09/</guid>
+      <guid>http://localhost:1313/posts/centrifugo/centrifugo_09/</guid>
       <description>
         
           
@@ -1220,10 +1237,10 @@ Redis 分片
     
     <item>
       <title>Centrifugo（十）令牌和签名</title>
-      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_10/</link>
+      <link>http://localhost:1313/posts/centrifugo/centrifugo_10/</link>
       <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_10/</guid>
+      <guid>http://localhost:1313/posts/centrifugo/centrifugo_10/</guid>
       <description>
         
           
@@ -1237,10 +1254,10 @@ Redis 分片
     
     <item>
       <title>Centrifugo（八）连接检查</title>
-      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_08/</link>
+      <link>http://localhost:1313/posts/centrifugo/centrifugo_08/</link>
       <pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_08/</guid>
+      <guid>http://localhost:1313/posts/centrifugo/centrifugo_08/</guid>
       <description>
         
           
@@ -1256,10 +1273,10 @@ to_return = {&amp;#39;user&amp;#39;: &amp;#34;USER ID&amp;#34;,&amp;#39;timest
     
     <item>
       <title>常用 Git 命令清单</title>
-      <link>https://rjguanwen.cn/posts/git/git_03/</link>
+      <link>http://localhost:1313/posts/git/git_03/</link>
       <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/git/git_03/</guid>
+      <guid>http://localhost:1313/posts/git/git_03/</guid>
       <description>
         
           
@@ -1277,10 +1294,10 @@ Workspace: 工作区 Index/Stage: 暂存区 Repository: 仓库区（或本地仓
     
     <item>
       <title>Centrifugo（七）Server HTTP API</title>
-      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_07/</link>
+      <link>http://localhost:1313/posts/centrifugo/centrifugo_07/</link>
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_07/</guid>
+      <guid>http://localhost:1313/posts/centrifugo/centrifugo_07/</guid>
       <description>
         
           
@@ -1299,10 +1316,10 @@ X-API-Sign 标头是基于 Centrifugo 密钥和要发送的 JSON 正文的 SHA-2
     
     <item>
       <title>Centrifugo（六）引擎（Engines）</title>
-      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_06/</link>
+      <link>http://localhost:1313/posts/centrifugo/centrifugo_06/</link>
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_06/</guid>
+      <guid>http://localhost:1313/posts/centrifugo/centrifugo_06/</guid>
       <description>
         
           
@@ -1322,10 +1339,10 @@ redis_host (string, default &amp;quot;127.0.0.1&amp;quot;) redis_port (int, defa
     
     <item>
       <title>上传本地文件到git</title>
-      <link>https://rjguanwen.cn/posts/git/git_02/</link>
+      <link>http://localhost:1313/posts/git/git_02/</link>
       <pubDate>Tue, 17 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/git/git_02/</guid>
+      <guid>http://localhost:1313/posts/git/git_02/</guid>
       <description>
         
           
@@ -1340,10 +1357,10 @@ git init 将文件添加到仓库： git add . 提交文件到仓库： git comm
     
     <item>
       <title>Centrifugo（三）安装与启动</title>
-      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_03/</link>
+      <link>http://localhost:1313/posts/centrifugo/centrifugo_03/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_03/</guid>
+      <guid>http://localhost:1313/posts/centrifugo/centrifugo_03/</guid>
       <description>
         
           
@@ -1360,10 +1377,10 @@ git init 将文件添加到仓库： git add . 提交文件到仓库： git comm
     
     <item>
       <title>Centrifugo（二）基本使用</title>
-      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_02/</link>
+      <link>http://localhost:1313/posts/centrifugo/centrifugo_02/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_02/</guid>
+      <guid>http://localhost:1313/posts/centrifugo/centrifugo_02/</guid>
       <description>
         
           
@@ -1389,10 +1406,10 @@ Centrifugo v2.3.0 之后，可以不使用 JWT 进行连接认证，参见 proxy
     
     <item>
       <title>Centrifugo（五）频道（Channel）</title>
-      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_05/</link>
+      <link>http://localhost:1313/posts/centrifugo/centrifugo_05/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_05/</guid>
+      <guid>http://localhost:1313/posts/centrifugo/centrifugo_05/</guid>
       <description>
         
           
@@ -1411,10 +1428,10 @@ Centrifugo v2.3.0 之后，可以不使用 JWT 进行连接认证，参见 proxy
     
     <item>
       <title>Centrifugo（四）配置文件说明</title>
-      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_04/</link>
+      <link>http://localhost:1313/posts/centrifugo/centrifugo_04/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_04/</guid>
+      <guid>http://localhost:1313/posts/centrifugo/centrifugo_04/</guid>
       <description>
         
           
@@ -1429,10 +1446,10 @@ Centrifugo – real-time messaging serverUsage:[flags] [command]Available Com
     
     <item>
       <title>Centrifugo（一）简介</title>
-      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_01/</link>
+      <link>http://localhost:1313/posts/centrifugo/centrifugo_01/</link>
       <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_01/</guid>
+      <guid>http://localhost:1313/posts/centrifugo/centrifugo_01/</guid>
       <description>
         
           
@@ -1463,10 +1480,10 @@ MIT license。
     
     <item>
       <title>坚持好习惯</title>
-      <link>https://rjguanwen.cn/posts/mine/good_habits/</link>
+      <link>http://localhost:1313/posts/mine/good_habits/</link>
       <pubDate>Sat, 30 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/mine/good_habits/</guid>
+      <guid>http://localhost:1313/posts/mine/good_habits/</guid>
       <description>
         
           
@@ -1481,10 +1498,10 @@ MIT license。
     
     <item>
       <title>数据加解传输过程</title>
-      <link>https://rjguanwen.cn/posts/tec_ot/data_translet_safely/</link>
+      <link>http://localhost:1313/posts/tec_ot/data_translet_safely/</link>
       <pubDate>Tue, 26 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/tec_ot/data_translet_safely/</guid>
+      <guid>http://localhost:1313/posts/tec_ot/data_translet_safely/</guid>
       <description>
         
           
@@ -1497,10 +1514,10 @@ MIT license。
     
     <item>
       <title>gomod使用记录</title>
-      <link>https://rjguanwen.cn/posts/golang/gomod_use/</link>
+      <link>http://localhost:1313/posts/golang/gomod_use/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/golang/gomod_use/</guid>
+      <guid>http://localhost:1313/posts/golang/gomod_use/</guid>
       <description>
         
           
@@ -1523,10 +1540,10 @@ go get -u need-upgrade-package 或者 go get -u
     
     <item>
       <title>govendor使用记录</title>
-      <link>https://rjguanwen.cn/posts/golang/govendor_use/</link>
+      <link>http://localhost:1313/posts/golang/govendor_use/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/golang/govendor_use/</guid>
+      <guid>http://localhost:1313/posts/golang/govendor_use/</guid>
       <description>
         
           
@@ -1551,10 +1568,10 @@ govendor remove +vendor
     
     <item>
       <title>git错误解决</title>
-      <link>https://rjguanwen.cn/posts/git/git_01/</link>
+      <link>http://localhost:1313/posts/git/git_01/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/git/git_01/</guid>
+      <guid>http://localhost:1313/posts/git/git_01/</guid>
       <description>
         
           
@@ -1568,10 +1585,10 @@ govendor remove +vendor
     
     <item>
       <title>关于产品与技术的一些想法</title>
-      <link>https://rjguanwen.cn/posts/mine/any_01/</link>
+      <link>http://localhost:1313/posts/mine/any_01/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/mine/any_01/</guid>
+      <guid>http://localhost:1313/posts/mine/any_01/</guid>
       <description>
         
           
@@ -1584,10 +1601,10 @@ govendor remove +vendor
     
     <item>
       <title>《苦昼短》</title>
-      <link>https://rjguanwen.cn/posts/art-1/</link>
+      <link>http://localhost:1313/posts/art-1/</link>
       <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/art-1/</guid>
+      <guid>http://localhost:1313/posts/art-1/</guid>
       <description>
         
           
@@ -1611,10 +1628,10 @@ govendor remove +vendor
     
     <item>
       <title>杂句摘抄</title>
-      <link>https://rjguanwen.cn/posts/somewords_01/</link>
+      <link>http://localhost:1313/posts/somewords_01/</link>
       <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/somewords_01/</guid>
+      <guid>http://localhost:1313/posts/somewords_01/</guid>
       <description>
         
           

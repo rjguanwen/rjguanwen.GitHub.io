@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>休闲娱乐 on 飞光</title>
-    <link>https://rjguanwen.cn/categories/%E4%BC%91%E9%97%B2%E5%A8%B1%E4%B9%90/</link>
+    <link>http://localhost:1313/categories/%E4%BC%91%E9%97%B2%E5%A8%B1%E4%B9%90/</link>
     <description>Recent content in 休闲娱乐 on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 07 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/categories/%E4%BC%91%E9%97%B2%E5%A8%B1%E4%B9%90/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/%E4%BC%91%E9%97%B2%E5%A8%B1%E4%B9%90/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>《诫子书》</title>
-      <link>https://rjguanwen.cn/posts/arts/scsj-8/</link>
+      <link>http://localhost:1313/posts/arts/scsj-8/</link>
       <pubDate>Tue, 07 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/scsj-8/</guid>
+      <guid>http://localhost:1313/posts/arts/scsj-8/</guid>
       <description>
         
           
@@ -30,10 +30,10 @@
     
     <item>
       <title>《行香子·述怀》</title>
-      <link>https://rjguanwen.cn/posts/arts/sc-sdp-1/</link>
+      <link>http://localhost:1313/posts/arts/sc-sdp-1/</link>
       <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/sc-sdp-1/</guid>
+      <guid>http://localhost:1313/posts/arts/sc-sdp-1/</guid>
       <description>
         
           
@@ -54,10 +54,10 @@
     
     <item>
       <title>《临江仙·夜登小阁忆洛中旧游》</title>
-      <link>https://rjguanwen.cn/posts/arts/scsj-6/</link>
+      <link>http://localhost:1313/posts/arts/scsj-6/</link>
       <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/scsj-6/</guid>
+      <guid>http://localhost:1313/posts/arts/scsj-6/</guid>
       <description>
         
           
@@ -68,6 +68,7 @@
 二十余年如一梦，此身虽在堪惊。
 闲登小阁看新晴。
 古今多少事，渔唱起三更。
+【注】：第一次读这首词是在《亮剑》这本书的结尾，思及书中诸豪英的命运，感慨颇深&amp;hellip;
           
           
         
@@ -76,10 +77,10 @@
     
     <item>
       <title>《师旷劝学》</title>
-      <link>https://rjguanwen.cn/posts/arts/scsj-5/</link>
+      <link>http://localhost:1313/posts/arts/scsj-5/</link>
       <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/scsj-5/</guid>
+      <guid>http://localhost:1313/posts/arts/scsj-5/</guid>
       <description>
         
           
@@ -93,10 +94,10 @@
     
     <item>
       <title>《贺新郎·甚矣吾衰矣》</title>
-      <link>https://rjguanwen.cn/posts/arts/scsj-4/</link>
+      <link>http://localhost:1313/posts/arts/scsj-4/</link>
       <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/scsj-4/</guid>
+      <guid>http://localhost:1313/posts/arts/scsj-4/</guid>
       <description>
         
           
@@ -122,10 +123,10 @@
     
     <item>
       <title>《鹧鸪天·吴子似过秋水》</title>
-      <link>https://rjguanwen.cn/posts/arts/scsj-3/</link>
+      <link>http://localhost:1313/posts/arts/scsj-3/</link>
       <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/scsj-3/</guid>
+      <guid>http://localhost:1313/posts/arts/scsj-3/</guid>
       <description>
         
           
@@ -144,10 +145,10 @@
     
     <item>
       <title>《鹧鸪天•西都作》</title>
-      <link>https://rjguanwen.cn/posts/arts/scsj-7/</link>
+      <link>http://localhost:1313/posts/arts/scsj-7/</link>
       <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/scsj-7/</guid>
+      <guid>http://localhost:1313/posts/arts/scsj-7/</guid>
       <description>
         
           
@@ -164,10 +165,10 @@
     
     <item>
       <title>《天台石梁雨后观瀑歌》</title>
-      <link>https://rjguanwen.cn/posts/arts/scsj-1/</link>
+      <link>http://localhost:1313/posts/arts/scsj-1/</link>
       <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/scsj-1/</guid>
+      <guid>http://localhost:1313/posts/arts/scsj-1/</guid>
       <description>
         
           
@@ -201,10 +202,10 @@
     
     <item>
       <title>《清江引·弃微名去来心快哉》</title>
-      <link>https://rjguanwen.cn/posts/arts/scsj-2/</link>
+      <link>http://localhost:1313/posts/arts/scsj-2/</link>
       <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/scsj-2/</guid>
+      <guid>http://localhost:1313/posts/arts/scsj-2/</guid>
       <description>
         
           
@@ -232,10 +233,10 @@
     
     <item>
       <title>《与龚惟长先生书》</title>
-      <link>https://rjguanwen.cn/posts/arts/rswl/</link>
+      <link>http://localhost:1313/posts/arts/rswl/</link>
       <pubDate>Sat, 31 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/rswl/</guid>
+      <guid>http://localhost:1313/posts/arts/rswl/</guid>
       <description>
         
           
@@ -249,10 +250,10 @@
     
     <item>
       <title>《你还在我身旁》</title>
-      <link>https://rjguanwen.cn/posts/arts/xds-1/</link>
+      <link>http://localhost:1313/posts/arts/xds-1/</link>
       <pubDate>Sat, 31 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/xds-1/</guid>
+      <guid>http://localhost:1313/posts/arts/xds-1/</guid>
       <description>
         
           
@@ -274,10 +275,10 @@
     
     <item>
       <title>纳兰性德诗词一</title>
-      <link>https://rjguanwen.cn/posts/arts/nlxd-1/</link>
+      <link>http://localhost:1313/posts/arts/nlxd-1/</link>
       <pubDate>Sat, 31 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/nlxd-1/</guid>
+      <guid>http://localhost:1313/posts/arts/nlxd-1/</guid>
       <description>
         
           
@@ -308,10 +309,10 @@
     
     <item>
       <title>《定风波·南海归赠王定国侍人寓娘》</title>
-      <link>https://rjguanwen.cn/posts/arts/dfb-1/</link>
+      <link>http://localhost:1313/posts/arts/dfb-1/</link>
       <pubDate>Fri, 23 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/dfb-1/</guid>
+      <guid>http://localhost:1313/posts/arts/dfb-1/</guid>
       <description>
         
           
@@ -332,10 +333,10 @@
     
     <item>
       <title>《六州歌头·少年侠气》</title>
-      <link>https://rjguanwen.cn/posts/arts/lzgt/</link>
+      <link>http://localhost:1313/posts/arts/lzgt/</link>
       <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/lzgt/</guid>
+      <guid>http://localhost:1313/posts/arts/lzgt/</guid>
       <description>
         
           
@@ -363,10 +364,10 @@
     
     <item>
       <title>《南吕·一枝花·不服老》</title>
-      <link>https://rjguanwen.cn/posts/arts/yzh/</link>
+      <link>http://localhost:1313/posts/arts/yzh/</link>
       <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/arts/yzh/</guid>
+      <guid>http://localhost:1313/posts/arts/yzh/</guid>
       <description>
         
           
@@ -401,10 +402,10 @@
     
     <item>
       <title>《苦昼短》</title>
-      <link>https://rjguanwen.cn/posts/art-1/</link>
+      <link>http://localhost:1313/posts/art-1/</link>
       <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/art-1/</guid>
+      <guid>http://localhost:1313/posts/art-1/</guid>
       <description>
         
           

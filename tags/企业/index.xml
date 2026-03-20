@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>企业 on 飞光</title>
-    <link>https://rjguanwen.cn/tags/%E4%BC%81%E4%B8%9A/</link>
+    <link>http://localhost:1313/tags/%E4%BC%81%E4%B8%9A/</link>
     <description>Recent content in 企业 on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 25 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/tags/%E4%BC%81%E4%B8%9A/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E4%BC%81%E4%B8%9A/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>国企与民企的最大区别</title>
-      <link>https://rjguanwen.cn/posts/ot/soeandpe/</link>
+      <link>http://localhost:1313/posts/ot/soeandpe/</link>
       <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/ot/soeandpe/</guid>
+      <guid>http://localhost:1313/posts/ot/soeandpe/</guid>
       <description>
         
           
@@ -44,10 +44,10 @@
     
     <item>
       <title>国企与资本，人民至上与盈利模式</title>
-      <link>https://rjguanwen.cn/posts/ot/soeandpe2/</link>
+      <link>http://localhost:1313/posts/ot/soeandpe2/</link>
       <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/ot/soeandpe2/</guid>
+      <guid>http://localhost:1313/posts/ot/soeandpe2/</guid>
       <description>
         
           

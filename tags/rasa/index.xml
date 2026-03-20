@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rasa on 飞光</title>
-    <link>https://rjguanwen.cn/tags/rasa/</link>
+    <link>http://localhost:1313/tags/rasa/</link>
     <description>Recent content in Rasa on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 30 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/tags/rasa/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/rasa/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>rasa 入门</title>
-      <link>https://rjguanwen.cn/posts/rasa/rasa-1/</link>
+      <link>http://localhost:1313/posts/rasa/rasa-1/</link>
       <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/rasa/rasa-1/</guid>
+      <guid>http://localhost:1313/posts/rasa/rasa-1/</guid>
       <description>
         
           
@@ -33,10 +33,10 @@ rasa shell 可能因训练数据的问题，bot 表现的挺傻的，呵呵~
     
     <item>
       <title>rasa 继续入门 - 语言模型与分词器</title>
-      <link>https://rjguanwen.cn/posts/rasa/rasa-2/</link>
+      <link>http://localhost:1313/posts/rasa/rasa-2/</link>
       <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://rjguanwen.cn/posts/rasa/rasa-2/</guid>
+      <guid>http://localhost:1313/posts/rasa/rasa-2/</guid>
       <description>
         
           
