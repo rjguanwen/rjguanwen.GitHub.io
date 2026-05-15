@@ -9,7 +9,7 @@
   
   >
   <head>
-<title>rasa 入门 | 飞光</title>
+<title>几点感悟 | 飞光</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,21 +22,21 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="rasa 学习验证过程记录" />
+<meta name="description" content="几点感触与想法" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
-<meta name="twitter:title" content="rasa 入门" />
+<meta name="twitter:title" content="几点感悟" />
 <meta name="twitter:image" content="https://rjguanwen.cn/"/>
-<meta property="og:url" content="https://rjguanwen.cn/posts/rasa/rasa-1/" />
-<meta property="og:title" content="rasa 入门" />
-<meta property="og:description" content="rasa 学习验证过程记录" />
+<meta property="og:url" content="https://rjguanwen.cn/posts/mine/jidianganwu/" />
+<meta property="og:title" content="几点感悟" />
+<meta property="og:description" content="几点感触与想法" />
 <meta property="og:image" content="https://rjguanwen.cn/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://rjguanwen.cn/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://rjguanwen.cn/icons/favicon-32x32.png">
 <link rel="manifest" href="https://rjguanwen.cn/icons/site.webmanifest">
 
-<link rel="canonical" href="https://rjguanwen.cn/posts/rasa/rasa-1/">
+<link rel="canonical" href="https://rjguanwen.cn/posts/mine/jidianganwu/">
 
 
 
@@ -95,7 +95,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">rasa 入门</h1>
+    <h1 class="post_title">几点感悟</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -103,23 +103,21 @@
 </svg>
 </span>
     <span class="post_date">
-      Jul 30, 2021</span>
-    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/' title="技术" class="post_tag button button_translucent">技术
-        </a><a href='https://rjguanwen.cn/tags/python/' title="python" class="post_tag button button_translucent">python
-        </a><a href='https://rjguanwen.cn/tags/rasa/' title="rasa" class="post_tag button button_translucent">rasa
+      May 15, 2026</span>
+    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://rjguanwen.cn/tags/%E4%B8%AA%E4%BA%BA/' title="个人" class="post_tag button button_translucent">个人
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=rasa%20%e5%85%a5%e9%97%a8&url=https%3a%2f%2frjguanwen.cn%2fposts%2frasa%2frasa-1%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=%e5%87%a0%e7%82%b9%e6%84%9f%e6%82%9f&url=https%3a%2f%2frjguanwen.cn%2fposts%2fmine%2fjidianganwu%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2frjguanwen.cn%2fposts%2frasa%2frasa-1%2f&t=rasa%20%e5%85%a5%e9%97%a8" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2frjguanwen.cn%2fposts%2fmine%2fjidianganwu%2f&t=%e5%87%a0%e7%82%b9%e6%84%9f%e6%82%9f" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -133,7 +131,7 @@
 </svg>
 
     </a>
-    <a href="https://rjguanwen.cn/posts/rasa/rasa-1/" title="Copy Link" class="link link_yank">
+    <a href="https://rjguanwen.cn/posts/mine/jidianganwu/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -144,74 +142,45 @@
   </span>
   </div>
 
-    <div class="post_body"><p>**前言：没有比官网文档更好的资料了。**看这里<a href="https://rasa.com/docs/rasa/">https://rasa.com/docs/rasa/</a></p>
-<h2 id="rasa-安装">rasa 安装</h2>
-<pre tabindex="0"><code class="language-(shell)" data-lang="(shell)">pip install -U rasa  
-pip show rasa  
-</code></pre><p>注：我是用的 rasa 版本为 Version: 2.8.1</p>
-<h2 id="初始化项目">初始化项目</h2>
-<p>1、 在工作文件夹中执行</p>
-<pre tabindex="0"><code class="language-(shell)" data-lang="(shell)"># 创建默认的初始化项目，加“--no-prompt”就避免了中间的问题提示
-rasa init --no-prompt  
-</code></pre><p>该命令会在工作文件夹中创建一系列的文件，关键文件如下：</p>
+    <div class="post_body"><h3 id="1喝酒要节制">1、喝酒要节制</h3>
 <ul>
-<li>config.yml : Rasa NLU 和 Rasa Core 的配置文件</li>
-<li>credentials.yml : 定义和其他服务连接的一些细节，例如rasa api接口</li>
-<li>data/nlu.yml : Rasa NLU 的训练数据</li>
-<li>data/stories.yml : Rasa stories 数据</li>
-<li>data/rule.yml : Rasa 规则数据</li>
-<li>endpoints.yml : 和外部消息服务对接的配置</li>
-<li>models/<!-- raw HTML omitted -->.tar.gz : 初始训练的模型数据</li>
+<li>喝酒要想到<strong>身体</strong>，晚年身体不好是最大的凄凉</li>
+<li>喝酒要想到<strong>理智</strong>，胡言乱语说者无心听者有意</li>
+<li>喝酒要保持<strong>安静</strong>，克服咋咋呼呼的毛病</li>
+<li>喝开心了要知道<strong>控制</strong>，不要发微信、不要打电话，不要骚扰别人</li>
+<li>乖乖<strong>睡觉</strong>比什么都好！</li>
 </ul>
-<p>以上文件都打开看一下，基本能明白是啥意思。</p>
-<p>2、 训练模型<br>
-如果添加了 NLU 或者 Core 数据，或者修改了domain和配置文件，需要重新训练模型：</p>
-<pre tabindex="0"><code class="language-(shell)" data-lang="(shell)">rasa train  
-</code></pre><p>3、 对话应用</p>
-<pre tabindex="0"><code class="language-(shell)" data-lang="(shell)">rasa shell  
-</code></pre><p>可能因训练数据的问题，bot 表现的挺傻的，呵呵~</p>
-<h2 id="定制简单的中文对话">定制简单的中文对话</h2>
-<p>1、 建立工作目录<br>
-创建一个新的工作文件夹，如 &ldquo;rasa-zh-1&rdquo;。<br>
-在文件夹中直接用 <code>rasa init --no-prompt</code> 进行初始化</p>
-<p>2、 修改其中的关键内容</p>
+<h3 id="2多言数穷不如守中">2、多言数穷，不如守中</h3>
 <ul>
-<li>domain.yml: 其中定义了意图和响应，将其修改为你需要的</li>
-<li>data/nul.yml: 其中意图的识别方式，每个意图都有些 “examples”</li>
-<li>data/stories.yml: 其中定义了多个情节（即对话剧本），为每个意图对应上了响应，用于机器学习训练方式</li>
-<li>data/rules.yml: 其中定于了基于规则的流程控制，只要满足规则，每次走的都是确定性分支</li>
+<li>控制表达欲，说话更少一些</li>
+<li>控制教导欲，没有人是傻子</li>
+<li>控制表现欲，说话更慢一些</li>
 </ul>
-<p><strong><!-- raw HTML omitted -->影响RASA会话流程的有2个配置，一个是Story，一个就是Rules！<!-- raw HTML omitted --></strong><br>
-<!-- raw HTML omitted -->其中 <code>config.yml</code> 开头的语言配置 <code>language: en</code> 也应该修改，不过好像不该也行。<!-- raw HTML omitted --></p>
-<p>根据需要将上面说的四个文件修改修改 &hellip;</p>
-<p>3、训练并跑跑试试</p>
-<pre tabindex="0"><code class="language-(shell)" data-lang="(shell)">rasa train
-rasa shell
-</code></pre><p><figure>
-  <picture>
-
-    
-      
-        
-        
-        
-        
-        
-        
-    <img
-      loading="lazy"
-      decoding="async"
-      alt="rasa简单对话示例"
-      
-        class="image_figure image_internal image_unprocessed"
-        src="/images/rasa-1.png"
-      
-      
-    />
-
-    </picture>
-</figure>
-</p>
+<h3 id="3耐心与谦逊">3、耐心与谦逊</h3>
+<ul>
+<li>更耐心一点点，无论是对他人还是对自己</li>
+<li>更谦逊一点点，我们没有嚣张的资本与资历</li>
+<li>可以坚定，但没必要急迫的否定他人</li>
+</ul>
+<h3 id="4坚持学习">4、坚持学习</h3>
+<ul>
+<li>人的进步都是在人后的学习</li>
+<li>学习就好，不用太在意学的是啥，目的性可以轻一些</li>
+<li>永远坚持长期主义</li>
+</ul>
+<h3 id="5工作与生活">5、工作与生活</h3>
+<ul>
+<li>要有一定的隔离，工作是为了生活，并不是生活本身</li>
+<li>隔离的关键不是距离，不是圈子，而是个人的思想</li>
+<li>享受生活更多的也不是物质而是精神状态</li>
+<li>享受工作，不是一句空话，而是一种理想的工作时的精神状态</li>
+<li>个人修养不是一句空话，而是要以文化内涵为地基才能修炼出来的</li>
+</ul>
+<h3 id="6别怕麻烦享受麻烦">6、别怕麻烦，享受麻烦</h3>
+<ul>
+<li>麻烦就像懒惰一样，周末在家躺一天，绝对不如去健身房锻炼一趟、去户外徒步一圈</li>
+<li>躲避麻烦不如快乐的直面并解决之</li>
+</ul>
 
     </div>
 <div class="post_comments">
