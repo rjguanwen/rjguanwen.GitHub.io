@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ignite on 飞光</title>
-    <link>http://localhost:1313/tags/ignite/</link>
+    <link>https://rjguanwen.cn/tags/ignite/</link>
     <description>Recent content in Ignite on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/ignite/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/tags/ignite/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Apache Ignite 实践记录</title>
-      <link>http://localhost:1313/posts/ignite/ignite_02/</link>
+      <link>https://rjguanwen.cn/posts/ignite/ignite_02/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/ignite/ignite_02/</guid>
+      <guid>https://rjguanwen.cn/posts/ignite/ignite_02/</guid>
       <description>
         
           
@@ -27,10 +27,10 @@
     
     <item>
       <title>Apache Ignite 简介</title>
-      <link>http://localhost:1313/posts/ignite/ignite_01/</link>
+      <link>https://rjguanwen.cn/posts/ignite/ignite_01/</link>
       <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/ignite/ignite_01/</guid>
+      <guid>https://rjguanwen.cn/posts/ignite/ignite_01/</guid>
       <description>
         
           

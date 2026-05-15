@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Centrifugo on 飞光</title>
-    <link>http://localhost:1313/tags/centrifugo/</link>
+    <link>https://rjguanwen.cn/tags/centrifugo/</link>
     <description>Recent content in Centrifugo on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 31 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/centrifugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/tags/centrifugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Centrifugo（九）使用 Redis 实现伸缩</title>
-      <link>http://localhost:1313/posts/centrifugo/centrifugo_09/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_09/</link>
       <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/centrifugo/centrifugo_09/</guid>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_09/</guid>
       <description>
         
           
@@ -35,10 +35,10 @@ Redis 分片
     
     <item>
       <title>Centrifugo（十）令牌和签名</title>
-      <link>http://localhost:1313/posts/centrifugo/centrifugo_10/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_10/</link>
       <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/centrifugo/centrifugo_10/</guid>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_10/</guid>
       <description>
         
           
@@ -52,10 +52,10 @@ Redis 分片
     
     <item>
       <title>Centrifugo（八）连接检查</title>
-      <link>http://localhost:1313/posts/centrifugo/centrifugo_08/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_08/</link>
       <pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/centrifugo/centrifugo_08/</guid>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_08/</guid>
       <description>
         
           
@@ -71,10 +71,10 @@ to_return = {&amp;#39;user&amp;#39;: &amp;#34;USER ID&amp;#34;,&amp;#39;timest
     
     <item>
       <title>Centrifugo（七）Server HTTP API</title>
-      <link>http://localhost:1313/posts/centrifugo/centrifugo_07/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_07/</link>
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/centrifugo/centrifugo_07/</guid>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_07/</guid>
       <description>
         
           
@@ -93,10 +93,10 @@ X-API-Sign 标头是基于 Centrifugo 密钥和要发送的 JSON 正文的 SHA-2
     
     <item>
       <title>Centrifugo（六）引擎（Engines）</title>
-      <link>http://localhost:1313/posts/centrifugo/centrifugo_06/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_06/</link>
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/centrifugo/centrifugo_06/</guid>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_06/</guid>
       <description>
         
           
@@ -116,10 +116,10 @@ redis_host (string, default &amp;quot;127.0.0.1&amp;quot;) redis_port (int, defa
     
     <item>
       <title>Centrifugo（三）安装与启动</title>
-      <link>http://localhost:1313/posts/centrifugo/centrifugo_03/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_03/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/centrifugo/centrifugo_03/</guid>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_03/</guid>
       <description>
         
           
@@ -136,10 +136,10 @@ redis_host (string, default &amp;quot;127.0.0.1&amp;quot;) redis_port (int, defa
     
     <item>
       <title>Centrifugo（二）基本使用</title>
-      <link>http://localhost:1313/posts/centrifugo/centrifugo_02/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_02/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/centrifugo/centrifugo_02/</guid>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_02/</guid>
       <description>
         
           
@@ -165,10 +165,10 @@ Centrifugo v2.3.0 之后，可以不使用 JWT 进行连接认证，参见 proxy
     
     <item>
       <title>Centrifugo（五）频道（Channel）</title>
-      <link>http://localhost:1313/posts/centrifugo/centrifugo_05/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_05/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/centrifugo/centrifugo_05/</guid>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_05/</guid>
       <description>
         
           
@@ -187,10 +187,10 @@ Centrifugo v2.3.0 之后，可以不使用 JWT 进行连接认证，参见 proxy
     
     <item>
       <title>Centrifugo（四）配置文件说明</title>
-      <link>http://localhost:1313/posts/centrifugo/centrifugo_04/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_04/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/centrifugo/centrifugo_04/</guid>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_04/</guid>
       <description>
         
           
@@ -205,10 +205,10 @@ Centrifugo – real-time messaging serverUsage:[flags] [command]Available Com
     
     <item>
       <title>Centrifugo（一）简介</title>
-      <link>http://localhost:1313/posts/centrifugo/centrifugo_01/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_01/</link>
       <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/centrifugo/centrifugo_01/</guid>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_01/</guid>
       <description>
         
           

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>语言工具 on 飞光</title>
-    <link>http://localhost:1313/categories/%E8%AF%AD%E8%A8%80%E5%B7%A5%E5%85%B7/</link>
+    <link>https://rjguanwen.cn/categories/%E8%AF%AD%E8%A8%80%E5%B7%A5%E5%85%B7/</link>
     <description>Recent content in 语言工具 on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 08 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/%E8%AF%AD%E8%A8%80%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/categories/%E8%AF%AD%E8%A8%80%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go 命名规范</title>
-      <link>http://localhost:1313/posts/golang/naming_convention/</link>
+      <link>https://rjguanwen.cn/posts/golang/naming_convention/</link>
       <pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/golang/naming_convention/</guid>
+      <guid>https://rjguanwen.cn/posts/golang/naming_convention/</guid>
       <description>
         
           
@@ -25,10 +25,10 @@
     
     <item>
       <title>Dart语言基础</title>
-      <link>http://localhost:1313/posts/flutter/dart-1/</link>
+      <link>https://rjguanwen.cn/posts/flutter/dart-1/</link>
       <pubDate>Thu, 09 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/flutter/dart-1/</guid>
+      <guid>https://rjguanwen.cn/posts/flutter/dart-1/</guid>
       <description>
         
           
@@ -41,10 +41,10 @@
     
     <item>
       <title>Anaconda 虚拟环境基础操作</title>
-      <link>http://localhost:1313/posts/python/python-1/</link>
+      <link>https://rjguanwen.cn/posts/python/python-1/</link>
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/python/python-1/</guid>
+      <guid>https://rjguanwen.cn/posts/python/python-1/</guid>
       <description>
         
           
@@ -62,10 +62,10 @@ deactivate &amp;lt;虚拟环境名&amp;gt; 删除虚拟环境 conda remove -n &a
     
     <item>
       <title>win10 的 Linux 子系统中安装 docker</title>
-      <link>http://localhost:1313/posts/docker/docker_wsl/</link>
+      <link>https://rjguanwen.cn/posts/docker/docker_wsl/</link>
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/docker/docker_wsl/</guid>
+      <guid>https://rjguanwen.cn/posts/docker/docker_wsl/</guid>
       <description>
         
           
@@ -87,10 +87,10 @@ $ sudo passwd 输入当前用户的密码，终端会提示我们输入新的密
     
     <item>
       <title>Go 文件操作</title>
-      <link>http://localhost:1313/posts/golang/go_file/</link>
+      <link>https://rjguanwen.cn/posts/golang/go_file/</link>
       <pubDate>Thu, 27 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/golang/go_file/</guid>
+      <guid>https://rjguanwen.cn/posts/golang/go_file/</guid>
       <description>
         
           
@@ -104,10 +104,10 @@ Go 文件操作总结 1、基本操作 1.1 创建文件 package mainimport (&a
     
     <item>
       <title>Docker常用命令</title>
-      <link>http://localhost:1313/posts/docker/docker_01/</link>
+      <link>https://rjguanwen.cn/posts/docker/docker_01/</link>
       <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/docker/docker_01/</guid>
+      <guid>https://rjguanwen.cn/posts/docker/docker_01/</guid>
       <description>
         
           
@@ -123,10 +123,10 @@ Go 文件操作总结 1、基本操作 1.1 创建文件 package mainimport (&a
     
     <item>
       <title>gomod使用记录</title>
-      <link>http://localhost:1313/posts/golang/gomod_use/</link>
+      <link>https://rjguanwen.cn/posts/golang/gomod_use/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/golang/gomod_use/</guid>
+      <guid>https://rjguanwen.cn/posts/golang/gomod_use/</guid>
       <description>
         
           
@@ -149,10 +149,10 @@ go get -u need-upgrade-package 或者 go get -u
     
     <item>
       <title>govendor使用记录</title>
-      <link>http://localhost:1313/posts/golang/govendor_use/</link>
+      <link>https://rjguanwen.cn/posts/golang/govendor_use/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/golang/govendor_use/</guid>
+      <guid>https://rjguanwen.cn/posts/golang/govendor_use/</guid>
       <description>
         
           

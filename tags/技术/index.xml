@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>技术 on 飞光</title>
-    <link>http://localhost:1313/tags/%E6%8A%80%E6%9C%AF/</link>
+    <link>https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/</link>
     <description>Recent content in 技术 on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 08 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/tags/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go 命名规范</title>
-      <link>http://localhost:1313/posts/golang/naming_convention/</link>
+      <link>https://rjguanwen.cn/posts/golang/naming_convention/</link>
       <pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/golang/naming_convention/</guid>
+      <guid>https://rjguanwen.cn/posts/golang/naming_convention/</guid>
       <description>
         
           
@@ -25,10 +25,10 @@
     
     <item>
       <title>Dart语言基础</title>
-      <link>http://localhost:1313/posts/flutter/dart-1/</link>
+      <link>https://rjguanwen.cn/posts/flutter/dart-1/</link>
       <pubDate>Thu, 09 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/flutter/dart-1/</guid>
+      <guid>https://rjguanwen.cn/posts/flutter/dart-1/</guid>
       <description>
         
           
@@ -41,10 +41,10 @@
     
     <item>
       <title>北极星指标</title>
-      <link>http://localhost:1313/posts/tec_ot/omtm/</link>
+      <link>https://rjguanwen.cn/posts/tec_ot/omtm/</link>
       <pubDate>Thu, 03 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/tec_ot/omtm/</guid>
+      <guid>https://rjguanwen.cn/posts/tec_ot/omtm/</guid>
       <description>
         
           
@@ -65,10 +65,10 @@ S代表目标必须是具体(Specific)，比如目标定为我要减肥，就不
     
     <item>
       <title>Gartner战略技术趋势（2021-2023）</title>
-      <link>http://localhost:1313/posts/tec_ot/gartner_01/</link>
+      <link>https://rjguanwen.cn/posts/tec_ot/gartner_01/</link>
       <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/tec_ot/gartner_01/</guid>
+      <guid>https://rjguanwen.cn/posts/tec_ot/gartner_01/</guid>
       <description>
         
           
@@ -108,10 +108,10 @@ Burke先生表示：“超级自动化是一股不可避免且不可逆转的趋
     
     <item>
       <title>组装式应用思考</title>
-      <link>http://localhost:1313/posts/tec_ot/pbc_01/</link>
+      <link>https://rjguanwen.cn/posts/tec_ot/pbc_01/</link>
       <pubDate>Thu, 22 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/tec_ot/pbc_01/</guid>
+      <guid>https://rjguanwen.cn/posts/tec_ot/pbc_01/</guid>
       <description>
         
           
@@ -142,10 +142,10 @@ Burke先生表示：“超级自动化是一股不可避免且不可逆转的趋
     
     <item>
       <title>读书 - 《数据资产论》</title>
-      <link>http://localhost:1313/posts/books/sjzcl01/</link>
+      <link>https://rjguanwen.cn/posts/books/sjzcl01/</link>
       <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/books/sjzcl01/</guid>
+      <guid>https://rjguanwen.cn/posts/books/sjzcl01/</guid>
       <description>
         
           
@@ -159,10 +159,10 @@ Burke先生表示：“超级自动化是一股不可避免且不可逆转的趋
     
     <item>
       <title>Gin 表单与文件上传</title>
-      <link>http://localhost:1313/posts/gin/gin_03/</link>
+      <link>https://rjguanwen.cn/posts/gin/gin_03/</link>
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/gin/gin_03/</guid>
+      <guid>https://rjguanwen.cn/posts/gin/gin_03/</guid>
       <description>
         
           
@@ -177,10 +177,10 @@ application/json application/x-www-form-urlencoded application/xml multipart/for
     
     <item>
       <title>Gin 路由</title>
-      <link>http://localhost:1313/posts/gin/gin_02/</link>
+      <link>https://rjguanwen.cn/posts/gin/gin_02/</link>
       <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/gin/gin_02/</guid>
+      <guid>https://rjguanwen.cn/posts/gin/gin_02/</guid>
       <description>
         
           
@@ -195,10 +195,10 @@ application/json application/x-www-form-urlencoded application/xml multipart/for
     
     <item>
       <title>hugo 常用命令</title>
-      <link>http://localhost:1313/posts/tec_ot/hugo_cmd/</link>
+      <link>https://rjguanwen.cn/posts/tec_ot/hugo_cmd/</link>
       <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/tec_ot/hugo_cmd/</guid>
+      <guid>https://rjguanwen.cn/posts/tec_ot/hugo_cmd/</guid>
       <description>
         
           
@@ -211,10 +211,10 @@ application/json application/x-www-form-urlencoded application/xml multipart/for
     
     <item>
       <title>rasa 入门</title>
-      <link>http://localhost:1313/posts/rasa/rasa-1/</link>
+      <link>https://rjguanwen.cn/posts/rasa/rasa-1/</link>
       <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/rasa/rasa-1/</guid>
+      <guid>https://rjguanwen.cn/posts/rasa/rasa-1/</guid>
       <description>
         
           
@@ -235,10 +235,10 @@ rasa shell 可能因训练数据的问题，bot 表现的挺傻的，呵呵~
     
     <item>
       <title>rasa 继续入门 - 语言模型与分词器</title>
-      <link>http://localhost:1313/posts/rasa/rasa-2/</link>
+      <link>https://rjguanwen.cn/posts/rasa/rasa-2/</link>
       <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/rasa/rasa-2/</guid>
+      <guid>https://rjguanwen.cn/posts/rasa/rasa-2/</guid>
       <description>
         
           
@@ -254,10 +254,10 @@ pipeline:- name: &amp;#34;WhitespaceTokenizer&amp;#34;# Flag to check whether 
     
     <item>
       <title>Anaconda 虚拟环境基础操作</title>
-      <link>http://localhost:1313/posts/python/python-1/</link>
+      <link>https://rjguanwen.cn/posts/python/python-1/</link>
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/python/python-1/</guid>
+      <guid>https://rjguanwen.cn/posts/python/python-1/</guid>
       <description>
         
           
@@ -275,10 +275,10 @@ deactivate &amp;lt;虚拟环境名&amp;gt; 删除虚拟环境 conda remove -n &a
     
     <item>
       <title>Apache Superset 简介</title>
-      <link>http://localhost:1313/posts/superset/superset_01/</link>
+      <link>https://rjguanwen.cn/posts/superset/superset_01/</link>
       <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/superset/superset_01/</guid>
+      <guid>https://rjguanwen.cn/posts/superset/superset_01/</guid>
       <description>
         
           
@@ -301,10 +301,10 @@ docker run --name superset -u 0 -d -p 8088:8088 -v /opt/docker/superset/conf:/et
     
     <item>
       <title>Apache Ignite 实践记录</title>
-      <link>http://localhost:1313/posts/ignite/ignite_02/</link>
+      <link>https://rjguanwen.cn/posts/ignite/ignite_02/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/ignite/ignite_02/</guid>
+      <guid>https://rjguanwen.cn/posts/ignite/ignite_02/</guid>
       <description>
         
           
@@ -319,10 +319,10 @@ docker run --name superset -u 0 -d -p 8088:8088 -v /opt/docker/superset/conf:/et
     
     <item>
       <title>win10 的 Linux 子系统中安装 docker</title>
-      <link>http://localhost:1313/posts/docker/docker_wsl/</link>
+      <link>https://rjguanwen.cn/posts/docker/docker_wsl/</link>
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/docker/docker_wsl/</guid>
+      <guid>https://rjguanwen.cn/posts/docker/docker_wsl/</guid>
       <description>
         
           
@@ -344,10 +344,10 @@ $ sudo passwd 输入当前用户的密码，终端会提示我们输入新的密
     
     <item>
       <title>Apache Ignite 简介</title>
-      <link>http://localhost:1313/posts/ignite/ignite_01/</link>
+      <link>https://rjguanwen.cn/posts/ignite/ignite_01/</link>
       <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/ignite/ignite_01/</guid>
+      <guid>https://rjguanwen.cn/posts/ignite/ignite_01/</guid>
       <description>
         
           
@@ -360,10 +360,10 @@ $ sudo passwd 输入当前用户的密码，终端会提示我们输入新的密
     
     <item>
       <title>Windows 更新 git 版本</title>
-      <link>http://localhost:1313/posts/git/git_04/</link>
+      <link>https://rjguanwen.cn/posts/git/git_04/</link>
       <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/git/git_04/</guid>
+      <guid>https://rjguanwen.cn/posts/git/git_04/</guid>
       <description>
         
           
@@ -378,10 +378,10 @@ git update-git-for-windows 3、如出现错误 重新下载新版本安装包，
     
     <item>
       <title>Go 文件操作</title>
-      <link>http://localhost:1313/posts/golang/go_file/</link>
+      <link>https://rjguanwen.cn/posts/golang/go_file/</link>
       <pubDate>Thu, 27 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/golang/go_file/</guid>
+      <guid>https://rjguanwen.cn/posts/golang/go_file/</guid>
       <description>
         
           
@@ -395,10 +395,10 @@ Go 文件操作总结 1、基本操作 1.1 创建文件 package mainimport (&a
     
     <item>
       <title>Gin Quickstart</title>
-      <link>http://localhost:1313/posts/gin/gin_01/</link>
+      <link>https://rjguanwen.cn/posts/gin/gin_01/</link>
       <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/gin/gin_01/</guid>
+      <guid>https://rjguanwen.cn/posts/gin/gin_01/</guid>
       <description>
         
           
@@ -418,10 +418,10 @@ Quickstart 安装 Gin 前，首先要安装 Go，并做好各种设置。Go 版�
     
     <item>
       <title>Docker常用命令</title>
-      <link>http://localhost:1313/posts/docker/docker_01/</link>
+      <link>https://rjguanwen.cn/posts/docker/docker_01/</link>
       <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/docker/docker_01/</guid>
+      <guid>https://rjguanwen.cn/posts/docker/docker_01/</guid>
       <description>
         
           
@@ -437,10 +437,10 @@ Quickstart 安装 Gin 前，首先要安装 Go，并做好各种设置。Go 版�
     
     <item>
       <title>Redis 常用命令</title>
-      <link>http://localhost:1313/posts/redis/redis_01/</link>
+      <link>https://rjguanwen.cn/posts/redis/redis_01/</link>
       <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/redis/redis_01/</guid>
+      <guid>https://rjguanwen.cn/posts/redis/redis_01/</guid>
       <description>
         
           
@@ -461,10 +461,10 @@ Quickstart 安装 Gin 前，首先要安装 Go，并做好各种设置。Go 版�
     
     <item>
       <title>Centrifugo（九）使用 Redis 实现伸缩</title>
-      <link>http://localhost:1313/posts/centrifugo/centrifugo_09/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_09/</link>
       <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/centrifugo/centrifugo_09/</guid>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_09/</guid>
       <description>
         
           
@@ -487,10 +487,10 @@ Redis 分片
     
     <item>
       <title>Centrifugo（十）令牌和签名</title>
-      <link>http://localhost:1313/posts/centrifugo/centrifugo_10/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_10/</link>
       <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/centrifugo/centrifugo_10/</guid>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_10/</guid>
       <description>
         
           
@@ -504,10 +504,10 @@ Redis 分片
     
     <item>
       <title>Centrifugo（八）连接检查</title>
-      <link>http://localhost:1313/posts/centrifugo/centrifugo_08/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_08/</link>
       <pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/centrifugo/centrifugo_08/</guid>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_08/</guid>
       <description>
         
           
@@ -523,10 +523,10 @@ to_return = {&amp;#39;user&amp;#39;: &amp;#34;USER ID&amp;#34;,&amp;#39;timest
     
     <item>
       <title>常用 Git 命令清单</title>
-      <link>http://localhost:1313/posts/git/git_03/</link>
+      <link>https://rjguanwen.cn/posts/git/git_03/</link>
       <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/git/git_03/</guid>
+      <guid>https://rjguanwen.cn/posts/git/git_03/</guid>
       <description>
         
           
@@ -544,10 +544,10 @@ Workspace: 工作区 Index/Stage: 暂存区 Repository: 仓库区（或本地仓
     
     <item>
       <title>Centrifugo（七）Server HTTP API</title>
-      <link>http://localhost:1313/posts/centrifugo/centrifugo_07/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_07/</link>
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/centrifugo/centrifugo_07/</guid>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_07/</guid>
       <description>
         
           
@@ -566,10 +566,10 @@ X-API-Sign 标头是基于 Centrifugo 密钥和要发送的 JSON 正文的 SHA-2
     
     <item>
       <title>Centrifugo（六）引擎（Engines）</title>
-      <link>http://localhost:1313/posts/centrifugo/centrifugo_06/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_06/</link>
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/centrifugo/centrifugo_06/</guid>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_06/</guid>
       <description>
         
           
@@ -589,10 +589,10 @@ redis_host (string, default &amp;quot;127.0.0.1&amp;quot;) redis_port (int, defa
     
     <item>
       <title>上传本地文件到git</title>
-      <link>http://localhost:1313/posts/git/git_02/</link>
+      <link>https://rjguanwen.cn/posts/git/git_02/</link>
       <pubDate>Tue, 17 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/git/git_02/</guid>
+      <guid>https://rjguanwen.cn/posts/git/git_02/</guid>
       <description>
         
           
@@ -607,10 +607,10 @@ git init 将文件添加到仓库： git add . 提交文件到仓库： git comm
     
     <item>
       <title>Centrifugo（三）安装与启动</title>
-      <link>http://localhost:1313/posts/centrifugo/centrifugo_03/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_03/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/centrifugo/centrifugo_03/</guid>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_03/</guid>
       <description>
         
           
@@ -627,10 +627,10 @@ git init 将文件添加到仓库： git add . 提交文件到仓库： git comm
     
     <item>
       <title>Centrifugo（二）基本使用</title>
-      <link>http://localhost:1313/posts/centrifugo/centrifugo_02/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_02/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/centrifugo/centrifugo_02/</guid>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_02/</guid>
       <description>
         
           
@@ -656,10 +656,10 @@ Centrifugo v2.3.0 之后，可以不使用 JWT 进行连接认证，参见 proxy
     
     <item>
       <title>Centrifugo（五）频道（Channel）</title>
-      <link>http://localhost:1313/posts/centrifugo/centrifugo_05/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_05/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/centrifugo/centrifugo_05/</guid>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_05/</guid>
       <description>
         
           
@@ -678,10 +678,10 @@ Centrifugo v2.3.0 之后，可以不使用 JWT 进行连接认证，参见 proxy
     
     <item>
       <title>Centrifugo（四）配置文件说明</title>
-      <link>http://localhost:1313/posts/centrifugo/centrifugo_04/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_04/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/centrifugo/centrifugo_04/</guid>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_04/</guid>
       <description>
         
           
@@ -696,10 +696,10 @@ Centrifugo – real-time messaging serverUsage:[flags] [command]Available Com
     
     <item>
       <title>Centrifugo（一）简介</title>
-      <link>http://localhost:1313/posts/centrifugo/centrifugo_01/</link>
+      <link>https://rjguanwen.cn/posts/centrifugo/centrifugo_01/</link>
       <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/centrifugo/centrifugo_01/</guid>
+      <guid>https://rjguanwen.cn/posts/centrifugo/centrifugo_01/</guid>
       <description>
         
           
@@ -730,10 +730,10 @@ MIT license。
     
     <item>
       <title>数据加解传输过程</title>
-      <link>http://localhost:1313/posts/tec_ot/data_translet_safely/</link>
+      <link>https://rjguanwen.cn/posts/tec_ot/data_translet_safely/</link>
       <pubDate>Tue, 26 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/tec_ot/data_translet_safely/</guid>
+      <guid>https://rjguanwen.cn/posts/tec_ot/data_translet_safely/</guid>
       <description>
         
           
@@ -746,10 +746,10 @@ MIT license。
     
     <item>
       <title>gomod使用记录</title>
-      <link>http://localhost:1313/posts/golang/gomod_use/</link>
+      <link>https://rjguanwen.cn/posts/golang/gomod_use/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/golang/gomod_use/</guid>
+      <guid>https://rjguanwen.cn/posts/golang/gomod_use/</guid>
       <description>
         
           
@@ -772,10 +772,10 @@ go get -u need-upgrade-package 或者 go get -u
     
     <item>
       <title>govendor使用记录</title>
-      <link>http://localhost:1313/posts/golang/govendor_use/</link>
+      <link>https://rjguanwen.cn/posts/golang/govendor_use/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/golang/govendor_use/</guid>
+      <guid>https://rjguanwen.cn/posts/golang/govendor_use/</guid>
       <description>
         
           
@@ -800,10 +800,10 @@ govendor remove +vendor
     
     <item>
       <title>git错误解决</title>
-      <link>http://localhost:1313/posts/git/git_01/</link>
+      <link>https://rjguanwen.cn/posts/git/git_01/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/git/git_01/</guid>
+      <guid>https://rjguanwen.cn/posts/git/git_01/</guid>
       <description>
         
           

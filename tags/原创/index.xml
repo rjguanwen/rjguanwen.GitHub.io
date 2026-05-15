@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>原创 on 飞光</title>
-    <link>http://localhost:1313/tags/%E5%8E%9F%E5%88%9B/</link>
+    <link>https://rjguanwen.cn/tags/%E5%8E%9F%E5%88%9B/</link>
     <description>Recent content in 原创 on 飞光</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 13 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E5%8E%9F%E5%88%9B/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rjguanwen.cn/tags/%E5%8E%9F%E5%88%9B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>为之建立  为之崩解</title>
-      <link>http://localhost:1313/posts/mine/aiqing/</link>
+      <link>https://rjguanwen.cn/posts/mine/aiqing/</link>
       <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/mine/aiqing/</guid>
+      <guid>https://rjguanwen.cn/posts/mine/aiqing/</guid>
       <description>
         
           
@@ -30,10 +30,10 @@
     
     <item>
       <title>茧</title>
-      <link>http://localhost:1313/posts/mine/jian/</link>
+      <link>https://rjguanwen.cn/posts/mine/jian/</link>
       <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/mine/jian/</guid>
+      <guid>https://rjguanwen.cn/posts/mine/jian/</guid>
       <description>
         
           
